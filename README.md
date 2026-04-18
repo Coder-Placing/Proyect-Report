@@ -24,7 +24,7 @@ Docente: Eduardo Martin Reyes Rodriguez
 <br><br>
 Startup: Coder-Placing
 <br><br>
-Producto: -----
+Producto: SpacePulse
 <br><br>
 <br><br>
 <strong>Integrantes</strong>  
