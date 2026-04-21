@@ -399,5 +399,25 @@ A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos 
 
 Posteriormente, se procedió a definir la interconexión estratégica de los bounded contexts delimitados en las fases previas. Este proceso se centró en la identificación y mapeo de eventos de dominio clave, los cuales actúan como el tejido conectivo de la arquitectura distribuida. Al establecer estos puntos de enlace, se garantizó una comunicación asíncrona y desacoplada, permitiendo que el flujo de información entre contextos sea fluido, coherente y respete las reglas de negocio de cada área.
 
+## IAM (Identity and Access Management) - El Punto de Entrada --> Space Management (Gestión de Equipos) - La Configuración
+
+<img width="1785" height="414" alt="image" src="https://github.com/user-attachments/assets/615b6853-0abe-4f9d-823b-f77e9e18407a" />
+
+## Space Management (Gestión de Equipos) - La Configuración --> Payment Management - La Activación del Servicio
+
+<img width="1780" height="375" alt="image" src="https://github.com/user-attachments/assets/4bb4a395-7696-4857-81e3-4386c506e87c" />
+
+## Payment Management - La Activación del Servicio --> IoT Monitoring and Notifications - El Core Operativo
+
+<img width="1807" height="663" alt="image" src="https://github.com/user-attachments/assets/d55d318e-f15d-44cc-a82d-d00c35c6ebf4" />
+
+## IoT Monitoring and Notifications - El Core Operativo --> Reports and Advanced Features - La Inteligencia de Negocio
+
+<img width="1723" height="587" alt="image" src="https://github.com/user-attachments/assets/741b03d7-c28d-4d4a-b415-e5a8b704c644" />
+
+
+
+
+
 
 
