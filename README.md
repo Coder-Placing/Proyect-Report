@@ -193,7 +193,7 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 ##### 1.2.2.4. Lean UX Canvas
 
 
-### 1.3. Requirements Elicitation & Analysis
+### 1.3. Segmentos Objetivos
 
 
 ## Capítulo II: Presentación
@@ -222,11 +222,35 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 
 #### 2.3.1. User Personas
 
+User Persona 1:
+
+![User_Persona_1](Assets/User_Persona_1.png)
+
+User Persona 2:
+
+![User_Persona_2](Assets/User_Persona_2.png)
+
 #### 2.3.2. User Task Matrix
 
 #### 2.3.3. User Journey Map
 
+User Journey Map Segmento objetivo 1:
+
+![User_Journey_Map_1](Assets/Journey_map_1.png)
+
+User Journey Map Segmento objetivo 2:
+
+![User_Journey_Map_2](Assets/Journey_map_2.png)
+
 #### 2.3.4. Empathy Mapping
+
+Empathy Map Segmento Objetivo 1:
+
+![Empathy_Map_1](Assets/Empathy_map_1.png)
+
+Empathy Map Segmento Objetivo 2:
+
+![Empathy_Map_2](Assets/Empathy_map_2.png)
 
 #### 2.3.5. As-Is Scenario Mapping
 
@@ -258,7 +282,77 @@ cumplimiento
 
 Una vez concluidas las epicas, ahora podemos proceder a encapsular las multiples historias de usuario que poseemos para definir los requerimientos de nuestra aplicacion y saber como desarrollarla correctamente
 
+| Epic / Story ID | Titulo | Descripción | Criterios de Aceptación | Epic ID | 
+|-----------------|--------|-------------|-------------------------|--------------------------|
+|Landing Page / US01|Visualizacion de Landing Page|Como usuario de SpacePulse, quiero acceder a una Landing Page informativa para ver los beneficios y lo que ofrece la aplicacion | Dado que el usuario accede a la web pública<br> Cuando abre la sección de servicios <br> Entonces el sistema muestra los servicios que ofrece. |EP01|
+|Landing Page / US02| Acceso a la aplicacion | Como usuario de SpacePulse, quiero acceder a la aplicacion desde la Landing Page para acceder a la aplicacion desde otros medios|  Dado que el usuario accede a la Landing Page <br> Cuando acceda al boton "Ingresar" <br> Entonces sera redirigido a la aplicacion | EP01|
+|Gestion de Usuarios / US03| Registro de Usuarios | Como usuario de SpacePulse, quiero crear una cuenta para acceder a la aplicacion|Dado que el usuario accede a la aplicacion <br> Cuando llene el formulario con su informacion personal <br> Y los datos sean permitidos <br> Entonces la aplicacion creara una cuenta para el usuario | EP02|
+| Gestion de Usuarios / US04 | Inicio de Sesion | Como usuario de SpacePulse, quiero iniciar sesion con mis datos personales para acceder a la aplicacion con una cuenta personalizada para mi | Escenario 1: <br> Dado que el usuario esta en la ventana de "Iniciar Sesion" <br> Cuando llene el formulario de inicio de sesion <br> Y los datos sean correctos <br> Entonces acceder con el inicio de sesion <br> <br> Escenario 2: <br> Dado que el usuario esta en la ventana de "Iniciar Sesion" <br> Cuando llene el formulario de inicio de sesion <br> Y los datos sean incorrectos <br> Entonces no podra acceder al inicio de sesion | EP02|
+Gestion de Usuarios / US05 | Recuperar Contraseña | Como usuario de SpacePulse, quiero recuperar la contraseña de mi cuenta, para recuperar el acceso a mi cuenta en caso se me olvide | Dado el usuario no recuerde la contraseña de su cuenta <br> Cuando el usuario presione el boton de "Recuperar contraseña" <br> Entonces el sistema iniciaria el proceso para recuperar o reemplazar su anterior contraseña | EP02|
+|Gestion de Usuarios/ US06| Editar Perfil | Como usuario de SpacePulse, quiero editar mi perfil en ciertos aspectos para mayor personalizacion de mi cuenta |Escenario 1: <br> Dado el usuario esta en al seccion "Mi Perfil" <br> Cuando el usuario presione el boton "Editar Perfil" <br> Entonces el sistema iniciara el formulario de datos editables del perfil de usuario <br><br> Escenario 2: Edicion de Perfil <br> Dado que el usuario esta en el formulario de editar perfil <br> Cuando el usuario modifique los datos que desee <br> Entonces el sistema lo actualizara y su perfil mostrara los nuevos datos | EP02|
+| Gestion de Usuarios / US07 | Seleccion de Roles | Como usuario de Space Pulse, quiero seleccionar el rol que sere para acceder a las funcionalidades de dicho rol para evitar problemas a futuro | Dado que el usuario esta creando su cuenta <br> Cuando vea la opcion de seleccionar rol <br> Entonces podra seleccionar si es dueño o remodelador | EP02|
+|US08 | Visualización de servicios de remodelación | | | |
+|US09 | Recibir notificaciones IoT | | | |
+|US10 | Reportes de remodelación | | | |
+|US11 | Personalización de perfil | | | |
+|US12 | Seguridad de datos | | | |
+|US13 | Historial de proyectos | | | |
+|US14 | Dejar opiniones | | | |
+|US15 | Alertas de seguridad | | | |
+|US16 | Seguimiento en tiempo real | | | |
+|US17 | Comparación de presupuestos | | | |
+|US18 | Gestión de pagos | | | |
+|US19 | Recordatorios de pago | | | |
+|US20 | Registro de incidencias | | | |
+|US21 | Confirmación de entrega de materiales | | | |
+|US22 | Descarga de reportes | | | |
+|US23 | Panel de control de dispositivos IoT | | | |
+|US24 | Sugerencias de mejoras | | | |
+|US25 | Calificación del servicio | | | |
+|US26 | Control de acceso de usuarios (RBAC) | | | |
+|US27 | Recuperación de contraseña | | | |
+|US28 | Configuración de notificaciones | | | |
+|US29 | Multilenguaje | | | |
+|US30 | Filtrado de proyectos | | | |
+|US31 | Gestión de documentos | | | |
+|US32 | Reportes personalizados | | | |
+|US33 | Vista de progreso en gráfico | | | |
+|US34 | Carga de fotos de avance | | | |
+|US35 | Chat en tiempo real | | | |
+|US36 | Integración con facturación electrónica | | | |
+|US37 | Roles de usuario | | | |
+|US38 | API para integración externa | | | |
+|US39 | Auditoría de cambios | | | |
+|US40 | Modo oscuro | | | |
+|US41 | Autenticación de usuario | | | |
+|US42 | Creación de Espacio | | | |
+|US43 | Consulta de Espacios | | | |
+|US44 | Actualización de Espacio | | | |
+|US45 | Eliminación de Espacio | | | |
+|US46 | Creación de Pago | | | |
+|US48 | Consulta de Pagos | | | |
+|US49 | Flujo de Iniciación y Confirmación | | | |
+|US50 | Flujo de Reversión (Cancelación y Reembolso) | | | |
+|US51 | Registro de Proyecto de Monitoreo | | | |
+|US52 | Consulta de Proyecto por ID | | | |
+|US53 | Ingesta de Lecturas de Sensores | | | |
+|US54 | Creación de Tarea de Monitoreo | | | |
+|US55 | Consulta de Tarea por ID | | | |
+|US56 | Registro de Dispositivo IoT | | | |
+|US57 | Consulta de Dispositivos por Proyecto | | | |
+|US58 | Consulta de Incidentes por Proyecto | | | |
+|US59 | Reconocimiento (Acknowledge) de Incidente | | | |
+|US60 | Consulta de Notificaciones por Proyecto | | | |
+
 ### 3.3. Impact Mapping
+
+Impact Mapping Segmento Objetivo 1:
+
+![Impact_Mapping_1](Assets/Impact_map_1.png)
+
+Impact Mapping Segmento Objetivo 2:
+
+![Impact_Mapping_2](Assets/Impact_map_2.png)
 
 ### 3.4. Product Backlog
 
