@@ -1,4 +1,4 @@
-
+<img width="1555" height="298" alt="image" src="https://github.com/user-attachments/assets/d9237a23-897a-4469-a780-f70e6be1501f" />
 <div align="center">
 
 <p align="center">
@@ -362,5 +362,18 @@ Esta sección describe la dinámica de los procesos de negocio mediante el flujo
 <img width="1060" height="115" alt="image" src="https://github.com/user-attachments/assets/eec10c38-8661-42e0-9cc9-c96e5b556ec0" />
 <img width="828" height="304" alt="image" src="https://github.com/user-attachments/assets/52f8e616-d8b0-4175-8f30-c708a81dba4d" />
 <img width="853" height="430" alt="image" src="https://github.com/user-attachments/assets/36faae71-9321-41f2-8c0a-d6b3ba6f7512" />
+
+A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos y separamos los que apenas interactuaban, marcando así límites de consistencia más claros.
+
+<img width="1009" height="412" alt="image" src="https://github.com/user-attachments/assets/386b63bb-3d0c-4aa5-89bf-e97af33dd9a1" />
+<img width="1577" height="412" alt="image" src="https://github.com/user-attachments/assets/229989a0-82ee-4f4b-8bba-99a0c2c934b1" />
+<img width="1555" height="298" alt="image" src="https://github.com/user-attachments/assets/fcf5ebda-6c4a-4675-bf65-3b6a54aef741" />
+<img width="1425" height="575" alt="image" src="https://github.com/user-attachments/assets/b1b8a009-6a58-41de-b435-a4bfbf526afd" />
+<img width="1603" height="277" alt="image" src="https://github.com/user-attachments/assets/6b026489-eb9f-4668-8f65-f4cb62761926" />
+
+ ### 4.1.1.2. Domain Message Flows Modeling
+
+Posteriormente, se procedió a definir la interconexión estratégica de los bounded contexts delimitados en las fases previas. Este proceso se centró en la identificación y mapeo de eventos de dominio clave, los cuales actúan como el tejido conectivo de la arquitectura distribuida. Al establecer estos puntos de enlace, se garantizó una comunicación asíncrona y desacoplada, permitiendo que el flujo de información entre contextos sea fluido, coherente y respete las reglas de negocio de cada área.
+
 
 
