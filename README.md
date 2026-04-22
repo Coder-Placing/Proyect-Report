@@ -383,10 +383,6 @@ Se identificaron los siguientes bounded context en el sistema:
 
 Se encarga del registro, autenticación y control de acceso de los usuarios. Su función principal es permitir que el usuario cree su cuenta, inicie sesión y acceda al sistema de forma segura según su rol. A partir de este contexto se habilita el ingreso a las demás funcionalidades de la plataforma. 
 
-**Profile & Preferences**
-
-Administra la información personal y las preferencias del usuario. Aquí se gestionan los datos de perfil, edición de información y configuraciones que personalizan la experiencia dentro de la aplicación. Su responsabilidad complementa la identidad del usuario, pero no reemplaza la lógica de autenticación.
-
 **Space Management**
 
 Se encarga de la gestión de espacios dentro de la plataforma. Aquí se registran, publican, actualizan y administran los espacios que formarán parte del flujo principal del negocio. También concentra la lógica base sobre la cual se conectan los procesos de remodelación, monitoreo y contratación de servicios. 
@@ -405,7 +401,6 @@ Se encarga de la generación de reportes, métricas e información analítica. S
 
 |Destino |Origen |Tipo de relación |Comentario |
 |-------|----------|-------------|------------|
-|Profile & Preferences |Identity & Access Management |Shared Kernel |Ambos contextos comparten información base del usuario, como identidad y rol. Identity & Access Management controla el acceso al sistema, mientras que Profile & Preferences gestiona la información complementaria del perfil. |
 |Space Management |Identity & Access Management |Shared Kernel |La gestión de espacios requiere que el usuario esté autenticado y tenga un rol válido dentro del sistema. Por ello, ambos contextos comparten una base mínima de identidad sin mezclar sus responsabilidades. |
 |Payment Management |Space Management |Customer/Supplier |Payment Management necesita información generada en Space Management, como espacios, servicios contratados o remodelaciones asociadas, para procesar los cobros y pagos del sistema. |
 |IoT Monitoring & Notifications |Space Management |Customer/Supplier |El monitoreo y las notificaciones dependen de un espacio previamente registrado en la plataforma. Por eso, Space Management provee la base del espacio y IoT Monitoring & Notifications usa esa información para gestionar lecturas, alertas e incidentes. |
