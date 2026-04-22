@@ -579,6 +579,24 @@ En la Application Layer de SpacePulse, específicamente para el contexto de IAM,
 
 ### 4.2.1.4. Infrastructure Layer
 
+En la Infrastructure Layer de SpacePulse, específicamente para el contexto de IAM, se implementan los detalles técnicos y las integraciones con marcos de trabajo externos. Esta capa se encarga de la persistencia de datos mediante Entity Framework Core (EFC), configurando las entidades del dominio para su mapeo con la base de datos, y de la implementación de los servicios de seguridad como el cifrado de contraseñas y la generación de tokens JWT. Estos componentes aseguran que la lógica de negocio se ejecute sobre una infraestructura robusta y escalable dentro de la plataforma de remodelación IoT.
+
+### Persistence (Repositories Implementation)
+
+| **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
+| ------------ | --------- | --------- | 
+| UserRepository        | Implementación concreta de IUserRepository que utiliza EFC para realizar operaciones CRUD sobre la tabla de usuarios.      | Entity Framework Core, LINQ. | 
+| PaymentMethodRepository        | Implementación de IPaymentMethodRepository encargada de persistir los datos de las tarjetas vinculadas a los perfiles.     | Entity Framework Core. | 
+| UserConfiguration        | Define el mapeo detallado entre la entidad User y la tabla de base de datos, incluyendo restricciones y tipos de datos.     | Fluent API (EFC). | 
+| PaymentMethodConfiguration        | Configura el esquema de base de datos para la entidad PaymentMethod, estableciendo las relaciones necesarias.     | Fluent API (EFC). | 
+
+### Security Services Implementation
+
+| **Nombre** | **Descripción**  |   Resumen de Implementación  |
+| ------------ | --------- | --------- | 
+| PasswordHashingService        | Implementación técnica encargada de proteger las contraseñas de los usuarios.      | Utiliza algoritmos de cifrado estándar para generar hashes seguros y validar contraseñas durante el acceso. | 
+| TokenGenerationService        |Servicio responsable de la gestión de identidades en tránsito mediante tokens de seguridad.     | Implementa la generación de tokens JWT (JSON Web Tokens), codificando la información del usuario y su rol para la autorización de peticiones. | 
+
 ### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
