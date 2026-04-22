@@ -453,3 +453,24 @@ Cada uno de estos bounded contexts se detalla a continuación a través de su ca
 
 <img width="982" height="777" alt="image" src="https://github.com/user-attachments/assets/b77af927-f52e-4b1d-bfea-c728b0fdd994" />
 
+---
+
+## 4.2. Tactical-Level Domain-Driven Design
+
+### 4.2.1. Bounded Context: NOMBRE
+
+### 4.2.1.1. Domain Layer
+
+### 4.2.1.2. Interface Layer
+
+### 4.2.1.3. Application Layer
+
+### 4.2.1.4. Infrastructure Layer
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+### 4.2.1.6.2. Bounded Context Database Design Diagrams
