@@ -599,6 +599,9 @@ En la Infrastructure Layer de SpacePulse, específicamente para el contexto de I
 
 ### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
+<img width="3930" height="3298" alt="structurizr-107883-IAM_Component_View" src="https://github.com/user-attachments/assets/06875c43-5a9f-45a5-8dd2-d70021cb830f" />
+
+
 ### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
