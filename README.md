@@ -457,11 +457,102 @@ Cada uno de estos bounded contexts se detalla a continuación a través de su ca
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.1. Bounded Context: NOMBRE
+### 4.2.1. Bounded Context: Identity & Access Management BC
 
 ### 4.2.1.1. Domain Layer
 
+La capa de dominio de IAM encapsula la lógica de negocio central para la gestión de identidades y seguridad, asegurando que las reglas de autenticación y autorización sean independientes de las tecnologías externas.
+
+### Aggregates
+
+| **Atributo** | **Nombre**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| Aggregate Root         | User      | Representa al usuario autenticado en el sistema, conteniendo su identidad y el hash de su contraseña para validación segura.       |
+
+
+**Métodos:**
+- User.AddPaymentMethod: Este método permite la creación y asociación de un nuevo método de pago al perfil del usuario. Internamente, instancia una entidad PaymentMethod con los datos de la tarjeta proporcionados y la añade a la lista de pagos del usuario.
+- User (Constructor): Además de inicializar las propiedades del usuario, este método realiza una validación de negocio crítica al asegurar que el correo electrónico no esté vacío antes de crear la instancia.
+
+### Entities
+
+| **Atributo** | **Nombre**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| Type, Number, Expiry, Cvv        | PaymentMethod      | Entidad que representa la información de cobro (tarjeta) vinculada a un usuario específico.      |
+
+### Value Objects
+
+| **Atributo** | **Nombre**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| Value        | Username      | Identificador único de texto utilizado por el usuario para acceder al sistema.      |
+| Value        | PasswordHash      | Representación segura de la contraseña tras pasar por un algoritmo de encriptación.      |
+
+### Commands & Queries
+
+| **Atributo** | **Nombre**  | **Tipo**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| Username, Password        | RegisterUserCommand      | Command      |
+| UserId, PaymentMethodType, CardNumber, ExpirationDate, CVV        | AddPaymentMethodCommand      | Command      |
+| Username, Password        | LoginQuery      | Query      |
+| UserId        | GetUserByIdQuery      | Query      |
+
+### Domain Services
+
+| **Nombre** | **Funcion**  | **Metodos**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| IPasswordHashingService        | Define el contrato para el cifrado y verificación de contraseñas de seguridad.      | HashPassword, VerifyPassword      |
+| ITokenGenerationService        | Define el contrato para la generación de tokens de acceso (JWT) para sesiones autenticadas.      | GenerateToken      |
+
+**Métodos:**
+
+-IPasswordHashingService.HashPassword: Recibe la contraseña en texto plano ingresada por el usuario y la transforma en una cadena cifrada (hash) mediante un algoritmo criptográfico para su almacenamiento seguro.
+
+-IPasswordHashingService.VerifyPassword: Compara una contraseña ingresada en texto claro contra un hash previamente almacenado para verificar si coinciden, permitiendo así el acceso al sistema.
+
+-ITokenGenerationService.GenerateToken: Utiliza la información del objeto User autenticado para generar un token de seguridad (usualmente JWT), el cual servirá como credencial temporal para autorizar las peticiones del cliente en la plataforma.
+
+### Domain Services
+
+| **Nombre** | **Descripción**                                     |
+| ------------ | --------- |
+| IUserRepository        | Interfaz para la persistencia y recuperación de datos de los agregados User.     | 
+| IPaymentMethodRepository        | Interfaz para gestionar el almacenamiento de los métodos de pago vinculados a los perfiles.      | 
+
+En la Domain Layer de SpacePulse, específicamente dentro del Bounded Context de IAM, hemos definido la gestión de identidades bajo un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales del sistema de autenticación y autorización para la plataforma de remodelación IoT.La clase User actúa como el Agregado raíz que centraliza la información del perfil y su asociación con roles específicos (como customer o perfiles técnicos), garantizando que el acceso y las credenciales se validen estrictamente a través de servicios de dominio como IPasswordHashingService e ITokenGenerationService. Finalmente, la recuperación y persistencia de estas identidades se gestiona mediante repositorios especializados como IUserRepository.
+
 ### 4.2.1.2. Interface Layer
+
+En la Interface Layer de SpacePulse, específicamente para el contexto de IAM, se han definido los puntos de entrada para la comunicación externa. Esta capa utiliza controladores REST, recursos (DTOs) y ensambladores para desacoplar el modelo de dominio de las representaciones externas, facilitando el registro y la autenticación de los usuarios de forma segura.
+
+### Resources
+
+| **Nombre** | **Descripción**  |  
+| ------------ | --------- | 
+| RegisterUserResource        | DTO que encapsula los datos de entrada (Email, Password, FullName, Phone) para el registro de un nuevo usuario.      | 
+| LoginResource        | DTO que contiene las credenciales necesarias (Email, Password) para validar el acceso al sistema.      | 
+| AddPaymentMethodResource        | DTO que transporta la información financiera (Type, Number, Expiry, Cvv) para vincular una tarjeta al perfil del usuario.      | 
+| UserResource        | DTO de salida que representa la información pública del usuario (ID, Nombre, Email, Rol) tras una consulta exitosa.     | 
+| AuthenticatedUserResource        | Recurso que devuelve el token JWT generado y la información básica del usuario tras un inicio de sesión correcto.      | 
+
+### Controllers
+
+| **Nombre** | **Método HTTP**  | **Parámetro / Resource**  | **Descripción** |
+| ------------ | --------- | --------- | --------- |
+| UsersController        | POST    |RegisterUserResource   | Expone el endpoint para crear una nueva cuenta de usuario en la plataforma.   |
+| UsersController        | POST     |  LoginResource |  Gestiona la autenticación, verificando las credenciales y devolviendo el token de acceso.  |
+| UsersController        | POST      | AddPaymentMethodResource  |  Permite a un usuario autenticado registrar un nuevo método de pago en su perfil.  |
+| UsersController        | GET     |  AddPaymentMethodResource |  Recupera la información detallada de un usuario específico mediante su identificador.  |
+
+### Transformers / Assemblers
+
+| **Nombre** | **Descripción**  |  
+| ------------ | --------- | 
+| UserResourceFromEntityAssembler        | Se encarga de convertir la entidad de dominio User en un objeto UserResource para su envío a través de la API.     | 
+| RegisterUserCommandFromResourceAssembler        | Transforma los datos recibidos en el RegisterUserResource en un comando RegisterUserCommand procesable por la capa de aplicación.      | 
+| AddPaymentMethodCommandFromResourceAssembler        | Convierte el recurso AddPaymentMethodResource en el comando correspondiente para persistir la información financiera.      | 
+
+En la Interface Layer de SpacePulse, específicamente para el contexto de IAM, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados y devolver una respuesta adecuada. Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o a los servicios de aplicación, actuando como una interfaz entre los usuarios y la lógica del negocio. Los controladores presentados permiten gestionar el registro de nuevos usuarios, la autenticación segura mediante credenciales y la administración de métodos de pago dentro de la plataforma de remodelación IoT.
+
 
 ### 4.2.1.3. Application Layer
 
