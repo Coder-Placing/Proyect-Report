@@ -375,6 +375,62 @@ Esta sección describe la dinámica de los procesos de negocio mediante el flujo
 <img width="828" height="304" alt="image" src="https://github.com/user-attachments/assets/52f8e616-d8b0-4175-8f30-c708a81dba4d" />
 <img width="853" height="430" alt="image" src="https://github.com/user-attachments/assets/36faae71-9321-41f2-8c0a-d6b3ba6f7512" />
 
+### 4.1.2 Context Mapping
+El Context Mapping de SpacePulse permite representar la organización general del dominio del sistema y la manera en que sus distintas partes se relacionan entre sí. Esta vista ayuda a delimitar responsabilidades, reducir el acoplamiento y entender con mayor claridad cómo se distribuyen los procesos principales de la solución.
+Se identificaron los siguientes bounded context en el sistema:
+
+**Identity & Access Management**
+
+Se encarga del registro, autenticación y control de acceso de los usuarios. Su función principal es permitir que el usuario cree su cuenta, inicie sesión y acceda al sistema de forma segura según su rol. A partir de este contexto se habilita el ingreso a las demás funcionalidades de la plataforma. 
+
+**Profile & Preferences**
+
+Administra la información personal y las preferencias del usuario. Aquí se gestionan los datos de perfil, edición de información y configuraciones que personalizan la experiencia dentro de la aplicación. Su responsabilidad complementa la identidad del usuario, pero no reemplaza la lógica de autenticación.
+
+**Space Management**
+
+Se encarga de la gestión de espacios dentro de la plataforma. Aquí se registran, publican, actualizan y administran los espacios que formarán parte del flujo principal del negocio. También concentra la lógica base sobre la cual se conectan los procesos de remodelación, monitoreo y contratación de servicios. 
+
+**Payment Management**
+
+Administra los pagos, cobros, suscripciones y comprobantes relacionados con los servicios contratados en SpacePulse. Su función es controlar la parte financiera del sistema y dar trazabilidad a las operaciones económicas asociadas a remodelaciones o servicios del espacio. 
+
+**IoT Monitoring & Notifications**
+
+Se encarga del monitoreo de lecturas, detección de incidentes y envío de notificaciones. Su objetivo es registrar eventos relacionados con el espacio o con el proceso de remodelación, identificar anomalías y comunicar alertas a los usuarios cuando sea necesario. 
+
+**Reports & Advanced Features**
+
+Se encarga de la generación de reportes, métricas e información analítica. Su función es tomar datos producidos por otros contextos y transformarlos en información útil para seguimiento, supervisión y apoyo a la toma de decisiones.
+
+|Destino |Origen |Tipo de relación |Comentario |
+|-------|----------|-------------|------------|
+|Profile & Preferences |Identity & Access Management |Shared Kernel |Ambos contextos comparten información base del usuario, como identidad y rol. Identity & Access Management controla el acceso al sistema, mientras que Profile & Preferences gestiona la información complementaria del perfil. |
+|Space Management |Identity & Access Management |Shared Kernel |La gestión de espacios requiere que el usuario esté autenticado y tenga un rol válido dentro del sistema. Por ello, ambos contextos comparten una base mínima de identidad sin mezclar sus responsabilidades. |
+|Payment Management |Space Management |Customer/Supplier |Payment Management necesita información generada en Space Management, como espacios, servicios contratados o remodelaciones asociadas, para procesar los cobros y pagos del sistema. |
+|IoT Monitoring & Notifications |Space Management |Customer/Supplier |El monitoreo y las notificaciones dependen de un espacio previamente registrado en la plataforma. Por eso, Space Management provee la base del espacio y IoT Monitoring & Notifications usa esa información para gestionar lecturas, alertas e incidentes. |
+|Reports & Advanced Features |Payment Management |Conformist |Reports & Advanced Features consume la información financiera generada por Payment Management para construir reportes e indicadores sin modificar el modelo original. |
+|Reports & Advanced Features |IoT Monitoring & Notifications |Conformist |Reports & Advanced Features también consume la información producida por IoT Monitoring & Notifications, como alertas, incidentes o eventos, para generar análisis y vistas de seguimiento. |
+
+![Context_Mapping](Assets/Context_Mapping.png)
+
+### 4.1.3 Software Architecture
+La arquitectura de software de SpacePulse ha sido planteada para soportar los procesos principales del negocio de forma organizada y desacoplada. La solución parte de una aplicación móvil desde la cual los usuarios interactúan con la plataforma para gestionar espacios, contratar servicios de remodelación, monitorear el avance del proyecto, recibir alertas y consultar reportes. Para responder a estas necesidades, el sistema se apoya en un backend centralizado que concentra la lógica del negocio y coordina la interacción con los distintos módulos funcionales, como autenticación, gestión de espacios, pagos, monitoreo IoT, notificaciones y reportes. Además, la arquitectura contempla la integración con servicios externos necesarios para el procesamiento de pagos, la generación de comprobantes electrónicos, el envío de correos y la recepción de lecturas o eventos provenientes del entorno monitoreado. Esta organización permite que la solución mantenga una estructura clara, facilite la evolución de sus funcionalidades y soporte de manera consistente el flujo principal de SpacePulse.
+
+#### 4.1.3.1. Software Architecture Context Level Diagram
+El diagrama de contexto de SpacePulse muestra la solución como un sistema central que se relaciona directamente con sus actores principales y con los servicios externos requeridos para su funcionamiento. En este caso, los usuarios que interactúan con la plataforma son el Owner, quien administra espacios, contrata remodelaciones, realiza pagos y supervisa el progreso, y el Remodeler, quien actualiza avances, registra procesos y da seguimiento al trabajo realizado. A su vez, el sistema se conecta con un Payment Gateway para procesar transacciones, con un E-Invoicing Service para generar comprobantes electrónicos, con un Email Service para enviar correos de verificación y notificaciones, y con IoT Devices / IoT Broker para recibir lecturas, eventos e información operativa del espacio monitoreado. De esta manera, el diagrama permite identificar de forma clara el alcance de SpacePulse dentro del ecosistema general de la solución y su relación con los elementos externos que complementan el servicio.
+
+![Software_Architecture_Context_Level_Diagram](Assets/Software_Architecture_Context_Level_Diagram.png)
+
+#### 4.1.3.2 Software Architecture Container Level Diagrams
+En el nivel de contenedores se desglosan los principales componentes internos de SpacePulse, mostrando cómo se organiza el sistema a nivel tecnológico. Aquí se incluyen la Mobile App, la Landing Page, el API Gateway como punto central de comunicación, los distintos servicios internos que representan la lógica principal de la plataforma y una base de datos relacional común. Además, se consideran las integraciones con servicios externos para pagos, facturación electrónica, envío de correos y recepción de datos de monitoreo IoT. Cada uno de estos contenedores cumple una función específica y se relaciona con los demás para permitir el funcionamiento integrado de la solución. integraciones externas. 
+
+![Software_Architecture_Container_Level_Diagrams](Assets/Software_Architecture_Container_Level_Diagrams.png)
+
+#### 4.1.3.3. Software Architecture Deployment Diagrams.
+En el diagrama de despliegue se representa cómo los principales componentes de SpacePulse se distribuyen en el entorno de producción. En este caso, la Mobile App se ejecuta en los dispositivos móviles de los usuarios, mientras que la Landing Page se publica en un servicio de hosting estático. Por otro lado, el API Gateway se aloja en una plataforma cloud como punto central de acceso al backend, y la Relational Database se ubica en un servidor administrado que permite el almacenamiento persistente de la información. Esta organización permite una arquitectura más clara y escalable, separando la capa de acceso, el procesamiento principal del sistema y el almacenamiento de datos.
+
+![Software_Architecture_Deployment_Diagrams](Assets/Software_Architecture_Deployment_Diagrams.png)
 
 ## Conclusiones
 
