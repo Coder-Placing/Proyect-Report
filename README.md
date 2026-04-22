@@ -556,6 +556,27 @@ En la Interface Layer de SpacePulse, específicamente para el contexto de IAM, l
 
 ### 4.2.1.3. Application Layer
 
+En la Application Layer de SpacePulse, específicamente para el contexto de IAM, los handlers son los encargados de procesar los comandos y consultas, orquestando la lógica necesaria para cumplir con los casos de uso del sistema. Estos handlers actúan como mediadores entre la interfaz y el dominio, asegurando que las operaciones de registro, autenticación y gestión de pagos se realicen siguiendo las reglas de negocio establecidas . Los componentes presentados permiten orquestar la seguridad y los perfiles de usuario dentro de la plataforma de remodelación IoT.
+
+### Commands & Queries Handlers
+
+| **Nombre** | **Descripción**  |   Resumen de Lógica  |
+| ------------ | --------- | --------- | 
+| RegisterUserCommandHandler        | Procesa la creación de nuevas cuentas de usuario .      | Valida que el email no esté en uso, cifra la contraseña usando el servicio de hashing, instancia el agregado User y persiste los cambios a través del repositorio y la unidad de trabajo . | 
+| LoginQueryHandler        | Gestiona el proceso de inicio de sesión y autenticación .     | Busca al usuario por email, verifica la validez de la contraseña comparándola con el hash almacenado y genera un token JWT para sesiones seguras . | 
+| AddPaymentMethodCommandHandler        | Orquesta la vinculación de información financiera a un perfil .      | Verifica la existencia del usuario, crea la entidad PaymentMethod con los datos de la tarjeta y actualiza el registro persistente mediante el repositorio correspondiente . | 
+| GetUserByIdQueryHandler        | Recupera la información de un usuario específico.     | Consulta al repositorio de usuarios mediante un identificador único y devuelve un DTO con la información pública y técnica del perfil. | 
+
+
+### Internal DTOs (Data Transfer Objects)
+
+| **Nombre** | **Descripción**  |  
+| ------------ | --------- | 
+| UserDto        | Objeto que transporta la información pública y operativa del usuario, incluyendo su rol, foto y lista de métodos de pago vinculados .     | 
+| AuthenticationDto        | DTO especializado que encapsula la información básica del usuario junto con el token JWT tras una autenticación exitosa .      | 
+| PaymentMethodDto        | Estructura de datos simplificada que representa la información de una tarjeta vinculada al perfil del usuario .      | 
+
+
 ### 4.2.1.4. Infrastructure Layer
 
 ### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
