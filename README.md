@@ -382,7 +382,7 @@ Tanto clientes como empresas remodeladoras necesitan monitoreo centralizado del 
 
 ##### 1.2.2.4. Lean UX Canvas
 
-
+![Lean_UX _Canvas.jpg](Assets/Lean_UX%20_Canvas.jpg)
 
 ### 1.3. Segmentos Objetivos
 
