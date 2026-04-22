@@ -383,7 +383,7 @@ A partir de esto, fuimos agrupando aquellos que tenían vínculos más cercanos 
 
 <img width="1577" height="412" alt="image" src="https://github.com/user-attachments/assets/229989a0-82ee-4f4b-8bba-99a0c2c934b1" />
 
-### Reports & Advanced Features BC
+### Iot Monitoring and Notification
 
 <img width="1555" height="298" alt="image" src="https://github.com/user-attachments/assets/fcf5ebda-6c4a-4675-bf65-3b6a54aef741" />
 
@@ -415,9 +415,41 @@ Posteriormente, se procedió a definir la interconexión estratégica de los bou
 
 <img width="1723" height="587" alt="image" src="https://github.com/user-attachments/assets/741b03d7-c28d-4d4a-b415-e5a8b704c644" />
 
+ ### 4.1.1.3. Bounded Context Canvases
 
+La separación en bounded contexts permite reducir la complejidad, facilitar la escalabilidad y mantener la coherencia del modelo, garantizando que cada parte del sistema responda a objetivos específicos sin generar dependencias innecesarias.
 
+En SpacePulse, los bounded contexts identificados fueron los siguientes:
 
+Registro y Autenticación de Usuario (IAM): Encargado de la validación de identidades de propietarios y técnicos, garantizando el acceso seguro a la infraestructura de remodelación e IoT privada.
 
+Gestión de Espacios (Space Management): Núcleo operativo que organiza la infraestructura física y digital de los espacios, permitiendo definir layouts, gestionar el inventario y vincular dispositivos inteligentes.
 
+Monitoreo y Notificaciones IoT: Responsable de procesar la telemetría de los sensores en tiempo real, identificar anomalías técnicas mediante la detección de incidentes y distribuir alertas automáticas ante eventos relevantes .
+
+Gestión de Pagos (Payment Management): Especializado en el ciclo de vida financiero de las transacciones de remodelación, incluyendo el procesamiento de cobros, reembolsos y la emisión de facturas legales.
+
+Informes y Funciones Avanzadas (Reports): Orientado al procesamiento de datos operativos y financieros para generar métricas de eficiencia, informes de sostenibilidad y tableros de control ejecutivo.
+
+Cada uno de estos bounded contexts se detalla a continuación a través de su canvas, explicando su descripción, clasificación estratégica, roles, comunicaciones entrantes y salientes, lenguaje ubicuo y decisiones de negocio clave.
+
+### Identity & Access Management BC
+
+<img width="887" height="598" alt="image" src="https://github.com/user-attachments/assets/b9306904-1ce3-48cb-9775-2cc65730568f" />
+
+### Space Management BC
+
+<img width="1114" height="754" alt="image" src="https://github.com/user-attachments/assets/51ef5e60-b8cb-4cdc-87d1-55b7b46e689d" />
+
+### Iot Monitoring and Notification BC
+
+<img width="884" height="714" alt="image" src="https://github.com/user-attachments/assets/018d0791-74ac-420b-af17-e5d01aa33c65" />
+
+### Payment Management BC
+
+<img width="698" height="574" alt="image" src="https://github.com/user-attachments/assets/d3d4dd4c-f0d0-4d0c-9b88-1078b100ec2b" />
+
+### Reports & Advanced Features BC
+
+<img width="982" height="777" alt="image" src="https://github.com/user-attachments/assets/b77af927-f52e-4b1d-bfea-c728b0fdd994" />
 
