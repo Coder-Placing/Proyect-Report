@@ -257,6 +257,10 @@ Empathy Map Segmento Objetivo 2:
 
 ### 2.4. Ubiquitous Language
 
+|Termino|Definicion|
+|-------|----------|
+|a|a|
+
 
 ## Capitulo III: Requirements specification
 
@@ -291,58 +295,53 @@ Una vez concluidas las epicas, ahora podemos proceder a encapsular las multiples
 Gestion de Usuarios / US05 | Recuperar Contraseña | Como usuario de SpacePulse, quiero recuperar la contraseña de mi cuenta, para recuperar el acceso a mi cuenta en caso se me olvide | Dado el usuario no recuerde la contraseña de su cuenta <br> Cuando el usuario presione el boton de "Recuperar contraseña" <br> Entonces el sistema iniciaria el proceso para recuperar o reemplazar su anterior contraseña | EP02|
 |Gestion de Usuarios/ US06| Editar Perfil | Como usuario de SpacePulse, quiero editar mi perfil en ciertos aspectos para mayor personalizacion de mi cuenta |Escenario 1: <br> Dado el usuario esta en al seccion "Mi Perfil" <br> Cuando el usuario presione el boton "Editar Perfil" <br> Entonces el sistema iniciara el formulario de datos editables del perfil de usuario <br><br> Escenario 2: Edicion de Perfil <br> Dado que el usuario esta en el formulario de editar perfil <br> Cuando el usuario modifique los datos que desee <br> Entonces el sistema lo actualizara y su perfil mostrara los nuevos datos | EP02|
 | Gestion de Usuarios / US07 | Seleccion de Roles | Como usuario de Space Pulse, quiero seleccionar el rol que sere para acceder a las funcionalidades de dicho rol para evitar problemas a futuro | Dado que el usuario esta creando su cuenta <br> Cuando vea la opcion de seleccionar rol <br> Entonces podra seleccionar si es dueño o remodelador | EP02|
-|US08 | Visualización de servicios de remodelación | | | |
-|US09 | Recibir notificaciones IoT | | | |
-|US10 | Reportes de remodelación | | | |
-|US11 | Personalización de perfil | | | |
-|US12 | Seguridad de datos | | | |
-|US13 | Historial de proyectos | | | |
-|US14 | Dejar opiniones | | | |
-|US15 | Alertas de seguridad | | | |
-|US16 | Seguimiento en tiempo real | | | |
-|US17 | Comparación de presupuestos | | | |
-|US18 | Gestión de pagos | | | |
-|US19 | Recordatorios de pago | | | |
-|US20 | Registro de incidencias | | | |
-|US21 | Confirmación de entrega de materiales | | | |
-|US22 | Descarga de reportes | | | |
-|US23 | Panel de control de dispositivos IoT | | | |
-|US24 | Sugerencias de mejoras | | | |
-|US25 | Calificación del servicio | | | |
-|US26 | Control de acceso de usuarios (RBAC) | | | |
-|US27 | Recuperación de contraseña | | | |
-|US28 | Configuración de notificaciones | | | |
-|US29 | Multilenguaje | | | |
-|US30 | Filtrado de proyectos | | | |
-|US31 | Gestión de documentos | | | |
-|US32 | Reportes personalizados | | | |
-|US33 | Vista de progreso en gráfico | | | |
-|US34 | Carga de fotos de avance | | | |
-|US35 | Chat en tiempo real | | | |
-|US36 | Integración con facturación electrónica | | | |
-|US37 | Roles de usuario | | | |
-|US38 | API para integración externa | | | |
-|US39 | Auditoría de cambios | | | |
-|US40 | Modo oscuro | | | |
-|US41 | Autenticación de usuario | | | |
-|US42 | Creación de Espacio | | | |
-|US43 | Consulta de Espacios | | | |
-|US44 | Actualización de Espacio | | | |
-|US45 | Eliminación de Espacio | | | |
-|US46 | Creación de Pago | | | |
-|US48 | Consulta de Pagos | | | |
-|US49 | Flujo de Iniciación y Confirmación | | | |
-|US50 | Flujo de Reversión (Cancelación y Reembolso) | | | |
-|US51 | Registro de Proyecto de Monitoreo | | | |
-|US52 | Consulta de Proyecto por ID | | | |
-|US53 | Ingesta de Lecturas de Sensores | | | |
-|US54 | Creación de Tarea de Monitoreo | | | |
-|US55 | Consulta de Tarea por ID | | | |
-|US56 | Registro de Dispositivo IoT | | | |
-|US57 | Consulta de Dispositivos por Proyecto | | | |
-|US58 | Consulta de Incidentes por Proyecto | | | |
-|US59 | Reconocimiento (Acknowledge) de Incidente | | | |
-|US60 | Consulta de Notificaciones por Proyecto | | | |
+|Gestion de espacios / US08 | Creación de Espacio |Como cliente, quiero crear un espacio para que sea publico y se pueda remodelar mas adelante | | EP03|
+|Funcionalidades Avanzadas / US09 | Recibir notificaciones IoT |Como cliente, quiero recibir notificacion de los dispositivos IoT instalados para mantener controlado mi espacio | |EP06 |
+|Monitoreo de Remodelaciones / US10 | Reportes de remodelación |Como cliente, quiero pedir reportes que desmuestren como va avanzando la remodelacion del espacio para mantenerme informado | | EP05|
+|Gestion de espacios / US11 | Subir espacio para edicion |Como cliente, quiero subir los diferentes espacios que este por pedir remodelar para asi tener multiples remodeladores | | EP03|
+|Seguridad de informacion / US12 | Seguridad de datos |Como administrador, quiero proteger los multiples datos ingresados para mantener una fidelidad de los clientes | |EP07 |
+|Monitoreo de Remodelaciones / US13 | Historial de proyectos | Como cliente, quiero ver un registro histórico de todas mis remodelaciones y equipos IoT instalados, para auditar los cambios realizados en mi propiedad a lo largo del tiempo | |EP05 |
+|Funcionalidades Avanzadas de Cliente / US14 | Dejar opiniones |Como cliente, quiero dejar una reseña sobre el servicio del contratista y la calidad de la instalación IoT, para ayudar a otros propietarios a tomar decisiones informadas | |EP04 |
+|Funcionalidades Avanzadas / US15 | Alertas de seguridad |Como propietario, quiero recibir notificaciones inmediatas si los sensores IoT detectan una intrusión o movimiento inusual fuera de horario en mi local, para contactar a las autoridades rápidamente | |EP06 |
+|Gestion de espacios / US16 | Seguimiento en tiempo real |Como cliente, quiero monitorear el avance de la remodelación en tiempo real a través del panel de control, para conocer el progreso sin necesidad de visitar físicamente la obra | | EP03|
+|Funcionalidades Avanzadas / US17 | Comparación de presupuestos |Como cliente, quiero comparar múltiples cotizaciones de diferentes proveedores para la misma remodelación, para evaluar fácilmente costos, tiempos e inclusiones tecnológicas | |EP06 |
+|Monitoreo de Remodelaciones / US18 | Gestión de pagos |Como cliente, quiero  realizar y administrar los pagos de la remodelación por hitos dentro de la plataforma, para mantener un control financiero seguro y centralizado de la obra | |EP05 |
+|Funcionalidades Avanzadas / US19 | Recordatorios de pago |Como cliente, quiero recibir recordatorios automáticos de los próximos pagos de la remodelación, para evitar penalizaciones por retraso o paralizaciones de la obra | |EP06 |
+|Funcionalidades Avanzadas de Cliente / US20 | Registro de incidencias |Como cliente, quiero reportar problemas detectados en la obra o fallas en los sensores IoT, para que el equipo técnico los atienda en el menor tiempo posible | | EP04|
+|Funcionalidades Avanzadas de Cliente / US21 | Confirmación de entrega de materiales | Como remodelador, quiero confirmar la recepción de los materiales y dispositivos IoT en el local, para mantener la trazabilidad del inventario y autorizar los pagos a proveedores| |EP04 |
+|Funcionalidades Avanzadas / US22 | Descarga de reportes |Como cliente, quiero descargar reportes en PDF sobre el avance físico de la obra y el rendimiento de los dispositivos IoT, para presentarlos en reuniones de directorio o registros contables | |EP06 |
+|Funcionalidades Avanzadas / US23 | Panel de control de dispositivos IoT |Como cliente, quiero visualizar el estado, la batería y la conectividad de todos mis dispositivos IoT instalados en un único dashboard, para asegurar que la red de monitoreo funcione correctamente | |EP06 |
+|Gestion de espacios / US24 | Sugerencias de mejoras |Como cliente, quiero que el sistema analice los datos de mis sensores ambientales y me ofrezca sugerencias de remodelación automáticas, para optimizar el consumo de energía y agua del local | | EP03|
+|Funcionalidades Avanzadas de Cliente /  US25 | Calificación del servicio |Como cliente, quiero evaluar el trabajo general de la remodelación una vez concluida, para proveer retroalimentación sobre la calidad, la limpieza y la puntualidad del contratista | |EP04 |
+|Seguridad de informacion / US26 | Control de acceso de usuarios (RBAC) | Como administrador, quiero gestionar permisos por rol para controlar accesos.| |EP07 |
+|Funcionalidades Avanzadas / US27 | Configuración de notificaciones | Como usuario, quiero personalizar el tipo de notificaciones que voy a recibir tanto por dispositivos IoT como por procesos de la aplicacion para mantener mi espacio de notificaciones ordenado| |EP06 |
+|Accesibilidad / US28 | Multilenguaje |Como usuario internacional, quiero cambiar el idioma de la plataforma (ej. español a inglés), para comprender con claridad los manuales de los dispositivos IoT y los contratos de remodelación | |EP08 |
+|Funcionalidades Avanzadas / US29 | Filtrado de proyectos | Como usuario con multiples espacios, quiero filtrar mi lista de locales en remodelación por estado, distrito o contratista, para ubicar rápidamente la obra que necesito revisar.| |EP06 |
+|Monitoreo de Remodelaciones / US30 | Conexion con dispositivos IoT|Como remodelador, quiero registrar y emparejar un nuevo sensor inteligente a la cuenta de la propiedad, para integrarlo a la red y que empiece a reportar datos de telemetría | |EP05 |
+|Funcionalidades Avanzadas / US31 | Reportes personalizados |Como remodelador , quiero construir gráficos combinando diferentes métricas (ej. costo de obra vs. reducción de consumo eléctrico post-IoT), para analizar el ROI exacto | |EP06 |
+|Accesibilidad / US32 | Carga de fotos de avance |Como remodelador, quiero poder tomar fotos con mi celular y subirlas directamente, para mantener un registro visual que el cliente pueda auditar | |EP08 |
+|Funcionalidades Avanzadas / US33 | Chat en tiempo real | Como cliente, quiero comunicarme de forma directa y fluida mediante un chat interno con el supervisor del proyecto, para resolver dudas rápidas sin necesidad de usar WhatsApp o correos| |EP06 |
+|Funcionalidades Avanzadas / US34 | Integración con facturación electrónica |Como usuario, quiero que la plataforma genere automáticamente una factura electrónica (XML/PDF) con validez fiscal peruana por cada pago realizado, para simplificar mi declaración de impuestos | |EP06 |
+|Gestion de Usuarios / US35 | Roles de usuario |Como administrador, quiero poder crear, editar y eliminar los permisos asociados a cada rol de usuario (Remodelador, cliente), para mantener la arquitectura de seguridad del sistema | |EP02 |
+|Funcionalidades Avanzadas / US36 | API para integración externa |Como empresa, quiere exponer acceso a una API de datos IoT para integrar con otros sistemas. | |EP06 |
+|Accesibilidad / US37 | Modo oscuro | Como usuario, quiero  activar el modo oscuro en la interfaz, para reducir el brillo y la fatiga visual al revisar planos o alertas nocturnas| |EP08 |
+|Gestion de espacios / US38 | Visualización de espacios para remodelacion |Como cliente, quiero visualizar un catálogo con mis espacios y locales registrados (con metraje y distribución básica), para evaluar rápidamente a cuál le daré prioridad de remodelación | |EP03 |
+|Gestion de espacios / US39 | Actualización de Espacio |Como propietario, quiero poder modificar los datos de mi espacio (ej. si amplié un ambiente o cambié la dirección legal), para mantener la información exacta antes de pedir una cotización | |EP03 |
+|Gestion de espacios / US40 | Eliminación de Espacio |Como propietario, quiero poder borrar o archivar del sistema un inmueble que concluyo su remodelacion, para que mi panel solo muestre mis activos actuales | |EP03 |
+|Monitoreo de Remodelaciones / US41 | Creación de Pago |Como sistema de gestión, quiero generar automáticamente una orden de cobro al inicio de cada nueva etapa de la remodelación, para asegurar el flujo de caja del contratista | |EP05 |
+|Monitoreo de Remodelaciones / US42 | Consulta de Pagos |Como usuario, quiero  buscar y listar todos los recibos y comprobantes de pago de un proyecto específico, para tener control del presupuesto y auditar las salidas de dinero. | |EP05 |
+|Funcionalidades Avanzadas / US43 | Procesamiento y Confirmación de Pagos |Como cliente, quiero iniciar el procesamiento de un pago pendiente y posteriormente confirmarlo, para garantizar que la transacción bancaria ha sido exitosa antes de habilitar el servicio o proyecto | | EP06 |
+|Funcionalidades Avanzadas / US44 | Cancelación y Reembolso de Pagos |Como cliente, quiero  cancelar pagos que no se hayan procesado o reembolsar pagos ya completados, para gestionar devoluciones, errores de cobro o cancelaciones de clientes cumpliendo las políticas de la empresa | |EP06  |
+|Funcionalidades Avanzadas / US45 | Registro de Proyecto de Monitoreo IoT | Como remodelador, quiero registrar un nuevo proyecto de monitoreo en la plataforma, para centralizar toda la configuración, alertas y dispositivos IoT que se instalarán en una propiedad específica.| | EP06 |
+|Monitoreo de Remodelaciones / US46 | Visualización de Detalles de Proyecto IoT |Como cliente, quiero consultar los detalles de configuración de un proyecto de monitoreo específico, para revisar los umbrales establecidos y el estado general de la instalación tecnológica | | EP05|
+|Monitoreo de Remodelaciones / US47 | Recepción Masiva de Datos de Sensores |Como cliente, quiero tener la capacidad de recibir y procesar grandes volúmenes de lecturas de los sensores IoT en lote, para mantener la información ambiental actualizada sin saturar el rendimiento de la aplicación | |EP05 |
+|Monitoreo de Remodelaciones / US48 | Configuración de Tareas de Monitoreo Automático |Como cliente, quiero crear y programar tareas automáticas de revisión de datos, para que la plataforma analice periódicamente la telemetría y detecte anomalías sin intervención humana. | |EP05 |
+|Funcionalidades Avanzadas / US49 | Auditoría de Tareas de Monitoreo |Como cliente, quiero consultar el estado y registro de ejecución de una tarea de monitoreo, para verificar si se ejecutó correctamente o si hubo fallos técnicos en el análisis de datos. | |EP06  |
+|Funcionalidades Avanzadas / US50 | Registro de Dispositivo IoT |Como remodelador, quiero vincular un nuevo dispositivo físico (sensor/cámara) al sistema asociándolo a un proyecto de monitoreo, para que la plataforma comience a registrar su actividad. |  | EP06|
+|Monitoreo de Remodelaciones / US51 | Consulta de Dispositivos por Proyecto |Como remodelador, quiero visualizar un listado de todos los dispositivos IoT instalados y agrupados por proyecto, para auditar el equipamiento tecnológico de la remodelación| |EP05 |
+|Monitoreo de Remodelaciones / US52 | Consulta de Incidentes por Proyecto |Como cliente, quiero ver una lista de todos los incidentes o anomalías detectadas en mi proyecto, para poder tomar decisiones correctivas o de mantenimiento | |EP05 |
+|Monitoreo de Remodelaciones / US53 | Reconocimiento y Gestión de Incidentes |Como cliente, quiero poder marcar un incidente crítico como "reconocido" , para detener el envío de notificaciones repetitivas y avisar al resto del equipo que ya estoy atendiendo el problema. | | EP05|
+|Funcionalidades Avanzadas / US54 | Registro Histórico de Notificaciones |Como cliente, quiero tener acceso a un registro completo de todas las notificaciones emitidas por el sistema en mi proyecto, para revisar alertas pasadas que pude haber omitido. | |EP06 |
 
 ### 3.3. Impact Mapping
 
@@ -355,6 +354,65 @@ Impact Mapping Segmento Objetivo 2:
 ![Impact_Mapping_2](Assets/Impact_map_2.png)
 
 ### 3.4. Product Backlog
+
+| # Order |User Story ID|Titulo|Story Points (1/2/3/5/8)|
+|---------|-------------|------|------------------------|
+|1|US01|Visualizacion de Landing Page||
+|2|US02|Acceso a la aplicacion||
+|3|US03|Registro de Usuarios||
+|4|US04|Inicio de Sesion||
+|5|US05|Recuperar Contraseña||
+|6|US06|Editar Perfil||
+|7|US07|Seleccion de Roles||
+|8|US08|Creación de Espacio||
+|9|US09|Recibir notificaciones IoT||
+|10|US10|||
+|11|US11|||
+|12|US12|||
+|13|US13|||
+|14|US14|||
+|15|US15|||
+|16|US16|||
+|17|US17|||
+|18|US18|||
+|19|US19|||
+|20|US20|||
+|21|US21|||
+|22|US22|||
+|23|US23|||
+|24|US24|||
+|25|US25|||
+|26|US26|||
+|27|US27|||
+|28|US28|||
+|29|US29|||
+|30|US30|||
+|31|US31|||
+|32|US32|||
+|33|US33|||
+|34|US34|||
+|35|US35|||
+|36|US36|||
+|37|US37|||
+|38|US38|||
+|39|US39|||
+|40|US40|||
+|41|US41|||
+|42|US42|||
+|43|US43|||
+|44|US44|||
+|45|US45|||
+|46|US46|||
+|47|US47|||
+|48|US48|||
+|49|US49|||
+|50|US50|||
+|51|US51|||
+|52|US52|||
+|53|US53|||
+|54|US54|||
+
+
 
 ## Capitulo IV: Solution Software Design
 
