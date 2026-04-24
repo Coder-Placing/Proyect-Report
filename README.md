@@ -33,7 +33,7 @@ Aliaga Urbina, Wilder Gonzalo (U202222001)
 <br><br>
 Via Luna, Bruce (U202313403)
 <br><br>
- (U) 
+Martinez Gaona, Pablo Afranio (U202120011) 
 <br><br>
  (U) 
 <br><br>
@@ -63,6 +63,7 @@ Via Luna, Bruce (U202313403)
 
 - Bruce Via Luna
 - Aliaga Urbina Wilder Gonzalo
+- Pablo Afranio Martinez Gaona
 
 |  URL del repositorio del reporte  |
 | :-----------------------------------: |
@@ -177,7 +178,7 @@ Convertirnos en una startup referente en Latinoamérica en soluciones digitales 
 |---------| -------------------------- |----------------------| ---------------------- |
 | ![Imagen1](Assets/.png) |Wilder Gonzalo Aliaga Urbina |U202222001    | Estudiante de Ingeniería de Software, con interés en el desarrollo de aplicaciones y soluciones tecnológicas orientadas a la mejora de procesos. Cuento con conocimientos en tecnologías como Java, Spring Boot, Angular, TypeScript, C#, .NET y bases de datos relacionales y no relacionales. Me caracterizo por ser una persona responsable, proactiva y comprometida con el trabajo en equipo, buscando siempre aportar de manera organizada al desarrollo del proyecto.    |
 | ![Imagen2]()                    |Via Luna Bruce|U202313403|  |
-| ![Imagen3]()                    |   |                      |  |
+| ![Imagen3]()                    |Martinez Gaona, Pablo Afranio   | U202120011                     | Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Manejo lenguajes de programación como C++ y Python. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música. |
 | ![Imagen4]()                    |   |                      |  |
 | ![Imagen5]()                    |   |                      |  |
 
