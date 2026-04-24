@@ -35,7 +35,7 @@ Via Luna, Bruce (U202313403)
 <br><br>
 Martinez Gaona, Pablo Afranio (U202120011) 
 <br><br>
- (U) 
+ Perez Tuesta, Gabriel (U202321281) 
 <br><br>
  (U)
 <br><br>
@@ -54,7 +54,7 @@ Martinez Gaona, Pablo Afranio (U202120011)
 | 1.01 | 20/04/2026 | Bruce Via                    | Creacion de Epicas y correccion del documento |
 | 1.02 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Startup Profile                               |
 | 1.03 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Solution Profile(Lean UX Process)             |
-| 1.04 | 22/04/2026 |   |                                               |
+| 1.04 | 22/04/2026 |  Perez Tuesta Gabriel |         Tactical-Level Domain-Driven Design                                      |
 
 
 ## Project Report Collaboration Insights
@@ -64,6 +64,7 @@ Martinez Gaona, Pablo Afranio (U202120011)
 - Bruce Via Luna
 - Aliaga Urbina Wilder Gonzalo
 - Pablo Afranio Martinez Gaona
+- Gabriel Perez Tuesta
 
 |  URL del repositorio del reporte  |
 | :-----------------------------------: |
