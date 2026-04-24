@@ -587,13 +587,13 @@ En la Infrastructure Layer de SpacePulse, específicamente para el contexto de I
 
 ![IoT_Monitoring_and_Notifications_Software_Architecture_ Component_Level_Diagram](Assets/IoT_Monitoring_and_Notifications_Software_Architecture_Component_Level_Diagram.png)
 
-### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
-### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![IoT_Monitoring_and_Notifications_Domain_Layer_Class_Diagram](Assets/IoT_Monitoring_and_Notifications_Domain_Layer_Class_Diagram.png)
 
-### 4.2.1.6.2. Bounded Context Database Design Diagrams
+### 4.2.5.6.2. Bounded Context Database Design Diagrams
 
 ![IoT_Monitoring_and_Notifications_Database_Design_Diagram](Assets/IoT_Monitoring_and_Notifications_Database_Design_Diagram.png)
 
