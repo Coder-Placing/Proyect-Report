@@ -427,6 +427,176 @@ En el diagrama de despliegue se representa cómo los principales componentes de 
 
 ![Software_Architecture_Deployment_Diagrams](Assets/Software_Architecture_Deployment_Diagrams.png)
 
+
+### 4.2.5. Bounded Context: IoT Monitoring and Notifications
+
+### 4.2.5.1 Domain Layer
+
+La capa de dominio de IoT Monitoring and Notifications encapsula la lógica principal para la supervisión de dispositivos IoT, recepción de lecturas, validación de datos y generación de alertas cuando se detectan valores fuera de rango.
+
+### Aggregates
+
+| **Atributo** | **Nombre**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| Aggregate Root         | IoTDevice     | Representa el dispositivo IoT registrado en el sistema, asociado a un espacio específico y encargado de emitir lecturas para el monitoreo.       |
+
+
+**Métodos:**
+- IoTDevice.activate: Cambia el estado del dispositivo a activo para permitir la recepción de lecturas.
+- IoTDevice.deactivate: Desactiva el dispositivo y evita que siga enviando información al sistema.
+- IoTDevice.isActive: Verifica si el dispositivo se encuentra habilitado para operar.
+
+### Entities
+
+| **Atributo** | **Nombre**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| ReadingId, DeviceId, MetricType, Value, Unit, ReceivedAt, Status       | Reading      | Entidad que representa una lectura enviada por un dispositivo IoT, incluyendo el tipo de métrica, valor registrado y estado de validación.      |
+| AlertId, ReadingId, Severity, Status, CreatedAt          | Alert              | Entidad que representa una alerta generada cuando una lectura se encuentra fuera de los límites permitidos.                  |
+
+### Value Objects
+
+| **Atributo** | **Nombre**  | **Descripción**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| MinValue, MaxValue, Unit  |  ThresholdRange   | Define el rango permitido para una métrica monitoreada.  |
+| Value        | SeverityLevel      | Representa el nivel de gravedad de una alerta: baja, media, alta o crítica.      |
+| Value        | ReadingStatus      | Indica el estado de una lectura: recibida, validada o fuera de rango.      |
+| Value        | AlertStatus      | Indica el estado de una alerta: creada, enviada, reconocida o cerrada.      |
+
+### Commands & Queries
+
+| **Atributo** | **Nombre**  | **Tipo**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| DeviceId, MetricType, Value, Unit       | IngestReadingCommand     | Command      |
+| AlertId       | AcknowledgeAlertCommand      | Command      |
+| AlertId       | CloseAlertCommand      | Command      |
+| SpaceId       | GetAlertsBySpaceQuery      | Query      |
+| SpaceId       | GetReadingsBySpaceQuery      | Query      |
+
+### Domain Services
+
+| **Nombre** | **Funcion**  | **Metodos**                                       |
+| ------------ | --------- | ----------------------------------------------------- |
+| IMonitoringDomainService        |Define las reglas para validar lecturas, detectar valores fuera de rango y generar alertas.      | ValidateReading, DetectOutOfRange, CreateAlert     |
+| IAlertPolicyService        | Define criterios para clasificar la severidad de una alerta según el valor detectado.      | EvaluateSeverity, CanDispatchAlert      |
+
+**Métodos:**
+
+- IMonitoringDomainService.ValidateReading: Verifica que la lectura provenga de un dispositivo registrado y activo.
+  
+- IMonitoringDomainService.DetectOutOfRange: Evalúa si el valor recibido está fuera del rango permitido.
+  
+- IMonitoringDomainService.CreateAlert: Genera una alerta cuando se detecta una lectura anómala.
+  
+- IAlertPolicyService.EvaluateSeverity: Determina la severidad de la alerta según la métrica y el valor registrado.
+  
+- IAlertPolicyService.CanDispatchAlert: Valida si una alerta puede ser enviada al usuario responsable.
+
+### Repositories
+
+| **Nombre** | **Descripción**  | 
+| ------------ | --------- |
+| IIoTDeviceRepository        |Interfaz para la persistencia y recuperación de dispositivos IoT registrados.      |
+| IReadingRepository        | Interfaz para almacenar y consultar lecturas recibidas desde los dispositivos.      |
+| IAlertRepository        | Interfaz para gestionar el almacenamiento y consulta de alertas generadas.      |
+
+En la Domain Layer de SpacePulse, dentro del bounded context IoT Monitoring and Notifications, se define la lógica central para monitorear dispositivos, procesar lecturas y generar alertas ante condiciones fuera de rango. La clase IoTDevice actúa como el agregado raíz, mientras que Reading y Alert representan los eventos operativos principales del monitoreo. Finalmente, la validación de lecturas, detección de anomalías y persistencia de información se gestionan mediante servicios de dominio y repositorios especializados.
+
+### 4.2.5.2. Interface Layer
+
+En la Interface Layer de SpacePulse, específicamente para el contexto de IoT Monitoring and Notifications, se definen los puntos de entrada que permiten la comunicación externa con las funcionalidades de monitoreo. Esta capa utiliza controladores REST, recursos DTOs y ensambladores para recibir lecturas IoT, consultar información de monitoreo y gestionar alertas, desacoplando el modelo de dominio de las representaciones externas.
+
+### Resources
+
+| **Nombre** | **Descripción**  |  
+| ------------ | --------- | 
+| IngestReadingResource        | DTO que encapsula los datos de entrada de una lectura IoT, incluyendo DeviceId, MetricType, Value y Unit.      | 
+| ReadingResource        | DTO de salida que representa la información de una lectura registrada, como identificador, dispositivo, métrica, valor, unidad, fecha y estado.      | 
+| AlertResource        | DTO de salida que representa una alerta generada por una lectura fuera de rango, incluyendo identificador, severidad, estado y mensaje.     | 
+| AcknowledgeAlertResource        | DTO que transporta la información necesaria para reconocer una alerta pendiente.     | 
+| CloseAlertResource        | DTO que permite cerrar una alerta luego de haber sido revisada o atendida.     | 
+
+### Controllers
+
+| **Nombre** | **Método HTTP**  | **Parámetro / Resource**  | **Descripción** |
+| ------------ | --------- | --------- | --------- |
+| IoTMonitoringController        | POST    |IngestReadingResource   | Expone el endpoint para recibir una nueva lectura enviada por un dispositivo IoT.   |
+| IoTMonitoringController        | GET     |  SpaceId |  Recupera las lecturas registradas para un espacio monitoreado.  |
+| AlertController        | GET      | SpaceId  |  Recupera las alertas asociadas a un espacio específico.  |
+| AlertController        | PATCH     |  AcknowledgeAlertResource |  Permite marcar una alerta como reconocida por el usuario responsable.  |
+| AlertController        | PATCH     |  CloseAlertResource |  Permite cerrar una alerta cuando ya fue atendida.  |
+
+### Transformers / Assemblers
+
+| **Nombre** | **Descripción**  |  
+| ------------ | --------- | 
+| IngestReadingCommandFromResourceAssembler        | Transforma los datos recibidos en IngestReadingResource en un comando IngestReadingCommand procesable por la capa de aplicación.   | 
+| ReadingResourceFromEntityAssembler        | Convierte la entidad de dominio Reading en un objeto ReadingResource para su envío a través de la API.      | 
+| AlertResourceFromEntityAssembler        | Convierte la entidad de dominio Alert en un objeto AlertResource para mostrar la información de la alerta en la aplicación.     | 
+| AcknowledgeAlertCommandFromResourceAssembler        | Convierte el recurso AcknowledgeAlertResource en un comando para reconocer una alerta.    | 
+| CloseAlertCommandFromResourceAssembler        | Convierte el recurso CloseAlertResource en un comando para cerrar una alerta.     | 
+
+En la Interface Layer de SpacePulse, específicamente para el contexto de IoT Monitoring and Notifications, los controladores reciben las solicitudes HTTP relacionadas con lecturas y alertas, las transforman mediante recursos y ensambladores, y las delegan a los servicios correspondientes. Esta capa no contiene reglas de negocio, sino que actúa como puente entre la aplicación móvil, los dispositivos IoT y la lógica interna del sistema de monitoreo.
+
+### 4.2.5.3. Application Layer
+
+En la Application Layer de SpacePulse, específicamente para el contexto de IoT Monitoring and Notifications, los handlers se encargan de procesar los comandos y consultas relacionados con la recepción de lecturas IoT, la validación de datos y la gestión de alertas. Esta capa actúa como intermediaria entre la interfaz y el dominio, coordinando las operaciones necesarias para registrar lecturas, detectar valores fuera de rango, generar alertas y consultar información de monitoreo sin incluir directamente detalles de infraestructura.
+
+### Commands & Queries Handlers
+
+| **Nombre** | **Descripción**  |   Resumen de Lógica  |
+| ------------ | --------- | --------- | 
+| IngestReadingCommandHandler        | Procesa la recepción de nuevas lecturas enviadas por dispositivos IoT.      | Valida que el dispositivo exista y esté activo, registra la lectura recibida, evalúa si el valor está fuera del rango permitido y, si corresponde, genera una alerta asociada. | 
+| AcknowledgeAlertCommandHandler        | Gestiona el reconocimiento de una alerta pendiente.     | Busca la alerta por su identificador, valida que pueda ser reconocida y actualiza su estado para indicar que el usuario ya tomó conocimiento del evento. | 
+| CloseAlertCommandHandler        | Gestiona el cierre de una alerta atendida.  | Recupera la alerta registrada, valida su estado actual y la marca como cerrada cuando ya fue revisada o solucionada. | 
+| GetReadingsBySpaceQueryHandler        | Recupera las lecturas asociadas a un espacio monitoreado.     | Consulta el repositorio de lecturas usando el identificador del espacio y devuelve la información organizada para su visualización. | 
+| GetAlertsBySpaceQueryHandler        | Recupera las alertas generadas dentro de un espacio específico.   | Consulta las alertas asociadas al espacio, filtrando eventos pendientes, reconocidos o cerrados según sea necesario. | 
+
+
+### Internal DTOs (Data Transfer Objects)
+
+| **Nombre** | **Descripción**  |  
+| ------------ | --------- | 
+| ReadingDto        | Objeto que transporta la información principal de una lectura IoT, incluyendo dispositivo, tipo de métrica, valor, unidad, fecha de recepción y estado.    | 
+| AlertDto        | DTO que representa una alerta generada por el sistema, incluyendo identificador, mensaje, severidad, estado y fecha de creación.    | 
+| MonitoringSummaryDto        | Estructura resumida que agrupa información de monitoreo de un espacio, como cantidad de lecturas recientes, alertas activas y estado general del monitoreo.     | 
+
+### 4.2.5.4. Infrastructure Layer
+
+En la Infrastructure Layer de SpacePulse, específicamente para el contexto de IoT Monitoring and Notifications, se implementan los detalles técnicos necesarios para persistir dispositivos, lecturas y alertas, así como para integrarse con servicios externos relacionados con la recepción de datos IoT y el envío de notificaciones. Esta capa permite que la lógica del dominio se ejecute sobre una infraestructura concreta, manteniendo separadas las reglas de negocio de los mecanismos técnicos de almacenamiento y comunicación.
+
+### Persistence (Repositories Implementation)
+
+| **Nombre** | **Descripción**  |   Tecnologías / Herramientas  |
+| ------------ | --------- | --------- | 
+| IoTDeviceRepository        | Implementación concreta de IIoTDeviceRepository encargada de registrar, actualizar y consultar dispositivos IoT asociados a los espacios monitoreados.     | Entity Framework Core, LINQ | 
+| ReadingRepository        | Implementación de IReadingRepository encargada de almacenar las lecturas recibidas desde los dispositivos y consultarlas por espacio, dispositivo o fecha.    | Entity Framework Core, LINQ | 
+| AlertRepository        | Implementación de IAlertRepository encargada de persistir alertas generadas, actualizar su estado y recuperar alertas pendientes o históricas.    | Entity Framework Core, LINQ | 
+| IoTDeviceConfiguration        | Define el mapeo entre la entidad IoTDevice y la tabla correspondiente en la base de datos, incluyendo restricciones y relaciones.  | Fluent API | 
+| ReadingConfiguration        | Configura el esquema de base de datos para las lecturas IoT, incluyendo tipos de datos, relación con dispositivos y fecha de recepción.   | Fluent API | 
+| AlertConfiguration        | Configura el mapeo de las alertas, sus estados, severidad y relación con la lectura que originó la alerta.     | Fluent API | 
+
+### Security Services Implementation
+
+| **Nombre** | **Descripción**  |   Resumen de Implementación  |
+| ------------ | --------- | --------- | 
+| IoTBrokerAdapter      | Adaptador encargado de recibir datos provenientes del broker IoT o dispositivos externos.     | Recibe lecturas externas, normaliza su formato y las transforma en datos procesables por la capa de aplicación. | 
+| NotificationDispatcherService        |Servicio técnico encargado de enviar alertas o mensajes hacia los usuarios cuando ocurre un evento importante.   |Integra el sistema con un servicio externo de correo o notificaciones para comunicar alertas generadas por el monitoreo. | 
+| ReadingNormalizerService        |Servicio de apoyo encargado de limpiar y estandarizar los valores recibidos desde sensores.    | Convierte unidades, valida estructura básica de datos y prepara la lectura antes de ser enviada al dominio. | 
+
+### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+![IoT_Monitoring_and_Notifications_Software_Architecture_ Component_Level_Diagram](Assets/IoT_Monitoring_and_Notifications_Software_Architecture_Component_Level_Diagram.png)
+
+### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+![IoT_Monitoring_and_Notifications_Domain_Layer_Class_Diagram](Assets/IoT_Monitoring_and_Notifications_Domain_Layer_Class_Diagram.png)
+
+### 4.2.1.6.2. Bounded Context Database Design Diagrams
+
+![IoT_Monitoring_and_Notifications_Database_Design_Diagram](Assets/IoT_Monitoring_and_Notifications_Database_Design_Diagram.png)
+
 ## Conclusiones
 
 ### Conclusiones:
