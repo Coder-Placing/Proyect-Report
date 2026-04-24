@@ -169,6 +169,7 @@ Brindar a propietarios y remodeladores expertos una plataforma centralizada para
 **Misión**
 
 Simplificar la transformación y gestión de espacios privados mediante tecnología accesible, conectando a los actores del proceso de remodelación con información centralizada, trazabilidad operativa y monitoreo inteligente.
+
 **Visión**
 
 Convertirnos en una startup referente en Latinoamérica en soluciones digitales para espacios inteligentes, destacando por integrar remodelación, gestión operativa y monitoreo IoT en una experiencia confiable, innovadora y escalable.
