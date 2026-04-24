@@ -48,13 +48,13 @@ Via Luna, Bruce (U202313403)
 ## Registro de Versiones del Informe
 
 
-| Versión | Fecha      | Autor    | Descripción de modificación |              
-| ------- |------------| -------- | ----------------------------|
-| 1.0  | 09/04/2026 | Bruce Via Luna | Creacion del documento |
-| 1.01 | 20/04/2026 | Bruce Via      | Creacion de Epicas y correccion del documento|
-| 1.02 | 22/04/2026 |                |         |
-| 1.03 | 22/04/2026 |                |             |
-| 1.04 | 22/04/2026 |                |    |
+| Versión | Fecha      | Autor                        | Descripción de modificación                   |              
+| ------- |------------|------------------------------|-----------------------------------------------|
+| 1.0  | 09/04/2026 | Bruce Via Luna               | Creacion del documento                        |
+| 1.01 | 20/04/2026 | Bruce Via                    | Creacion de Epicas y correccion del documento |
+| 1.02 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Startup Profile                               |
+| 1.03 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Solution Profile(Lean UX Process)             |
+| 1.04 | 22/04/2026 |   |                                               |
 
 
 ## Project Report Collaboration Insights
@@ -62,6 +62,7 @@ Via Luna, Bruce (U202313403)
 **AUTHORS:**
 
 - Bruce Via Luna
+- Aliaga Urbina Wilder Gonzalo
 
 |  URL del repositorio del reporte  |
 | :-----------------------------------: |
@@ -102,32 +103,6 @@ Via Luna, Bruce (U202313403)
         - [2.3.4. Empathy Mapping](#234-empathy-mapping)
         - [2.3.5. As-Is Scenario Mapping](#235-as-is-scenario-mapping)
     - [2.4. Ubiquitous Language](#24-ubiquitous-language)
-- [Capítulo III: Requirements specification](#capítulo-iii-requirements-specification)
-    - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
-    - [3.2. User Stories](#32-user-stories)
-    - [3.3. Impact Mapping](#33-impact-mapping)
-    - [3.4. Product Backlog](#34-product-backlog)
-- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
-    - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
-        - [4.1.1. EventStorming](#411-eventstorming)
-            - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
-            - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
-            - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
-        - [4.1.2. Context Mapping](#412-context-mapping)
-        - [4.1.3. Software Architecture](#413-software-architecture)
-            - [4.1.3.1. Software Architecture Context Level Diagrams](#4131-software-architecture-context-level-diagrams)
-            - [4.1.3.2. Software Architecture Container Level Diagrams](#4132-software-architecture-container-level-diagrams)
-            - [4.1.3.3. Software Architecture Deployment Level Diagrams](#4133-software-architecture-deployment-level-diagrams)
-    - [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
-        - [4.2.1. Bounded Context: NOMBRE](#421-bounded-context-registro-y-autenticación-de-usuario)
-            - [4.2.1.1. Domain Layer](#4211-domain-layer)
-            - [4.2.1.2. Interface Layer](#4212-interface-layer)
-            - [4.2.1.3. Application Layer](#4213-application-layer)
-            - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
-            - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
-            - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
-                - [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
-                - [4.2.1.6.2. Bounded Context Database Design Diagrams](#42162-bounded-context-database-design-diagrams)
 
 - [Conclusiones](#conclusiones)
 - [Bibliografía](#bibliografía)
@@ -139,10 +114,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 necesario, utilizando estrategias deaprendizaje apropiadas.
 En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado los criterios especificos.
 
-| Criterio específico | Acciones realizadas  | Conclusiones |
-|--------|----------|------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1**<br>  |         |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1**<br>|         |
+| Criterio específico | Acciones realizadas                                                                                                                                                          | Conclusiones |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1** <br> Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo. |         |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1**<br>  Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico.                                                                                                                              |         |
 <hr>
 
 ## Objetivos SMART
@@ -154,35 +129,31 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 
 ## Capítulo I: Presentación
 ### 1.1. Startup Profile
-Coder-Placing es una startup orientada a la digitalización de espacios privados, principalmente viviendas y oficinas, mediante un modelo que integra alquiler, remodelación y monitoreo IoT en una sola solución. La propuesta nace ante una necesidad concreta del mercado: 
-actualmente, gran parte del proceso de remodelación y gestión de espacios todavía se maneja con comunicación dispersa, cotizaciones aisladas, poca trazabilidad del avance y escasa visibilidad del estado real de los trabajos. En paralelo, el contexto tecnológico ya permite una solución mobile-first, 
-ya que en el Perú el acceso a internet en el hogar alcanzó 92.6% en 2024 y la telefonía móvil llegó a 99.3% de los hogares, lo que vuelve viable una plataforma digital para coordinar servicios, pagos y seguimiento remoto
-
+Coder-Placing es una startup orientada a la digitalización de espacios privados, principalmente viviendas y oficinas, mediante un modelo que integra remodelación, gestión operativa y monitoreo IoT en una sola solución. La propuesta nace ante una necesidad concreta del mercado: actualmente, gran parte del proceso de remodelación y gestión de espacios todavía se maneja con comunicación dispersa, cotizaciones aisladas, poca trazabilidad del avance y escasa visibilidad del estado real de los trabajos. Frente a ello, Coder-Placing busca ofrecer una alternativa tecnológica que permita centralizar la información, mejorar la coordinación entre actores y brindar mayor control durante todo el proceso.
 
 
 #### 1.1.1. Descripción de la Startup
 
-Nuestra empresa desarrolla soluciones digitales para conectar a propietarios, remodeladores y técnicos en torno a un mismo espacio físico. Su propuesta combina marketplace, contratación por suscripción, seguimiento operativo de remodelaciones y monitoreo mediante dispositivos IoT, permitiendo una gestión más ordenada, medible y transparente.
-Dentro de este ecosistema, se propone como producto principal SpacePulse, una aplicación móvil/web que permite publicar espacios, contratar combos de remodelación, gestionar procesos y materiales, monitorear avances, recibir alertas y controlar pagos recurrentes desde una sola plataforma.
+Nuestra empresa desarrolla soluciones digitales para conectar a propietarios, remodeladores expertos y técnicos en torno a un mismo espacio físico. Su propuesta combina marketplace, contratación por suscripción, seguimiento operativo de remodelaciones y monitoreo mediante dispositivos IoT, permitiendo una gestión más ordenada, medible y transparente.
 
+Dentro de este ecosistema, se propone como producto principal SpacePulse, una aplicación móvil/web que permite publicar espacios, contratar combos de remodelación, gestionar procesos y materiales, monitorear avances, recibir alertas y controlar pagos recurrentes desde una sola plataforma.
 
 **Objetivo:**
 
-Brindar a propietarios y empresas remodeladoras una plataforma centralizada para alquilar, remodelar y monitorear espacios privados, integrando procesos operativos, pagos y seguimiento IoT en tiempo real.
-
+Brindar a propietarios y remodeladores expertos una plataforma centralizada para alquilar, remodelar y monitorear espacios privados, integrando procesos operativos, pagos y seguimiento IoT en tiempo real.
 
 **Misión**
 
 Simplificar la transformación y gestión de espacios privados mediante tecnología accesible, conectando a los actores del proceso de remodelación con información centralizada, trazabilidad operativa y monitoreo inteligente.
-
 **Visión**
 
-Convertirse en una startup referente en Latinoamérica en soluciones digitales para espacios inteligentes, destacando por integrar marketplace, remodelación y monitoreo IoT en una experiencia confiable y escalable.
+Convertirnos en una startup referente en Latinoamérica en soluciones digitales para espacios inteligentes, destacando por integrar remodelación, gestión operativa y monitoreo IoT en una experiencia confiable, innovadora y escalable.
+
 
 #### 1.1.2. Perfiles de integrantes del equipo
 |  Foto   | Miembros del equipo        | Código de Estudiante |   Descripción          |
 |---------| -------------------------- |----------------------| ---------------------- |
-| ![Imagen1](Assets/TB1/eric.png) |Wilder Gonzalo Aliaga Urbina |U202222001    |     |
+| ![Imagen1](Assets/.png) |Wilder Gonzalo Aliaga Urbina |U202222001    | Estudiante de Ingeniería de Software, con interés en el desarrollo de aplicaciones y soluciones tecnológicas orientadas a la mejora de procesos. Cuento con conocimientos en tecnologías como Java, Spring Boot, Angular, TypeScript, C#, .NET y bases de datos relacionales y no relacionales. Me caracterizo por ser una persona responsable, proactiva y comprometida con el trabajo en equipo, buscando siempre aportar de manera organizada al desarrollo del proyecto.    |
 | ![Imagen2]()                    |Via Luna Bruce|U202313403|  |
 | ![Imagen3]()                    |   |                      |  |
 | ![Imagen4]()                    |   |                      |  |
@@ -199,15 +170,15 @@ La propuesta toma valor porque los espacios inteligentes no se limitan a automat
 
 Actualmente, la remodelación de viviendas y oficinas suele gestionarse con herramientas separadas: mensajes por WhatsApp, hojas de cálculo, cotizaciones manuales, llamadas, evidencias dispersas y seguimiento informal del avance. Esto dificulta saber qué se contrató, cuánto se ha ejecutado, qué materiales faltan, cuánto se debe pagar y si existe alguna incidencia en el espacio intervenido.
 
-A esto se suma un contexto en el que los espacios de trabajo están cambiando. JLL señala que los diseños de oficina actuales priorizan layouts abiertos, flexibles y adaptables al trabajo híbrido, y que los costos globales de fit-out aumentaron aproximadamente entre 2% y 6% en el último año. En ese escenario, la gestión precisa del presupuesto, del alcance de la remodelación y del avance real del proyecto se vuelve más importante.
+A esto se suma un contexto en el que la digitalización del seguimiento sí es viable. En el primer trimestre de 2025, el 58,9% de los hogares del país contó con acceso a internet y el 95,2% tuvo telefonía móvil, mientras que al cierre de 2024 alrededor de 31,35 millones de teléfonos móviles accedieron a internet en el Perú. Esto muestra que ya existe una base tecnológica suficiente para una solución mobile-first enfocada en seguimiento y monitoreo remoto.
 
 #### 1. ¿Qué?
 
-Existe una falta de integración en la gestión del alquiler, remodelación y monitoreo de espacios privados. Los propietarios no cuentan con una plataforma unificada para publicar su espacio, contratar remodelación, controlar pagos, revisar avances e identificar incidentes técnicos en tiempo real.
+Existe una falta de integración en la gestión de la remodelación y monitoreo de espacios privados. Los propietarios no cuentan con una plataforma unificada para publicar su espacio, contratar remodelación, controlar pagos, revisar avances e identificar incidentes técnicos en tiempo real.
 
 #### 2. ¿Cuándo?
 
-El problema aparece durante todo el ciclo de atención del espacio: desde la publicación inicial del inmueble, pasando por la cotización y contratación del servicio, hasta la ejecución de la remodelación, el control de materiales, los cobros mensuales y el seguimiento de incidentes o cambios solicitados.
+El problema aparece durante todo el ciclo de atención del espacio: desde la publicación inicial del inmueble, pasando por la cotización y contratación del servicio, hasta la ejecución de la remodelación, el control de materiales, los cobros y el seguimiento de incidentes o cambios solicitados.
 
 #### 3. ¿Dónde?
 
@@ -216,18 +187,20 @@ Se presenta principalmente en viviendas, departamentos, oficinas y pequeños esp
 #### 4. ¿Quién?
 
 Los afectados principales son:
+
 - **Clientes que desean el servicio**, como propietarios o administradores de casas y oficinas que buscan remodelar, modernizar o acondicionar un espacio con mayor control, visibilidad y confianza.
-- **Empresas remodeladoras**, que necesitan captar clientes, organizar catálogos, gestionar proyectos, coordinar personal técnico, controlar materiales y mantener trazabilidad sobre tiempos, costos e incidencias.
+- **Remodeladores expertos**, que necesitan captar clientes, organizar servicios, gestionar proyectos, coordinar personal técnico, controlar materiales y mantener trazabilidad sobre tiempos, costos e incidencias.
 
 #### 5. ¿Por qué?
 
-Porque el proceso sigue siendo altamente manual y fragmentado. Aunque el contexto digital ya es favorable, muchas decisiones operativas todavía dependen de seguimiento informal. En el Perú, 31.35 millones de líneas móviles accedieron a internet al cierre de 2024, lo que demuestra que existe una base tecnológica suficiente para operar una solución de seguimiento móvil y en tiempo real.
+Porque el proceso sigue siendo altamente manual y fragmentado. Aunque el contexto digital ya es favorable, muchas decisiones operativas todavía dependen de seguimiento informal, lo que genera retrasos, sobrecostos, poca transparencia y menor confianza entre las partes.
 
 #### 6. ¿Cómo?
 
 La problemática puede abordarse mediante una aplicación que centralice:
-- el catálogo de espacios y combos de remodelación,
-- la contratación por suscripción,
+
+- el catálogo de espacios y servicios de remodelación,
+- la contratación del servicio,
 - la facturación y emisión de comprobantes,
 - el registro de proyectos, procesos y materiales,
 - el monitoreo de lecturas IoT,
@@ -236,7 +209,7 @@ La problemática puede abordarse mediante una aplicación que centralice:
 
 #### 7. ¿Cuánto?
 
-El problema impacta en tiempo, costos y control. No solo se pierde visibilidad del avance, sino también eficiencia en la toma de decisiones. En un contexto donde los costos de fit-out siguen subiendo y donde los edificios inteligentes buscan reducir costos operativos y riesgos, trabajar sin una plataforma integrada representa mayor probabilidad de retrasos, sobrecostos y mala experiencia para el propietario.
+El problema impacta en tiempo, costos y control. No solo se pierde visibilidad del avance, sino también eficiencia en la toma de decisiones. En un contexto donde los costos de fit-out siguen subiendo, trabajar sin una plataforma integrada representa mayor probabilidad de retrasos, sobrecostos y mala experiencia para el propietario.
 
 #### 1.2.2. Lean UX Process
 
@@ -246,10 +219,10 @@ El problema impacta en tiempo, costos y control. No solo se pierde visibilidad d
 Los propietarios de casas y oficinas necesitan una forma más simple de contratar y seguir remodelaciones, porque actualmente el proceso depende de múltiples canales y no ofrece trazabilidad clara del avance, los costos ni las incidencias.
 
 **Problema 2**  
-Las empresas remodeladoras necesitan una plataforma para organizar catálogos, proyectos, materiales, procesos y cobros, porque la gestión dispersa reduce eficiencia operativa y dificulta brindar una experiencia confiable al cliente.
+Los remodeladores expertos necesitan una plataforma para organizar proyectos, materiales, procesos y cobros, porque la gestión dispersa reduce su eficiencia operativa y dificulta brindar una experiencia confiable al cliente.
 
 **Problema 3**  
-Tanto clientes como empresas remodeladoras necesitan monitoreo centralizado del estado del espacio, porque los cambios, alertas y problemas técnicos suelen detectarse tarde o comunicarse de forma desordenada.
+Tanto clientes como remodeladores expertos necesitan monitoreo centralizado del estado del espacio, porque los cambios, alertas y problemas técnicos suelen detectarse tarde o comunicarse de forma desordenada.
 
 ##### 1.2.2.2. Lean UX Assumptions
 
@@ -257,31 +230,31 @@ Tanto clientes como empresas remodeladoras necesitan monitoreo centralizado del 
 
 - Creo que mis clientes tienen la necesidad de: Contar con una plataforma que centralice la contratación, planificación, seguimiento y monitoreo de remodelaciones para casas y oficinas, evitando la desorganización, la poca visibilidad del avance y la dependencia de medios informales de comunicación.
 
-- Estas necesidades se pueden resolver con: Una aplicación móvil que conecte al cliente y a la empresa remodeladora en un mismo entorno digital, permitiendo visualizar el progreso, registrar procesos, materiales, tiempos, pagos, incidentes y alertas del espacio intervenido.
+- Estas necesidades se pueden resolver con: Una aplicación móvil que conecte al cliente y al remodelador experto en un mismo entorno digital, permitiendo visualizar el progreso, registrar procesos, materiales, tiempos, pagos, incidentes y alertas del espacio intervenido.
 
-- Mis clientes iniciales son (o serán): Propietarios de casas u oficinas pequeñas que desean remodelar con mayor control y transparencia, así como empresas remodeladoras que necesitan ordenar sus operaciones y ofrecer un servicio más confiable.
+- Mis clientes iniciales son (o serán): Propietarios de casas u oficinas pequeñas que desean remodelar con mayor control y transparencia, así como remodeladores expertos que necesitan ordenar sus operaciones y ofrecer un servicio más confiable.
 
-- El valor principal que los clientes quieren obtener de mi servicio es: Tener control, visibilidad y seguimiento del proceso de remodelación en tiempo real. Beneficios adicionales que también pueden obtener: Mejor comunicación, trazabilidad de cambios, mayor control de costos, respuesta rápida ante incidentes y una experiencia más ordenada.
+- El valor principal que los clientes quieren obtener de mi servicio es: Tener control, visibilidad y seguimiento del proceso de remodelación en tiempo real. Beneficios adicionales que también pueden obtener: mejor comunicación, trazabilidad de cambios, mayor control de costos, respuesta rápida ante incidentes y una experiencia más ordenada.
 
-- Adquiriré a la mayoría de mis clientes a través de: Redes sociales, campañas dirigidas a propietarios y pequeñas empresas, alianzas con remodeladoras, demostraciones del producto y recomendaciones de clientes satisfechos.
+- Adquiriré a la mayoría de mis clientes a través de: Redes sociales, campañas dirigidas a propietarios y pequeñas empresas, alianzas con especialistas del rubro, demostraciones del producto y recomendaciones de clientes satisfechos.
 
-- Ganaré dinero mediante: Cobros por servicios contratados dentro de la plataforma, suscripciones para empresas remodeladoras y comisiones por paquetes de remodelación o monitoreo IoT.
+- Ganaré dinero mediante: Cobros por servicios contratados dentro de la plataforma, suscripciones para remodeladores expertos y comisiones por paquetes de remodelación o monitoreo IoT.
 
-- Mi principal competencia en el mercado será: Empresas tradicionales de remodelación y plataformas de servicios que no integran seguimiento del proceso. Los superaremos debido a: Nuestra propuesta reúne marketplace, gestión de remodelación, monitoreo IoT, alertas automáticas y trazabilidad en una sola solución móvil.
+- Mi principal competencia en el mercado será: Servicios tradicionales de remodelación y plataformas que no integran seguimiento del proceso. Los superaremos debido a: Nuestra propuesta reúne marketplace, gestión de remodelación, monitoreo IoT, alertas automáticas y trazabilidad en una sola solución móvil.
 
 - Mi mayor riesgo de producto es: Que los usuarios perciban la plataforma como algo más complejo que gestionar todo por WhatsApp, llamadas o visitas. Lo resolveremos mediante: Una interfaz simple, información clara, alertas útiles y una propuesta enfocada en reducir incertidumbre y aumentar la confianza.
 
 - Otras suposiciones que, si resultan falsas, harán que nuestro proyecto fracase:
     - Que los clientes valoren monitorear el avance de la remodelación desde una aplicación móvil.
-    - Que las empresas remodeladoras estén dispuestas a registrar procesos, materiales e incidencias de forma constante.
+    - Que los remodeladores expertos estén dispuestos a registrar procesos, materiales e incidencias de forma constante.
     - Que el componente IoT sea visto como una ventaja diferencial.
     - Que exista disposición a pagar por un servicio más transparente, trazable y apoyado en tecnología.
 
 **User Assumptions (Suposiciones de Usuario)**
 
-- ¿Quién es el usuario?: Nuestros usuarios serán, por un lado, clientes que desean remodelar una casa u oficina con mayor confianza; y, por otro lado, empresas remodeladoras que ejecutan el servicio y coordinan personal, materiales, tiempos y seguimiento operativo.
+- ¿Quién es el usuario?: Nuestros usuarios serán, por un lado, clientes que desean remodelar una casa u oficina con mayor confianza; y, por otro lado, remodeladores expertos que ejecutan el servicio y coordinan personal, materiales, tiempos y seguimiento operativo.
 
-- ¿Dónde encaja nuestro producto en su trabajo o vida?: Para el cliente, encaja como una herramienta de seguimiento y control del estado de su espacio. Para la empresa, encaja como una herramienta de gestión operativa y comunicación con el cliente durante el proyecto.
+- ¿Dónde encaja nuestro producto en su trabajo o vida?: Para el cliente, encaja como una herramienta de seguimiento y control del estado de su espacio. Para el remodelador experto, encaja como una herramienta de gestión operativa y comunicación con el cliente durante el proyecto.
 
 - ¿Qué problemas resuelve nuestro producto?: Nuestro producto resuelve los siguientes problemas:
     - La falta de visibilidad sobre el estado real de una remodelación.
@@ -290,7 +263,7 @@ Tanto clientes como empresas remodeladoras necesitan monitoreo centralizado del 
     - La poca trazabilidad de cambios o incidentes.
     - La falta de alertas oportunas frente a retrasos o problemas en el espacio.
 
-- ¿Cuándo y cómo se usa nuestro producto?: Se utiliza antes, durante y después de contratar el servicio. El cliente lo usa para revisar avances, aceptar cambios, visualizar pagos, recibir alertas y confirmar incidentes. La empresa lo usa para registrar procesos, actualizar estados, gestionar materiales, controlar tareas y mantener informado al cliente desde dispositivos móviles.
+- ¿Cuándo y cómo se usa nuestro producto?: Se utiliza antes, durante y después de contratar el servicio. El cliente lo usa para revisar avances, aceptar cambios, visualizar pagos, recibir alertas y confirmar incidentes. El remodelador experto lo usa para registrar procesos, actualizar estados, gestionar materiales, controlar tareas y mantener informado al cliente desde dispositivos móviles.
 
 - ¿Qué características son importantes?: Las características más importantes de nuestro producto son:
     - Visualización del avance de la remodelación en tiempo real.
@@ -307,82 +280,97 @@ Tanto clientes como empresas remodeladoras necesitan monitoreo centralizado del 
 
 **Hypothesis Statement 01:**
 
-- Creemos que centralizar en una sola aplicación la contratación, el seguimiento de la remodelación, el monitoreo IoT y los pagos permitirá que el cliente tenga una mayor percepción de control sobre su espacio.
-- Sabremos que estamos en lo correcto cuando la mayoría de usuarios indique en entrevistas o pruebas que la plataforma reduce la incertidumbre y les permite entender mejor el estado de su proyecto.
+- Creemos que centralizar en una sola aplicación la contratación, el seguimiento de la remodelación, el monitoreo IoT y los pagos ayudará a los clientes que desean el servicio a tener mayor control y confianza sobre su espacio.
+
+- Sabremos que estamos bien cuando veamos que al menos el 70% de los usuarios indique en entrevistas o encuestas que la plataforma reduce la incertidumbre del proyecto y / o que ingresen a revisar su espacio al menos una vez por semana.
 
 **Hypothesis Statement 02:**
 
-- Creemos que permitir a la empresa remodeladora registrar procesos, materiales, tiempos y avances dentro de la plataforma mejorará la organización operativa del servicio.
-- Sabremos que estamos en lo correcto cuando las empresas usuarias afirmen que pueden ordenar mejor sus actividades y reducir pérdidas de información durante la ejecución de la remodelación.
+- Creemos que permitir a los remodeladores expertos registrar procesos, materiales, tiempos y avances dentro de la plataforma les ayudará a organizar mejor su operación y brindar un servicio más profesional.
+
+- Sabremos que estamos bien cuando veamos que al menos el 60% de los remodeladores expertos actualiza el estado de sus proyectos varias veces por semana y / o que reporten una reducción en la pérdida de información durante la ejecución del servicio.
 
 **Hypothesis Statement 03:**
 
-- Creemos que mostrar el avance de la remodelación en tiempo real desde el celular aumentará la confianza del cliente en el servicio contratado.
-- Sabremos que estamos en lo correcto cuando los usuarios manifiesten que revisar el progreso desde la aplicación les genera mayor tranquilidad que depender de mensajes o reportes manuales.
+- Creemos que mostrar el avance de la remodelación en tiempo real desde el celular ayudará a los clientes a sentirse más tranquilos y seguros durante todo el proceso.
+
+- Sabremos que estamos bien cuando veamos que al menos el 65% de los clientes consulta el avance de su proyecto desde su smartphone cada semana y / o que valoren positivamente esta funcionalidad en pruebas de usabilidad.
 
 **Hypothesis Statement 04:**
 
-- Creemos que incorporar alertas automáticas e incidentes relacionados con el espacio permitirá una atención más rápida frente a problemas o anomalías durante el proceso.
-- Sabremos que estamos en lo correcto cuando los usuarios consideren útiles las notificaciones y perciban que estas mejoran la capacidad de respuesta ante eventos inesperados.
+- Creemos que incorporar alertas automáticas e incidentes relacionados con el espacio ayudará a clientes y remodeladores expertos a responder más rápido ante problemas o anomalías.
+
+- Sabremos que estamos bien cuando veamos que al menos el 80% de las alertas críticas es revisado dentro de las primeras 24 horas y / o que los usuarios reporten que las notificaciones les permiten actuar con mayor rapidez.
 
 **Hypothesis Statement 05:**
 
-- Creemos que ofrecer un historial de cambios, costos y procesos completados mejorará la transparencia del servicio para el cliente.
-- Sabremos que estamos en lo correcto cuando los usuarios indiquen que la trazabilidad de la información les ayuda a confiar más en la empresa remodeladora.
+- Creemos que ofrecer un historial de cambios, costos y procesos completados ayudará a los clientes a percibir el servicio como más transparente y confiable.
+
+- Sabremos que estamos bien cuando veamos que al menos el 70% de los clientes consulta el historial del proyecto durante la remodelación y / o que más del 60% afirme que esta función mejora su confianza en el servicio.
 
 **Hypothesis Statement 06:**
 
-- Creemos que un marketplace inicial donde se publiquen espacios y servicios de remodelación facilitará la conexión entre la necesidad del cliente y la oferta de la empresa.
-- Sabremos que estamos en lo correcto cuando los usuarios entiendan fácilmente el flujo de publicación, contratación y seguimiento sin necesidad de recurrir a canales externos.
+- Creemos que un marketplace inicial donde se publiquen espacios y servicios de remodelación ayudará a conectar de manera más simple la necesidad del cliente con la oferta del remodelador experto.
+
+- Sabremos que estamos bien cuando veamos que al menos el 50% de los usuarios que publica un espacio recibe una propuesta dentro de la plataforma y / o que más del 60% entienda el flujo de publicación y contratación sin ayuda externa.
 
 **Hypothesis Statement 07:**
 
-- Creemos que permitir modificaciones sobre muebles, procesos o elementos aún no finalizados hará que la solución sea percibida como más flexible y personalizada.
-- Sabremos que estamos en lo correcto cuando los clientes valoren positivamente la posibilidad de ajustar su remodelación y visualizar el impacto de esos cambios en tiempo y costo.
+- Creemos que permitir modificaciones sobre muebles, procesos o elementos aún no finalizados ayudará a que la solución sea percibida como más flexible y adaptada a las necesidades del cliente.
+
+- Sabremos que estamos bien cuando veamos que al menos el 40% de los clientes utiliza la función de cambios durante su proyecto y / o que más del 65% considere útil poder personalizar la remodelación desde la aplicación.
 
 **Hypothesis Statement 08:**
 
-- Creemos que integrar monitoreo IoT dentro del servicio de remodelación diferenciará nuestra propuesta frente a empresas tradicionales del rubro.
-- Sabremos que estamos en lo correcto cuando tanto clientes como empresas reconozcan el componente tecnológico como un valor agregado importante al momento de comparar alternativas.
+- Creemos que integrar monitoreo IoT dentro del servicio de remodelación ayudará a diferenciar la propuesta de SpacePulse frente a soluciones tradicionales del rubro.
+
+- Sabremos que estamos bien cuando veamos que al menos el 60% de los usuarios menciona el monitoreo IoT como un valor agregado importante y / o que esta funcionalidad influya positivamente en su decisión de usar la plataforma.
 
 **Hypothesis Statement 09:**
 
-- Creemos que diseñar la solución principalmente para dispositivos móviles incrementará la frecuencia de interacción de los usuarios con la plataforma.
-- Sabremos que estamos en lo correcto cuando observemos que los usuarios revisan con frecuencia avances, alertas, cambios y estados del proyecto desde sus celulares.
+- Creemos que diseñar la solución principalmente para dispositivos móviles ayudará a incrementar la frecuencia de uso y consulta de la plataforma por parte de ambos segmentos.
+
+- Sabremos que estamos bien cuando veamos que más del 50% de las sesiones proviene de smartphones y / o que los usuarios ingresan varias veces por semana para revisar avances, alertas o cambios.
 
 **Hypothesis Statement 10:**
 
-- Creemos que una interfaz intuitiva, visual y fácil de usar reducirá la barrera de adopción tanto para clientes como para empresas remodeladoras.
-- Sabremos que estamos en lo correcto cuando nuevos usuarios puedan comprender las funciones principales de la aplicación sin necesidad de capacitación extensa.
+- Creemos que una interfaz intuitiva, visual y fácil de usar ayudará a reducir la barrera de adopción tanto para clientes como para remodeladores expertos.
+
+- Sabremos que estamos bien cuando veamos que al menos el 85% de los usuarios completa tareas básicas sin apoyo, y / o que la tasa de abandono inicial sea menor al 15%, y / o que la experiencia sea calificada como clara y sencilla en encuestas post-uso.
 
 **Hypothesis Statement 11:**
 
-- Creemos que permitir al cliente visualizar el detalle de materiales y procesos de su remodelación aumentará su percepción de transparencia en el servicio.
-- Sabremos que estamos en lo correcto cuando los usuarios indiquen que tener acceso a esa información les da más seguridad al momento de continuar con el proyecto.
+- Creemos que permitir al cliente visualizar el detalle de materiales y procesos de su remodelación ayudará a aumentar su percepción de transparencia en el servicio.
+
+- Sabremos que estamos bien cuando veamos que al menos el 60% de los clientes revisa el detalle de materiales durante el proyecto y / o que más del 65% afirme que entiende mejor en qué se invierte su dinero.
 
 **Hypothesis Statement 12:**
 
-- Creemos que mostrar actualizaciones frecuentes del estado del espacio remodelado motivará al cliente a revisar la aplicación de manera constante.
-- Sabremos que estamos en lo correcto cuando observemos que los usuarios ingresan repetidamente a consultar avances, cambios o nuevas alertas del proyecto.
+- Creemos que mostrar actualizaciones frecuentes del estado del espacio remodelado ayudará a motivar al cliente a revisar la aplicación de manera constante.
+
+- Sabremos que estamos bien cuando veamos que los clientes ingresan a la plataforma al menos una vez por semana y / o que el nivel de interacción con avances, cambios o alertas aumente durante la ejecución del proyecto.
 
 **Hypothesis Statement 13:**
 
-- Creemos que ofrecer a la empresa remodeladora una vista centralizada de todos sus proyectos facilitará la gestión simultánea de varias remodelaciones.
-- Sabremos que estamos en lo correcto cuando las empresas usuarias afirmen que pueden supervisar mejor múltiples espacios sin perder información relevante de cada uno.
+- Creemos que ofrecer a los remodeladores expertos una vista centralizada de todos sus proyectos ayudará a facilitar la gestión simultánea de varias remodelaciones.
+
+- Sabremos que estamos bien cuando veamos que al menos el 50% de los remodeladores expertos administra más de un proyecto activo desde la plataforma y / o que reporten una mejora en el control operativo de sus servicios.
 
 **Hypothesis Statement 14:**
 
-- Creemos que incorporar notificaciones sobre retrasos, cambios de estado o problemas detectados mejorará la comunicación entre el cliente y la empresa.
-- Sabremos que estamos en lo correcto cuando los usuarios reporten menos confusiones o consultas repetitivas sobre el estado de la remodelación.
+- Creemos que incorporar notificaciones sobre retrasos, cambios de estado o problemas detectados ayudará a mejorar la comunicación entre el cliente y el remodelador experto.
+
+- Sabremos que estamos bien cuando veamos una reducción del 30% en consultas repetitivas por canales externos y / o que más del 70% de los usuarios considere que la comunicación dentro de la plataforma es suficiente y clara.
 
 **Hypothesis Statement 15:**
 
-- Creemos que una propuesta enfocada en casas y oficinas pequeñas permitirá validar más rápido la utilidad de la solución antes de escalar a proyectos de mayor tamaño.
-- Sabremos que estamos en lo correcto cuando logremos que los primeros usuarios de ese segmento adopten la plataforma y destaquen su utilidad en el seguimiento de remodelaciones.
+- Creemos que una propuesta enfocada en casas y oficinas pequeñas ayudará a validar más rápido la utilidad de la solución antes de escalar a proyectos de mayor tamaño.
+
+- Sabremos que estamos bien cuando veamos que al menos el 60% de los primeros proyectos registrados pertenece a ese tipo de espacios y / o que los usuarios de ese segmento reporten una experiencia satisfactoria durante la etapa piloto.
 
 ##### 1.2.2.4. Lean UX Canvas
 
-![Lean_UX _Canvas.jpg](Assets/Lean_UX%20_Canvas.jpg)
+![Lean_UX _Canvas.jpg](Assets/Lean_UX_Canvas.jpg)
 
 ### 1.3. Segmentos Objetivos
 
@@ -394,17 +382,18 @@ Este segmento corresponde a personas o responsables de un inmueble que buscan re
 Generalmente, este segmento está conformado por adultos entre 28 y 55 años, con capacidad de decisión sobre su vivienda u oficina, ubicados principalmente en zonas urbanas. Además, suelen estar familiarizados con el uso del celular para realizar consultas, coordinar servicios y hacer seguimiento a procesos importantes de su vida diaria.
 
 **Información Estadística de Sustento:**  
-Este segmento resulta relevante porque el uso de herramientas digitales en el país es cada vez mayor. En el primer trimestre de 2025, el 58,9% de los hogares del país contó con acceso a Internet y el 95,2% tuvo al menos un integrante con telefonía móvil. Esto respalda la viabilidad de una aplicación móvil orientada al seguimiento de remodelaciones y monitoreo de espacios.
+Este segmento resulta relevante porque el uso de herramientas digitales en el país es cada vez mayor. En el primer trimestre de 2025, el 58,9% de los hogares del país contó con acceso a internet y el 95,2% tuvo telefonía móvil, lo que respalda la viabilidad de una aplicación móvil orientada al seguimiento de remodelaciones y monitoreo de espacios.
 
-#### Segmento Objetivo 2: Empresa remodeladora
+#### Segmento Objetivo 2: Remodeladores expertos
 
-Este segmento corresponde a empresas o negocios que ofrecen servicios de remodelación, implementación o mejora de espacios privados. Su principal interés es contar con una plataforma que les permita publicar sus servicios, captar clientes, administrar proyectos, registrar materiales, coordinar actividades técnicas y llevar un mejor control de pagos, avances e incidencias.
+Este segmento corresponde a profesionales o especialistas que ofrecen servicios de remodelación, implementación o mejora de espacios privados. Su principal interés es contar con una plataforma que les permita publicar sus servicios, captar clientes, administrar proyectos, registrar materiales, coordinar actividades técnicas y llevar un mejor control de pagos, avances e incidencias.
 
 **Características Demográficas:**  
-Este segmento está conformado principalmente por micro y pequeñas empresas ubicadas en zonas urbanas, dirigidas por dueños, gerentes o encargados operativos que necesitan ordenar sus procesos y brindar una atención más profesional. Además, suelen requerir herramientas digitales simples e intuitivas que les ayuden a gestionar varios proyectos sin recurrir únicamente a registros manuales o aplicaciones de mensajería.
+Este segmento está conformado principalmente por profesionales independientes, técnicos especializados o pequeños equipos de trabajo ubicados en zonas urbanas, que necesitan ordenar sus procesos y brindar una atención más profesional. Además, suelen requerir herramientas digitales simples e intuitivas que les ayuden a gestionar varios proyectos sin recurrir únicamente a registros manuales o aplicaciones de mensajería.
 
 **Información Estadística de Sustento:**  
-Según PRODUCE, en el Perú existen 2,2 millones de Mipyme formales, de las cuales el 94,7% son microempresas y el 5,0% pequeñas empresas. Esta composición empresarial respalda que una solución como SpacePulse puede enfocarse en negocios remodeladores pequeños y medianos que necesitan digitalizar su operación sin adoptar sistemas complejos o costosos.
+Según PRODUCE, en el Perú operaron 2 331 173 mipyme formales al cierre de 2024, lo que confirma una base amplia de micro y pequeños negocios a los que puede dirigirse una solución como SpacePulse; en la publicación anterior de PRODUCE sobre mipyme formales, el 94,7% correspondía a microempresas y el 5,0% a pequeñas empresas. Esto respalda un enfoque inicial en remodeladores expertos y pequeños equipos que necesitan digitalizar su operación sin adoptar sistemas complejos o costosos.
+
 ## Capítulo II: Presentación
 
 
