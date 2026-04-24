@@ -874,14 +874,488 @@ Estos componentes aseguran que la lógica financiera se ejecute sobre una infrae
 
 ### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
-### 4.2.2.6.1. Bounded Context Software Architecture Component Level Diagrams
+### 4.2.2.6.1.  Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases de la capa de dominio describe la estructura lógica del modelo de negocio financiero. El diseño se centra en el agregado raíz Payment, que rige el flujo transaccional, y el agregado Invoice, que gestiona la documentación fiscal. Se utiliza el objeto de valor Money para garantizar la precisión monetaria.
+
+## Descripción de Elementos del Diagrama
+
+### Payment (Aggregate Root)
+
+Clase principal que encapsula el estado de la transacción.
+
+Características:
+- Actúa como **raíz del agregado**.
+- Gestiona el ciclo de vida del pago.
+- Estados posibles:
+  - Pending
+  - Completed
+  - Failed
+
+Métodos principales:
+- `confirm()`: Marca el pago como completado.
+- `fail()`: Marca el pago como fallido.
+
+---
+
+### Invoice (Aggregate Root)
+
+Representa el comprobante legal de cobro generado tras un pago exitoso.
+
+Características:
+- Se genera automáticamente luego de la confirmación del pago.
+- Contiene el número correlativo de facturación.
+- Mantiene la trazabilidad legal de la transacción.
+
+---
+
+### Money (Value Object)
+
+Objeto inmutable que representa una cantidad monetaria.
+
+Características:
+- Contiene:
+  - Monto decimal
+  - Código de moneda (ISO 4217)
+- Evita errores en cálculos entre distintas divisas.
+- Se compara por valor, no por identidad.
+
+---
+
+### Interfaces de Repositorio
+
+#### IPaymentRepository
+
+Define el contrato para la persistencia de pagos.
+
+Responsabilidades:
+- Guardar transacciones.
+- Recuperar pagos por ID.
+- Consultar pagos por proyecto.
+
+---
+
+#### IInvoiceRepository
+
+Define el contrato para la persistencia de facturas.
+
+Responsabilidades:
+- Almacenar comprobantes fiscales.
+- Recuperar facturas por ID o por pago.
+- Mantener la integridad de los registros financieros.
+
+---
+
+## Relación General del Modelo
+
+- **Payment** puede generar una **Invoice** (relación 1:1).
+- **Money** es un objeto de valor utilizado dentro de **Payment**.
+- Los repositorios abstraen la persistencia de ambos agregados.
+
 
 <img width="773" height="438" alt="image" src="https://github.com/user-attachments/assets/575c52f5-a97b-4d21-836f-2f38b0ab4c2d" />
 
 ### 4.2.2.6.2. Bounded Context Database Design Diagrams
 
+El diseño de la base de datos para el contexto de Payment Management se ha normalizado para gestionar de manera eficiente el flujo de cobros y la emisión de facturas. El esquema físico garantiza que cada transacción esté vinculada a un proyecto de remodelación y que la documentación fiscal sea inalterable una vez generada.
+
+## Tabla: Payments
+
+Esta tabla registra todos los intentos de pago y transacciones completadas dentro de la plataforma.
+
+| Campo             | Tipo de Dato        | Restricción | Descripción |
+|------------------|--------------------|-------------|-------------|
+| Id               | Guid / Binary(16)  | PK          | Identificador único de la transacción. |
+| ProjectId        | Guid / Binary(16)  | FK          | Referencia al proyecto de remodelación asociado. |
+| Amount           | Decimal(18,2)      | Not Null    | Monto de la operación financiera. |
+| Currency         | Varchar(10)        | Not Null    | Código de la moneda (ej. "USD", "PEN"). |
+| Status           | Varchar(50)        | Not Null    | Estado del pago (Pending, Completed, Failed). |
+| ExternalReference| Varchar(255)       | Nullable    | ID de seguimiento provisto por la pasarela de pagos. |
+| CreatedAt        | DateTime           | Not Null    | Fecha y hora de creación del registro. |
+
+---
+
+## Tabla: Invoices
+
+Almacena la información de los comprobantes fiscales electrónicos generados tras un pago exitoso.
+
+| Campo         | Tipo de Dato        | Restricción   | Descripción |
+|--------------|--------------------|---------------|-------------|
+| Id           | Guid / Binary(16)  | PK            | Identificador único de la factura. |
+| PaymentId    | Guid / Binary(16)  | FK, Unique    | Referencia al pago que originó la factura. |
+| InvoiceNumber| Varchar(100)       | Unique        | Número correlativo legal del documento. |
+| IssuedAt     | DateTime           | Not Null      | Fecha de emisión oficial del comprobante. |
+
+---
+
+## Relaciones de Integridad
+
+### Relación Payments - Invoices (1:1)
+
+- Un **Payment** puede generar **una única Invoice**.
+- Se establece mediante la clave foránea **PaymentId** en la tabla **Invoices**.
+- La restricción **Unique** garantiza que no existan múltiples facturas para un mismo pago.
+
+
 <img width="288" height="342" alt="image" src="https://github.com/user-attachments/assets/2bf9f061-480c-4d3e-af39-9e67ffac2d99" />
 
+##4.2.3. Bounded Context: Report Management
+
+## 4.2.3.1. Domain Layer
+
+La Domain Layer en el contexto de Report Management es la encargada de definir la lógica para la agregación de datos y la generación de conocimiento analítico.
+
+A diferencia de otros contextos, este no suele modificar el estado de los proyectos, sino que extrae información para transformarla en métricas clave de desempeño (KPIs) sobre el avance de las remodelaciones y el funcionamiento de los dispositivos IoT.
+
+## 1. Aggregate: ProjectReport
+
+**Descripción:**
+
+Es el agregado raíz que representa un reporte consolidado de un proyecto de remodelación. Contiene el resumen de costos, avances y cumplimiento de cronograma.
+
+### Atributos
+
+| Atributo    | Tipo      | Descripción |
+|------------|-----------|-------------|
+| id         | Guid      | Identificador único del reporte. |
+| projectId  | Guid      | Referencia al proyecto analizado. |
+| reportType | String    | Tipo de reporte (Progreso, Financiero, Técnico). |
+| generatedAt| DateTime  | Fecha y hora de generación. |
+| content    | JSON/Text | Información detallada de los indicadores calculados. |
+
+### Métodos
+
+- `generateSummary()`: Calcula el porcentaje de avance basado en las tareas completadas del proyecto.
+- `exportToFormat(String format)`: Prepara la estructura de datos para ser exportada (PDF, Excel).
+
+---
+
+## 2. Value Object: ReportPeriod
+
+**Descripción:**
+
+Objeto de valor que define el rango de tiempo específico que abarca el reporte, asegurando que las fechas de inicio y fin sean lógicas y válidas.
+
+### Atributos
+
+| Atributo  | Tipo     | Descripción |
+|----------|----------|-------------|
+| startDate| DateTime | Fecha de inicio del análisis. |
+| endDate  | DateTime | Fecha de fin del análisis. |
+
+### Métodos
+
+- `isValidRange()`: Verifica que la fecha de fin no sea anterior a la de inicio.
+- `getDurationInDays()`: Calcula la cantidad de días analizados en el reporte.
+
+---
+
+## 3. Entity: MetricDetail
+
+**Descripción:**
+
+Entidad que representa un indicador específico dentro de un reporte, como "Consumo Energético" o "Días de retraso".
+
+### Atributos
+
+| Atributo | Tipo   | Descripción |
+|----------|--------|-------------|
+| id       | Guid   | Identificador de la métrica. |
+| name     | String | Nombre del indicador. |
+| value    | Double | Valor numérico obtenido. |
+| unit     | String | Unidad de medida (ej. "%", "kWh"). |
+
+---
+
+## 4. Domain Service: IReportGenerationService
+
+**Descripción:**
+
+Define el contrato para la lógica compleja de agregación que requiere consultar múltiples fuentes de datos (Proyectos, Pagos e IoT) para construir un reporte integral.
+
+### Métodos
+
+- `calculateProjectKPIs(Guid projectId)`: Ejecuta algoritmos de análisis para determinar el rendimiento del proyecto.
+- `aggregateIotData(Guid infrastructureId)`: Consolida los datos históricos de los sensores para el reporte técnico.
+
+---
+
+## 5. Repository: IProjectReportRepository
+
+**Descripción:**
+
+Interfaz que define las operaciones de persistencia para los reportes generados, permitiendo su consulta histórica.
+
+### Métodos
+
+- `save(ProjectReport report)`: Almacena un reporte generado.
+- `findByProjectId(Guid projectId)`: Recupera el historial de reportes de un proyecto específico.
+- `deleteOldReports(DateTime expirationDate)`: Limpieza de reportes antiguos.
+
+---
 
 
+En la Domain Layer de SpacePulse, el contexto de Report Management utiliza los principios de DDD para asegurar que la generación de reportes sea consistente y precisa. Al separar la lógica de cálculo en servicios de dominio y utilizar objetos de valor como ReportPeriod, se garantiza que la analítica de los proyectos de remodelación IoT sea confiable para la gestión operativa.
+
+## 4.2.3.2. Interface Layer
+
+La Interface Layer en el contexto de Report Management es la encargada de exponer los puntos de acceso (endpoints) para que los usuarios (técnicos y propietarios) puedan solicitar y consultar reportes analíticos.
+
+Esta capa se asegura de que las peticiones HTTP sean válidas y las transforma en comandos o consultas que la capa de aplicación pueda procesar, devolviendo finalmente la información en formatos legibles (Resources/DTOs).
+
+---
+
+## Controlador: ReportsController
+
+**Descripción:**
+
+Este controlador centraliza las operaciones para la generación y recuperación de informes técnicos y financieros de los proyectos de remodelación IoT.
+
+### Endpoints
+
+| Método | Ruta                                   | Descripción |
+|--------|----------------------------------------|-------------|
+| POST   | /api/v1/reports                        | Recibe una solicitud para generar un nuevo reporte mediante un CreateReportResource. Transforma la petición en un comando de generación y devuelve el reporte procesado. |
+| GET    | /api/v1/reports/{reportId}             | Permite obtener el contenido detallado de un reporte específico utilizando su identificador único. |
+| GET    | /api/v1/projects/{projectId}/reports   | Recupera el listado histórico de todos los reportes generados para un proyecto de remodelación en particular. |
+
+---
+
+## Dependencias y Transformaciones
+
+- **CreateReportCommandFromResourceAssembler**: Componente encargado de convertir los datos de la solicitud (como el tipo de reporte y el rango de fechas) en un comando de aplicación.
+- **ReportResourceFromEntityAssembler**: Utilidad que transforma la entidad de dominio ProjectReport en un recurso JSON estructurado para el cliente.
+- **IReportCommandService / IReportQueryService**: Interfaces que desacoplan el controlador de la ejecución lógica de los reportes.
+
+---
+
+## Recursos de Interfaz (DTOs de Entrada/Salida)
+
+| Recurso                | Descripción |
+|------------------------|-------------|
+| CreateReportResource   | Contiene los parámetros necesarios para la generación (ej. projectId, reportType, startDate, endDate). |
+| ReportResource         | Estructura de salida que incluye los KPIs calculados, el resumen ejecutivo y la fecha de generación. |
+
+---
+
+## Flujo de Comunicación
+
+1. El cliente envía una petición **POST** indicando que desea un reporte de "Consumo IoT" para el mes actual.
+2. El ReportsController valida la estructura de la petición y utiliza un Assembler para crear el comando interno.
+3. La petición se despacha a la capa de aplicación.
+4. Una vez generado el reporte, el controlador devuelve un **ReportResource** con un estado HTTP **201 (Created)**.
+
+---
+
+
+En esta capa de SpacePulse, los controladores actúan como el puente entre el mundo exterior y la lógica analítica del sistema. Al seguir el patrón de Clean Architecture, se garantiza que los controladores solo se encarguen de la comunicación HTTP, delegando toda la complejidad del cálculo de métricas a las capas internas de Application y Domain.
+
+## 4.2.3.3. Application Layer
+
+La Application Layer actúa como el motor de orquestación del contexto de reportes. Su función principal es recibir los comandos de generación y las consultas de visualización, coordinando la recolección de datos desde el dominio y otros contextos (como IoT o Proyectos) para transformar información cruda en métricas de valor para el usuario final.
+
+---
+
+## 1. Servicios de Comando y Consulta (Handlers)
+
+En esta sección se definen los Handlers que procesan la lógica de aplicación. Al utilizar MediatR, estos componentes desacoplan la recepción de la solicitud de su ejecución técnica.
+
+### Handlers
+
+| Nombre                              | Descripción                                                     | Resumen de Lógica |
+|-------------------------------------|-----------------------------------------------------------------|-------------------|
+| GenerateProjectReportCommandHandler | Coordina la creación de un nuevo reporte analítico.             | Valida la existencia del proyecto, solicita al IReportGenerationService el cálculo de los KPIs y persiste el resultado en el repositorio. |
+| GetReportByIdQueryHandler           | Recupera un reporte específico por su identificador.            | Consulta el IProjectReportRepository y mapea la entidad de dominio a un DTO de respuesta. |
+| GetReportsByProjectIdQueryHandler   | Obtiene el historial de reportes de un proyecto.                | Filtra los registros en la base de datos por el ProjectId y devuelve una colección estructurada. |
+| DeleteOldReportsCommandHandler      | Realiza el mantenimiento del historial de reportes.             | Ejecuta una lógica de limpieza basada en la fecha de expiración definida en la configuración del sistema. |
+
+---
+
+## 2. DTOs Internos (Data Transfer Objects)
+
+Estos objetos facilitan el transporte de información entre capas, asegurando que la estructura interna de las entidades de dominio no se exponga directamente a la interfaz.
+
+### DTOs
+
+| Nombre           | Descripción |
+|------------------|-------------|
+| ReportDto        | Contiene el resumen ejecutivo del reporte, incluyendo los metadatos de generación y el estado del análisis. |
+| KpiSummaryDto    | Encapsula los indicadores clave calculados (ej. porcentaje de avance, eficiencia energética, desviación presupuestaria). |
+| ReportListDto    | Estructura optimizada para la visualización de listas históricas en el dashboard de SpacePulse. |
+
+---
+
+## 3. Servicios Externos (Outbound Services)
+
+Representan las interfaces de comunicación con sistemas o componentes fuera del control directo del dominio de reportes.
+
+### Servicios
+
+- **ProjectDataClient**: Interfaz utilizada para obtener datos en tiempo real del Bounded Context de Project Management (tareas, fechas, hitos).
+- **IotTelemetryAggregator**: Servicio encargado de recopilar y promediar los datos históricos de los sensores IoT para incluirlos en los reportes técnicos.
+- **ExportService (PDF/Excel)**: Componente técnico de infraestructura que transforma los datos del reporte en archivos descargables para el usuario.
+
+---
+
+
+En la Application Layer de SpacePulse, la lógica se centra en la transformación de datos. Los Command Handlers aseguran que los reportes se generen siguiendo las reglas de negocio del dominio, mientras que los Query Handlers optimizan la entrega de información para que los propietarios y técnicos puedan monitorear el estado de sus proyectos de remodelación de manera eficiente.
+
+
+## 4.2.3.4. Infrastructure Layer
+
+En la Infrastructure Layer de SpacePulse, específicamente para el contexto de Report Management, se implementan los detalles técnicos necesarios para la persistencia de los análisis generados y la integración con herramientas de exportación de datos.
+
+Esta capa:
+- Utiliza Entity Framework Core (EFC) para mapear los reportes en la base de datos MySQL.
+- Permite almacenar información analítica consolidada.
+- Provee servicios técnicos para exportar datos en formatos descargables.
+
+## 1. Persistence (Repositories Implementation)
+
+| Nombre                     | Descripción                                                                 | Tecnologías / Herramientas |
+|----------------------------|-----------------------------------------------------------------------------|-----------------------------|
+| ProjectReportRepository    | Implementación concreta de IProjectReportRepository que gestiona el almacenamiento y recuperación de informes históricos. | Entity Framework Core, LINQ |
+| ReportConfiguration        | Define el mapeo detallado de la entidad ProjectReport, configurando el almacenamiento de los KPIs en formato JSON dentro de la base de datos. | Fluent API (EFC) |
+| MetricDetailConfiguration  | Configura la persistencia de los detalles individuales de las métricas asociadas a cada reporte. | Fluent API (EFC) |
+
+---
+
+## 2. External / Technical Services Implementation
+
+| Nombre               | Descripción                                                                 | Resumen de Implementación |
+|----------------------|-----------------------------------------------------------------------------|---------------------------|
+| ExcelReportExporter  | Servicio técnico que transforma los datos del dominio en hojas de cálculo para análisis externo. | Utiliza bibliotecas como ClosedXML para generar archivos .xlsx. |
+| IotTelemetryClient   | Implementación técnica para la obtención de datos históricos de sensores desde el módulo de infraestructura. | Realiza peticiones internas o consultas a la base de datos de telemetría. |
+
+
+## 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+
+<img width="3930" height="2698" alt="structurizr-107883-Report_Component_View" src="https://github.com/user-attachments/assets/771aa4d7-9057-44f8-b2d2-87196029e723" />
+
+
+## 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+## 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+Descripción de Elementos del Diagrama
+
+ ProjectReport (Aggregate Root)
+
+Es la entidad principal que representa un informe consolidado. Encapsula metadatos como el tipo de reporte (Técnico, Financiero o de Progreso) y la fecha de generación.
+
+- Actúa como **raíz del agregado**.
+- Gestiona la consistencia interna del reporte.
+- Posee una relación de **composición** con sus métricas (MetricDetail).
+
+---
+
+MetricDetail (Entity)
+
+Representa un indicador específico calculado dentro de un reporte.
+
+Ejemplos:
+- "Eficiencia Energética"
+- "Porcentaje de Avance"
+
+Características:
+- Tiene identidad propia dentro del agregado.
+- Contiene:
+  - Valor numérico
+  - Unidad de medida
+- Depende del ciclo de vida del **ProjectReport**.
+
+---
+
+ ReportPeriod (Value Object)
+
+Objeto inmutable que define el rango de tiempo analizado en el reporte.
+
+Características:
+- Contiene:
+  - Fecha de inicio
+  - Fecha de fin
+- Garantiza la validez del intervalo temporal.
+- No posee identidad propia (se compara por valor).
+
+---
+
+ IReportGenerationService (Domain Service)
+
+Interfaz que define el contrato para los algoritmos de cálculo de reportes.
+
+Responsabilidades:
+- Interactuar con otros contextos (Proyectos, IoT, Pagos).
+- Extraer y procesar datos.
+- Construir el agregado **ProjectReport** con métricas calculadas.
+
+---
+
+ IProjectReportRepository (Repository Interface)
+
+Define los métodos necesarios para la persistencia de los reportes.
+
+Responsabilidades:
+- Almacenar reportes generados.
+- Recuperar reportes por **ProjectId**.
+- Mantener historial de análisis.
+
+---
+
+## Relación General del Modelo
+
+- **ProjectReport** contiene múltiples **MetricDetail** (1:N).
+- **ReportPeriod** es un objeto de valor utilizado por el reporte.
+- **IReportGenerationService** construye el agregado.
+- **IProjectReportRepository** gestiona su persistencia.
+
+---
+
+## Nota
+
+Este modelo sigue los principios de **Domain-Driven Design (DDD)**:
+- Separación clara entre entidades y objetos de valor.
+- Uso de agregados para mantener consistencia.
+- Servicios de dominio para lógica compleja.
+
+
+<img width="821" height="428" alt="image" src="https://github.com/user-attachments/assets/a2117075-dfd0-4329-9290-38d6931b9986" />
+
+## 4.2.3.6.2. Bounded Context Database Design Diagrams
+
+
+El esquema de base de datos para Report Management se ha diseñado para ofrecer una trazabilidad completa de los análisis realizados sobre los proyectos de remodelación.
+
+La estructura permite almacenar datos agregados de sensores IoT y estados de obra, organizándolos en tablas relacionales que optimizan la consulta histórica de métricas de desempeño.
+
+---
+
+## Tabla: ProjectReports
+
+Esta tabla almacena los metadatos de cada informe generado en la plataforma.
+
+| Campo        | Tipo de Dato        | Restricción | Descripción |
+|-------------|--------------------|-------------|-------------|
+| Id          | Guid / Binary(16)  | PK          | Identificador único del reporte. |
+| ProjectId   | Guid / Binary(16)  | FK          | Referencia al proyecto analizado (vínculo con Project BC). |
+| ReportType  | Varchar(50)        | Not Null    | Categoría del informe (ej. "Técnico", "Financiero"). |
+| GeneratedAt | DateTime           | Not Null    | Marca de tiempo exacta de la creación del informe. |
+
+---
+
+## Tabla: MetricDetails
+
+Contiene los valores específicos de los indicadores calculados que componen un reporte.
+
+| Campo     | Tipo de Dato        | Restricción | Descripción |
+|----------|--------------------|-------------|-------------|
+| Id       | Guid / Binary(16)  | PK          | Identificador único de la métrica. |
+| ReportId | Guid / Binary(16)  | FK          | Referencia al reporte contenedor (Tabla ProjectReports). |
+| Name     | Varchar(100)       | Not Null    | Nombre del indicador (ej. "Energy Efficiency"). |
+| Value    | Double             | Not Null    | Valor numérico del KPI obtenido. |
+| Unit     | Varchar(20)        | Not Null    | Unidad de medida (ej. "%", "kWh", "Days"). |
+
+
+
+<img width="224" height="310" alt="image" src="https://github.com/user-attachments/assets/4887a1da-3d07-4481-bcfc-eb4d71ee0681" />
 
