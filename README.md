@@ -233,7 +233,17 @@ La problemática puede abordarse mediante una aplicación que centralice:
 
 #### 7. ¿Cuánto?
 
-El problema impacta en tiempo, costos y control. No solo se pierde visibilidad del avance, sino también eficiencia en la toma de decisiones. En un contexto donde los costos de fit-out siguen subiendo, trabajar sin una plataforma integrada representa mayor probabilidad de retrasos, sobrecostos y mala experiencia para el propietario.
+- Según Ipsos Perú, el 35% de los hogares alista obras, remodelación y decoración en casa. Esto respalda que sí existe una demanda real por mejoras y cambios en la vivienda, que puede beneficiarse de una solución digital para organizar el proceso.
+
+- El mismo estudio señala que entre los principales proyectos del hogar figuran construir, ampliar, remodelar y decorar, lo que confirma que las familias peruanas no solo piensan en comprar vivienda, sino también en transformarla y acondicionarla.
+
+- El Ministerio de Vivienda advirtió que en el Perú el 70% de las viviendas corresponde a autoconstrucción y remarcó la importancia de contratar profesionales especializados, como ingenieros y arquitectos, para asegurar una inversión de calidad. Esto se relaciona directamente con la necesidad de contar con remodeladores confiables y con mayor trazabilidad en el servicio.
+
+- CAPECO indicó que el componente vivienda explica siete de cada diez metros cuadrados edificados en Lima Metropolitana. Esta cifra refuerza la relevancia del segmento vivienda dentro de la actividad constructiva y justifica una solución enfocada en espacios residenciales y oficinas pequeñas. 
+
+- Según un estudio reportado por Perú21 en febrero de 2023, el 17% de los peruanos deseaba realizar remodelaciones en sus viviendas. El informe destacó la importancia de planificar, organizar y buscar profesionales y materiales adecuados para optimizar tiempo y dinero en estas mejoras.
+
+![estadisticaIPSOS.png](Assets/estadisticaIPSOS.png)
 
 #### 1.2.2. Lean UX Process
 
