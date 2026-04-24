@@ -606,4 +606,282 @@ En la Infrastructure Layer de SpacePulse, específicamente para el contexto de I
 
 ### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+<img width="956" height="457" alt="image" src="https://github.com/user-attachments/assets/6b43cd6c-82eb-4ee5-bc40-a9d21ea58f74" />
+
+
 ### 4.2.1.6.2. Bounded Context Database Design Diagrams
+El diseño de la base de datos para el contexto de IAM se ha normalizado para garantizar la integridad de las identidades y la seguridad de la información financiera. Se compone de dos tablas principales relacionadas mediante una clave foránea.
+<img width="229" height="397" alt="image" src="https://github.com/user-attachments/assets/4d226568-11ac-4de2-ba49-155ca88274a5" />
+
+## 4.2.2. Bounded Context: Payment Management
+
+### 4.2.2.1. Domain Layer
+
+La Domain Layer es el núcleo que orquesta y gestiona las reglas de negocio relacionadas con las transacciones financieras y la facturación de servicios en la plataforma SpacePulse. En este contexto, entidades como **Payment** e **Invoice**, junto con los objetos de valor y servicios de validación, permiten gestionar el ciclo de vida de los pagos por proyectos de remodelación e infraestructura IoT.
+
+**Objetivo:**
+
+La capa de dominio tiene como objetivo representar las entidades y servicios fundamentales del procesamiento de pagos, cubriendo desde la iniciación de la transacción hasta la emisión de comprobantes fiscales, asegurando la integridad de los montos y la trazabilidad de cada cobro.
+
+## 1. Aggregate: Payment
+
+**Descripción:**
+
+El agregado Payment actúa como la raíz del modelo y encapsula todos los datos y comportamientos relacionados con una transacción económica dentro del sistema. Representa un intento de cobro y contiene la información necesaria para interactuar con pasarelas de pago externas.
+
+### Atributos
+
+| Atributo           | Tipo   | Descripción                                                                 |
+|--------------------|--------|-----------------------------------------------------------------------------|
+| id                 | Guid   | Identificador único del pago (autogenerado).                               |
+| projectId          | Guid   | Identificador del proyecto de remodelación asociado al pago.               |
+| amount             | Money  | Objeto de valor que contiene el monto y la moneda.                         |
+| status             | String | Estado actual del pago (PENDING, COMPLETED, FAILED).                       |
+| externalReference  | String | Código de referencia devuelto por la pasarela de pagos.                    |
+| createdAt          | Date   | Fecha de creación del registro de pago.                                    |
+
+### Métodos
+
+- `confirm(String reference)`: Cambia el estado a COMPLETED y vincula la referencia externa.
+- `fail(String reason)`: Marca la transacción como fallida y registra el motivo.
+- `calculateTax()`: Calcula los impuestos aplicables según el monto total del proyecto.
+
+---
+
+## 2. Value Object: Money
+
+**Descripción:**
+
+El objeto de valor Money representa una cantidad monetaria validada. Es un objeto embebido que asegura que los cálculos financieros se realicen con la precisión correcta y bajo la misma denominación monetaria.
+
+### Atributos
+
+| Atributo | Tipo    | Descripción                     |
+|----------|--------|---------------------------------|
+| amount   | Decimal | Cantidad numérica del pago.     |
+| currency | String  | Código de moneda (ej. USD, PEN).|
+
+### Métodos
+
+- `Money(Decimal amount, String currency)`: Constructor que valida que el monto no sea negativo.
+- `add(Money other)`: Suma otro objeto Money validando que la moneda sea idéntica.
+- `getFormatted()`: Retorna el monto con el símbolo de moneda correspondiente.
+
+---
+
+## 3. Aggregate: Invoice
+
+**Descripción:**
+
+Representa el documento legal de facturación emitido tras un pago exitoso. Define los permisos y responsabilidades asociados a la documentación fiscal del sistema.
+
+### Atributos
+
+| Atributo      | Tipo   | Descripción                                                   |
+|---------------|--------|---------------------------------------------------------------|
+| id            | Guid   | Identificador único de la factura.                            |
+| paymentId     | Guid   | Referencia al pago confirmado que genera la factura.          |
+| invoiceNumber | String | Serie y número correlativo legal del documento.               |
+| issuedAt      | Date   | Fecha de emisión de la factura.                               |
+
+### Métodos
+
+- `generateNumber()`: Genera el correlativo legal basado en la serie configurada.
+- `voidInvoice()`: Marca la factura como anulada en caso de devoluciones.
+
+---
+
+## 4. Domain Service: PaymentCommandService
+
+**Descripción:**
+
+El servicio PaymentCommandService encapsula las reglas de negocio complejas que involucran la validación de transacciones y la comunicación lógica con el dominio de proyectos.
+
+### Métodos
+
+- `processTransaction(Payment payment)`: Valida la viabilidad de la transacción antes de su persistencia.
+- `validatePaymentMethod(Guid methodId)`: Verifica que el método de pago seleccionado esté activo y sea compatible.
+
+---
+
+## 5. Repository: IPaymentRepository
+
+**Descripción:**
+
+El IPaymentRepository es una abstracción para la persistencia de las transacciones en la base de datos, permitiendo realizar operaciones de consulta y guardado de manera efectiva.
+
+### Métodos
+
+- `save(Payment payment)`: Guarda un nuevo pago o actualiza uno existente.
+- `findById(Guid id)`: Recupera un pago por su identificador único.
+- `findByProjectId(Guid projectId)`: Recupera el historial de pagos asociados a un proyecto.
+
+En la Domain Layer de SpacePulse, hemos definido los flujos financieros bajo un modelo de Domain-Driven Design (DDD). Estas entidades y objetos de valor representan las reglas de negocio fundamentales para el procesamiento de cobros y facturación. La clase Payment se asocia con los proyectos de remodelación, y se valida la integridad de los montos a través de servicios como PaymentCommandService y repositorios como IPaymentRepository.
+
+## 4.2.2.2. Interface Layer
+
+La Interface Layer es la capa que expone los endpoints de la aplicación, permitiendo la interacción entre los clientes y el sistema de pagos de SpacePulse. Los controladores son responsables de recibir las peticiones, validarlas y coordinar con los servicios correspondientes para ejecutar las transacciones financieras.
+
+En esta capa, no se implementan reglas de negocio, sino que se coordina la comunicación entre las solicitudes de los usuarios y la lógica del dominio.
+
+---
+
+## Controlador: PaymentsController
+
+**Descripción:**
+
+El PaymentsController maneja los endpoints relacionados con la iniciación y el seguimiento de pagos por servicios de remodelación e instalaciones IoT.
+
+### Endpoints
+
+| Método | Ruta                                   | Descripción |
+|--------|----------------------------------------|-------------|
+| POST   | /api/v1/payments                       | Maneja la solicitud para iniciar un nuevo pago. Recibe un objeto CreatePaymentResource, lo convierte en un comando y llama al servicio de aplicación. Devuelve el recurso del pago creado o un error 400. |
+| GET    | /api/v1/payments/{paymentId}           | Recupera la información detallada de un pago específico mediante su ID. Si existe, lo convierte en un recurso y lo devuelve; de lo contrario, retorna un error 404. |
+| GET    | /api/v1/projects/{projectId}/payments  | Obtiene el historial de pagos asociados a un proyecto de remodelación específico. |
+
+### Dependencias
+
+- **IPaymentCommandService**: Servicio que maneja los comandos de creación y confirmación de transacciones.
+- **IPaymentQueryService**: Servicio encargado de gestionar las consultas de historial de pagos.
+- **CreatePaymentCommandFromResourceAssembler**: Utilidad para convertir el recurso de entrada en un comando procesable.
+- **PaymentResourceFromEntityAssembler**: Utilidad para convertir la entidad de dominio Payment en un recurso de respuesta para el cliente.
+
+---
+
+## Controlador: InvoicesController
+
+**Descripción:**
+
+El InvoicesController maneja los endpoints relacionados con la obtención y visualización de documentos fiscales electrónicos.
+
+### Endpoints
+
+| Método | Ruta                                   | Descripción |
+|--------|----------------------------------------|-------------|
+| GET    | /api/v1/invoices/{invoiceId}           | Maneja la solicitud para obtener una factura específica. Llama al servicio de consultas y devuelve el recurso de la factura para su visualización o descarga. |
+| GET    | /api/v1/users/{userId}/invoices        | Recupera todas las facturas emitidas para un usuario en particular, permitiendo el seguimiento de sus gastos en la plataforma. |
+
+### Dependencias
+
+- **IInvoiceQueryService**: Servicio encargado de manejar las búsquedas y recuperación de facturas.
+- **InvoiceResourceFromEntityAssembler**: Utilidad para transformar las entidades de factura en recursos JSON para la API.
+
+---
+
+## Flujo de Trabajo
+
+### Procesamiento de Pagos
+Los usuarios pueden iniciar un pago a través de la API, lo que invoca a los servicios de comando para registrar la transacción y validar los montos con la pasarela externa.
+
+### Gestión de Facturas
+Una vez que un pago es confirmado, el sistema genera automáticamente una factura que puede ser consultada por los usuarios y administradores a través del endpoint de facturación.
+
+### Historial por Proyecto
+Los administradores pueden consultar todos los pagos realizados dentro del contexto de un proyecto de remodelación IoT para asegurar que el presupuesto se esté ejecutando correctamente.
+
+---
+
+
+En esta capa de SpacePulse, los controladores son los encargados de recibir las solicitudes HTTP, dirigirlas a los servicios apropiados y devolver una respuesta adecuada.
+
+Estos controladores no contienen reglas de negocio, sino que delegan el procesamiento a la capa de dominio o los servicios, actuando como una interfaz entre los clientes (propietarios y técnicos) y la lógica financiera del negocio.
+
+Los controladores presentados permiten gestionar la transaccionalidad económica y la emisión de comprobantes dentro del sistema.
+
+## 4.2.2.3. Application Layer
+
+Esta capa actúa como un orquestador. Recibe comandos y consultas de la capa de interfaz y coordina la ejecución de la lógica del negocio financiero. Es el "intermediario" que traduce las peticiones de los usuarios en acciones del dominio, asegurando que las transacciones y la facturación de servicios IoT se apliquen correctamente.
+
+---
+
+## 1. Servicios de Comando y Consulta (Handlers)
+
+Las implementaciones de los Handlers son responsables de las transacciones (escribir datos) y las consultas (leer datos), respectivamente. Estos servicios usan los repositorios para interactuar con el dominio.
+
+### Handlers
+
+| Nombre                          | Descripción                                                                 | Resumen de Lógica |
+|---------------------------------|-----------------------------------------------------------------------------|-------------------|
+| CreatePaymentCommandHandler     | Gestiona la creación de una nueva intención de pago en el sistema.         | Valida el ProjectId, instancia el objeto Money, crea el agregado Payment en estado pendiente y lo persiste mediante el repositorio. |
+| ConfirmPaymentCommandHandler    | Procesa la confirmación de éxito desde la pasarela externa.                | Recupera el pago, invoca el método confirm() del dominio para cambiar el estado y dispara el evento para la generación de la factura. |
+| GetPaymentByIdQueryHandler      | Recupera la información detallada de una transacción.                      | Consulta el IPaymentRepository utilizando el identificador único y devuelve el DTO correspondiente. |
+| IssueInvoiceCommandHandler      | Orquesta la generación de documentos fiscales.                             | Verifica que el pago esté completado, genera el correlativo legal para la Invoice y guarda el registro fiscal en la base de datos. |
+
+---
+
+## 2. DTOs Internos (Data Transfer Objects)
+
+Estos objetos se utilizan para transportar datos entre las capas de aplicación e interfaz, manteniendo el dominio limpio de preocupaciones de presentación.
+
+### DTOs
+
+| Nombre                   | Descripción |
+|--------------------------|-------------|
+| PaymentDto              | Contiene la información operativa del pago, incluyendo el estado, monto y referencia externa para uso interno. |
+| InvoiceDto              | Encapsula los datos fiscales necesarios para generar la representación visual o PDF de la factura. |
+| TransactionSummaryDto   | Provee una vista simplificada de los movimientos financieros asociados a un proyecto de remodelación. |
+
+---
+
+## 3. Servicios Externos (Outbound Services)
+
+Se utilizan para manejar operaciones técnicas que no forman parte de la lógica de negocio principal, permitiendo que el dominio permanezca enfocado en las reglas financieras de SpacePulse.
+
+### Servicios
+
+- **ExternalPaymentGatewayService**: Interfaz que define la comunicación técnica con la pasarela de pagos (ej. Stripe o Culqi) para procesar el cobro real.
+- **EmailNotificationService**: Servicio encargado de enviar el comprobante de pago y la factura al correo electrónico del cliente una vez confirmada la operación.
+
+---
+
+En la Application Layer de SpacePulse, se implementa el patrón MediatR para desacoplar la intención de la ejecución. Los handlers orquestan el flujo financiero, asegurando que cada pago sea validado y que la facturación electrónica se dispare solo cuando el dominio confirma la transacción. La lógica se valida a través de servicios de aplicación y se persiste mediante los repositorios definidos en la infraestructura.
+
+## 4.2.2.4. Infrastructure Layer
+
+En la Infrastructure Layer de SpacePulse, específicamente para el contexto de Payment Management, se implementan los detalles técnicos y las integraciones con marcos de trabajo externos necesarios para la persistencia financiera.
+
+Esta capa se encarga de:
+- La gestión de datos mediante Entity Framework Core (EFC).
+- La configuración del mapeo de transacciones y facturas con la base de datos MySQL.
+- La implementación de servicios de comunicación con pasarelas de pago externas.
+
+Estos componentes aseguran que la lógica financiera se ejecute sobre una infraestructura segura y auditable.
+
+---
+
+## 1. Persistence (Repositories Implementation)
+
+| Nombre                | Descripción                                                                 | Tecnologías / Herramientas |
+|-----------------------|-----------------------------------------------------------------------------|-----------------------------|
+| PaymentRepository     | Implementación concreta de IPaymentRepository que utiliza EFC para gestionar el almacenamiento de transacciones. | Entity Framework Core, LINQ |
+| InvoiceRepository     | Implementación de IInvoiceRepository encargada de persistir los comprobantes fiscales generados por el sistema. | Entity Framework Core |
+| PaymentConfiguration  | Define el mapeo detallado entre la entidad Payment y la tabla payments, incluyendo restricciones de precisión para el monto. | Fluent API (EFC) |
+| InvoiceConfiguration  | Configura el esquema de base de datos para la entidad Invoice, asegurando la unicidad del número de factura correlativo. | Fluent API (EFC) |
+
+---
+
+## 2. External / Technical Services Implementation
+
+| Nombre                  | Descripción                                                                 | Resumen de Implementación |
+|--------------------------|-----------------------------------------------------------------------------|---------------------------|
+| StripeGatewayService     | Implementación técnica para la comunicación con la pasarela de pagos externa (Stripe/Culqi). | Utiliza el SDK de la pasarela para procesar el cargo y recibir webhooks de confirmación. |
+| PdfInvoiceGenerator      | Servicio técnico responsable de transformar los datos de la factura en un archivo digital. | Implementa la generación de documentos PDF utilizando bibliotecas de renderizado para el cliente. |
+
+## 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+<img width="3930" height="3298" alt="structurizr-107883-Payment_Component_View" src="https://github.com/user-attachments/assets/e5a2e2be-189a-4689-89f1-aca456f0a5d4" />
+
+### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+### 4.2.2.6.1. Bounded Context Software Architecture Component Level Diagrams
+
+<img width="773" height="438" alt="image" src="https://github.com/user-attachments/assets/575c52f5-a97b-4d21-836f-2f38b0ab4c2d" />
+
+### 4.2.2.6.2. Bounded Context Database Design Diagrams
+
+<img width="288" height="342" alt="image" src="https://github.com/user-attachments/assets/2bf9f061-480c-4d3e-af39-9e67ffac2d99" />
+
+
+
+
