@@ -37,9 +37,9 @@ Martinez Gaona, Pablo Afranio (U202120011)
 <br><br>
  Perez Tuesta, Gabriel (U202321281) 
 <br><br>
- (U)
+ Landa Ortiz, Sergio Javier (U202311086)
 <br><br>
-2026
+2026-01
 </h3>
 </div>
 
@@ -55,6 +55,7 @@ Martinez Gaona, Pablo Afranio (U202120011)
 | 1.02 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Startup Profile                               |
 | 1.03 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Solution Profile(Lean UX Process)             |
 | 1.04 | 22/04/2026 |  Perez Tuesta Gabriel |         Tactical-Level Domain-Driven Design                                      |
+|1.05|24/04/2026  | Todos los integrantes | Capitulo I <br> Capitulo II
 
 
 ## Project Report Collaboration Insights
@@ -65,6 +66,7 @@ Martinez Gaona, Pablo Afranio (U202120011)
 - Aliaga Urbina Wilder Gonzalo
 - Pablo Afranio Martinez Gaona
 - Gabriel Perez Tuesta
+- Sergio Javier Landa Ortiz
 
 |  URL del repositorio del reporte  |
 | :-----------------------------------: |
@@ -142,10 +144,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 necesario, utilizando estrategias deaprendizaje apropiadas.
 En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado los criterios especificos.
 
-| Criterio específico | Acciones realizadas                                                                                                                                                          | Conclusiones |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1** <br> Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo. |         |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1**<br>  Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico.                                                                                                                              |         |
+| Criterio específico | Acciones realizadas   | Conclusiones |
+|--------|---------------|------|
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1** <br> Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br><br> -**Wilder Gonzalo Aliaga Urbina** <br> TB1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo. <br><br> -**Perez Tuesta, Gabriel - TB1** <br> Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br><br> -**Sergio Javier Landa Ortiz -TB1**<br> Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br><br> -**Bruce Via Luna-TB1** <br> Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo|         |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo – TB1**<br>  Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br><br> -**Wilder Gonzalo Aliaga Urbina** <br> TB1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br><br> -**Perez Tuesta, Gabriel - TB1** <br> Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br><br> -**Sergio Javier Landa Ortiz -TB1**<br> Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br><br> -**Bruce Via Luna-TB1** <br>|         |
 <hr>
 
 ## Objetivos SMART
@@ -178,11 +180,11 @@ Convertirnos en una startup referente en Latinoamérica en soluciones digitales 
 #### 1.1.2. Perfiles de integrantes del equipo
 |  Foto   | Miembros del equipo        | Código de Estudiante |   Descripción          |
 |---------| -------------------------- |----------------------| ---------------------- |
-| ![Imagen1](Assets/.png) |Wilder Gonzalo Aliaga Urbina |U202222001    | Estudiante de Ingeniería de Software, con interés en el desarrollo de aplicaciones y soluciones tecnológicas orientadas a la mejora de procesos. Cuento con conocimientos en tecnologías como Java, Spring Boot, Angular, TypeScript, C#, .NET y bases de datos relacionales y no relacionales. Me caracterizo por ser una persona responsable, proactiva y comprometida con el trabajo en equipo, buscando siempre aportar de manera organizada al desarrollo del proyecto.    |
-| ![Imagen2]()                    |Via Luna Bruce|U202313403|  |
-| ![Imagen3]()                    |Martinez Gaona, Pablo Afranio   | U202120011                     | Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Manejo lenguajes de programación como C++ y Python. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música. |
-| ![Imagen4]()                    |   |                      |  |
-| ![Imagen5]()                    |   |                      |  |
+| ![Imagen1](Assets/foto_wilder.png) |Wilder Gonzalo Aliaga Urbina |U202222001    | Estudiante de Ingeniería de Software, con interés en el desarrollo de aplicaciones y soluciones tecnológicas orientadas a la mejora de procesos. Cuento con conocimientos en tecnologías como Java, Spring Boot, Angular, TypeScript, C#, .NET y bases de datos relacionales y no relacionales. Me caracterizo por ser una persona responsable, proactiva y comprometida con el trabajo en equipo, buscando siempre aportar de manera organizada al desarrollo del proyecto.    |
+| ![Imagen2](Assets/foto_bruce.jpeg) |Via Luna Bruce|U202313403|Mi nombre es Bruce Via, tengo 20 años y soy estudiante de la carrera de ingenieria de Software. Me considero uan persona que muestra un interes desmedido cuando lo que hago resulta agradable, dispuesto a aprender nuevos conocimientos incluso si no es necesario, ademas de siempre intentar mejorar en lo que hago demostrando iniciativo|
+| ![Imagen3](Assets/foto_pablo.png)|Martinez Gaona, Pablo Afranio   | U202120011  | Tengo 24 años y estudio la carrera de Ingeniería de Software. Me considero alguien adaptable a la situación, así como alguien que trabaja muy bien en equipo. Manejo lenguajes de programación como C++ y Python. Busco aprender más acerca de la ciencia de datos asi como de la inteligencia artificial. Me gusta los videojuegos y escuchar música. |
+| ![Imagen4](Assets/foto_gabriel.png)|Perez Tuesta, Gabriel |U202321281|Soy estudiante de ingeniería de software del 6to ciclo con conocimientos en JavaScript, Vue y NextJS, me quiero especializar en desarrollo web tanto en front end como en back end.|
+| ![Imagen5](Assets/foto_sergio.png)|Sergio Javier Landa Ortiz | U202311086 |Soy un estudiante de software, cursando actualmente el 7mo ciclo, la carrera me interesa mucho ya que siempre aprendo cosas nuevas cada dia, las tecnologias son tantas que nunca te aburres, me considero una persona responsable y me gusta trabajar en equipo|
 
 
 ### 1.2. Solution Profile
@@ -429,7 +431,7 @@ Este segmento está conformado principalmente por profesionales independientes, 
 **Información Estadística de Sustento:**  
 Según PRODUCE, en el Perú operaron 2 331 173 mipyme formales al cierre de 2024, lo que confirma una base amplia de micro y pequeños negocios a los que puede dirigirse una solución como SpacePulse; en la publicación anterior de PRODUCE sobre mipyme formales, el 94,7% correspondía a microempresas y el 5,0% a pequeñas empresas. Esto respalda un enfoque inicial en remodeladores expertos y pequeños equipos que necesitan digitalizar su operación sin adoptar sistemas complejos o costosos.
 
-## Capítulo II: Presentación
+## Capítulo II: Requirements Development and Software Solution Design
 
 
 ### 2.1. Competidores
@@ -497,10 +499,9 @@ Empathy Map Segmento Objetivo 2:
 
 ![Empathy_Map_2](Assets/Empathy_map_2.png)
 
-#### 2.3.5. As-Is Scenario Mapping
+#### 2.3.5. Big Event Storming
 
-
-### 2.4. Ubiquitous Language
+#### 2.3.6. Ubiquitous Language
 
 |Termino|Definicion|
 |-------|----------|
@@ -514,20 +515,9 @@ Empathy Map Segmento Objetivo 2:
 |Incidencia|Problema o desperfecto reportado durante el uso o remodelación del espacio|
 |Dispositivos IoT|Dispositivos especializados en conectarse mediante coneccion Wi-fi para su control desde celulares|
 
+### 2.4. Requirements Specification
 
-## Capitulo III: Requirements specification
-
-### 3.1. To-Be Scenario Mapping
-
-To-Be Scenario Mapping de Segmento Objetivo 1:
-
-![To-Be-Scenario_Mapping_1](Assets/to-be-1.png) 
-
-To-Be Scenario Mapping de Segmento Objetivo 2:
-
-![To-Be-Scenario_Mapping_2](Assets/to-be-2.png) 
-
-### 3.2. User Stories
+#### 2.4.1. User Stories
 
 En esta seccion detallaremos la existencia, escenarios y diferentes historias de usuarios o 
 User Stories que usaremos a lo largo del proyecto, para mejor orden se iniciara con la creacion de 
@@ -604,7 +594,7 @@ Gestion de Usuarios / US05 | Recuperar Contraseña | Como usuario de SpacePulse,
 |Monitoreo de Remodelaciones / US53 | Reconocimiento y Gestión de Incidentes |Como cliente, quiero poder marcar un incidente crítico como "reconocido" , para detener el envío de notificaciones repetitivas y avisar al resto del equipo que ya estoy atendiendo el problema. | Dado que existe una alerta activa sonando o enviando correos, Cuando marco el incidente como reconocido, Entonces el sistema actualiza su estado, silencia las notificaciones recurrentes y registra a qué usuario se le asignó.| EP05|
 |Funcionalidades Avanzadas / US54 | Registro Histórico de Notificaciones |Como cliente, quiero tener acceso a un registro completo de todas las notificaciones emitidas por el sistema en mi proyecto, para revisar alertas pasadas que pude haber omitido. |Dado que recibí múltiples alertas durante la semana, Cuando entro al panel de notificaciones del proyecto, Entonces visualizo un historial paginado con fecha, tipo de notificación y mensaje detallado. |EP06 |
 
-### 3.3. Impact Mapping
+#### 2.4.2. Impact Mapping
 
 Impact Mapping Segmento Objetivo 1:
 
@@ -614,7 +604,7 @@ Impact Mapping Segmento Objetivo 2:
 
 ![Impact_Mapping_2](Assets/Impact_map_2.png)
 
-### 3.4. Product Backlog
+#### 2.4.3. Product Backlog
 
 | # Order |User Story ID|Titulo|Story Points (1/2/3/5/8)|
 |---------|-------------|------|------------------------|
@@ -675,17 +665,15 @@ Impact Mapping Segmento Objetivo 2:
 
 
 
-## Capitulo IV: Solution Software Design
+### 2.5. Strategic-Level Domain-Driven Design
 
-
-## 4.1. Strategic-Level Domain-Driven Design
 Esta sección describe cómo el diseño orientado al dominio (DDD) guio la arquitectura estratégica de nuestra solución. Nos enfocamos en segmentar el sistema en contextos delimitados (Bounded Contexts) para mejorar la organización del desarrollo. Mediante el uso de Event Storming y Bounded Context Canvases, definimos con precisión el alcance y las interacciones de cada componente. Como resultado, logramos una estructura de software totalmente alineada con las necesidades reales del negocio.
 
-### 4.1.1. EventStorming
+#### 2.5.1. EventStorming
 El proceso de modelado comenzó con una fase de descubrimiento deliberado mediante una dinámica de lluvia de ideas. Durante esta actividad, se utilizaron notas adhesivas de color naranja para representar los Domain Events (eventos de dominio). Estos elementos son fundamentales, ya que capturan hechos significativos que ocurren dentro del sistema y reflejan cambios de estado críticos para el negocio. Esta identificación visual permitió al equipo mapear la cronología de los procesos e identificar los puntos de interacción más relevantes de la aplicación.
 <img width="717" height="875" alt="image" src="https://github.com/user-attachments/assets/f60d67f0-8666-41f3-94b0-7a99eb3042c9" />
 
-### 4.1.1.1. Candidate Context Discovery
+##### 2.5.1.1. Candidate Context Discovery
 Esta sección describe la dinámica de los procesos de negocio mediante el flujo de eventos. Al identificar los pivotal events, logramos detectar los puntos de cambio donde una responsabilidad termina y otra comienza, lo que resulta fundamental para la creación de los Bounded Contexts. Esta delimitación estratégica permite estructurar el dominio de forma coherente, facilitando el desarrollo modular y permitiendo que el software escale de manera ordenada según las necesidades de la organización.
 
 <img width="967" height="171" alt="image" src="https://github.com/user-attachments/assets/5e0e8f3c-e23d-469e-a6d4-37b258531a65" />
