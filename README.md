@@ -428,7 +428,7 @@ En el diagrama de despliegue se representa cómo los principales componentes de 
 ![Software_Architecture_Deployment_Diagrams](Assets/Software_Architecture_Deployment_Diagrams.png)
 
 
-## 4.2.4. Bounded Context: Payment Management
+## 4.2.4. Bounded Context: Space Management
 
 ### 4.2.4.1. Domain Layer
 
