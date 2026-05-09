@@ -2948,22 +2948,138 @@ En la Infrastructure Layer de SpacePulse, específicamente para el contexto de I
 ## Capítulo III: Solution UI/UX Design
 
 ### 3.1. Product design
+El diseño de producto de SpacePulse se plantea como una experiencia digital simple, moderna y confiable, orientada a conectar a clientes que desean remodelar un espacio con especialistas capaces de guiarlos durante el proceso. La propuesta visual y funcional se enfoca en facilitar la publicación de espacios, la solicitud de asesorías, la contratación de servicios, el seguimiento del avance, la revisión de pagos y la recepción de alertas relevantes desde una sola plataforma. Por ello, el diseño prioriza una navegación clara, elementos visuales sobrios y una organización intuitiva de la información, de modo que tanto el cliente como el remodelador puedan comprender rápidamente el estado del proyecto, las acciones pendientes y los servicios disponibles. En conjunto, SpacePulse busca transmitir orden, confianza y acompañamiento profesional durante la transformación de hogares, oficinas y otros espacios privados, manteniendo el componente IoT como un valor complementario para el monitoreo y control del espacio.
 
 #### 3.1.1. Style Guidelines 
+Las Style Guidelines de SpacePulse definen los criterios visuales que guían la identidad del producto, tanto en la landing page como en la futura aplicación móvil. La propuesta visual se basa en una estética moderna, sobria y profesional, orientada a transmitir confianza durante el proceso de remodelación de espacios. Para ello, se emplea una paleta de colores compuesta por azul oscuro como tono principal, un acento cálido para botones y elementos destacados, fondos claros para mejorar la lectura y tipografías limpias que facilitan la navegación. Esta línea visual permite que SpacePulse se perciba como una plataforma cercana, ordenada y confiable para clientes y especialistas.
 
 ##### 3.1.1.1. General Style Guidelines  
+La identidad visual de SpacePulse se construye a partir de un enfoque minimalista, moderno y funcional. El logo representa una casa con una línea tipo pulso, lo cual comunica la idea de un espacio vivo, en seguimiento y en proceso de mejora, sin colocar la tecnología como elemento principal. La landing page utiliza como color principal #2c3e50, como color de acento #d4a373, fondo claro #f8f9fa, texto principal #333333 y blanco #ffffff; además, emplea Roboto para títulos y Open Sans para el cuerpo del texto. Esta combinación permite mantener una apariencia profesional y coherente con el rubro de remodelación, diseño de interiores y gestión de espacios.
+
+**Logo**
+
+![SpacePulse_Icon](Assets/SpacePulse_Icon.png)
+
+**Paleta de colores**
+
+![Colores](Assets/Colores.png)
+
+|Color	|Código	|Uso principal|
+|---|---|---|
+|Azul oscuro	|#2C3E50	|Color principal de marca, encabezados, botones primarios y footer.|
+|Acento cálido	|#D4A373	|Botones secundarios, íconos, métricas y elementos destacados.|
+|Fondo claro	|#F8F9FA	|Fondo general de secciones y pantallas.|
+|Texto principal	|#333333	|Textos descriptivos y contenido general.|
+|Blanco	|#FFFFFF	|Tarjetas, formularios, contrastes y espacios limpios.|
+
+**Tipografía**
+
+![Tipografia](Assets/Tipografia.png)
+
+|Tipo	|Fuente	|Uso|
+|---|---|---|
+|Títulos	|Roboto	|Encabezados, logo, botones y títulos principales.|
+|Cuerpo de texto	|Open Sans	|Párrafos, formularios, descripciones y contenido informativo.|
 
 #### 3.1.2. Information Architecture
 
+La Information Architecture de SpacePulse organiza el contenido y las funcionalidades de la plataforma para que los usuarios puedan encontrar rápidamente la información que necesitan y realizar sus acciones principales sin dificultad. La estructura se divide entre la landing page, orientada a presentar el servicio, explicar sus beneficios y captar solicitudes de asesoría, y la aplicación móvil, enfocada en la gestión del proceso de remodelación. En la app, la información se organiza según las tareas principales del usuario: revisar espacios publicados, solicitar servicios, monitorear avances, consultar pagos, recibir alertas y comunicarse con especialistas. De esta manera, la arquitectura de información busca mantener una navegación clara, reducir la confusión del usuario y facilitar el seguimiento de cada etapa del proyecto desde una sola plataforma
+
 ##### 3.1.2.1. Organization Systems  
+
+La organización de la información en SpacePulse se plantea de forma jerárquica y secuencial, permitiendo que el usuario avance desde una comprensión general del servicio hasta acciones concretas dentro de la plataforma. En la landing page, el contenido se organiza jerárquicamente, iniciando con una presentación clara del valor de SpacePulse, seguida por servicios, beneficios, especialistas y formulario de contacto. Esto permite que el visitante comprenda rápidamente qué ofrece la plataforma y cómo puede iniciar una solicitud. En la aplicación móvil, la organización se estructura principalmente por tareas y por tipo de usuario, separando las funciones del cliente y del remodelador experto. Para el cliente, la información se agrupa en espacios, avances, pagos, alertas y solicitudes; mientras que para el remodelador se priorizan proyectos asignados, registro de avances, materiales, incidencias y comunicación con el cliente.
+
+|Sistema de organización	|Aplicación en SpacePulse|
+|---|---|
+|Jerárquico |Se usa para ordenar la información desde lo más importante hasta lo más específico, como el resumen del espacio, detalles del proyecto, pagos, alertas e historial.|
+|SecuenciaL |Se aplica en procesos paso a paso, como registrar un espacio, solicitar una asesoría, contratar un servicio o reportar una incidencia.|
+|Por audiencia |Separa las funcionalidades según el tipo de usuario: cliente o remodelador experto.|
+|Por tópicos |Agrupa el contenido en módulos como espacios, remodelaciones, pagos, monitoreo, reportes y notificaciones.|
+|Cronológico |Se utiliza en el seguimiento de avances, historial de cambios, pagos realizados, alertas recibidas y reportes generados.|
 
 ##### 3.1.2.2. Labelling Systems 
 
+El Labelling System de SpacePulse se plantea a partir de etiquetas simples y directamente asociadas a los módulos principales de la aplicación móvil. Estas etiquetas se relacionan con los bounded contexts definidos en el diseño del sistema, pero se adaptan a un lenguaje más claro para el usuario final. De esta manera, en lugar de mostrar nombres técnicos como Identity & Access Management o IoT Monitoring & Notifications, la aplicación utiliza términos más familiares como Perfil, Monitoreo o Alertas. Esta decisión permite que la navegación sea más intuitiva y que cada sección represente una responsabilidad funcional clara dentro de la plataforma, tal como se solicita para los sistemas de etiquetado del producto. 
+
+|Etiqueta en la aplicación	|Uso dentro de SpacePulse|
+|---|---|
+|Perfil |Permite al usuario revisar y administrar su información personal, rol, datos de cuenta y configuración básica.|
+|Mis Espacios |Permite visualizar, crear, actualizar, publicar o eliminar los espacios registrados por el usuario.|
+|Pagos |Centraliza pagos pendientes, pagos realizados, comprobantes, recordatorios y estado de las transacciones.|
+|Monitoreo |Muestra el estado del espacio, lecturas relevantes de sensores, alertas activas e incidencias detectadas.|
+|Reportes |Permite consultar reportes de avance, métricas del proyecto, historial de cambios, costos e información resumida para la toma de decisiones.|
+
+Estas etiquetas fueron seleccionadas para mantener coherencia entre la arquitectura del sistema y la experiencia del usuario. Mis Espacios funciona como el punto de partida para administrar los ambientes registrados; Monitoreo representa el seguimiento del estado del espacio y las alertas importantes; Pagos agrupa la gestión financiera; Reportes organiza la información analítica; y Perfil permite acceder a la configuración del usuario. Con ello, la aplicación mantiene una navegación simple, pero alineada con la estructura modular definida en el proyecto.
+
 ##### 3.1.2.3. SEO Tags and Meta Tags 
 
+Para SpacePulse, los SEO Tags y Meta Tags se definen con el objetivo de mejorar la identificación del producto en buscadores y mantener una presentación clara del servicio en la landing page. Las etiquetas se enfocan en comunicar la propuesta principal: remodelación de espacios, asesoría profesional, seguimiento del avance y monitoreo inteligente como valor complementario. Además, para la aplicación móvil se consideran elementos de ASO, orientados a que el usuario pueda reconocer rápidamente el propósito de la app en una tienda de aplicaciones.
+
+**SEO Tags y Meta Tags para Landing Page**
+
+|Elemento	|Valor propuesto|
+|---|---|
+|Title |SpacePulse / Remodelación y gestión inteligente de espacios|
+|Meta Description |SpacePulse conecta clientes con especialistas en remodelación, permitiendo gestionar espacios, revisar avances, controlar pagos y recibir alertas desde una sola plataforma.|
+|Meta Keywords |remodelación, diseño de interiores, gestión de espacios, remodeladores, seguimiento de proyectos, espacios inteligentes, SpacePulse
+|Meta Author |Coder-Placing|
+
+**ASO Elements para Mobile Application**
+
+|Elemento	|Valor propuesto|
+|---|---|
+|App Title |SpacePulse|
+|App Subtitle |Remodela y gestiona tus espacios|
+|App Keywords |remodelación, espacios, hogar, oficina, avances, pagos, alertas, especialistas|
+|App Description	|SpacePulse es una aplicación móvil que permite gestionar espacios en remodelación, conectar con especialistas, revisar avances, controlar pagos y recibir alertas importantes del proyecto desde un solo lugar.|
+
 ##### 3.1.2.4. Searching Systems  
+Las funciones de búsqueda en SpacePulse han sido diseñadas para que los usuarios puedan encontrar rápidamente información relevante dentro de la aplicación móvil, sin tener que navegar manualmente por todos los módulos. El objetivo es ofrecer una experiencia más ordenada y eficiente, especialmente porque la plataforma manejará datos relacionados con espacios, avances, pagos, alertas y reportes. A continuación, se detallan las principales opciones de búsqueda consideradas para la aplicación y la forma en que se mostrarán los resultados.
+
+**Barra de búsqueda global:** En la pantalla principal de la aplicación se implementa una barra de búsqueda que permite localizar espacios, pagos, alertas o reportes ingresando palabras clave. Esta barra se encontrará en una zona visible de la interfaz y permitirá acceder rápidamente a información importante relacionada con el proceso de remodelación.
+
+**Búsqueda de espacios:** En el módulo de Mis Espacios, los usuarios podrán buscar espacios registrados por nombre, dirección o tipo de ambiente. Los resultados mostrarán tarjetas con el nombre del espacio, estado actual, imagen referencial y última actualización, permitiendo acceder de forma directa al detalle del espacio seleccionado.
+
+**Búsqueda de alertas y monitoreo:** En el módulo de Monitoreo, los usuarios podrán buscar alertas, incidencias o lecturas asociadas a un espacio específico. Además, podrán filtrar la información por fecha, tipo de evento, prioridad o estado de atención. Los resultados se mostrarán en orden cronológico, priorizando las alertas más recientes o relevantes.
+
+**Búsqueda de pagos:** En el módulo de Pagos, se permitirá localizar pagos pendientes, pagos realizados o comprobantes mediante palabras clave, fecha o estado de transacción. Los resultados mostrarán el monto, la fecha, el estado del pago y el acceso al detalle correspondiente, facilitando el control financiero del proyecto.
+
+**Búsqueda de reportes:** En la sección de Reportes, los usuarios podrán buscar informes relacionados con avance, costos, incidencias o monitoreo del espacio. Esta búsqueda permitirá encontrar reportes por título, fecha de generación o espacio asociado. Al seleccionar un resultado, se mostrará una vista detallada con la información resumida del proyecto.
+
+**Búsqueda por filtros combinados:** SpacePulse también permitirá aplicar filtros combinados para visualizar información más específica. Por ejemplo, el usuario podrá buscar alertas críticas de un espacio determinado, pagos pendientes de un proyecto o reportes generados dentro de un rango de fechas. Esta funcionalidad ayudará a revisar información puntual sin recorrer toda la aplicación.
 
 ##### 3.1.2.5. Navigation Systems
+
+La estructura de navegación de SpacePulse ha sido diseñada para ofrecer una experiencia clara, fluida y coherente entre la landing page y la aplicación móvil. Su objetivo es facilitar el acceso a la información principal del servicio, orientar al usuario durante el proceso de remodelación y permitir una interacción ordenada con las funciones más importantes de la plataforma. La navegación busca que tanto clientes como remodeladores puedan identificar rápidamente las secciones disponibles y acceder a ellas sin dificultad.
+
+**Landing Page (Web):**
+
+La barra de navegación principal, ubicada en la parte superior de la página, permite que los visitantes se desplacen rápidamente por las secciones informativas del sitio. Además, se incluye un botón de llamada a la acción para iniciar el contacto con un especialista. Las secciones disponibles son:
+
+•	Inicio: Presenta la propuesta principal de SpacePulse y comunica el valor del servicio de remodelación y asesoría. 
+
+•	Servicios: Muestra las opciones principales que ofrece la plataforma, como consultoría, visitas de diagnóstico y planos o renders. 
+
+•	Especialistas: Presenta el enfoque profesional del servicio y refuerza la confianza en los expertos que acompañan el proceso. 
+
+•	Contacto: Permite al usuario dejar sus datos para solicitar información o reservar una asesoría. 
+
+•	Agendar Cita: Funciona como acceso directo para iniciar una solicitud de atención o asesoramiento. 
+
+**Aplicación Móvil:**
+
+En la versión móvil, la navegación se organizará mediante una barra inferior fija con iconos simples y etiquetas claras. Esta estructura permitirá acceder a los módulos principales de la aplicación sin depender de menús complejos. Las opciones principales son:
+
+•	Mis Espacios: Permite visualizar, crear y administrar los espacios registrados por el usuario. 
+
+•	Monitoreo: Muestra el estado del espacio, alertas activas, incidencias y lecturas relevantes. 
+
+•	Pagos: Centraliza pagos pendientes, pagos realizados, comprobantes y estados de transacción. 
+
+•	Reportes: Permite consultar reportes de avance, costos, incidencias y seguimiento del proyecto. 
+
+•	Perfil: Permite al usuario revisar y editar su información personal, rol, configuración y preferencias.
+
 
 #### 3.1.3. Landing Page UI Design  
 
