@@ -2987,17 +2987,169 @@ En la Infrastructure Layer de SpacePulse, específicamente para el contexto de I
 
 ### 4.1. Software Configuration Management  
 
+### 4.1. Software Configuration Management  
 #### 4.1.1. Software Development Environment Configuration  
+En este apartado se describe la configuración del entorno de desarrollo de Task Master, establecida para garantizar la correcta integración, colaboración y trazabilidad de las actividades realizadas por los miembros del equipo.  
+Se definen las herramientas, plataformas y productos de software utilizados a lo largo del ciclo de vida del desarrollo, desde la gestión del proyecto hasta el despliegue y la documentación técnica.
+
+| Plataforma / Herramienta | Descripción | Enlace |
+|---------------------------|--------------|---------|
+| GitHub | Plataforma de control de versiones basada en Git que permite la colaboración entre desarrolladores, la gestión de ramas, control de cambios y automatización del despliegue continuo (CI/CD). | [https://github.com](https://github.com) |
+| Render | Servicio de despliegue automatizado para backend y frontend. Facilita la integración continua, escalado automático y monitoreo del sistema en producción. | [https://render.com](https://render.com) |
+| Figma | Herramienta colaborativa de diseño de interfaces, utilizada para la creación de wireframes, mockups y prototipos interactivos de Task Master. Permite trabajo simultáneo entre diseñadores y desarrolladores. | [https://www.figma.com](https://www.figma.com) |
+| Structurizr | Herramienta usada para representar la arquitectura C4 de Task Master (Contexto, Contenedor, Componente, Código), mostrando la relación entre los módulos principales (Gestión de Tareas, Tableros, Usuarios, Visualización). | [https://structurizr.com](https://structurizr.com) |
+| C4 Model | Modelo conceptual que permite documentar las decisiones arquitectónicas del sistema de manera jerárquica y comprensible para todo el equipo. | [https://c4model.com](https://c4model.com) |
+| Trello | Plataforma de gestión de proyectos que facilita la organización de tareas y entregables mediante tableros, listas y tarjetas. Se emplea para la planificación ágil (sprints, backlogs, revisiones). | [https://trello.com](https://trello.com) |
+| UXPressia | Utilizada para la creación de User Personas y Customer Journey Maps, ayudando a entender las necesidades, frustraciones y objetivos de los usuarios que gestionan tareas dentro de la app. | [https://uxpressia.com](https://uxpressia.com) |
 
 #### 4.1.2. Source Code Management 
 
+En esta sección, el equipo de desarrollo de SpacePulse establece los medios y el esquema de organización aplicados para el seguimiento de modificaciones, utilizando GitHub como plataforma principal de control de versiones.  
+De esta manera, se configuró un repositorio remoto en GitHub para almacenar el código fuente, documentar los cambios y colaborar de manera eficiente entre los miembros del equipo durante todo el ciclo de desarrollo.
+
+Se utiliza GitHub como sistema centralizado para el versionado y la colaboración.  
+Los repositorios oficiales del proyecto Task Master son los siguientes:
+
+- Landing Page: ``
+- Movile App Application: ``
+- Backend Web Services: ``
+
+#### Implementación de GitFlow
+
+Para mantener una estructura organizada y evitar conflictos durante el desarrollo colaborativo, el equipo adopta la estrategia **GitFlow**, con ramas bien definidas para diferentes etapas y propósitos del proyecto.
+
+**Ramas base:**
+
+- **main**: Contiene la versión estable del código desplegada en producción.  
+- **develop**: Incluye las últimas actualizaciones y desarrollos en curso que eventualmente serán fusionados a `main`.
+
+**Feature branches:**
+
+Cada nueva funcionalidad o módulo inicia desde `develop`.  
+Convención de nombres: `feature/nombre-descriptivo`  
+Ejemplo: `feature/task-calendar-sync`
+
+Cada repositorio cuenta con flujos de trabajo independientes, integraciones de despliegue automático en Render y acciones de CI/CD configuradas en GitHub Actions.
+
 #### 4.1.3. Source Code Style Guide & Conventions 
 
+El equipo ha definido las siguientes convenciones de nombres y estilos de codificación para el proyecto SpacePulse, aplicadas en los lenguajes HTML, CSS, JavaScript, Kotlin y C#. Todas las nomenclaturas están en inglés, buscando claridad, estandarización y buenas prácticas de desarrollo. Se han adoptado guías de estilo reconocidas y actualizadas para cada tecnología.
+
+## HTML
+
+- Guía adoptada: [W3C HTML Style Guide](https://www.w3.org/TR/html5/)
+- Nomenclatura y convenciones:
+  - Minúsculas para etiquetas y atributos: `<div class="container">`
+  - Indentación: 2 espacios
+  - Atributos entre comillas dobles: `<img src="logo.png" alt="TaskMaster Logo">`
+  - Uso semántico de etiquetas: `<header>`, `<section>`, `<footer>`
+  - Comentarios HTML: `<!-- This is a comment -->`
+
+## CSS
+
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Nomenclatura y convenciones:
+  - `kebab-case` para clases e IDs  
+    Ejemplo: `.main-header`, `#footer-section`
+  - Agrupación de estilos por componente
+  - Evitar el uso de `!important` salvo en casos necesarios
+  - Indentación: 2 espacios
+
+## JavaScript
+
+- Guía adoptada: [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+- Nomenclatura y convenciones:
+  - `camelCase` para variables y funciones  
+    Ejemplo: `let Name = 'Luis';`, `function calculateAverage() {}`
+  - `PascalCase` para clases  
+    Ejemplo: `class DashboardManager {}`
+  - Evitar `snake_case`
+  - Usar `const` y `let` en lugar de `var`
+
+
+## C#
+
+- Nomenclatura y convenciones:
+  - `PascalCase` para clases  
+    Ejemplo: `public class CourseService {}`
+  - `camelCase` para variables, métodos y atributos  
+    Ejemplo: `int totalCourses;`, `calculateProgress();`
+  - Constantes en MAYÚSCULAS con `snake_case`  
+    Ejemplo: `public static final int MAX_MEMBERS = 50;`
+  - Paquetes en minúsculas separados por punto  
+    Ejemplo: `com.spacepulse.backend.controller`
+
+
+## SQL / Data Modeling (Vertabelo)
+
+- Guía adoptada: [SQL Style Guide](https://www.sqlstyle.guide/)
+- Nomenclatura y convenciones:
+  - Nombres en inglés, en singular
+  - Prefijos según entidad o módulo
+  - Palabras reservadas en mayúsculas
+  - Relaciones consistentes entre tablas
+  - Ejemplo:
+    ```sql
+    CREATE TABLE Member (
+      member_id INT PRIMARY KEY,
+      first_name VARCHAR(50),
+      last_name VARCHAR(50),
+      enrollment_date DATE
+    );
+    ```
+
+## Kotlin / XML (Aplicativo móvil – Android Studio)
+
+- Guía adoptada: [Android Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
+- Nomenclatura y convenciones:
+  - Código limpio, reutilizable y seguro
+  - `camelCase` para variables y funciones  
+    Ejemplo: `val userName: String = "Eric"`
+  - `PascalCase` para clases y componentes de UI  
+    Ejemplo: `class DashboardActivity : AppCompatActivity()`
+  - XML en `snake_case`  
+    Ejemplo: `<TextView android:id="@+id/student_name_text" />`
+  - Comentarios claros y concisos
+
+
 #### 4.1.4. Software Deployment Configuration 
+
+## Despliegue del Frontend (Landing Page)
+
+La landing page de SpacePulse fue desarrollada utilizando HTML, CSS y JavaScript, enfocándose en un diseño responsivo, limpio y rápido.  
+El sitio se publica mediante GitHub Pages, lo que permite una distribución gratuita, confiable y accesible desde cualquier navegador.  
+Durante el proceso de preparación para producción, se aplican optimizaciones de carga como la reducción de archivos CSS y JS, la organización modular del código y la compresión de imágenes en formatos .jpg, .png y .svg.  
+
+## Despliegue del Backend (API – .NET)
+
+El backend de SpacePulse está implementado con C#, siguiendo principios de arquitectura modular y escalable.  Actualmente, el entorno de despliegue se realiza en la nube en Render.  
+Se manejan variables de entorno para gestionar las credenciales y configuraciones sensibles, manteniendo la seguridad y trazabilidad del sistema.  
+La API REST está diseñada para gestionar tareas, usuarios y tableros de forma eficiente, garantizando una comunicación estable con el frontend y la aplicación móvil.
+
+## Configuración del Aplicativo Móvil (Android)
+
+La versión móvil de SpacePulse fue desarrollada en Android Studio, empleando Kotlin para la lógica y XML para el diseño de interfaces.  
+En la etapa actual, las pruebas se realizan mediante emuladores locales y dispositivos físicos, asegurando la compatibilidad con diferentes versiones del sistema operativo Android.  
+El despliegue se gestiona mediante la generación de archivos .apk y su distribución interna para pruebas cerradas.  
+El aplicativo mantiene sincronización con el backend en tiempo real, permitiendo a los usuarios gestionar tareas, recibir actualizaciones y visualizar su progreso desde el móvil.
 
 ### 4.2. Landing Page & Mobile Application Implementation 
 
 #### 4.2.1. Sprint 1  
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 1 |
+| Fecha | 9 de mayo del 2026 |
+| Hora | 3:00 p.m. |
+| Lugar | Virtual – Google Meet |
+| Elaborado por | Gabriel Perez Tuesta |
+| Participantes (Reunión de planificación) | ---- |
+| Resumen de la revisión anterior | Al ser el primer sprint, aún no se completa|
+| Resumen de la retrospectiva anterior |Al ser el primer sprint, aún no se completa |
+| Objetivo del Sprint | El objetivo de este sprint es establecer la base técnica y visual del proyecto SpacePulse, desarrollando la landing page y los módulos principales del backend para la gestión de usuarios y tareas. Se busca garantizar que los usuarios puedan gestionar sus primeras tareas. Resultado esperado: Desplegar la primera versión funcional del sistema. Impacto: Validar la propuesta de valor e iniciar pruebas internas. Usuarios objetivo: Personas interesadas en organizar sus actividades y proyectos. Evento clave: Los usuarios pueden registrarse, iniciar sesión y visualizar sus tareas dentro del sistema. |
+| Velocidad del Sprint | El equipo puede atender hasta -- Story Points. |
+| Suma de Story Points | La suma de Story Points planificados para este sprint es de -- Story Points. |
 
 ##### 4.2.1.1. Sprint Planning 1  
 
