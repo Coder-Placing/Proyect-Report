@@ -2985,7 +2985,6 @@ En la Infrastructure Layer de SpacePulse, específicamente para el contexto de I
 
 ## Capítulo IV: Product Implementation & Validation 
 
-### 4.1. Software Configuration Management  
 
 ### 4.1. Software Configuration Management  
 #### 4.1.1. Software Development Environment Configuration  
@@ -3010,9 +3009,9 @@ De esta manera, se configuró un repositorio remoto en GitHub para almacenar el 
 Se utiliza GitHub como sistema centralizado para el versionado y la colaboración.  
 Los repositorios oficiales del proyecto Task Master son los siguientes:
 
-- Landing Page: ``
+- Landing Page: `https://github.com/Coder-Placing/LandingPage-SpacePulse.git`
 - Movile App Application: ``
-- Backend Web Services: ``
+- Backend Web Services: `https://github.com/Coder-Placing/Backend.git`
 
 #### Implementación de GitFlow
 
@@ -3148,7 +3147,7 @@ El aplicativo mantiene sincronización con el backend en tiempo real, permitiend
 | Hora | 3:00 p.m. |
 | Lugar | Virtual – Google Meet |
 | Elaborado por | Gabriel Perez Tuesta |
-| Participantes (Reunión de planificación) | ---- |
+| Participantes (Reunión de planificación) | Aliaga Urbina, Wilder Gonzalo, Via Luna, Bruce, Martinez Gaona, Pablo Afranio, Perez Tuesta, Gabriel, Landa Ortiz, Sergio Javier |
 | Resumen de la revisión anterior | Al ser el primer sprint, aún no se completa|
 | Resumen de la retrospectiva anterior |Al ser el primer sprint, aún no se completa |
 | Objetivo del Sprint | El objetivo de este sprint es establecer la base técnica y visual del proyecto SpacePulse, desarrollando la landing page y los módulos principales del backend para la gestión de usuarios y tareas. Se busca garantizar que los usuarios puedan gestionar sus primeras tareas. Resultado esperado: Desplegar la primera versión funcional del sistema. Impacto: Validar la propuesta de valor e iniciar pruebas internas. Usuarios objetivo: Personas interesadas en organizar sus actividades y proyectos. Evento clave: Los usuarios pueden registrarse, iniciar sesión y visualizar sus tareas dentro del sistema. |
@@ -3210,7 +3209,6 @@ En esta sección, el equipo define los endpoints implementados en el desarrollo 
 <img width="1447" height="383" alt="image" src="https://github.com/user-attachments/assets/662f390c-4232-4dbf-81b3-f01cc816e8c3" />
 
 
-
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
 Desing:
@@ -3219,10 +3217,21 @@ Accedemos a Figma: https://www.figma.com/login
 
 <img width="660" height="321" alt="image" src="https://github.com/user-attachments/assets/839ecb4b-19a6-4d64-8849-194ed666f0be" />
 
+
+
 Deployment
 Ingresamos a Github: https://www.github.com
 
 <img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/52193bc6-7f82-4b5f-870e-cf77edac43be" />
+
+Ingresamos al repositorio de la Landind Page de SpacePulse
+
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/ae4f3f6c-056b-4a20-a269-35b8ad741a69" />
+
+Luego entramos a settings y a Pages, para desplegar la landing page.
+
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/969cf418-f82d-43a9-acf0-9df55ed50d59" />
+
 
 Accedamos a Render
 <img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/af21a728-0c95-4bb3-8893-d1be3c41e1e8" />
