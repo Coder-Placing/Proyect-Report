@@ -3137,6 +3137,10 @@ El aplicativo mantiene sincronización con el backend en tiempo real, permitiend
 
 #### 4.2.1. Sprint 1  
 
+
+
+##### 4.2.1.1. Sprint Planning 1  
+
 | Elemento | Detalle |
 |-----------|----------|
 | Sprint # | Sprint 1 |
@@ -3148,12 +3152,41 @@ El aplicativo mantiene sincronización con el backend en tiempo real, permitiend
 | Resumen de la revisión anterior | Al ser el primer sprint, aún no se completa|
 | Resumen de la retrospectiva anterior |Al ser el primer sprint, aún no se completa |
 | Objetivo del Sprint | El objetivo de este sprint es establecer la base técnica y visual del proyecto SpacePulse, desarrollando la landing page y los módulos principales del backend para la gestión de usuarios y tareas. Se busca garantizar que los usuarios puedan gestionar sus primeras tareas. Resultado esperado: Desplegar la primera versión funcional del sistema. Impacto: Validar la propuesta de valor e iniciar pruebas internas. Usuarios objetivo: Personas interesadas en organizar sus actividades y proyectos. Evento clave: Los usuarios pueden registrarse, iniciar sesión y visualizar sus tareas dentro del sistema. |
-| Velocidad del Sprint | El equipo puede atender hasta -- Story Points. |
-| Suma de Story Points | La suma de Story Points planificados para este sprint es de -- Story Points. |
-
-##### 4.2.1.1. Sprint Planning 1  
+| Velocidad del Sprint | El equipo puede atender hasta 43 Story Points. |
+| Suma de Story Points | La suma de Story Points planificados para este sprint es de 43 Story Points. |
 
 ##### 4.2.1.2. Sprint Backlog 1 
+
+El objetivo principal del Sprint 1 fue implementar las secciones principales de la Landing Page de SpacePulse y desarrollar las funcionalidades base del backend para la gestión de proyectos y tareas.  
+Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en JavaScript y construcción de endpoints.
+
+# Sprint Backlog - SpacePulse
+
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
+|---|---|---|---|---|---|---|---|---|
+| US01 | Visualización de Landing Page | TS01 | Diseño de estructura Landing Page | Crear estructura inicial de la landing con navbar, hero section y footer. | 6 | 3 | Frontend Dev | To Do |
+| US01 | Visualización de Landing Page | TS02 | Implementación sección servicios | Mostrar los beneficios y servicios ofrecidos por SpacePulse. | 5 | 2 | Frontend Dev | To Do |
+| US01 | Visualización de Landing Page | TS03 | Diseño responsive Landing | Adaptar la Landing Page para móviles y tablets. | 4 | 2 | Frontend Dev | To Do |
+| US02 | Acceso a la aplicación | TS04 | Botón de ingreso a la app | Implementar botón “Ingresar” con redirección al sistema principal. | 2 | 1 | Frontend Dev | To Do |
+| US03 | Registro de Usuarios | TS05 | Crear endpoint de registro | Desarrollar endpoint backend para registrar usuarios nuevos. | 6 | 3 | Backend Dev | To Do |
+| US03 | Registro de Usuarios | TS06 | Validación de datos de registro | Validar correo único, contraseña y campos obligatorios. | 5 | 2 | Backend Dev | To Do |
+| US03 | Registro de Usuarios | TS07 | Persistencia de usuarios | Guardar usuarios registrados en la base de datos. | 4 | 1 | Backend Dev | To Do |
+| US04 | Inicio de Sesión | TS08 | Endpoint de login | Implementar autenticación mediante correo y contraseña. | 6 | 3 | Backend Dev | To Do |
+| US04 | Inicio de Sesión | TS09 | Generación de JWT | Generar token JWT para sesiones autenticadas. | 4 | 2 | Backend Dev | To Do |
+| US04 | Inicio de Sesión | TS10 | Manejo de errores login | Mostrar respuesta adecuada cuando las credenciales sean inválidas. | 3 | 1 | Backend Dev | To Do |
+| US07 | Selección de Roles | TS16 | Gestión de roles de usuario | Implementar selección de roles durante el registro. | 4 | 2 | Backend Dev | To Do |
+| US07 | Selección de Roles | TS17 | Restricción de permisos por rol | Validar acceso a funcionalidades según rol asignado. | 5 | 2 | Backend Dev | To Do |
+| US08 | Creación de Espacio | TS18 | Endpoint crear espacio | Permitir registrar espacios con dimensiones, fotos y tipo. | 6 | 3 | Backend Dev | To Do |
+| US08 | Creación de Espacio | TS19 | Modelo entidad Espacio | Crear entidad y relaciones en base de datos para espacios. | 4 | 2 | Backend Dev | To Do |
+| US08 | Creación de Espacio | TS20 | Validación de formulario espacio | Validar datos obligatorios y formato correcto de espacios. | 3 | 1 | Backend Dev | To Do |
+| US11 | Subir espacio para edición | TS21 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Backend Dev | To Do |
+| US11 | Subir espacio para edición | TS22 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Backend Dev | To Do |
+| US38 | Visualización de espacios | TS25 | Endpoint listar espacios | Mostrar espacios registrados del usuario autenticado. | 5 | 2 | Backend Dev | To Do |
+| US38 | Visualización de espacios | TS26 | Consulta de detalles de espacio | Obtener información completa de cada espacio registrado. | 4 | 2 | Backend Dev | To Do |
+| US48 | Configuración de tareas automáticas | TS31 | Endpoint crear tarea monitoreo | Permitir registrar tareas automáticas de monitoreo IoT. | 6 | 3 | Backend Dev | To Do |
+| US48 | Configuración de tareas automáticas | TS32 | Programación de tareas | Configurar ejecución periódica de tareas automáticas. | 5 | 2 | Backend Dev | To Do |
+
+
 
 ##### 4.2.1.3. Development Evidence for Sprint Review  
 
