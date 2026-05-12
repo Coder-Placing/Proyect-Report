@@ -3190,15 +3190,48 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 ##### 4.2.1.3. Development Evidence for Sprint Review  
 
+| Hash   | Rama / Referencia | Mensaje                          | Descripción                                                       | Fecha       |
+|--------|-------------------|----------------------------------|-------------------------------------------------------------------|-------------|
+| 7bcc684 | Backend          | Adjusted Backend                 | Ajustes y correcciones generales en el backend del proyecto.      | 2026-05-11 |
+| 31a5b09 | LandingPage-SpacePulse             | commit add landing page          | Implementación inicial de la landing page del sistema.            | 2026-05-09 |
+| f0e8eda | main             | Update README.md                 | Actualización de la documentación principal del proyecto.         | 2026-05-11 |
+| df9a75a | main             | Update README.md                 | Mejoras y correcciones en el archivo README.                      | 2026-05-09 |
+| e55ebe8 | main             | Expand Report chapter 3 & 4 points | Ampliación de los puntos de los capítulos 3 y 4 del reporte.   | 2026-05-08 |
+
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
 
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
+En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
+
+<img width="1447" height="664" alt="image" src="https://github.com/user-attachments/assets/6e219c3c-cf50-4c24-99f0-c1e68ef6f88a" />
+
+<img width="1447" height="383" alt="image" src="https://github.com/user-attachments/assets/662f390c-4232-4dbf-81b3-f01cc816e8c3" />
+
+
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
+Desing:
+
+Accedemos a Figma: https://www.figma.com/login
+
+<img width="660" height="321" alt="image" src="https://github.com/user-attachments/assets/839ecb4b-19a6-4d64-8849-194ed666f0be" />
+
+Deployment
+Ingresamos a Github: https://www.github.com
+
+<img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/52193bc6-7f82-4b5f-870e-cf77edac43be" />
+
+Accedamos a Render
+<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/af21a728-0c95-4bb3-8893-d1be3c41e1e8" />
+
+
+
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
+
+<img width="1050" height="903" alt="image" src="https://github.com/user-attachments/assets/630a55c7-4636-4a4c-a4c8-0dbe596acfc3" />
 
 
 ## Conclusiones
