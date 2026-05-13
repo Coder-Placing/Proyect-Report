@@ -3217,6 +3217,9 @@ Accedemos a Figma: https://www.figma.com/login
 
 <img width="660" height="321" alt="image" src="https://github.com/user-attachments/assets/839ecb4b-19a6-4d64-8849-194ed666f0be" />
 
+Accedemos al tablero:
+
+<img width="1919" height="1035" alt="image" src="https://github.com/user-attachments/assets/84233535-273b-4169-aeca-16d175ccbd37" />
 
 
 Deployment
