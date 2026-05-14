@@ -3089,15 +3089,36 @@ En la versión móvil, la navegación se organizará mediante una barra inferior
 
 #### 3.1.4. Mobile Applications UX/UI Design  
 
+El diseño UX/UI de la aplicación móvil de SpacePulse se desarrolló con el objetivo de representar de forma clara las principales interacciones de los usuarios dentro de la plataforma. Para ello, se consideraron dos perfiles principales: el cliente, quien registra espacios, revisa avances, monitorea alertas, consulta pagos y visualiza reportes; y el remodelador, quien gestiona proyectos asignados, revisa tareas, actualiza avances y consulta su calendario de trabajo. A partir de estos flujos, se elaboraron wireframes, wireflows, mock-ups, user flows y un prototipo interactivo que permite visualizar cómo funcionaría la aplicación desde la experiencia del usuario. Todo realizado en figma y visible en el siguiente enlace: [Lienzo en Figma](https://www.figma.com/design/wM4jmVau4dlkKhGnMwnJ93/SpacePulse?node-id=0-1&p=f&t=P0AsdIr3Pfa4T79N-0)
+
 ##### 3.1.4.1. Mobile Applications Wireframes  
+
+Los wireframes de la aplicación móvil de SpacePulse representan la estructura inicial de las pantallas, sin aplicar todavía la identidad visual final del producto. En esta etapa se definió la distribución de los elementos principales, como formularios, botones, tarjetas, menús inferiores, filtros, estados vacíos, ventanas emergentes y pantallas diferenciadas para cliente y remodelador. Estos wireframes permitieron organizar la navegación de la app y validar que cada módulo principal, como espacios, monitoreo, pagos, reportes y perfil, cuente con una estructura clara antes de pasar al diseño visual final.
+
+![Wireframes_app](Assets/Wireframes_app.png)
 
 ##### 3.1.4.2. Mobile Applications Wireflow Diagrams  
 
+Los wireflow diagrams muestran cómo se conectan las diferentes pantallas de la aplicación móvil de SpacePulse a partir de las acciones del usuario. En estos diagramas se representan rutas como el inicio de sesión, el registro, la selección de rol, la gestión de espacios, la revisión de alertas, el proceso de pagos, la consulta de reportes y la actualización de tareas por parte del remodelador. Además, se incluyen interacciones específicas como botones, tarjetas, pestañas, navegación inferior y ventanas modales, permitiendo entender cómo el usuario avanza de una pantalla a otra dentro de la aplicación.
+
+![Wireflow_app](Assets/Wireflow_app.png)
+
 ##### 3.1.4.3. Mobile Applications Mock-ups  
+
+Los mock-ups de la aplicación móvil de SpacePulse corresponden a la versión visual final de los wireframes. En esta etapa se aplicó la identidad gráfica del producto, incluyendo la paleta de colores, tipografías, iconografía, logo, fotografías de perfil, estilos de botones, tarjetas, formularios y estados visuales. El diseño mantiene una apariencia moderna, limpia y profesional, usando tonos sobrios para transmitir confianza y un acento cálido para resaltar acciones importantes. De esta manera, los mock-ups permiten visualizar con mayor precisión cómo se verá la aplicación para clientes y remodeladores.
+
+![Mock-ups_app](Assets/Mock-ups_app.png)
 
 ##### 3.1.4.4. Mobile Applications User Flow Diagrams  
 
+Los user flow diagrams describen los recorridos principales que realizan los usuarios dentro de la aplicación móvil. Para el cliente, se consideran flujos como registrarse, crear un espacio, revisar el avance del proyecto, consultar alertas, realizar pagos y visualizar reportes. Para el remodelador, se consideran flujos como revisar proyectos asignados, consultar tareas, actualizar el estado de una tarea y acceder al calendario de actividades. Estos diagramas ayudan a representar de forma ordenada las decisiones y acciones del usuario durante el uso de SpacePulse.
+
+![User-flow_app](Assets/User-flow_app.png)
+
 ##### 3.1.4.5. Mobile Applications Prototyping  
+
+El prototipo interactivo de la aplicación móvil de SpacePulse fue desarrollado a partir de los mock-ups, conectando las pantallas mediante interacciones básicas en Figma. Este prototipo permite simular la navegación real de la app, incluyendo el uso del menú inferior, botones principales, tarjetas seleccionables, pestañas internas, formularios y ventanas emergentes. Gracias a ello, se puede probar el recorrido del cliente y del remodelador antes de una implementación funcional, identificando si los flujos son comprensibles y si las acciones principales están correctamente conectadas.
+Se puede ver directamente en el siguiente enlace: [Prototipo SpacePulse](https://www.figma.com/proto/wM4jmVau4dlkKhGnMwnJ93/SpacePulse?node-id=64-4412&p=f&t=D39hUrnmO2gtsP5t-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=64%3A4412)
 
 ## Capítulo IV: Product Implementation & Validation 
 
