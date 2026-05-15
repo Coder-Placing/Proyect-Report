@@ -3087,7 +3087,7 @@ En la versión móvil, la navegación se organizará mediante una barra inferior
 <br>
 
 <p align="center">
-  <img src="Assets/LandingPageWireframe.png" alt="wireframe" width="1000">
+  <img src="Assets/LandingPage_Wireframe.png" alt="wireframe" width="1000">
 </p>
 ##### 3.1.3.2. Landing Page Mock-up  
 <br>
