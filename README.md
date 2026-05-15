@@ -3189,13 +3189,37 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 ##### 4.2.1.3. Development Evidence for Sprint Review  
 
-| Hash   | Rama / Referencia | Mensaje                          | Descripción                                                       | Fecha       |
-|--------|-------------------|----------------------------------|-------------------------------------------------------------------|-------------|
-| 7bcc684 | Backend          | Adjusted Backend                 | Ajustes y correcciones generales en el backend del proyecto.      | 2026-05-11 |
-| 31a5b09 | LandingPage-SpacePulse             | commit add landing page          | Implementación inicial de la landing page del sistema.            | 2026-05-09 |
-| f0e8eda | main             | Update README.md                 | Actualización de la documentación principal del proyecto.         | 2026-05-11 |
-| df9a75a | main             | Update README.md                 | Mejoras y correcciones en el archivo README.                      | 2026-05-09 |
-| e55ebe8 | main             | Expand Report chapter 3 & 4 points | Ampliación de los puntos de los capítulos 3 y 4 del reporte.   | 2026-05-08 |
+### Development Evidence for Landing Page
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+| LandingPage-SpacePulse|main|31a5b09|commit add landing page|-| 09/05/2026
+| LandingPage-SpacePulse|main|3656e7c|Logo Agregado|-|13/05/2026
+| LandingPage-SpacePulse|main|77aa98c|carpetas borradas|-|04/05/2026
+
+### Development Evidence for FrontEnd
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile|main|6cd6ed9|Primer commit|-|14/05/2026
+|SpacePulse-AppMobile|develop|23a2ca3|added screen views and functions|-|14/05/2026
+|SpacePulse-AppMobile|main|c5f39e0|Merge pull request #1 from Coder-Placing/develop|update app|15/05/2026
+
+### Development Evidence for Backend
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|Backend|main|7bcc684|Adjusted Backend|-|11/05/2026
+|Backend|main|62e90ae|Update README.md|-|12/05/2026
+|Backend|main|8c79443|Updated IoT|-|13/05/2026
+|Backend|main|a20c326|updated Readings|-|13/05/2026
+|Backend|main|7175560|Update README.md|-|13/05/2026
+|Backend|main|b96298b|Updated and finished IoT - Before Notifications|-|14/05/2026
+|Backend|main|fa707b2|Finished notifications - pre corrections|-|14/05/2026
+|Backend|testing|5aa2c9c|added Testing Suite|-|14/05/2026
+|Backend|testing|7462a11|updated testing suite|-|14/05/2026
+|Backend|testing|0ff001e|fix testing suite|-|14/05/2026
+|Backend|testing|e38a96f|finished testing suite for sprint 1|-|14/05/2026
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
 
@@ -3266,50 +3290,97 @@ A continuación, se presentan los commits relacionados con los avances en Testin
 
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
+* US01: Visualización de Landing Page
+* US02: Acceso a la aplicación
+
+![Landing Page Deployed](Assets/Landing_Testing.png)
+
+* US03: Registro de Usuarios
+* US04: Inicio de Sesión
+* US07: Selección de Roles
+
+![User Testing](Assets/User_Swagguer.png)
+
+![User Testing](Assets/JWT_Swagger.png)
+
+* US08: Creación de Espacio
+* US11: Subir espacio para edición
+* US38: Visualización de espacios
+
+![Space Testing](Assets/Spaces_Swagger.png)
+
+* US48: Configuración de tareas automáticas
+
+![Task Testing](Assets/Tasks_Swagger.png)
+![IoT Testing](Assets/Iot_Swagger.png)
+![Notifications Testing](Assets/Notifications_Swagger.png)
+![Reading Testing](Assets/Readings_Swagger.png)
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
 En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
 
-<img width="1447" height="664" alt="image" src="https://github.com/user-attachments/assets/6e219c3c-cf50-4c24-99f0-c1e68ef6f88a" />
-
-<img width="1447" height="383" alt="image" src="https://github.com/user-attachments/assets/662f390c-4232-4dbf-81b3-f01cc816e8c3" />
+|HTTP VERB| Endpoint URL (Local)a | Operation ID | Summary| 
+|--------|-------|-------------------|-------------------------|
+| POST|/api/v1/monitoring/io-t-devices | CreateDevice| Creates an IoT device in the System|
+| GET| /api/v1/monitoring/io-t-devices/space/{spaceId} | GetDeviceById| Get the information of all the IoT Devices|
+| PUT| /api/v1/monitoring/io-t-devices/{deviceId}| UpdateDeviceContent| Update IoT device specific content|
+| PUT| /api/v1/monitoring/io-t-devices/{deviceId}/toggle| UpdateDeviceOn| Turn on/off IoT device|
+| GET| /api/v1/monitoring/io-t-devices/my-devices| GetDeviceByUser| Get general information of IoT device by User Id|
+| GET| /api/v1/monitoring/notifications/user| GetNotificationsByUser| Get all the notifications by the user JWT Token|
+| PUT| /api/v1/monitoring/notifications/{id}/read| UpdateNotificationsReadStatus| Update notification "Is_Read" status from 0 to 1 (yes to no)|
+| GET| /api/v1/monitoring/readings/device/{deviceId}| GetDeviceReadingsByDeviceId| Get the complete information from IoT device by DeviceId|
+| GET| /api/v1/monitoring/readings/space/{spaceId}| GetDeviceReadingsBySpaceId| Get the complete information from IoT device by SpaceId|
+| GET| /api/v1/monitoring/readings/user| GetDeviceReadingsByUser| Get the complete information from IoT device by user JWT Token|
+| GET| /api/v1/space| GetAllSpaces| Get All the Spaces Information |
+| POST| /api/v1/space| CreateSpace| Create a Space in the system|
+| GET| /api/v1/space/{id}| GetSpaceById| Get information from the Space By SpaceId|
+| PUT| /api/v1/space/{id}| UpdateSpacesContent| Update Space content|
+| DELETE| /api/v1/space/{id}| DeleteSpaceById| Delete Space By SpaceId|
+| POST| /api/v1/space/{id}/accept| AceptSpaceById| Acept remodel Space by SpaceId|
+| POST| /api/v1/monitoring/tasks/request| CreateTaskRequest| Create a Task Request to a Space|
+| POST| /api/v1/monitoring/tasks/plan| CreateTaskPlan| Update a Task Plan to a Space|
+| GET| /api/v1/monitoring/tasks/{id}| GetTaskById| Get Task information by TaskId|
+| DELETE| /api/v1/monitoring/tasks/{id}| DeleteTaskById| Delete Task by TaskId|
+| PUT| /api/v1/monitoring/tasks/{id}/content| UpdateTaskContent| Update specific content from Task by TaskId and homeowner JWT Token|
+| PUT| /api/v1/monitoring/tasks/{id}/progress| UpdateTaskProgress| Update specific content from Task by TaskId and remodeler JWT Token|
+| POST| /api/users/register| SignUp| Creates a new user in the system.|
+| POST| /api/users/login| SignIn| Authenticates a user and returns a basic session payload.|
+| GET| /api/users/{userId}| GetUserById| Gets a user by id.|
+| POST| /api/users/{userId}/payment-methods| CreateUserPaymentMethods| Creates the payment methods for the user|
 
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
-Desing:
-
-Accedemos a Figma: https://www.figma.com/login
-
-<img width="660" height="321" alt="image" src="https://github.com/user-attachments/assets/839ecb4b-19a6-4d64-8849-194ed666f0be" />
-
-Accedemos al tablero:
-
-<img width="1919" height="1035" alt="image" src="https://github.com/user-attachments/assets/84233535-273b-4169-aeca-16d175ccbd37" />
+### Deployment for Mockups
 
 
-Deployment
-Ingresamos a Github: https://www.github.com
-
-<img width="1919" height="926" alt="image" src="https://github.com/user-attachments/assets/52193bc6-7f82-4b5f-870e-cf77edac43be" />
-
-Ingresamos al repositorio de la Landind Page de SpacePulse
-
-<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/ae4f3f6c-056b-4a20-a269-35b8ad741a69" />
-
-Luego entramos a settings y a Pages, para desplegar la landing page.
-
-<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/969cf418-f82d-43a9-acf0-9df55ed50d59" />
+### Deployment for Landing Page
 
 
-Accedamos a Render
-<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/af21a728-0c95-4bb3-8893-d1be3c41e1e8" />
+
+### Deployment for Backend
 
 
+
+
+### Deployment for Frontend
+
+
+
+
+Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage-SpacePulse/
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
-<img width="1050" height="903" alt="image" src="https://github.com/user-attachments/assets/630a55c7-4636-4a4c-a4c8-0dbe596acfc3" />
+### Team Collaboration for Landing Page
 
+![Team Collaboration for Landing Page](Assets/Landing_Participation.png)
+
+### Team Collaboration for Frontend
+
+![Team Collaboration for Frontend](Assets/Frontend_Participation.png)
+
+### Team Collaboration for Backend
 
 ## Conclusiones
 
