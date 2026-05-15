@@ -3388,12 +3388,24 @@ Finalmente se despliegueara y se comprobara que todo este conectado para su core
 
 ### Deployment for Frontend
 
+Debido a las limitantes para la ejecucion de una aplicacion estatica usaremos appetize.io el cual servira para probar los mockups a mayor detalle
 
+![Frontend Deployed](Assets/Frontend_Deployment.png)
+
+Para eso generaremos el APK de la aplicacion movil y la subiremos a esta pagina para que asi genera esta version de prueba publica
+
+![Frontend Deployed](Assets/Select_APK.png)
+
+Finalmente veremos que la aplicacion es accesible en esta pagina, actuando como el despliegue de la aplicacion estatica
+
+![Frontend Deployed](Assets/Frontend_Deployed.png)
 
 
 Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage-SpacePulse/
 
 Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.html
+
+Enlace al Frontend Desplegado: https://appetize.io/app/b_cjyekwwt6wtlqt7dfdhvnlrdey 
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
