@@ -47,14 +47,16 @@ Martinez Gaona, Pablo Afranio (U202120011)
 ## Registro de Versiones del Informe
 
 
-| Versión | Fecha      | Autor                        | Descripción de modificación                   |              
-| ------- |------------|------------------------------|-----------------------------------------------|
-| 1.0  | 09/04/2026 | Bruce Via Luna               | Creacion del documento                        |
-| 1.01 | 20/04/2026 | Bruce Via                    | Creacion de Epicas y correccion del documento |
-| 1.02 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Startup Profile                               |
-| 1.03 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Solution Profile(Lean UX Process)             |
-| 1.04 | 22/04/2026 |  Perez Tuesta Gabriel |         Tactical-Level Domain-Driven Design                                      |
+| Versión | Fecha | Autor  | Descripción de modificación   |              
+| ------- |-----|-----------|---------------------------|
+| 1.0  | 09/04/2026 | Bruce Via Luna  | Creacion del documento      |
+| 1.01 | 20/04/2026 | Bruce Via  | Creacion de Epicas y correccion del documento |
+| 1.02 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Startup Profile  |
+| 1.03 | 22/04/2026 | Aliaga Urbina Wilder Gonzalo | Solution Profile(Lean UX Process)  |
+| 1.04 | 22/04/2026 |  Perez Tuesta Gabriel |  Tactical-Level Domain-Driven Design  |
 |1.05|24/04/2026  | Todos los integrantes | Capitulo I <br> Capitulo II
+|2.00|3/00/2026  | Martinez Gaona, Pablo Afranio | Construccion inicial de Capitulo III y IV
+|2.01|14/04/2026  | Todos los integrantes | Finalizacion de Capitulo III y Capitulo IV
 
 
 ## Project Report Collaboration Insights
@@ -72,10 +74,15 @@ Martinez Gaona, Pablo Afranio (U202120011)
 | [https://github.com/Coder-Placing/Proyect-Report](https://github.com/Coder-Placing/Proyect-Report) |
 
 
-**TB1:**
+**AV1:**
 
 ![](Assets/Insights_1.png)
 ![](Assets/Insights_2.png)
+
+**TB1:**
+
+![](Assets/Insights_3.png)
+![](Assets/Insights_4.png)
 
 ## Contenido
 
@@ -182,8 +189,8 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 
 | Criterio específico | Acciones realizadas   | Conclusiones |
 |--------|---------------|------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo** <br> AV1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br>TB1: Elaboré y documenté el testing suite del sprint, aplicando casos de prueba para validar funcionalidades. Además, desarrollé la primera versión de la aplicación móvil<br><br> -**Martinez Gaona, Pablo Afranio** <br> AV1: Se revisaron y aplicaron conceptos relacionados con Domain-Driven Design, Bounded Contexts, Context Mapping, modelo C4, capas de arquitectura, diagramas UML y diseño de base de datos. Estos conocimientos fueron utilizados para desarrollar la arquitectura de SpacePulse, especialmente en los bounded contexts IoT Monitoring and Notifications y Space Management <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br><br> -**Perez Tuesta, Gabriel** <br> AV1: Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br><br> -**Sergio Javier Landa Ortiz**<br> AV1: Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br><br> -**Bruce Via Luna** <br> AV1:Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo <br>TB1: Realice en completo el backend junto con los multiples escenario de prueba hasta abarcar con lo requerido dela entrega de su desarrollo<br><br>| **AV1:** Como equipo, se evidencia una actualización integral y proactiva de conocimientos aplicados a las fases tempranas del ciclo de vida del software. Los integrantes han investigado y dominado con éxito conceptos que abarcan desde el diseño estratégico y de negocio (Lean UX, Startup Profile, análisis competitivo para SpacePulse), hasta el modelado de arquitectura (EventStorming, Bounded Contexts) y la ingeniería de requisitos (Needfinding). En conjunto, esta asimilación metodológica y técnica garantiza que la solución de software en desarrollo cuente con una dirección clara, bases arquitectónicas robustas y funcionalidades estrictamente alineadas a las necesidades validadas del mercado y los usuarios        |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Martinez Gaona, Pablo Afranio**<br> AV1: Durante el desarrollo del trabajo se identificó la necesidad de aprender y reforzar herramientas como Structurizr, PlantUML, vertabeo y el enfoque de arquitectura por capas. <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br><br> -**Wilder Gonzalo Aliaga Urbina** <br> AV1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br>TB1: Investigué cómo organizar pruebas, documentar evidencias y adaptarme al desarrollo de la aplicación móvil. <br><br> -**Perez Tuesta, Gabriel** <br> AV1: Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br>TB1: <BR><br> -**Sergio Javier Landa Ortiz**<br> AV1: Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br>TB1: <br><br> -**Bruce Via Luna** <br> AV1: Realice los analisis de diagramas, la estructura de como sera el desarrollo mediante las user stories para llevar el proyecto por la ruta correcta hacia una arquitectura limpia y funcional<br>TB1: Pense en los multiples escenario de desarrollo de la aplicacion que puedan suceder para tener en cuenta las actitudes de los usuarios y que acciones puedan tomar, haciendo una logica de negocio implecable, evitando que el codigo se sobreescriba constantemente <br><br>| **AV1:** El equipo demuestra una clara conciencia sobre la importancia del aprendizaje continuo en el ciclo de vida del desarrollo de software. Los integrantes han evidenciado esta competencia al salir de su zona de confort para investigar proactivamente de forma autónoma, ya sea adquiriendo una visión estratégica de negocio (Lean UX y análisis de mercado), buscando nuevas metodologías de representación arquitectónica (Bounded Context) o explorando nuevos formatos para sintetizar hallazgos competitivos. En conjunto, reconocen que el éxito de un proyecto tecnológico exige adaptabilidad y una actualización constante de conocimientos más allá de lo estrictamente técnico.        |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo** <br> AV1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br>TB1: Elaboré y documenté el testing suite del sprint, aplicando casos de prueba para validar funcionalidades. Además, desarrollé la primera versión de la aplicación móvil<br><br> -**Martinez Gaona, Pablo Afranio** <br> AV1: Se revisaron y aplicaron conceptos relacionados con Domain-Driven Design, Bounded Contexts, Context Mapping, modelo C4, capas de arquitectura, diagramas UML y diseño de base de datos. Estos conocimientos fueron utilizados para desarrollar la arquitectura de SpacePulse, especialmente en los bounded contexts IoT Monitoring and Notifications y Space Management <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br><br> -**Perez Tuesta, Gabriel** <br> AV1: Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, aplicando nuevas tecnologías para la construcción del backend y la configuración del despliegue del sistema. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos técnicos, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional <br><br> -**Sergio Javier Landa Ortiz**<br> AV1: Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, asumiendo la responsabilidad de la landing page desde la creación de los wireframes y mockups iniciales, además de apoyar en el diseño en Figma de la aplicación. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos visuales y de interfaz, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional. <br><br> -**Bruce Via Luna** <br> AV1:Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo <br>TB1: Realice en completo el backend junto con los multiples escenario de prueba hasta abarcar con lo requerido dela entrega de su desarrollo<br><br>| **AV1:** Como equipo, se evidencia una actualización integral y proactiva de conocimientos aplicados a las fases tempranas del ciclo de vida del software. Los integrantes han investigado y dominado con éxito conceptos que abarcan desde el diseño estratégico y de negocio (Lean UX, Startup Profile, análisis competitivo para SpacePulse), hasta el modelado de arquitectura (EventStorming, Bounded Contexts) y la ingeniería de requisitos (Needfinding). En conjunto, esta asimilación metodológica y técnica garantiza que la solución de software en desarrollo cuente con una dirección clara, bases arquitectónicas robustas y funcionalidades estrictamente alineadas a las necesidades validadas del mercado y los usuarios <br><br> **TB1:** Como equipo, se evidencia una transición exitosa de la fase de diseño y arquitectura hacia la implementación técnica y validación del producto. Los integrantes han aplicado proactivamente nuevos conocimientos para el desarrollo frontend (aplicación móvil y landing page), la construcción del backend y la configuración del despliegue. Asimismo, destaca la actualización práctica en metodologías de aseguramiento de calidad (elaboración de testing suites y escenarios de prueba) y la iteración continua de la experiencia de usuario (ajustes en flujos, interfaces y wireframes). Esto demuestra que el equipo es capaz de investigar y adoptar nuevas herramientas tecnológicas de forma autónoma para resolver desafíos técnicos y cumplir con los requerimientos del sprint backlog.      |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Martinez Gaona, Pablo Afranio**<br> AV1: Durante el desarrollo del trabajo se identificó la necesidad de aprender y reforzar herramientas como Structurizr, PlantUML, vertabeo y el enfoque de arquitectura por capas. <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br><br> -**Wilder Gonzalo Aliaga Urbina** <br> AV1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br>TB1: Investigué cómo organizar pruebas, documentar evidencias y adaptarme al desarrollo de la aplicación móvil. <br><br> -**Perez Tuesta, Gabriel** <br> AV1: Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br>TB1:Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el rol de desarrollo backend y despliegue en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas que garantizaran una arquitectura sólida. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software. <BR><br> -**Sergio Javier Landa Ortiz**<br> AV1: Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br>TB1: Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el diseño y desarrollo de la landing page, la creación de sus wireframes y mockups, y el apoyo en el Figma de la aplicación en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas de diseño y maquetación que garantizaran una interfaz sólida y funcional. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software <br><br> -**Bruce Via Luna** <br> AV1: Realice los analisis de diagramas, la estructura de como sera el desarrollo mediante las user stories para llevar el proyecto por la ruta correcta hacia una arquitectura limpia y funcional<br>TB1: Pense en los multiples escenario de desarrollo de la aplicacion que puedan suceder para tener en cuenta las actitudes de los usuarios y que acciones puedan tomar, haciendo una logica de negocio implecable, evitando que el codigo se sobreescriba constantemente <br><br>| **AV1:** El equipo demuestra una clara conciencia sobre la importancia del aprendizaje continuo en el ciclo de vida del desarrollo de software. Los integrantes han evidenciado esta competencia al salir de su zona de confort para investigar proactivamente de forma autónoma, ya sea adquiriendo una visión estratégica de negocio (Lean UX y análisis de mercado), buscando nuevas metodologías de representación arquitectónica (Bounded Context) o explorando nuevos formatos para sintetizar hallazgos competitivos. En conjunto, reconocen que el éxito de un proyecto tecnológico exige adaptabilidad y una actualización constante de conocimientos más allá de lo estrictamente técnico. <br><br> **TB1:**  El equipo demuestra que el aprendizaje continuo es un pilar indispensable no solo en la planificación, sino durante el desarrollo activo y la codificación del producto. Al enfrentarse a la construcción de la interfaz, el despliegue del sistema y la estructuración de una lógica de negocio robusta, los miembros reconocieron la necesidad de investigar y dominar de forma autónoma nuevas herramientas de desarrollo, diseño y pruebas. Esta adaptabilidad y proactividad les ha permitido anticipar escenarios de uso, mejorar las vistas del usuario y garantizar una arquitectura sólida, reafirmando de manera práctica que la rápida evolución de las tecnologías de la información exige una constante actualización técnica para asegurar el éxito del proyecto    |
 <hr>
 
 ## Objetivos SMART
@@ -968,7 +975,7 @@ Complementarias:
     <td><strong>URL</strong></td>
     <td>
     
-  `https://drive.google.com/file/d/12ziUWQE9mXweRocDbyVaa0xu8OfRvco2/view?usp=sharing`
+  `hthttps://drive.google.com/file/d/1bcRXO3pZcL19HskLJXCnWymXl-MhfNP8/view?usp=drivesdk`
 
   </td>
   </tr>
@@ -3538,24 +3545,31 @@ Finalmente se despliegueara y se comprobara que todo este conectado para su core
 
 ### Deployment for Frontend
 
-Debido a las limitantes para la ejecucion de una aplicacion estatica usaremos appetize.io el cual servira para probar los mockups a mayor detalle
+Debido a las limitantes para la ejecucion de una aplicacionFirebase el cual servira para probar los mockups a mayor detalle
 
-![Frontend Deployed](Assets/Frontend_Deployment.png)
+![Frontend Deployed](Assets/Firebase_Project.png)
+
+![Frontend Deployed](Assets/SpacePulse_Space.png)
 
 Para eso generaremos el APK de la aplicacion movil y la subiremos a esta pagina para que asi genera esta version de prueba publica
 
 ![Frontend Deployed](Assets/Select_APK.png)
 
-Finalmente veremos que la aplicacion es accesible en esta pagina, actuando como el despliegue de la aplicacion estatica
+Finalmente llenaremos con la inforacion requerida por Firebase para desplegar la aplicacion
 
-![Frontend Deployed](Assets/Frontend_Deployed.png)
+![Frontend Deployed](Assets/Deployment.png)
+
+![Frontend Deployed](Assets/Deployed.png)
+
+Y abriremos la aplicacion desde nuestros celulares
+
+![Frontend Deployed](Assets/Frontend_Downloaded.jpeg)
 
 
 Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage-SpacePulse/
 
 Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.html
 
-Enlace al Frontend Desplegado: https://appetize.io/app/b_cjyekwwt6wtlqt7dfdhvnlrdey 
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
