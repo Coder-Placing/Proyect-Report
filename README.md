@@ -3199,6 +3199,34 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
 
+En esta sección se explica y presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados para los Web Services relacionados con los User Stories especificados en el Sprint 1.
+
+En el caso de los tests de BDD, se han elaborado los archivos .feature utilizando el lenguaje Gherkin y los archivos Steps correspondientes en el lenguaje de programación C#. A continuación, se detalla la relación de tests diseñados y la evidencia de su implementación.
+
+## 1. Relación de Unit Tests
+Los Unit Tests se han enfocado en validar la lógica de negocio y las validaciones de las entidades de dominio y servicios de aplicación.
+
+* User Registration & Authentication: Relacionados con User, RegisterUserCommandHandler, y TokenGenerationService. Validan la unicidad del correo, el hasheo de contraseñas y la correcta generación del JWT (Relacionado con US03, US04).
+* Space Management: Relacionados con Space, CreateSpaceCommand, y SpaceAppService. Validan que la creación de espacios cumpla con las dimensiones, restricciones de tipo de espacio y reglas de publicación (Relacionado con US08, US11, US38).
+* Monitoring Tasks: Relacionados con WorkItem, IoTDevice, y los Command Handlers de monitoreo. Validan la correcta programación y persistencia de las tareas automáticas (Relacionado con US48).
+
+## 2. Acceptance Tests (BDD - Gherkin)
+Bajo el enfoque BDD, se han diseñado escenarios que cubren los flujos principales de las User Stories del backend. Estos archivos .feature validan el comportamiento desde la perspectiva del usuario final interactuando con los endpoints de la API.
+
+
+
+## 3. Repositorio y Trazabilidad de Commits
+
+**Ruta del repositorio de Testing:** https://github.com/coder-placing/backend/tree/testing/backend/Backend-testing
+
+A continuación, se presentan los commits relacionados con los avances en Testing y Backend para este Sprint 1:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| coder-placing | testing | f4b12a3 | test: UserRegistration BDD features and steps | Added Gherkin features for US03 and US04 with initial step definitions. | 14/05/2026 |
+| coder-placing | testing | d866a9d | feat: CreateSpaceCommandHandler and querys | CreateSpaceCommand and handlers implemented with respective unit tests. | 13/05/2026 |
+| coder-placing | testing | 9e2c1f0 | feat: LoginResource and Auth endpoints | Implemented JWT generation logic and login resource for US04. | 12/05/2026 |
+
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
