@@ -3128,6 +3128,9 @@ Los user flow diagrams describen los recorridos principales que realizan los usu
 ##### 3.1.4.5. Mobile Applications Prototyping  
 
 El prototipo interactivo de la aplicación móvil de SpacePulse fue desarrollado a partir de los mock-ups, conectando las pantallas mediante interacciones básicas en Figma. Este prototipo permite simular la navegación real de la app, incluyendo el uso del menú inferior, botones principales, tarjetas seleccionables, pestañas internas, formularios y ventanas emergentes. Gracias a ello, se puede probar el recorrido del cliente y del remodelador antes de una implementación funcional, identificando si los flujos son comprensibles y si las acciones principales están correctamente conectadas.
+
+![User-flow_app](Assets/Ejecution_Mockup.png)
+
 Se puede ver directamente en el siguiente enlace: [Prototipo SpacePulse](https://www.figma.com/proto/wM4jmVau4dlkKhGnMwnJ93/SpacePulse?node-id=64-4412&p=f&t=D39hUrnmO2gtsP5t-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=64%3A4412)
 
 ## Capítulo IV: Product Implementation & Validation 
