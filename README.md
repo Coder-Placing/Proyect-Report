@@ -3252,15 +3252,17 @@ AutomatedTasksSteps.cs
 
 ## 4. Repositorio y Trazabilidad de Commits
 
-**Ruta del repositorio de Testing:** https://github.com/coder-placing/backend/tree/testing/backend/Backend-testing
+**Ruta del repositorio de Testing:** https://github.com/Coder-Placing/Backend/tree/testing
 
 A continuación, se presentan los commits relacionados con los avances en Testing y Backend para este Sprint 1:
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| coder-placing | testing | f4b12a3 | test: UserRegistration BDD features and steps | Added Gherkin features for US03 and US04 with initial step definitions. | 14/05/2026 |
-| coder-placing | testing | d866a9d | feat: CreateSpaceCommandHandler and querys | CreateSpaceCommand and handlers implemented with respective unit tests. | 13/05/2026 |
-| coder-placing | testing | 9e2c1f0 | feat: LoginResource and Auth endpoints | Implemented JWT generation logic and login resource for US04. | 12/05/2026 |
+| Coder-Placing/Backend | testing | e38a96f | finished testing suite for sprint 1 | | 14/05/2026 |
+| Coder-Placing/Backend | testing | 0ff001e | fix testing suite | | 14/05/2026 |
+| Coder-Placing/Backend | testing | 7462a11 | updated testing suite | | 14/05/2026 |
+| Coder-Placing/Backend | testing | 5aa2c9c | added Testing Suite | | 14/05/2026 |
+
 
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
