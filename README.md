@@ -3093,7 +3093,7 @@ En la versión móvil, la navegación se organizará mediante una barra inferior
 <br>
 
 <p align="center">
-  <img src="Assets/LandingPageMockUp.png" alt="MockUp" width="1000">
+  <img src="Assets/LandingPageMockup.png" alt="MockUp" width="1000">
 </p>
 
 
