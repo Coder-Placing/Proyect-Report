@@ -3135,36 +3135,441 @@ Se puede ver directamente en el siguiente enlace: [Prototipo SpacePulse](https:/
 
 ## Capítulo IV: Product Implementation & Validation 
 
-### 4.1. Software Configuration Management  
 
+### 4.1. Software Configuration Management  
 #### 4.1.1. Software Development Environment Configuration  
+En este apartado se describe la configuración del entorno de desarrollo de Task Master, establecida para garantizar la correcta integración, colaboración y trazabilidad de las actividades realizadas por los miembros del equipo.  
+Se definen las herramientas, plataformas y productos de software utilizados a lo largo del ciclo de vida del desarrollo, desde la gestión del proyecto hasta el despliegue y la documentación técnica.
+
+| Plataforma / Herramienta | Descripción | Enlace |
+|---------------------------|--------------|---------|
+| GitHub | Plataforma de control de versiones basada en Git que permite la colaboración entre desarrolladores, la gestión de ramas, control de cambios y automatización del despliegue continuo (CI/CD). | [https://github.com](https://github.com) |
+| Render | Servicio de despliegue automatizado para backend y frontend. Facilita la integración continua, escalado automático y monitoreo del sistema en producción. | [https://render.com](https://render.com) |
+| Figma | Herramienta colaborativa de diseño de interfaces, utilizada para la creación de wireframes, mockups y prototipos interactivos de Task Master. Permite trabajo simultáneo entre diseñadores y desarrolladores. | [https://www.figma.com](https://www.figma.com) |
+| Structurizr | Herramienta usada para representar la arquitectura C4 de Task Master (Contexto, Contenedor, Componente, Código), mostrando la relación entre los módulos principales (Gestión de Tareas, Tableros, Usuarios, Visualización). | [https://structurizr.com](https://structurizr.com) |
+| C4 Model | Modelo conceptual que permite documentar las decisiones arquitectónicas del sistema de manera jerárquica y comprensible para todo el equipo. | [https://c4model.com](https://c4model.com) |
+| Trello | Plataforma de gestión de proyectos que facilita la organización de tareas y entregables mediante tableros, listas y tarjetas. Se emplea para la planificación ágil (sprints, backlogs, revisiones). | [https://trello.com](https://trello.com) |
+| UXPressia | Utilizada para la creación de User Personas y Customer Journey Maps, ayudando a entender las necesidades, frustraciones y objetivos de los usuarios que gestionan tareas dentro de la app. | [https://uxpressia.com](https://uxpressia.com) |
 
 #### 4.1.2. Source Code Management 
 
+En esta sección, el equipo de desarrollo de SpacePulse establece los medios y el esquema de organización aplicados para el seguimiento de modificaciones, utilizando GitHub como plataforma principal de control de versiones.  
+De esta manera, se configuró un repositorio remoto en GitHub para almacenar el código fuente, documentar los cambios y colaborar de manera eficiente entre los miembros del equipo durante todo el ciclo de desarrollo.
+
+Se utiliza GitHub como sistema centralizado para el versionado y la colaboración.  
+Los repositorios oficiales del proyecto Task Master son los siguientes:
+
+- Landing Page: `https://github.com/Coder-Placing/LandingPage-SpacePulse.git`
+- Movile App Application: ``
+- Backend Web Services: `https://github.com/Coder-Placing/Backend.git`
+
+#### Implementación de GitFlow
+
+Para mantener una estructura organizada y evitar conflictos durante el desarrollo colaborativo, el equipo adopta la estrategia **GitFlow**, con ramas bien definidas para diferentes etapas y propósitos del proyecto.
+
+**Ramas base:**
+
+- **main**: Contiene la versión estable del código desplegada en producción.  
+- **develop**: Incluye las últimas actualizaciones y desarrollos en curso que eventualmente serán fusionados a `main`.
+
+**Feature branches:**
+
+Cada nueva funcionalidad o módulo inicia desde `develop`.  
+Convención de nombres: `feature/nombre-descriptivo`  
+Ejemplo: `feature/task-calendar-sync`
+
+Cada repositorio cuenta con flujos de trabajo independientes, integraciones de despliegue automático en Render y acciones de CI/CD configuradas en GitHub Actions.
+
 #### 4.1.3. Source Code Style Guide & Conventions 
 
+El equipo ha definido las siguientes convenciones de nombres y estilos de codificación para el proyecto SpacePulse, aplicadas en los lenguajes HTML, CSS, JavaScript, Kotlin y C#. Todas las nomenclaturas están en inglés, buscando claridad, estandarización y buenas prácticas de desarrollo. Se han adoptado guías de estilo reconocidas y actualizadas para cada tecnología.
+
+## HTML
+
+- Guía adoptada: [W3C HTML Style Guide](https://www.w3.org/TR/html5/)
+- Nomenclatura y convenciones:
+  - Minúsculas para etiquetas y atributos: `<div class="container">`
+  - Indentación: 2 espacios
+  - Atributos entre comillas dobles: `<img src="logo.png" alt="TaskMaster Logo">`
+  - Uso semántico de etiquetas: `<header>`, `<section>`, `<footer>`
+  - Comentarios HTML: `<!-- This is a comment -->`
+
+## CSS
+
+- Guía adoptada: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- Nomenclatura y convenciones:
+  - `kebab-case` para clases e IDs  
+    Ejemplo: `.main-header`, `#footer-section`
+  - Agrupación de estilos por componente
+  - Evitar el uso de `!important` salvo en casos necesarios
+  - Indentación: 2 espacios
+
+## JavaScript
+
+- Guía adoptada: [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+- Nomenclatura y convenciones:
+  - `camelCase` para variables y funciones  
+    Ejemplo: `let Name = 'Luis';`, `function calculateAverage() {}`
+  - `PascalCase` para clases  
+    Ejemplo: `class DashboardManager {}`
+  - Evitar `snake_case`
+  - Usar `const` y `let` en lugar de `var`
+
+
+## C#
+
+- Nomenclatura y convenciones:
+  - `PascalCase` para clases  
+    Ejemplo: `public class CourseService {}`
+  - `camelCase` para variables, métodos y atributos  
+    Ejemplo: `int totalCourses;`, `calculateProgress();`
+  - Constantes en MAYÚSCULAS con `snake_case`  
+    Ejemplo: `public static final int MAX_MEMBERS = 50;`
+  - Paquetes en minúsculas separados por punto  
+    Ejemplo: `com.spacepulse.backend.controller`
+
+
+## SQL / Data Modeling (Vertabelo)
+
+- Guía adoptada: [SQL Style Guide](https://www.sqlstyle.guide/)
+- Nomenclatura y convenciones:
+  - Nombres en inglés, en singular
+  - Prefijos según entidad o módulo
+  - Palabras reservadas en mayúsculas
+  - Relaciones consistentes entre tablas
+  - Ejemplo:
+    ```sql
+    CREATE TABLE Member (
+      member_id INT PRIMARY KEY,
+      first_name VARCHAR(50),
+      last_name VARCHAR(50),
+      enrollment_date DATE
+    );
+    ```
+
+## Kotlin / XML (Aplicativo móvil – Android Studio)
+
+- Guía adoptada: [Android Kotlin Style Guide](https://developer.android.com/kotlin/style-guide)
+- Nomenclatura y convenciones:
+  - Código limpio, reutilizable y seguro
+  - `camelCase` para variables y funciones  
+    Ejemplo: `val userName: String = "Eric"`
+  - `PascalCase` para clases y componentes de UI  
+    Ejemplo: `class DashboardActivity : AppCompatActivity()`
+  - XML en `snake_case`  
+    Ejemplo: `<TextView android:id="@+id/student_name_text" />`
+  - Comentarios claros y concisos
+
+
 #### 4.1.4. Software Deployment Configuration 
+
+## Despliegue del Frontend (Landing Page)
+
+La landing page de SpacePulse fue desarrollada utilizando HTML, CSS y JavaScript, enfocándose en un diseño responsivo, limpio y rápido.  
+El sitio se publica mediante GitHub Pages, lo que permite una distribución gratuita, confiable y accesible desde cualquier navegador.  
+Durante el proceso de preparación para producción, se aplican optimizaciones de carga como la reducción de archivos CSS y JS, la organización modular del código y la compresión de imágenes en formatos .jpg, .png y .svg.  
+
+## Despliegue del Backend (API – .NET)
+
+El backend de SpacePulse está implementado con C#, siguiendo principios de arquitectura modular y escalable.  Actualmente, el entorno de despliegue se realiza en la nube en Render.  
+Se manejan variables de entorno para gestionar las credenciales y configuraciones sensibles, manteniendo la seguridad y trazabilidad del sistema.  
+La API REST está diseñada para gestionar tareas, usuarios y tableros de forma eficiente, garantizando una comunicación estable con el frontend y la aplicación móvil.
+
+## Configuración del Aplicativo Móvil (Android)
+
+La versión móvil de SpacePulse fue desarrollada en Android Studio, empleando Kotlin para la lógica y XML para el diseño de interfaces.  
+En la etapa actual, las pruebas se realizan mediante emuladores locales y dispositivos físicos, asegurando la compatibilidad con diferentes versiones del sistema operativo Android.  
+El despliegue se gestiona mediante la generación de archivos .apk y su distribución interna para pruebas cerradas.  
+El aplicativo mantiene sincronización con el backend en tiempo real, permitiendo a los usuarios gestionar tareas, recibir actualizaciones y visualizar su progreso desde el móvil.
 
 ### 4.2. Landing Page & Mobile Application Implementation 
 
 #### 4.2.1. Sprint 1  
 
+
+
 ##### 4.2.1.1. Sprint Planning 1  
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 1 |
+| Fecha | 9 de mayo del 2026 |
+| Hora | 3:00 p.m. |
+| Lugar | Virtual – Google Meet |
+| Elaborado por | Gabriel Perez Tuesta |
+| Participantes (Reunión de planificación) | Aliaga Urbina, Wilder Gonzalo, Via Luna, Bruce, Martinez Gaona, Pablo Afranio, Perez Tuesta, Gabriel, Landa Ortiz, Sergio Javier |
+| Resumen de la revisión anterior | Al ser el primer sprint, aún no se completa|
+| Resumen de la retrospectiva anterior |Al ser el primer sprint, aún no se completa |
+| Objetivo del Sprint | El objetivo de este sprint es establecer la base técnica y visual del proyecto SpacePulse, desarrollando la landing page y los módulos principales del backend para la gestión de usuarios y tareas. Se busca garantizar que los usuarios puedan gestionar sus primeras tareas. Resultado esperado: Desplegar la primera versión funcional del sistema. Impacto: Validar la propuesta de valor e iniciar pruebas internas. Usuarios objetivo: Personas interesadas en organizar sus actividades y proyectos. Evento clave: Los usuarios pueden registrarse, iniciar sesión y visualizar sus tareas dentro del sistema. |
+| Velocidad del Sprint | El equipo puede atender hasta 43 Story Points. |
+| Suma de Story Points | La suma de Story Points planificados para este sprint es de 43 Story Points. |
 
 ##### 4.2.1.2. Sprint Backlog 1 
 
+El objetivo principal del Sprint 1 fue implementar las secciones principales de la Landing Page de SpacePulse y desarrollar las funcionalidades base del backend para la gestión de proyectos y tareas.  
+Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en JavaScript y construcción de endpoints.
+
+# Sprint Backlog - SpacePulse
+
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
+|---|---|---|---|---|---|---|---|---|
+| US01 | Visualización de Landing Page | TS01 | Diseño de estructura Landing Page | Crear estructura inicial de la landing con navbar, hero section y footer. | 6 | 3 | Frontend Dev | To Do |
+| US01 | Visualización de Landing Page | TS02 | Implementación sección servicios | Mostrar los beneficios y servicios ofrecidos por SpacePulse. | 5 | 2 | Frontend Dev | To Do |
+| US01 | Visualización de Landing Page | TS03 | Diseño responsive Landing | Adaptar la Landing Page para móviles y tablets. | 4 | 2 | Frontend Dev | To Do |
+| US02 | Acceso a la aplicación | TS04 | Botón de ingreso a la app | Implementar botón “Ingresar” con redirección al sistema principal. | 2 | 1 | Frontend Dev | To Do |
+| US03 | Registro de Usuarios | TS05 | Crear endpoint de registro | Desarrollar endpoint backend para registrar usuarios nuevos. | 6 | 3 | Backend Dev | To Do |
+| US03 | Registro de Usuarios | TS06 | Validación de datos de registro | Validar correo único, contraseña y campos obligatorios. | 5 | 2 | Backend Dev | To Do |
+| US03 | Registro de Usuarios | TS07 | Persistencia de usuarios | Guardar usuarios registrados en la base de datos. | 4 | 1 | Backend Dev | To Do |
+| US04 | Inicio de Sesión | TS08 | Endpoint de login | Implementar autenticación mediante correo y contraseña. | 6 | 3 | Backend Dev | To Do |
+| US04 | Inicio de Sesión | TS09 | Generación de JWT | Generar token JWT para sesiones autenticadas. | 4 | 2 | Backend Dev | To Do |
+| US04 | Inicio de Sesión | TS10 | Manejo de errores login | Mostrar respuesta adecuada cuando las credenciales sean inválidas. | 3 | 1 | Backend Dev | To Do |
+| US07 | Selección de Roles | TS16 | Gestión de roles de usuario | Implementar selección de roles durante el registro. | 4 | 2 | Backend Dev | To Do |
+| US07 | Selección de Roles | TS17 | Restricción de permisos por rol | Validar acceso a funcionalidades según rol asignado. | 5 | 2 | Backend Dev | To Do |
+| US08 | Creación de Espacio | TS18 | Endpoint crear espacio | Permitir registrar espacios con dimensiones, fotos y tipo. | 6 | 3 | Backend Dev | To Do |
+| US08 | Creación de Espacio | TS19 | Modelo entidad Espacio | Crear entidad y relaciones en base de datos para espacios. | 4 | 2 | Backend Dev | To Do |
+| US08 | Creación de Espacio | TS20 | Validación de formulario espacio | Validar datos obligatorios y formato correcto de espacios. | 3 | 1 | Backend Dev | To Do |
+| US11 | Subir espacio para edición | TS21 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Backend Dev | To Do |
+| US11 | Subir espacio para edición | TS22 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Backend Dev | To Do |
+| US38 | Visualización de espacios | TS25 | Endpoint listar espacios | Mostrar espacios registrados del usuario autenticado. | 5 | 2 | Backend Dev | To Do |
+| US38 | Visualización de espacios | TS26 | Consulta de detalles de espacio | Obtener información completa de cada espacio registrado. | 4 | 2 | Backend Dev | To Do |
+| US48 | Configuración de tareas automáticas | TS31 | Endpoint crear tarea monitoreo | Permitir registrar tareas automáticas de monitoreo IoT. | 6 | 3 | Backend Dev | To Do |
+| US48 | Configuración de tareas automáticas | TS32 | Programación de tareas | Configurar ejecución periódica de tareas automáticas. | 5 | 2 | Backend Dev | To Do |
+
+
+
 ##### 4.2.1.3. Development Evidence for Sprint Review  
+
+### Development Evidence for Landing Page
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+| LandingPage-SpacePulse|main|31a5b09|commit add landing page|-| 09/05/2026
+| LandingPage-SpacePulse|main|3656e7c|Logo Agregado|-|13/05/2026
+| LandingPage-SpacePulse|main|77aa98c|carpetas borradas|-|04/05/2026
+
+### Development Evidence for FrontEnd
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile|main|6cd6ed9|Primer commit|-|14/05/2026
+|SpacePulse-AppMobile|develop|23a2ca3|added screen views and functions|-|14/05/2026
+|SpacePulse-AppMobile|main|c5f39e0|Merge pull request #1 from Coder-Placing/develop|update app|15/05/2026
+
+### Development Evidence for Backend
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|Backend|main|7bcc684|Adjusted Backend|-|11/05/2026
+|Backend|main|62e90ae|Update README.md|-|12/05/2026
+|Backend|main|8c79443|Updated IoT|-|13/05/2026
+|Backend|main|a20c326|updated Readings|-|13/05/2026
+|Backend|main|7175560|Update README.md|-|13/05/2026
+|Backend|main|b96298b|Updated and finished IoT - Before Notifications|-|14/05/2026
+|Backend|main|fa707b2|Finished notifications - pre corrections|-|14/05/2026
+|Backend|testing|5aa2c9c|added Testing Suite|-|14/05/2026
+|Backend|testing|7462a11|updated testing suite|-|14/05/2026
+|Backend|testing|0ff001e|fix testing suite|-|14/05/2026
+|Backend|testing|e38a96f|finished testing suite for sprint 1|-|14/05/2026
+|Backend|main|382827f|Update environment variable and expose port in Dockerfile|-|15/05/2026
+|Backend|main|cfcf477|Updated: Fixed mistakes for deploying|-|15/05/2026
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
 
+En esta sección se explica y presenta el conjunto de Unit Tests, Integration Tests y Acceptance Tests automatizados para los Web Services relacionados con los User Stories especificados en el Sprint 1.
+
+En el caso de los tests de BDD, se han elaborado los archivos .feature utilizando el lenguaje Gherkin y los archivos Steps correspondientes en el lenguaje de programación C#. A continuación, se detalla la relación de tests diseñados y la evidencia de su implementación.
+
+### 1. Relación de Unit Tests
+Los Unit Tests se han enfocado en validar la lógica de negocio y las validaciones de las entidades de dominio y servicios de aplicación.
+
+* User Registration & Authentication: Relacionados con User, RegisterUserCommandHandler, y TokenGenerationService. Validan la unicidad del correo, el hasheo de contraseñas y la correcta generación del JWT (Relacionado con US03, US04).
+* Space Management: Relacionados con Space, CreateSpaceCommand, y SpaceAppService. Validan que la creación de espacios cumpla con las dimensiones, restricciones de tipo de espacio y reglas de publicación (Relacionado con US08, US11, US38).
+* Monitoring Tasks: Relacionados con WorkItem, IoTDevice, y los Command Handlers de monitoreo. Validan la correcta programación y persistencia de las tareas automáticas (Relacionado con US48).
+
+![succesfull_tests_sprint1.png](Assets/succesfull_tests_sprint1.png)
+
+
+### 2. Acceptance Tests (BDD - Gherkin)
+Bajo el enfoque BDD, se han diseñado escenarios que cubren los flujos principales de las User Stories del backend. Estos archivos .feature validan el comportamiento desde la perspectiva del usuario final interactuando con los endpoints de la API.
+
+UserIdentity.feature
+
+![useridentityfeature.png](Assets/useridentityfeature.png)
+
+![useridentityfeaturecs.png](Assets/useridentityfeaturecs.png)
+
+SpaceManagement.feature
+
+![spacemanagementfeature.png](Assets/spacemanagementfeature.png)
+
+![spacemanagementfeaturecs.png](Assets/spacemanagementfeaturecs.png)
+
+AutomatedTasks.feature
+
+![automatedtasksfeature.png](Assets/automatedtasksfeature.png)
+
+![automatedtasksfeaturecs.png](Assets/automatedtasksfeaturecs.png)
+
+
+### 3. Step Definitions (C#)
+
+UserIdentitySteps.cs
+
+![useridentitySTEPS.png](Assets/useridentitySTEPS.png)
+
+SpaceManagementSteps.cs
+
+![spacemanagementSTEPS.png](Assets/spacemanagementSTEPS.png)
+
+AutomatedTasksSteps.cs
+
+![automatedtasksSTEPS.png](Assets/automatedtasksSTEPS.png)
+
+
+### 4. Repositorio y Trazabilidad de Commits
+
+**Ruta del repositorio de Testing:** https://github.com/Coder-Placing/Backend/tree/testing
+
+A continuación, se presentan los commits relacionados con los avances en Testing y Backend para este Sprint 1:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Coder-Placing/Backend | testing | e38a96f | finished testing suite for sprint 1 | | 14/05/2026 |
+| Coder-Placing/Backend | testing | 0ff001e | fix testing suite | | 14/05/2026 |
+| Coder-Placing/Backend | testing | 7462a11 | updated testing suite | | 14/05/2026 |
+| Coder-Placing/Backend | testing | 5aa2c9c | added Testing Suite | | 14/05/2026 |
+
+
 ##### 4.2.1.5. Execution Evidence for Sprint Review  
 
+* US01: Visualización de Landing Page
+* US02: Acceso a la aplicación
+
+![Landing Page Deployed](Assets/Landing_Testing.png)
+
+* US03: Registro de Usuarios
+* US04: Inicio de Sesión
+* US07: Selección de Roles
+
+![User Testing](Assets/User_Swagguer.png)
+
+![User Testing](Assets/JWT_Swagger.png)
+
+* US08: Creación de Espacio
+* US11: Subir espacio para edición
+* US38: Visualización de espacios
+
+![Space Testing](Assets/Spaces_Swagger.png)
+
+* US48: Configuración de tareas automáticas
+
+![Task Testing](Assets/Tasks_Swagger.png)
+![IoT Testing](Assets/Iot_Swagger.png)
+![Notifications Testing](Assets/Notifications_Swagger.png)
+![Reading Testing](Assets/Readings_Swagger.png)
+
 ##### 4.2.1.6. Services Documentation Evidence for Sprint Review  
+En esta sección, el equipo define los endpoints implementados en el desarrollo del Backend API:
+
+|HTTP VERB| Endpoint URL (Local)a | Operation ID | Summary| 
+|--------|-------|-------------------|-------------------------|
+| POST|/api/v1/monitoring/io-t-devices | CreateDevice| Creates an IoT device in the System|
+| GET| /api/v1/monitoring/io-t-devices/space/{spaceId} | GetDeviceById| Get the information of all the IoT Devices|
+| PUT| /api/v1/monitoring/io-t-devices/{deviceId}| UpdateDeviceContent| Update IoT device specific content|
+| PUT| /api/v1/monitoring/io-t-devices/{deviceId}/toggle| UpdateDeviceOn| Turn on/off IoT device|
+| GET| /api/v1/monitoring/io-t-devices/my-devices| GetDeviceByUser| Get general information of IoT device by User Id|
+| GET| /api/v1/monitoring/notifications/user| GetNotificationsByUser| Get all the notifications by the user JWT Token|
+| PUT| /api/v1/monitoring/notifications/{id}/read| UpdateNotificationsReadStatus| Update notification "Is_Read" status from 0 to 1 (yes to no)|
+| GET| /api/v1/monitoring/readings/device/{deviceId}| GetDeviceReadingsByDeviceId| Get the complete information from IoT device by DeviceId|
+| GET| /api/v1/monitoring/readings/space/{spaceId}| GetDeviceReadingsBySpaceId| Get the complete information from IoT device by SpaceId|
+| GET| /api/v1/monitoring/readings/user| GetDeviceReadingsByUser| Get the complete information from IoT device by user JWT Token|
+| GET| /api/v1/space| GetAllSpaces| Get All the Spaces Information |
+| POST| /api/v1/space| CreateSpace| Create a Space in the system|
+| GET| /api/v1/space/{id}| GetSpaceById| Get information from the Space By SpaceId|
+| PUT| /api/v1/space/{id}| UpdateSpacesContent| Update Space content|
+| DELETE| /api/v1/space/{id}| DeleteSpaceById| Delete Space By SpaceId|
+| POST| /api/v1/space/{id}/accept| AceptSpaceById| Acept remodel Space by SpaceId|
+| POST| /api/v1/monitoring/tasks/request| CreateTaskRequest| Create a Task Request to a Space|
+| POST| /api/v1/monitoring/tasks/plan| CreateTaskPlan| Update a Task Plan to a Space|
+| GET| /api/v1/monitoring/tasks/{id}| GetTaskById| Get Task information by TaskId|
+| DELETE| /api/v1/monitoring/tasks/{id}| DeleteTaskById| Delete Task by TaskId|
+| PUT| /api/v1/monitoring/tasks/{id}/content| UpdateTaskContent| Update specific content from Task by TaskId and homeowner JWT Token|
+| PUT| /api/v1/monitoring/tasks/{id}/progress| UpdateTaskProgress| Update specific content from Task by TaskId and remodeler JWT Token|
+| POST| /api/users/register| SignUp| Creates a new user in the system.|
+| POST| /api/users/login| SignIn| Authenticates a user and returns a basic session payload.|
+| GET| /api/users/{userId}| GetUserById| Gets a user by id.|
+| POST| /api/users/{userId}/payment-methods| CreateUserPaymentMethods| Creates the payment methods for the user|
+
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
+
+### Deployment for Landing Page
+
+Usaremos las herramientas del despliegue de GitHub para desplegar la landing page
+
+![Landing Page Deployment](Assets/Landing_Deployment.png)
+
+![Landing Page Deployment](Assets/Landing_Deploy.png)
+
+![Landing Page Deployment](Assets/Landing_Deployed.png)
+
+### Deployment for Backend
+
+Primero seleccionaos una base de datos online para el despliegue, en ese caso es TiDB, la cual se encargara de almacenar y registrar los datos que guardemos desde el swagger
+
+![Selection Database](Assets/DB_Deployment.png)
+
+Con esa decision iniciaremos sesion en render y vincularemos el repositorio para asi desplegarlo
+
+![Render Dashboard](Assets/Render.png)
+
+Procederemos a agregar la informacion del repositorio y proceder al proceso de despliegue
+
+![Backend Deployment](Assets/Backend_Deployment.png)
+
+Finalmente se despliegueara y se comprobara que todo este conectado para su corecto funcionamiento
+
+![Backend Deployed](Assets/Backend_Deploy.png)
+
+![Backend Deployed](Assets/Swagger_Deploy.png)
+
+![Backend Deployed](Assets/DB_Deploy.png)
+
+### Deployment for Frontend
+
+Debido a las limitantes para la ejecucion de una aplicacion estatica usaremos appetize.io el cual servira para probar los mockups a mayor detalle
+
+![Frontend Deployed](Assets/Frontend_Deployment.png)
+
+Para eso generaremos el APK de la aplicacion movil y la subiremos a esta pagina para que asi genera esta version de prueba publica
+
+![Frontend Deployed](Assets/Select_APK.png)
+
+Finalmente veremos que la aplicacion es accesible en esta pagina, actuando como el despliegue de la aplicacion estatica
+
+![Frontend Deployed](Assets/Frontend_Deployed.png)
+
+
+Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage-SpacePulse/
+
+Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.html
+
+Enlace al Frontend Desplegado: https://appetize.io/app/b_cjyekwwt6wtlqt7dfdhvnlrdey 
+
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
+### Team Collaboration for Landing Page
+
+![Team Collaboration for Landing Page](Assets/Landing_Participation.png)
+
+### Team Collaboration for Frontend
+
+![Team Collaboration for Frontend](Assets/Frontend_Participation.png)
+
+### Team Collaboration for Backend
+
+![Team Collaboration for Backend](Assets/Backend_Participation.png)
 
 ## Conclusiones
 
