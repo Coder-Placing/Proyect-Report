@@ -3220,6 +3220,8 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 |Backend|testing|7462a11|updated testing suite|-|14/05/2026
 |Backend|testing|0ff001e|fix testing suite|-|14/05/2026
 |Backend|testing|e38a96f|finished testing suite for sprint 1|-|14/05/2026
+|Backend|main|382827f|Update environment variable and expose port in Dockerfile|-|15/05/2026
+|Backend|main|cfcf477|Updated: Fixed mistakes for deploying|-|15/05/2026
 
 ##### 4.2.1.4. Testing Suite Evidence for Sprint Review 
 
@@ -3227,7 +3229,7 @@ En esta sección se explica y presenta el conjunto de Unit Tests, Integration Te
 
 En el caso de los tests de BDD, se han elaborado los archivos .feature utilizando el lenguaje Gherkin y los archivos Steps correspondientes en el lenguaje de programación C#. A continuación, se detalla la relación de tests diseñados y la evidencia de su implementación.
 
-## 1. Relación de Unit Tests
+### 1. Relación de Unit Tests
 Los Unit Tests se han enfocado en validar la lógica de negocio y las validaciones de las entidades de dominio y servicios de aplicación.
 
 * User Registration & Authentication: Relacionados con User, RegisterUserCommandHandler, y TokenGenerationService. Validan la unicidad del correo, el hasheo de contraseñas y la correcta generación del JWT (Relacionado con US03, US04).
@@ -3237,7 +3239,7 @@ Los Unit Tests se han enfocado en validar la lógica de negocio y las validacion
 ![succesfull_tests_sprint1.png](Assets/succesfull_tests_sprint1.png)
 
 
-## 2. Acceptance Tests (BDD - Gherkin)
+### 2. Acceptance Tests (BDD - Gherkin)
 Bajo el enfoque BDD, se han diseñado escenarios que cubren los flujos principales de las User Stories del backend. Estos archivos .feature validan el comportamiento desde la perspectiva del usuario final interactuando con los endpoints de la API.
 
 UserIdentity.feature
@@ -3259,7 +3261,7 @@ AutomatedTasks.feature
 ![automatedtasksfeaturecs.png](Assets/automatedtasksfeaturecs.png)
 
 
-## 3. Step Definitions (C#)
+### 3. Step Definitions (C#)
 
 UserIdentitySteps.cs
 
@@ -3274,7 +3276,7 @@ AutomatedTasksSteps.cs
 ![automatedtasksSTEPS.png](Assets/automatedtasksSTEPS.png)
 
 
-## 4. Repositorio y Trazabilidad de Commits
+### 4. Repositorio y Trazabilidad de Commits
 
 **Ruta del repositorio de Testing:** https://github.com/Coder-Placing/Backend/tree/testing
 
@@ -3351,17 +3353,38 @@ En esta sección, el equipo define los endpoints implementados en el desarrollo 
 
 ##### 4.2.1.7. Software Deployment Evidence for Sprint Review  
 
-### Deployment for Mockups
-
 
 ### Deployment for Landing Page
 
+Usaremos las herramientas del despliegue de GitHub para desplegar la landing page
 
+![Landing Page Deployment](Assets/Landing_Deployment.png)
+
+![Landing Page Deployment](Assets/Landing_Deploy.png)
+
+![Landing Page Deployment](Assets/Landing_Deployed.png)
 
 ### Deployment for Backend
 
+Primero seleccionaos una base de datos online para el despliegue, en ese caso es TiDB, la cual se encargara de almacenar y registrar los datos que guardemos desde el swagger
 
+![Selection Database](Assets/DB_Deployment.png)
 
+Con esa decision iniciaremos sesion en render y vincularemos el repositorio para asi desplegarlo
+
+![Render Dashboard](Assets/Render.png)
+
+Procederemos a agregar la informacion del repositorio y proceder al proceso de despliegue
+
+![Backend Deployment](Assets/Backend_Deployment.png)
+
+Finalmente se despliegueara y se comprobara que todo este conectado para su corecto funcionamiento
+
+![Backend Deployed](Assets/Backend_Deploy.png)
+
+![Backend Deployed](Assets/Swagger_Deploy.png)
+
+![Backend Deployed](Assets/DB_Deploy.png)
 
 ### Deployment for Frontend
 
@@ -3369,6 +3392,8 @@ En esta sección, el equipo define los endpoints implementados en el desarrollo 
 
 
 Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage-SpacePulse/
+
+Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.html
 
 ##### 4.2.1.8. Team Collaboration Insights during Sprint  
 
@@ -3381,6 +3406,8 @@ Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage
 ![Team Collaboration for Frontend](Assets/Frontend_Participation.png)
 
 ### Team Collaboration for Backend
+
+![Team Collaboration for Backend](Assets/Backend_Participation.png)
 
 ## Conclusiones
 
