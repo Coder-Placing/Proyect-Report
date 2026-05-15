@@ -3587,8 +3587,6 @@ Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.ht
 
 ## Conclusiones
 
-### Conclusiones:
-
 #### Conclusiones AV1:
 
 SpacePulse ataca un problema real y frecuente: la gestión de remodelaciones está fragmentada entre canales informales, lo que genera baja trazabilidad, retrasos y sobrecostos.
@@ -3600,6 +3598,12 @@ La propuesta de valor está bien diferenciada frente a soluciones tradicionales,
 El trabajo de descubrimiento está sólido: entrevistas, needfinding, personas, journey y Lean UX permitieron traducir necesidades del usuario en hipótesis y funcionalidades concretas.
 
 #### Conclusiones TB1:
+
+La arquitectura de la información y el diseño UI/UX garantizan una navegación intuitiva y diferenciada para los dos usuarios principales (cliente y remodelador experto). Esto se respalda con el desarrollo de wireframes, mock-ups y un prototipo interactivo en Figma que simula el flujo completo de la aplicación móvil de manera clara y moderna
+
+La implementación del software sigue un modelo organizado que incluye la estrategia GitFlow en GitHub para aislar el desarrollo en ramas específicas. Asimismo, se aplican estrictas guías de estilo reconocidas (como W3C, Google Style Guides y Android Kotlin Style Guide) para mantener la limpieza y coherencia del código en todas las tecnologías empleadas
+
+El primer sprint logró establecer una base técnica sólida, resultando en el despliegue funcional de la Landing Page (vía GitHub Pages), la infraestructura del Backend (en Render con base de datos TiDB) y una versión de prueba del aplicativo móvil en Firebase. Este progreso está fuertemente asegurado por pruebas automatizadas unitarias y de aceptación bajo el enfoque BDD utilizando Gherkin
 
 ### Recomendaciones:
 
@@ -3614,6 +3618,10 @@ Ejecutar pruebas de usabilidad con ambos segmentos antes de desarrollar en grand
 Diseñar un onboarding guiado para remodeladores, porque su constancia en registrar avances y materiales es clave para el éxito del producto.
 
 #### Recomendaciones TB1:
+
+Se sugiere utilizar el prototipo interactivo desarrollado en Figma para realizar sesiones de usabilidad tempranas con personas que encajen en los perfiles de cliente y remodelador. Esto permitirá ajustar los sistemas de búsqueda y etiquetado antes de invertir recursos en codificar las funciones finales
+
+En los próximos sprints, se debe extender la suite de testing automatizada actual (que ya cubre gestión de espacios y tareas automáticas) para incluir detalladamente los escenarios financieros (Payment Management) y la validación de anomalías en las lecturas de los dispositivos IoT
 
 ## Bibliografía
 
