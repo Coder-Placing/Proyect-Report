@@ -937,7 +937,7 @@ Complementarias:
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="Assets/Diseñador2.jpg" alt="segmento1entrevista1" width="1000"><br>
+      <img src="Assets/Diseñador2.png" alt="segmento1entrevista1" width="1000"><br>
     </td>
   </tr>
 </table>
@@ -968,7 +968,7 @@ Complementarias:
     <td><strong>URL</strong></td>
     <td>
     
-  `https://drive.google.com/file/d/1FOXb-YgKV8XFmEQ1tMuSJFX5ZpAndt2v/view?usp=sharing`
+  `https://drive.google.com/file/d/12ziUWQE9mXweRocDbyVaa0xu8OfRvco2/view?usp=sharing`
 
   </td>
   </tr>
@@ -3084,8 +3084,18 @@ En la versión móvil, la navegación se organizará mediante una barra inferior
 #### 3.1.3. Landing Page UI Design  
 
 ##### 3.1.3.1. Landing Page Wireframe  
+<br>
 
+<p align="center">
+  <img src="Assets/LandingPageWireframe.png" alt="wireframe" width="1000">
+</p>
 ##### 3.1.3.2. Landing Page Mock-up  
+<br>
+
+<p align="center">
+  <img src="Assets/LandingPageMockUp.png" alt="MockUp" width="1000">
+</p>
+
 
 #### 3.1.4. Mobile Applications UX/UI Design  
 
