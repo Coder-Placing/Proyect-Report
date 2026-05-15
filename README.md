@@ -3210,12 +3210,47 @@ Los Unit Tests se han enfocado en validar la lógica de negocio y las validacion
 * Space Management: Relacionados con Space, CreateSpaceCommand, y SpaceAppService. Validan que la creación de espacios cumpla con las dimensiones, restricciones de tipo de espacio y reglas de publicación (Relacionado con US08, US11, US38).
 * Monitoring Tasks: Relacionados con WorkItem, IoTDevice, y los Command Handlers de monitoreo. Validan la correcta programación y persistencia de las tareas automáticas (Relacionado con US48).
 
+![succesfull_tests_sprint1.png](Assets/succesfull_tests_sprint1.png)
+
+
 ## 2. Acceptance Tests (BDD - Gherkin)
 Bajo el enfoque BDD, se han diseñado escenarios que cubren los flujos principales de las User Stories del backend. Estos archivos .feature validan el comportamiento desde la perspectiva del usuario final interactuando con los endpoints de la API.
 
+UserIdentity.feature
+
+![useridentityfeature.png](Assets/useridentityfeature.png)
+
+![useridentityfeaturecs.png](Assets/useridentityfeaturecs.png)
+
+SpaceManagement.feature
+
+![spacemanagementfeature.png](Assets/spacemanagementfeature.png)
+
+![spacemanagementfeaturecs.png](Assets/spacemanagementfeaturecs.png)
+
+AutomatedTasks.feature
+
+![automatedtasksfeature.png](Assets/automatedtasksfeature.png)
+
+![automatedtasksfeaturecs.png](Assets/automatedtasksfeaturecs.png)
 
 
-## 3. Repositorio y Trazabilidad de Commits
+## 3. Step Definitions (C#)
+
+UserIdentitySteps.cs
+
+![useridentitySTEPS.png](Assets/useridentitySTEPS.png)
+
+SpaceManagementSteps.cs
+
+![spacemanagementSTEPS.png](Assets/spacemanagementSTEPS.png)
+
+AutomatedTasksSteps.cs
+
+![automatedtasksSTEPS.png](Assets/automatedtasksSTEPS.png)
+
+
+## 4. Repositorio y Trazabilidad de Commits
 
 **Ruta del repositorio de Testing:** https://github.com/coder-placing/backend/tree/testing/backend/Backend-testing
 
