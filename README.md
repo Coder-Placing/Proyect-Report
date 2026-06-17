@@ -19,7 +19,7 @@ NRC: 3667
 <br><br>
 Docente: Eduardo Martin Reyes Rodriguez  
 <br><br>
-<strong>Informe de TB1</strong>  
+<strong>Informe de AV2</strong>  
 <br><br>
 Startup: Coder-Placing
 <br><br>
@@ -83,6 +83,8 @@ Martinez Gaona, Pablo Afranio (U202120011)
 
 ![](Assets/Insights_3.png)
 ![](Assets/Insights_4.png)
+
+**AV2:**
 
 ## Contenido
 
@@ -177,8 +179,25 @@ Martinez Gaona, Pablo Afranio (U202120011)
           - [4.2.1.6. Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
           - [4.2.1.7. Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
           - [4.2.1.8. Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+        - [4.2.2. Sprint 2](#422-sprint-2)
+          - [4.2.2.1. Sprint Planning 2](#4221-sprint-planning-2)
+          - [4.2.2.2. Sprint Backlog 2](#4222-sprint-backlog-2)
+          - [4.2.2.3. Development Evidence for Sprint Review](#4223-development-evidence-for-sprint-review)
+          - [4.2.2.4. Testing Suite Evidence for Sprint Review](#4224-testing-suite-evidence-for-sprint-review)
+          - [4.2.2.5. Execution Evidence for Sprint Review](#4225-execution-evidence-for-sprint-review)
+          - [4.2.2.6. Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
+          - [4.2.2.7. Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
+          - [4.2.2.8. Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
+      - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1. Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2. Registro de Entrevistas](#432-registro-de-entrevistas)
+        - [4.3.3. Evaluaciones segun heuristicas](#433-evaluaciones-segun-heuristicas)
 - [Conclusiones](#conclusiones)
-- [Bibliografía](#bibliografía)
+- [Recomendaciones](#recomendaciones)
+- [Video App Validation](#video-app-validation)
+- [Video About the product](#video-about-the-product)
+- [Video About the team](#video-about-the-team)
+- [Bibliografía](#bibliografia)
 - [Anexos](#anexos)
 
 ## Student Outcome
@@ -3293,8 +3312,6 @@ El aplicativo mantiene sincronización con el backend en tiempo real, permitiend
 
 #### 4.2.1. Sprint 1  
 
-
-
 ##### 4.2.1.1. Sprint Planning 1  
 
 | Elemento | Detalle |
@@ -3585,6 +3602,319 @@ Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.ht
 
 ![Team Collaboration for Backend](Assets/Backend_Participation.png)
 
+#### 4.2.2. Sprint 2  
+
+##### 4.2.2.1. Sprint Planning 2  
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 2 |
+| Fecha | 10 de Junio del 2026 |
+| Hora | 12:00 p.m. |
+| Lugar | Virtual – Google Meet |
+| Elaborado por | Bruce Via Luna |
+| Participantes (Reunión de planificación) | Aliaga Urbina, Wilder Gonzalo, Via Luna, Bruce, Martinez Gaona, Pablo Afranio, Perez Tuesta, Gabriel, Landa Ortiz, Sergio Javier |
+| Resumen de la revisión anterior | Iniciar con la creacion del Frontend y avanzar casi a terminar el Backend|
+| Resumen de la retrospectiva anterior | Se lograron dichos objetivos para acercarse de forma mas rapida a la resolucion del Frontend y pasar la segunda version de la aplicacion |
+| Objetivo del Sprint | El objetivo del Sprint tiene la finalidad de definir las tareas y las fechas esperadas para las entregas, para empezar a actuar de manera cronometrada con los objetivos, desde finalizar el backend hasta terminar la aplicacion para el primer usuario Evento clave: Finalizacion del Backend y primera aplicacion de Frontend |
+| Velocidad del Sprint | Definamos el backlog primero. |
+| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  Story Points. |
+
+##### 4.2.2.2. Sprint Backlog 2 
+
+El objetivo principal del Sprint 2 fue mejorar la Landing Page de SpacePulse y Terminar el backend junto con la aplicacion para el primer segmento objetivo.  
+Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en JavaScript, desarrollo de backend en C# y el Frontend en Kotlin.
+
+# Sprint Backlog - SpacePulse
+
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
+|---|---|---|---|---|---|---|---|---|
+| US01 | Visualización de Landing Page | TS01 | Diseño de estructura Landing Page | Crear estructura inicial de la landing con navbar, hero section y footer. | 6 | 3 | Frontend Dev | To Do |
+
+
+
+
+##### 4.2.2.3. Development Evidence for Sprint Review  
+
+### Development Evidence for Landing Page
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+| LandingPage-SpacePulse|main|31a5b09|commit add landing page|-| 09/05/2026
+| LandingPage-SpacePulse|main|3656e7c|Logo Agregado|-|13/05/2026
+| LandingPage-SpacePulse|main|77aa98c|carpetas borradas|-|04/05/2026
+
+### Development Evidence for FrontEnd
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile|main|6cd6ed9|Primer commit|-|14/05/2026
+|SpacePulse-AppMobile|develop|23a2ca3|added screen views and functions|-|14/05/2026
+|SpacePulse-AppMobile|main|c5f39e0|Merge pull request #1 from Coder-Placing/develop|update app|15/05/2026
+
+### Development Evidence for Backend
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|Backend|main|7bcc684|Adjusted Backend|-|11/05/2026
+|Backend|main|62e90ae|Update README.md|-|12/05/2026
+|Backend|main|8c79443|Updated IoT|-|13/05/2026
+|Backend|main|a20c326|updated Readings|-|13/05/2026
+|Backend|main|7175560|Update README.md|-|13/05/2026
+|Backend|main|b96298b|Updated and finished IoT - Before Notifications|-|14/05/2026
+|Backend|main|fa707b2|Finished notifications - pre corrections|-|14/05/2026
+|Backend|testing|5aa2c9c|added Testing Suite|-|14/05/2026
+|Backend|testing|7462a11|updated testing suite|-|14/05/2026
+|Backend|testing|0ff001e|fix testing suite|-|14/05/2026
+|Backend|testing|e38a96f|finished testing suite for sprint 1|-|14/05/2026
+|Backend|main|382827f|Update environment variable and expose port in Dockerfile|-|15/05/2026
+|Backend|main|cfcf477|Updated: Fixed mistakes for deploying|-|15/05/2026
+
+##### 4.2.2.4. Testing Suite Evidence for Sprint Review 
+
+Esta seccion se da por finalizada al terminar expresamente con todo el backend, haciendo que las Unit Test y escenarios ya no sean requeridos debido a la culminacion al 100% de los servicios presentados en el Sprint
+
+
+##### 4.2.2.5. Execution Evidence for Sprint Review  
+
+
+
+##### 4.2.2.6. Services Documentation Evidence for Sprint Review  
+En esta sección, el equipo añadira y definira los nuevos metodos HTTP implementados en el desarrollo final del Backend API:
+
+|HTTP VERB| Endpoint URL (Local)a | Operation ID | Summary| 
+|--------|-------|-------------------|-------------------------|
+| GET | /api/v1/space/my-spaces | GetMySpaces | Get Spaces by JWT Token|
+| PUT | /api/v1/space/{id}/complete | CompleteSpace | Change Space status from "Accepted" to "Completed"|
+| PUT | /api/v1/space/{id}/cancel| CancelSpace | Change Space status from "Anything" to "Cancel" |
+| GET | /api/v1/monitoring/tasks/space/{spaceId} | GetTaskBySpaceId | Get Tasks by Space Id|
+| GET | /api/v1/monitoring/tasks/my-tasks | GetMyTasks| Get Tasks by JWT Token |
+| DELETE | /api/v1/monitoring/io-t-devices/{id} | DeleteIoTDevice| Delete IoT Device by Id|
+
+
+##### 4.2.2.7. Software Deployment Evidence for Sprint Review  
+
+
+### Deployment for Landing Page
+
+Usaremos las herramientas del despliegue de GitHub para desplegar la landing page
+
+
+### Deployment for Backend
+
+Primero seleccionaos una base de datos online para el despliegue, en ese caso es TiDB, la cual se encargara de almacenar y registrar los datos que guardemos desde el swagger
+
+
+
+Con esa decision iniciaremos sesion en render y vincularemos el repositorio para asi desplegarlo
+
+
+
+Procederemos a agregar la informacion del repositorio y proceder al proceso de despliegue
+
+
+
+Finalmente se despliegueara y se comprobara que todo este conectado para su corecto funcionamiento
+
+
+
+### Deployment for Frontend
+
+Debido a las limitantes para la ejecucion de una aplicacionFirebase el cual servira para probar los mockups a mayor detalle
+
+
+Para eso generaremos el APK de la aplicacion movil y la subiremos a esta pagina para que asi genera esta version de prueba publica
+
+
+
+Finalmente llenaremos con la inforacion requerida por Firebase para desplegar la aplicacion
+
+
+Y abriremos la aplicacion desde nuestros celulares
+
+
+
+Enlace a la Landing Page Desplegada: 
+
+Enlace al Backend Desplegado: 
+
+##### 4.2.2.8. Team Collaboration Insights during Sprint  
+
+#### Team Collaboration for Landing Page
+
+
+#### Team Collaboration for Frontend
+
+
+#### Team Collaboration for Backend
+
+
+### 4.3. Validation Interviews 
+
+Se realizaron entrevistas diseñadas para diferentes usuarios del segmento objetivo y puedan dar retroalimentacion para la direccion correcta del proyecto
+
+#### 4.3.1. Diseño de Entrevistas  
+
+Segmentos a entrevistar:
+
+- Propietarios de espacios que desean remodelarlos
+- Remodeladores Expertos
+
+Antes de realizar las entrevistas respectivas, consideramos sumamente necesario realizar un análisis previo que nos permita entender mejor a nuestros públicos objetivo. Por ende, se diseñaron preguntas específicas para cada segmento, con el fin de orientar nuestras entrevistas de manera más eficiente y alineada a sus realidades.
+
+Para esta fase inicial de validación, queremos conocer la experiencia de nuestros usuarios al navegar por nuestra Landing Page que comunica el valor de SpacePulse. Con este contexto, proponemos estas preguntas cualitativas orientadas a validar la claridad de nuestro mensaje, el atractivo de nuestra propuesta de valor y la efectividad de la página para generar el interés y la acción deseados.
+
+**Preguntas para propietarios de espacios que desean remodelarlos (Fase de testeo en Landing Page)**
+
+- Al ingresar a la web, ¿qué sensación te transmite o cuál es tu primera reacción?
+
+- Según lo que dice el título principal, ¿cómo explicarías brevemente para qué sirve SpacePulse?
+
+- Visualmente hablando, ¿te gusta cómo se ve la página? ¿Cuál es el motivo?
+
+- Pensando en tu rol como propietario, ¿qué ventajas concretas te ofrece la plataforma según lo que acabas de leer?
+
+- ¿Sientes que el contenido de la web conecta con tus verdaderas necesidades o problemas?
+
+- ¿Echas en falta alguna información o dato importante que esperabas ver y no está?
+
+- ¿Te resulta fácil entender el objetivo principal de este sitio?
+
+- ¿Qué partes o detalles específicos de la web te transmiten seguridad?
+
+- Por el contrario, ¿hay algo que te cause ruido, dudas o falta de credibilidad?
+
+- Con la información que tienes ahora mismo, ¿te animarías a crear una cuenta en SpacePulse cuando se lance? ¿Por qué sí o por qué no?
+
+- ¿Le recomendarías esta web a un colega del sector? Si es así, ¿cómo se la describirías?
+
+**Preguntas para remodeladores Expertos (Fase de testeo en Landing Page)**
+
+- A primera vista, ¿el diseño transmite el nivel de profesionalismo que esperaría ver para su empresa?
+
+- En pocas palabras, ¿cuál diría que es el valor principal que esta herramienta ofrece a su organización tras revisar la página?
+
+- Basándose en lo mostrado, ¿qué ventajas directas o beneficios empresariales ha logrado identificar?
+
+- ¿Echa en falta algún dato o argumento clave que le resulte indispensable para considerar esta herramienta en su flujo de trabajo?
+
+- ¿Siente que la forma de comunicarse de la página (tanto en textos como visualmente) conecta bien con un perfil directivo o gerencial?
+
+- A la hora de evaluar el impacto real de la herramienta, ¿le fue fácil encontrar ejemplos, testimonios o casos prácticos de otras empresas?
+
+- ¿Siente que la página web proyecta una imagen lo suficientemente confiable y sólida como para iniciar una relación comercial?
+
+- ¿Qué tipo de información necesitaría ver para estar totalmente seguro de la calidad del talento que se ofrece aquí?
+
+- Si tuviera que presentar esta plataforma a su equipo directivo, ¿qué posibles obstáculos o resistencias cree que enfrentarían para implementarla?
+
+#### 4.3.2. Registro de Entrevistas  
+
+
+
+#### 4.3.3. Evaluaciones segun heuristicas
+
+Esta sección contiene el proceso de evaluación de las sesiones de validación basado en heurísticas, considerando heurísticas de usabilidad, arquitectura de información y diseño de experiencia de usuario
+
+## Tabla Resumen:
+
+| # | Problema | Escala de Severidad | Heuristica / Principio Violado |
+|---|----------|---------------------|--------------------------------|
+| 1 | Ausensia de detalles sobre auditorias | 3 | Funcionalidad bidireccional |
+| 2 | Falta de interaccion en la pagina principal | 2 | Valor percibido / Completitud de información |
+| 3 | No se muestran afiliaciones a empresas seguras | 2 | Transparencia y credibilidad | 
+| 4 | Ausencia de evidencia visual de aplicacion | 1 | Confianza y seguridad | 
+| 5 | Falta de internacionalizacion | 1 | Accesibilidad y alcance global |
+| 6 | Falta de modo daltonico en diseño | 2 | Accesibilidad y alcance global | 
+
+## Descripcion de Problemas:
+
+### Problema #1: Ausensia de detalles sobre auditorias
+
+**Severidad:** 3
+
+**Heurística violada:** Funcionalidad bidireccional
+
+**Problema:**
+
+La posibilidad de pedir una auditoira personalizada no es muy intuitiva en lo que es una posible respuesta, solo pode llenar datos sin demasiados detalles de como los usarian
+
+**Recomendación:**
+
+Hacer el formulario a parte para especificar y mejorar el como ingresaremos los datos y como los usaran
+
+### Problema #2: Falta de interaccion en la pagina principal
+
+**Severidad:** 2
+
+**Heurística violada:** Valor percibido / Completitud de información
+
+**Problema:**
+
+La Landing page no tiene mayor interaccion que botones, no cuenta con una diseño realmente interactivo o llamativo mas alla de los minimamente funcional y requerido
+
+**Recomendación:**
+
+Usar mayores funciones de JavaScript en la landing page para hacerla mucho mas interactiva y llamativa para los nuevos usuarios
+
+### Problema #3: No se muestran afiliaciones a empresas seguras
+
+**Severidad:** 2
+
+**Heurística violada:** Transparencia y credibilidad
+
+**Problema:**
+
+No hay un seguro de alguna empresa o institucion que respalde el trabajo que hacen diariamente
+
+**Recomendación:**
+
+Añadir logos o vincularse con alguna empresa util para mejorar la seguridad y confianza que genera para el usuario
+
+### Problema #4: Ausencia de evidencia visual de aplicacion
+
+**Severidad:** 1
+
+**Heurística violada:** Confianza y seguridad
+
+**Problema:**
+
+La landing page no muestra alguna imagen de como se ve realmente la aplicacion, haciendo que no sea muy confiable o se corra el riesgo de entrar en alguna version falsa para robar informacion
+
+**Recomendación:**
+
+Añadir un segmento dentro de la Landing Page que muestre imagenes interactivas de como se ve la aplicacion realmente
+
+### Problema #5: Falta de internacionalizacion
+
+**Severidad:** 1
+
+**Heurística violada:** Accesibilidad y alcance global
+
+**Problema:**
+
+La aplicacion y Landing Page no muestra una forma de cambiar el idioma para los usuarios, siendo poco accesible para usuarios extranjeros
+
+**Recomendación:**
+
+Implementar un cambio de idiomas (español/inglés como mínimo) y adaptar el contenido para audiencias internacionales.
+
+### Problema #6: Falta de modo daltonico en diseño
+
+**Severidad:** 2
+
+**Heurística violada:** Accesibilidad y alcance global
+
+**Problema:**
+
+No se presenta un cambio de modo tanto de color como para otras opciones de usuarios con daltonismo
+
+**Recomendación:**
+
+Implementar un cambio de color o de modo de iluminacion  y adaptar el contenido para audiencias con daltonismo.
+
+
+
 ## Conclusiones
 
 #### Conclusiones AV1:
@@ -3605,7 +3935,9 @@ La implementación del software sigue un modelo organizado que incluye la estrat
 
 El primer sprint logró establecer una base técnica sólida, resultando en el despliegue funcional de la Landing Page (vía GitHub Pages), la infraestructura del Backend (en Render con base de datos TiDB) y una versión de prueba del aplicativo móvil en Firebase. Este progreso está fuertemente asegurado por pruebas automatizadas unitarias y de aceptación bajo el enfoque BDD utilizando Gherkin
 
-### Recomendaciones:
+#### Conclusiones AV2:
+
+## Recomendaciones:
 
 #### Recomendaciones AV1:
 
@@ -3623,7 +3955,19 @@ Se sugiere utilizar el prototipo interactivo desarrollado en Figma para realizar
 
 En los próximos sprints, se debe extender la suite de testing automatizada actual (que ya cubre gestión de espacios y tareas automáticas) para incluir detalladamente los escenarios financieros (Payment Management) y la validación de anomalías en las lecturas de los dispositivos IoT
 
-## Bibliografía
+#### Recomendaciones AV2:
+
+## Video App Validation
+
+
+## Video About the product
+
+
+## Video About the team
+
+
+
+## Bibliografia
 
 Ipsos Perú. (2019). El 35% de hogares alista obras, remodelación y decoración en casa. https://www.ipsos.com/sites/default/files/ct/publication/documents/2019-02/el_35_de_hogares_alista_obras_remodelacion_y_decoracion_en_casa.pdf
 
