@@ -3629,14 +3629,34 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 | Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
 |---|---|---|---|---|---|---|---|---|
-| US01 | Visualización de Landing Page | TS01 | Diseño de estructura Landing Page | Crear estructura inicial de la landing con navbar, hero section y footer. | 6 | 3 | Frontend Dev | To Do |
-
-
+| US01 | Visualización de Landing Page | TS33 | Refactorización de Diseño Visual | Rediseñar y optimizar la interfaz estética y responsiva de las secciones informativas principales de la Landing Page. | 5 | 2 | Frontend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US02 | Acceso a la aplicación desde Landing | TS34 | Dinamismo en formularios | Agregar interactividad con JavaScript para validar campos de contacto y gestionar la redirección de los usuarios hacia la aplicación web. | 4 | 2 | Frontend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US07 | Registro de métodos de pago | TS35 | Registro de tarjetas de crédito | Desarrollar el endpoint y la lógica que permite a los usuarios guardar y asociar sus tarjetas bancarias de forma segura en su perfil. | 6 | 3 | Backend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US12 | Vinculación de dispositivos a espacios | TS36 | Conexión de sensores a ambientes | Crear el servicio para emparejar nuevos dispositivos inteligentes físicos con los locales y espacios creados en el sistema. | 7 | 4 | Backend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US14 | Consulta de alertas y telemetría | TS37 | Panel móvil de sensores | Desarrollar las interfaces en Kotlin para listar los sensores activos dentro de los ambientes del local y revisar los estados de su batería. | 7 | 4 | Frontend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US22 | Control remoto de sensores | TS38 | Encendido y apagado remoto| Implementar la funcionalidad en el servidor para cambiar remotamente el estado de energía de un dispositivo IoT desde la aplicación. | 5 | 3 | Backend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US28 | Recepción de ráfagas IoT | TS39 | Ingesta de datos de telemetría | Desarrollar el controlador encargado de recibir de forma masiva y asíncrona los lotes de lecturas enviados por los sensores en tiempo real. | 6 | 4 | Backend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US33 | Visualización de notificaciones push | TS40 | Centro móvil de notificaciones | Diseñar las vistas del dispositivo móvil para capturar y mostrar de forma inmediata alertas visuales ante cualquier incidencia en los ambientes. | 6 | 3 | Frontend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US39 | Gestión de incidencias IoT | TS41 | Reconocimiento de alertas críticas | Crear el endpoint que permite registrar cuándo un usuario ha visto y atendido una alerta, actualizando el estado del incidente en el sistema. | 4 | 2 | Backend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US45 | Gestión operativa de tareas | TS42 | Creación de hitos y tareas de obra | Implementar los servicios que permiten desglosar una remodelación en tareas específicas de avance físico para el seguimiento del local. | 6 | 3 | Backend Dev | Done |
+|---|---|---|---|---|---|---|---|---|
+| US51 | Dashboard integral del Cliente | TS43 | Panel unificado del propietario | Culminar la interfaz de pantalla principal de la aplicación móvil que permite al cliente visualizar de manera consolidada sus espacios y sus obras activas. | 8 | 5 | Frontend Dev | Done |
 
 
 ##### 4.2.2.3. Development Evidence for Sprint Review  
-
+A continuación, se presentan las evidencias de desarrollo correspondientes al Sprint 2, organizadas por cada uno de los repositorios de la solución tecnológica de SpacePulse. Se detallan los principales commits de Git que sustentan la finalización del backend, las pantallas para el segmento del cliente y las optimizaciones de la Landing Page.
 ### Development Evidence for Landing Page
+
+Repositorio encargado de la presencia web de la solución, enfocado en optimizar la conversión de nuevos leads mediante el rediseño visual y el dinamismo del formulario de contacto.
 
 | Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
 |--------|---------------|------------|---------------|---------|--|
@@ -3646,6 +3666,8 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 ### Development Evidence for FrontEnd
 
+Repositorio que aloja la aplicación móvil nativa desarrollada en Kotlin con Jetpack Compose, enfocada por completo en la experiencia del primer segmento objetivo: el cliente/propietario del local.
+
 | Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
 |--------|---------------|------------|---------------|---------|--|
 |SpacePulse-AppMobile|main|6cd6ed9|Primer commit|-|14/05/2026
@@ -3653,6 +3675,8 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 |SpacePulse-AppMobile|main|c5f39e0|Merge pull request #1 from Coder-Placing/develop|update app|15/05/2026
 
 ### Development Evidence for Backend
+
+Este repositorio contiene la lógica de negocio centralizada bajo un enfoque de arquitectura limpia y Tactical Domain-Driven Design (DDD) en C# (.NET). Durante este sprint se concluyeron los contextos de monitoreo operativo y gestión transaccional de usuarios.
 
 | Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
 |--------|---------------|------------|---------------|---------|--|
@@ -3810,7 +3834,7 @@ Para esta fase inicial de validación, queremos conocer la experiencia de nuestr
 
 #### 4.3.2. Registro de Entrevistas  
 
-
+  
 
 #### 4.3.3. Evaluaciones segun heuristicas
 
