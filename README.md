@@ -3629,27 +3629,9 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 | Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
 |---|---|---|---|---|---|---|---|---|
-| US01 | Visualización de Landing Page | TS33 | Refactorización de Diseño Visual | Rediseñar y optimizar la interfaz estética y responsiva de las secciones informativas principales de la Landing Page. | 5 | 2 | Frontend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US02 | Acceso a la aplicación desde Landing | TS34 | Dinamismo en formularios | Agregar interactividad con JavaScript para validar campos de contacto y gestionar la redirección de los usuarios hacia la aplicación web. | 4 | 2 | Frontend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US07 | Registro de métodos de pago | TS35 | Registro de tarjetas de crédito | Desarrollar el endpoint y la lógica que permite a los usuarios guardar y asociar sus tarjetas bancarias de forma segura en su perfil. | 6 | 3 | Backend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US12 | Vinculación de dispositivos a espacios | TS36 | Conexión de sensores a ambientes | Crear el servicio para emparejar nuevos dispositivos inteligentes físicos con los locales y espacios creados en el sistema. | 7 | 4 | Backend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US14 | Consulta de alertas y telemetría | TS37 | Panel móvil de sensores | Desarrollar las interfaces en Kotlin para listar los sensores activos dentro de los ambientes del local y revisar los estados de su batería. | 7 | 4 | Frontend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US22 | Control remoto de sensores | TS38 | Encendido y apagado remoto| Implementar la funcionalidad en el servidor para cambiar remotamente el estado de energía de un dispositivo IoT desde la aplicación. | 5 | 3 | Backend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US28 | Recepción de ráfagas IoT | TS39 | Ingesta de datos de telemetría | Desarrollar el controlador encargado de recibir de forma masiva y asíncrona los lotes de lecturas enviados por los sensores en tiempo real. | 6 | 4 | Backend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US33 | Visualización de notificaciones push | TS40 | Centro móvil de notificaciones | Diseñar las vistas del dispositivo móvil para capturar y mostrar de forma inmediata alertas visuales ante cualquier incidencia en los ambientes. | 6 | 3 | Frontend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US39 | Gestión de incidencias IoT | TS41 | Reconocimiento de alertas críticas | Crear el endpoint que permite registrar cuándo un usuario ha visto y atendido una alerta, actualizando el estado del incidente en el sistema. | 4 | 2 | Backend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US45 | Gestión operativa de tareas | TS42 | Creación de hitos y tareas de obra | Implementar los servicios que permiten desglosar una remodelación en tareas específicas de avance físico para el seguimiento del local. | 6 | 3 | Backend Dev | Done |
-|---|---|---|---|---|---|---|---|---|
-| US51 | Dashboard integral del Cliente | TS43 | Panel unificado del propietario | Culminar la interfaz de pantalla principal de la aplicación móvil que permite al cliente visualizar de manera consolidada sus espacios y sus obras activas. | 8 | 5 | Frontend Dev | Done |
+| US05 | Recuperar Contraseña | TS01 | Diseño de formulario | Crear el diseño para ingresar los datos de recuperacion. | 2 | 2 | NOMBRE DE INTEGRANTE | To Do |
+| US05 | Recuperar Contraseña | TS02 | Porgramar funcionamiento | Diseñar y testear la funcionalidad de dicho segmento | 4 | 3 | NOMBRE DE INTEGRANTE | To Do |
+
 
 
 ##### 4.2.2.3. Development Evidence for Sprint Review  
@@ -3726,21 +3708,20 @@ Usaremos las herramientas del despliegue de GitHub para desplegar la landing pag
 
 ### Deployment for Backend
 
-Primero seleccionaos una base de datos online para el despliegue, en ese caso es TiDB, la cual se encargara de almacenar y registrar los datos que guardemos desde el swagger
+Como se hicieron cambios en el backend solo tenemos que reactualizar el Render con la opcion de desplegar el ultimo commit, cosa que no dara problemas por que sigue conectado a la base de datos creada previamente
+
+![About_The_team](Assets/Redeploy.png)
+
+Con esa decision iniciaremos sesion en render e iniciara el proceso para el despliegue
+
+![About_The_team](Assets/Deployed-backend-2.png)
+
+Finalmente se despliegueara y se comprobara que todo este conectado para su corecto funcionamiento tanto en el swagger y el TiDB
 
 
+![About_The_team](Assets/deployed-swagger-2.png)
 
-Con esa decision iniciaremos sesion en render y vincularemos el repositorio para asi desplegarlo
-
-
-
-Procederemos a agregar la informacion del repositorio y proceder al proceso de despliegue
-
-
-
-Finalmente se despliegueara y se comprobara que todo este conectado para su corecto funcionamiento
-
-
+![About_The_team](Assets/database-2.png)
 
 ### Deployment for Frontend
 
@@ -3937,8 +3918,6 @@ No se presenta un cambio de modo tanto de color como para otras opciones de usua
 
 Implementar un cambio de color o de modo de iluminacion  y adaptar el contenido para audiencias con daltonismo.
 
-
-
 ## Conclusiones
 
 #### Conclusiones AV1:
@@ -3983,13 +3962,84 @@ En los próximos sprints, se debe extender la suite de testing automatizada actu
 
 ## Video App Validation
 
+Para las entrevistas de app validation se buscaron 5 usuarios a los que se les envió un correo que contiene la aplicación para que pudieran probarla y dar una retroalimentación al proyecto, como realmente les parecio y como la mejorarían
+
+### Diseño de entrevistas
+
+**Segmento Objetivo #1**
+
+Tanto el entrevistador y entrevistado tienen que presentarse formalmente, este ultimo detallar como fue que recibió la versión de la aplicación a probar y resaltar el correo por el cual se le envió la aplicación 
+
+"Después de haber navegado y probado la aplicación para gestionar la remodelación, ¿cómo describirías tu experiencia general con ella?"
+
+"Acabas de completar el proceso de registrar un nuevo espacio y definir tu presupuesto inicial. ¿Cómo sentiste la cantidad de información que te pidió la aplicación en ese primer paso? ¿Hubo algún dato que dudaste en llenar?"
+
+"En tu pantalla principal vimos que tus proyectos aparecen con la información que ingresaste. Durante la prueba, ¿te fue fácil identificar todos los datos visibles en todo momento?"
+
+"De todo lo que navegaste hoy, ¿cuál dirías que fue el paso menos intuitivo o el momento en el que tuviste que pensar más para saber dónde hacer clic?"
+
+"En uno de los escenarios, te pedimos que cancelaras la solicitud antes de que la obra empezara. ¿Qué tan seguro te sentiste de que la aplicación realmente había detenido todo? ¿Te pareció que el botón estaba en un lugar lógico?"
+
+"También viste una alerta simulada de un sensor en tu hogar (por ejemplo, un pico de temperatura o humedad). Sabiendo que tú no instalaste ese sensor, sino el experto, ¿la información en pantalla te resultó útil o la sentiste demasiado técnica? ¿Qué te gustaría ver en esa pantalla para saber si debes preocuparte o no?"
+
+"Si estuvieras remodelando tu casa la próxima semana y pudieras usar solo una función de las que probaste hoy (el control del presupuesto, las alertas de los sensores, o el control de los estados de la obra), ¿cuál elegirías y por qué?"
+
+"Basado en lo que viste hoy, ¿qué información sentiste que te hizo falta para tener tranquilidad total mientras alguien trabaja en tu casa?"
+
+### Registro de entrevistas
+
+#### Entrevitas a Segmento #1
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Sebastian Altamirano</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:35-7:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://youtu.be/USl493CuMDY`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Sebastian fue uno de los usuarios entrevistados previamente, en las entrevistas para diseño de usuarios y tuvo la oportunidad de probar la aplicacion de primera mano, reslta el diseño y como los datos no sobrecargan la pantallan ni lo abruman como usuario,resltando la caracteristica de un buen diseño UX 
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/App-validation-inteview.png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
 
 ## Video About the product
 
+Aqui tenemos el video que evidencia la funcionalidad del producto a entregar, siendo una prueba de como el usuario interactua de todas las formas posibles con la aplicacion
 
 ## Video About the team
 
+Aqui tenemos el video que evidencia la participacion del grupo, el que aprendimo durante el curso y que aporta este proyecto a nuestro endemiento tanto del curso como de la carrera
 
+![About_The_team](Assets\About-the-Team.png)
 
 ## Bibliografia
 
