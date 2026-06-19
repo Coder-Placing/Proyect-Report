@@ -3631,6 +3631,76 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 |---|---|---|---|---|---|---|---|---|
 | US05 | Recuperar Contraseña | TS01 | Diseño de formulario | Crear el diseño para ingresar los datos de recuperacion. | 2 | 2 | NOMBRE DE INTEGRANTE | To Do |
 | US05 | Recuperar Contraseña | TS02 | Porgramar funcionamiento | Diseñar y testear la funcionalidad de dicho segmento | 4 | 3 | NOMBRE DE INTEGRANTE | To Do |
+| US09 | Recibir notificaciones IoT | TS33 | Endpoint recepción de notificaciones | Implementar servicio para recibir eventos generados por dispositivos IoT. | 6 | 3 | Backend Dev | To Do |
+| US09 | Recibir notificaciones IoT | TS34 | Gestión de alertas en sistema | Procesar y almacenar notificaciones recibidas. | 5 | 2 | Backend Dev | To Do |
+| US09 | Recibir notificaciones IoT | TS35 | Visualización de notificaciones | Mostrar alertas IoT al usuario dentro de la plataforma. | 4 | 2 | Frontend Dev | To Do |
+| US11 | Subir espacio para edición | TS36 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Backend Dev | To Do |
+| US11 | Subir espacio para edición | TS37 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Backend Dev | To Do |
+| US12 | Seguridad de datos | TS38 | Implementación de cifrado de datos | Proteger información sensible almacenada en la plataforma. | 8 | 3 | Backend Dev | To Do |
+| US12 | Seguridad de datos | TS39 | Protección de accesos API | Configurar autenticación y autorización en endpoints. | 6 | 2 | Backend Dev | To Do |
+| US12 | Seguridad de datos | TS40 | Auditoría de seguridad | Registrar eventos críticos relacionados con accesos y modificaciones. | 5 | 2 | Backend Dev | To Do |
+| US12 | Seguridad de datos | TS41 | Validación de vulnerabilidades | Realizar controles básicos de seguridad y validaciones. | 5 | 2 | Backend Dev | To Do |
+| US13 | Historial de proyectos | TS42 | Consulta de proyectos históricos | Obtener listado de proyectos completados y activos. | 5 | 2 | Backend Dev | To Do |
+| US13 | Historial de proyectos | TS43 | Visualización de historial | Mostrar historial detallado en la interfaz del usuario. | 4 | 2 | Frontend Dev | To Do |
+| US15 | Alertas de seguridad | TS44 | Generación de alertas de seguridad | Detectar eventos críticos relacionados con seguridad. | 5 | 2 | Backend Dev | To Do |
+| US15 | Alertas de seguridad | TS45 | Notificación al usuario | Enviar alertas mediante sistema de notificaciones. | 4 | 1 | Backend Dev | To Do |
+| US16 | Seguimiento en tiempo real | TS46 | Servicio de actualización en tiempo real | Implementar actualización continua del estado de proyectos. | 6 | 3 | Backend Dev | To Do |
+| US16 | Seguimiento en tiempo real | TS47 | Integración WebSocket | Permitir transmisión de datos en tiempo real. | 5 | 2 | Backend Dev | To Do |
+| US16 | Seguimiento en tiempo real | TS48 | Visualización dinámica | Refrescar información en pantalla sin recargar página. | 4 | 2 | Frontend Dev | To Do |
+| US17 | Comparación de presupuestos | TS49 | Consulta de presupuestos | Obtener propuestas económicas asociadas al proyecto. | 4 | 2 | Backend Dev | To Do |
+| US17 | Comparación de presupuestos | TS50 | Vista comparativa | Mostrar comparación de costos y características. | 5 | 2 | Frontend Dev | To Do |
+| US18 | Gestión de pagos | TS51 | Registro de pagos | Permitir registrar operaciones de pago. | 6 | 3 | Backend Dev | To Do |
+| US18 | Gestión de pagos | TS52 | Validación de transacciones | Verificar consistencia y estado de pagos. | 5 | 2 | Backend Dev | To Do |
+| US18 | Gestión de pagos | TS53 | Historial de pagos | Mostrar pagos realizados por el usuario. | 4 | 2 | Frontend Dev | To Do |
+| US19 | Recordatorios de pago | TS54 | Programación de recordatorios | Configurar alertas automáticas de vencimiento. | 3 | 1 | Backend Dev | To Do |
+| US19 | Recordatorios de pago | TS55 | Notificaciones de pago | Informar al usuario sobre pagos pendientes. | 2 | 1 | Backend Dev | To Do |
+| US20 | Registro de incidencias | TS56 | Endpoint registrar incidencia | Permitir registrar problemas durante la remodelación. | 5 | 2 | Backend Dev | To Do |
+| US20 | Registro de incidencias | TS57 | Persistencia de incidencias | Almacenar incidencias en base de datos. | 4 | 1 | Backend Dev | To Do |
+| US20 | Registro de incidencias | TS58 | Consulta de incidencias | Visualizar incidencias reportadas. | 4 | 2 | Frontend Dev | To Do |
+| US23 | Panel de control de dispositivos IoT | TS59 | Dashboard IoT | Diseñar panel para monitoreo de dispositivos. | 6 | 3 | Frontend Dev | To Do |
+| US23 | Panel de control de dispositivos IoT | TS60 | Consulta de métricas IoT | Obtener datos de sensores conectados. | 5 | 2 | Backend Dev | To Do |
+| US23 | Panel de control de dispositivos IoT | TS61 | Visualización de estados | Mostrar estado actual de dispositivos registrados. | 4 | 2 | Frontend Dev | To Do |
+| US24 | Sugerencias de mejoras | TS62 | Formulario de sugerencias | Permitir registrar propuestas de mejora. | 3 | 1 | Frontend Dev | To Do |
+| US24 | Sugerencias de mejoras | TS63 | Almacenamiento de sugerencias | Guardar comentarios enviados por usuarios. | 2 | 1 | Backend Dev | To Do |
+| US26 | Control de acceso de usuarios (RBAC) | TS64 | Configuración de roles RBAC | Definir permisos según rol de usuario. | 5 | 2 | Backend Dev | To Do |
+| US26 | Control de acceso de usuarios (RBAC) | TS65 | Validación de permisos | Restringir acceso a funcionalidades protegidas. | 5 | 2 | Backend Dev | To Do |
+| US27 | Configuración de notificaciones | TS66 | Preferencias de notificaciones | Permitir configurar tipos de alertas. | 4 | 2 | Frontend Dev | To Do |
+| US27 | Configuración de notificaciones | TS67 | Persistencia de configuración | Guardar preferencias seleccionadas por el usuario. | 4 | 1 | Backend Dev | To Do |
+| US29 | Filtrado de proyectos | TS68 | Implementación de filtros | Permitir búsqueda por estado, fecha y categoría. | 4 | 2 | Backend Dev | To Do |
+| US29 | Filtrado de proyectos | TS69 | Interfaz de filtrado | Diseñar controles para aplicar filtros. | 4 | 2 | Frontend Dev | To Do |
+| US30 | Conexión con dispositivos IoT | TS70 | Integración de dispositivos IoT | Permitir vincular dispositivos a proyectos. | 6 | 3 | IoT Dev | To Do |
+| US30 | Conexión con dispositivos IoT | TS71 | Validación de conexión | Verificar comunicación con dispositivos registrados. | 5 | 2 | IoT Dev | To Do |
+| US30 | Conexión con dispositivos IoT | TS72 | Registro de dispositivos conectados | Almacenar dispositivos asociados al proyecto. | 4 | 2 | Backend Dev | To Do |
+| US35 | Roles de usuario | TS73 | Gestión de roles | Crear y administrar roles del sistema. | 4 | 2 | Backend Dev | To Do |
+| US35 | Roles de usuario | TS74 | Asignación de roles | Permitir asignar roles a usuarios registrados. | 4 | 2 | Backend Dev | To Do |
+| US36 | API para integración externa | TS75 | Diseño de API pública | Crear endpoints para integraciones externas. | 5 | 2 | Backend Dev | To Do |
+| US36 | API para integración externa | TS76 | Documentación de API | Generar documentación para desarrolladores externos. | 4 | 2 | Backend Dev | To Do |
+| US39 | Actualización de Espacio | TS77 | Endpoint actualización de espacio | Permitir modificar información de espacios registrados. | 5 | 2 | Backend Dev | To Do |
+| US39 | Actualización de Espacio | TS78 | Validación de cambios | Verificar integridad de datos actualizados. | 4 | 1 | Backend Dev | To Do |
+| US40 | Eliminación de Espacio | TS79 | Endpoint eliminar espacio | Permitir eliminar espacios registrados. | 4 | 2 | Backend Dev | To Do |
+| US40 | Eliminación de Espacio | TS80 | Confirmación de eliminación | Solicitar validación antes de eliminar registros. | 3 | 1 | Frontend Dev | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS81 | Endpoint crear proyecto IoT | Registrar proyectos de monitoreo asociados a espacios. | 6 | 3 | Backend Dev | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS82 | Persistencia de proyecto IoT | Guardar información del proyecto en base de datos. | 5 | 2 | Backend Dev | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS83 | Validación de datos de proyecto | Verificar consistencia de la información registrada. | 4 | 2 | Backend Dev | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS84 | Consulta de proyecto IoT | Obtener información detallada del proyecto. | 6 | 3 | Backend Dev | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS85 | Visualización de métricas | Mostrar indicadores y datos relevantes del proyecto. | 5 | 2 | Frontend Dev | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS86 | Consulta de dispositivos asociados | Mostrar dispositivos vinculados al proyecto. | 5 | 2 | Backend Dev | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS87 | Visualización de incidentes | Mostrar incidentes registrados relacionados al proyecto. | 5 | 2 | Frontend Dev | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS88 | Endpoint recepción masiva | Recibir grandes volúmenes de datos de sensores. | 6 | 3 | Backend Dev | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS89 | Procesamiento de datos IoT | Procesar y validar información recibida. | 5 | 2 | Backend Dev | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS90 | Persistencia de mediciones | Almacenar datos históricos de sensores. | 5 | 2 | Backend Dev | To Do |
+| US50 | Registro de Dispositivo IoT | TS91 | Endpoint registrar dispositivo | Permitir registrar nuevos dispositivos IoT. | 6 | 3 | IoT Dev | To Do |
+| US50 | Registro de Dispositivo IoT | TS92 | Validación de dispositivo | Verificar identificadores y configuración inicial. | 4 | 2 | IoT Dev | To Do |
+| US50 | Registro de Dispositivo IoT | TS93 | Persistencia de dispositivos | Guardar dispositivos registrados en la base de datos. | 4 | 2 | Backend Dev | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS94 | Consulta de dispositivos | Obtener dispositivos asociados a un proyecto. | 6 | 3 | Backend Dev | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS95 | Filtros de dispositivos | Permitir búsqueda por estado y tipo. | 5 | 2 | Backend Dev | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS96 | Visualización de dispositivos | Mostrar información detallada en interfaz. | 5 | 2 | Frontend Dev | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS97 | Consulta de incidentes | Obtener incidentes relacionados con un proyecto. | 6 | 3 | Backend Dev | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS98 | Filtros de incidentes | Permitir búsqueda por severidad y fecha. | 5 | 2 | Backend Dev | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS99 | Visualización de incidentes | Mostrar listado y detalle de incidentes. | 5 | 2 | Frontend Dev | To Do |
+| US54 | Registro Histórico de Notificaciones | TS100 | Almacenamiento de notificaciones | Registrar historial de alertas generadas. | 5 | 2 | Backend Dev | To Do |
+| US54 | Registro Histórico de Notificaciones | TS101 | Consulta de historial | Permitir recuperar notificaciones anteriores. | 4 | 2 | Backend Dev | To Do |
+| US54 | Registro Histórico de Notificaciones | TS102 | Visualización de historial | Mostrar historial de notificaciones al usuario. | 4 | 2 | Frontend Dev | To Do |
 
 
 
@@ -4231,16 +4301,14 @@ En general, el usuario tuvo una experiencia positiva con la aplicación, destaca
   </tr>
 </table>
 
-## Video About the product
-
 
 <table align="center">
   <tr>
-    <th colspan="2" style="text-align:center">Entrevista</th>
+    <th colspan="2" style="text-align:center">Entrevista 5</th>
   </tr>
   <tr>
     <td><strong>Entrevistado</strong></td>
-    <td>Leonardo Cumba</td>
+    <td>Ayrton Zabarburu</td>
   </tr>
   <tr>
     <td><strong>Edad</strong></td>
@@ -4252,8 +4320,34 @@ En general, el usuario tuvo una experiencia positiva con la aplicación, destaca
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>0:00-10:27</td>
+    <td>1:08 - 8:15</td>
   </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=6QrXzgDBbZw`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+ Ayrton indica que en general tuvo una experiencia positiva, además de indicar varios puntos a mejorar como ser más especifico en algunos campos así como indicar aspectos que el cliente talvez no pueda saber de primera mano como los m2 de un espacio.  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista5AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+## Video About the product
+
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center"></th>
+  </tr>
+     
   <tr>
     <td><strong>URL</strong></td>
     <td>
@@ -4264,8 +4358,8 @@ En general, el usuario tuvo una experiencia positiva con la aplicación, destaca
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
-      Resumen: <br>
-En general, el usuario tuvo una experiencia positiva con la aplicación, destacando que la navegación fue sencilla y que la información principal resultó fácil de identificar. Durante el registro del proyecto, la única dificultad estuvo relacionada con la estimación del presupuesto inicial debido a la falta de conocimiento sobre los costos reales de una remodelación. Aunque las funciones fueron comprensibles, algunos procesos específicos requirieron más exploración para encontrar las opciones deseadas. Respecto a la cancelación de solicitudes, el usuario consideró que el proceso era claro, pero sugirió incluir confirmaciones más visibles para generar mayor confianza. Las alertas de sensores fueron percibidas como útiles, aunque algo técnicas, por lo que se recomendó utilizar mensajes más simples y orientados a la acción. La funcionalidad más valorada fue el control del presupuesto, ya que permite monitorear los gastos y evitar sobrecostos. Finalmente, el usuario manifestó que le brindaría mayor tranquilidad contar con fotografías del avance de la obra, tiempos estimados de finalización y notificaciones sobre cambios o retrasos durante el proceso de remodelación.  <tr>
+       <br>
+Aquí tenemos el video 'About the Product', donde mostramos en la práctica cómo funciona exactamente lo que hemos creado, cuáles son sus características clave y de qué manera esta solución resuelve el problema real que planteamos en el proyecto  <tr>
     <td colspan="2"><br>
       <img src="Assets/ProductBacklog.png" alt="segmento1entrevista3" width="1000"><br>
     </td>
