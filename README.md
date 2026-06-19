@@ -3815,7 +3815,90 @@ Para esta fase inicial de validación, queremos conocer la experiencia de nuestr
 
 #### 4.3.2. Registro de Entrevistas  
 
-  
+  #### Entrevitas a Segmento #1
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Mateo Vergaray</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:20-6:25</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=8f7YDSzLC8U`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Mateo, usuario perteneciente al segmento de propietarios de espacios que desean remodelar, percibió la web como una plataforma seria, clara y confiable. Resaltó que el diseño permite entender fácilmente la propuesta de valor, ya que conecta a propietarios con personas especializadas para realizar tareas de remodelación en el hogar. También mencionó que la plataforma responde a una necesidad real, porque facilita encontrar proveedores, negociar precios y ahorrar tiempo. Como mejora, sugirió incluir testimonios, reseñas, calificaciones o especialistas certificados para reforzar la confianza del usuario. Finalmente, indicó que sí crearía una cuenta y recomendaría Space Pulse a otros propietarios. 
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista1Sprint2 .png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+#### Entrevitas a Segmento #2
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Landa</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Isidro</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:33-6:32</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=Ig3sBfUJV2I`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Javier Landa, usuario perteneciente al segmento directivo o gerencial, percibió la landing page como una plataforma con una interfaz limpia, moderna y profesional. Resaltó que el diseño transmite la seriedad necesaria y permite entender su mayor valor: la centralización del control de obra al integrar el monitoreo en vivo de sensores IoT con la gestión financiera en una sola pantalla. También mencionó que la herramienta resuelve dolores de cabeza reales, ya que ayuda a mitigar riesgos, permite supervisar múltiples proyectos en simultáneo y ahorra visitas innecesarias al campo. Como mejora, sugirió incluir información técnica y logística sobre el hardware (proveedores, instalación y durabilidad), una sección clara de precios, garantías de soporte técnico y casos de éxito reales con métricas concretas. Finalmente, indicó que la página proyecta una imagen sólida y confiable para iniciar una relación comercial, aunque advirtió que la resistencia al cambio del personal en obra sería el principal reto para su implementación.    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista2Sprint2 .png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
 
 #### 4.3.3. Evaluaciones segun heuristicas
 
@@ -4031,9 +4114,163 @@ Tanto el entrevistador y entrevistado tienen que presentarse formalmente, este u
   </tr>
 </table>
 
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Mateo Vergaray</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:35-7:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=yznQXaY89WA`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Mateo probó la aplicación y describió su experiencia como positiva, entendible e intuitiva. Destacó que el registro de espacios, la definición del presupuesto inicial y la visualización de proyectos fueron fáciles de completar y comprender. Además, señaló que la información solicitada era adecuada y no le generaba desconfianza. También validó que acciones como cancelar una solicitud y revisar alertas de sensores estaban bien ubicadas y eran claras para el usuario. Como punto más importante, resaltó el control del presupuesto, ya que le permite conocer cuánto podría gastar y cuánto costaría cada tarea. Como mejora, recomendó agregar reseñas para aumentar la tranquilidad al contratar personas para trabajar en casa.    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista2AppValidation.png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Landa</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Isidro</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:32-5:43</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=SM7MY4NbTgY`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Javier Landa, usuario perteneciente al segmento de propietarios que buscan realizar remodelaciones en el hogar, percibió la aplicación como una plataforma muy positiva, organizada e intuitiva. Resaltó que el diseño limpio, apoyado en gráficos y tarjetas, permite ver de un vistazo el avance de la remodelación en sus distintas fases, centralizando todo el control del proyecto en un solo lugar y evitando el caos de mensajes o audios perdidos. También mencionó que la plataforma responde a una necesidad real, porque brinda tranquilidad económica y logística al permitir un control de pagos vinculado directamente al cumplimiento de hitos de la obra. Como mejora, sugirió incluir un aviso aclarando que el presupuesto inicial es estimado, simplificar el lenguaje técnico de las alertas de los sensores, agregar correos o ventanas de confirmación al cancelar una solicitud, y mostrar perfiles completos con fotos y calificaciones validadas de los maestros de obra para reforzar la seguridad al dejarlos entrar a su casa. Finalmente, indicó que la función que definitivamente elegiría usar sería la liberación de dinero por hitos cumplidos para evitar problemas con los trabajadores.  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista3AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 4</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Leonardo Cumba</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:00-3:20</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=oOiuboXH_yQ`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+En general, el usuario tuvo una experiencia positiva con la aplicación, destacando que la navegación fue sencilla y que la información principal resultó fácil de identificar. Durante el registro del proyecto, la única dificultad estuvo relacionada con la estimación del presupuesto inicial debido a la falta de conocimiento sobre los costos reales de una remodelación. Aunque las funciones fueron comprensibles, algunos procesos específicos requirieron más exploración para encontrar las opciones deseadas. Respecto a la cancelación de solicitudes, el usuario consideró que el proceso era claro, pero sugirió incluir confirmaciones más visibles para generar mayor confianza. Las alertas de sensores fueron percibidas como útiles, aunque algo técnicas, por lo que se recomendó utilizar mensajes más simples y orientados a la acción. La funcionalidad más valorada fue el control del presupuesto, ya que permite monitorear los gastos y evitar sobrecostos. Finalmente, el usuario manifestó que le brindaría mayor tranquilidad contar con fotografías del avance de la obra, tiempos estimados de finalización y notificaciones sobre cambios o retrasos durante el proceso de remodelación.  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista4AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
 ## Video About the product
 
-Aqui tenemos el video que evidencia la funcionalidad del producto a entregar, siendo una prueba de como el usuario interactua de todas las formas posibles con la aplicacion
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Leonardo Cumba</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:00-10:27</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=klJhEwJ3CGU`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+En general, el usuario tuvo una experiencia positiva con la aplicación, destacando que la navegación fue sencilla y que la información principal resultó fácil de identificar. Durante el registro del proyecto, la única dificultad estuvo relacionada con la estimación del presupuesto inicial debido a la falta de conocimiento sobre los costos reales de una remodelación. Aunque las funciones fueron comprensibles, algunos procesos específicos requirieron más exploración para encontrar las opciones deseadas. Respecto a la cancelación de solicitudes, el usuario consideró que el proceso era claro, pero sugirió incluir confirmaciones más visibles para generar mayor confianza. Las alertas de sensores fueron percibidas como útiles, aunque algo técnicas, por lo que se recomendó utilizar mensajes más simples y orientados a la acción. La funcionalidad más valorada fue el control del presupuesto, ya que permite monitorear los gastos y evitar sobrecostos. Finalmente, el usuario manifestó que le brindaría mayor tranquilidad contar con fotografías del avance de la obra, tiempos estimados de finalización y notificaciones sobre cambios o retrasos durante el proceso de remodelación.  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/ProductBacklog.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
 
 ## Video About the team
 
