@@ -87,6 +87,9 @@ Martinez Gaona, Pablo Afranio (U202120011)
 
 **AV2:**
 
+![](Assets/Insights_5.png)
+![](Assets/Insights_6.png)
+
 ## Contenido
 
 - [Student Outcome](#student-outcome)
