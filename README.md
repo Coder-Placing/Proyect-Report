@@ -57,6 +57,7 @@ Martinez Gaona, Pablo Afranio (U202120011)
 |1.05|24/04/2026  | Todos los integrantes | Capitulo I <br> Capitulo II
 |2.00|3/00/2026  | Martinez Gaona, Pablo Afranio | Construccion inicial de Capitulo III y IV
 |2.01|14/04/2026  | Todos los integrantes | Finalizacion de Capitulo III y Capitulo IV
+|3.01|14/04/2026  | Todos los integrantes | Sprint 2 y entrevistas de validacion
 
 
 ## Project Report Collaboration Insights
@@ -208,8 +209,8 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 
 | Criterio específico | Acciones realizadas   | Conclusiones |
 |--------|---------------|------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo** <br> AV1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br>TB1: Elaboré y documenté el testing suite del sprint, aplicando casos de prueba para validar funcionalidades. Además, desarrollé la primera versión de la aplicación móvil<br><br> -**Martinez Gaona, Pablo Afranio** <br> AV1: Se revisaron y aplicaron conceptos relacionados con Domain-Driven Design, Bounded Contexts, Context Mapping, modelo C4, capas de arquitectura, diagramas UML y diseño de base de datos. Estos conocimientos fueron utilizados para desarrollar la arquitectura de SpacePulse, especialmente en los bounded contexts IoT Monitoring and Notifications y Space Management <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br><br> -**Perez Tuesta, Gabriel** <br> AV1: Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, aplicando nuevas tecnologías para la construcción del backend y la configuración del despliegue del sistema. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos técnicos, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional <br><br> -**Sergio Javier Landa Ortiz**<br> AV1: Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, asumiendo la responsabilidad de la landing page desde la creación de los wireframes y mockups iniciales, además de apoyar en el diseño en Figma de la aplicación. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos visuales y de interfaz, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional. <br><br> -**Bruce Via Luna** <br> AV1:Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo <br>TB1: Realice en completo el backend junto con los multiples escenario de prueba hasta abarcar con lo requerido dela entrega de su desarrollo<br><br>| **AV1:** Como equipo, se evidencia una actualización integral y proactiva de conocimientos aplicados a las fases tempranas del ciclo de vida del software. Los integrantes han investigado y dominado con éxito conceptos que abarcan desde el diseño estratégico y de negocio (Lean UX, Startup Profile, análisis competitivo para SpacePulse), hasta el modelado de arquitectura (EventStorming, Bounded Contexts) y la ingeniería de requisitos (Needfinding). En conjunto, esta asimilación metodológica y técnica garantiza que la solución de software en desarrollo cuente con una dirección clara, bases arquitectónicas robustas y funcionalidades estrictamente alineadas a las necesidades validadas del mercado y los usuarios <br><br> **TB1:** Como equipo, se evidencia una transición exitosa de la fase de diseño y arquitectura hacia la implementación técnica y validación del producto. Los integrantes han aplicado proactivamente nuevos conocimientos para el desarrollo frontend (aplicación móvil y landing page), la construcción del backend y la configuración del despliegue. Asimismo, destaca la actualización práctica en metodologías de aseguramiento de calidad (elaboración de testing suites y escenarios de prueba) y la iteración continua de la experiencia de usuario (ajustes en flujos, interfaces y wireframes). Esto demuestra que el equipo es capaz de investigar y adoptar nuevas herramientas tecnológicas de forma autónoma para resolver desafíos técnicos y cumplir con los requerimientos del sprint backlog.      |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Martinez Gaona, Pablo Afranio**<br> AV1: Durante el desarrollo del trabajo se identificó la necesidad de aprender y reforzar herramientas como Structurizr, PlantUML, vertabeo y el enfoque de arquitectura por capas. <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br><br> -**Wilder Gonzalo Aliaga Urbina** <br> AV1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br>TB1: Investigué cómo organizar pruebas, documentar evidencias y adaptarme al desarrollo de la aplicación móvil. <br><br> -**Perez Tuesta, Gabriel** <br> AV1: Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br>TB1:Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el rol de desarrollo backend y despliegue en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas que garantizaran una arquitectura sólida. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software. <BR><br> -**Sergio Javier Landa Ortiz**<br> AV1: Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br>TB1: Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el diseño y desarrollo de la landing page, la creación de sus wireframes y mockups, y el apoyo en el Figma de la aplicación en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas de diseño y maquetación que garantizaran una interfaz sólida y funcional. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software <br><br> -**Bruce Via Luna** <br> AV1: Realice los analisis de diagramas, la estructura de como sera el desarrollo mediante las user stories para llevar el proyecto por la ruta correcta hacia una arquitectura limpia y funcional<br>TB1: Pense en los multiples escenario de desarrollo de la aplicacion que puedan suceder para tener en cuenta las actitudes de los usuarios y que acciones puedan tomar, haciendo una logica de negocio implecable, evitando que el codigo se sobreescriba constantemente <br><br>| **AV1:** El equipo demuestra una clara conciencia sobre la importancia del aprendizaje continuo en el ciclo de vida del desarrollo de software. Los integrantes han evidenciado esta competencia al salir de su zona de confort para investigar proactivamente de forma autónoma, ya sea adquiriendo una visión estratégica de negocio (Lean UX y análisis de mercado), buscando nuevas metodologías de representación arquitectónica (Bounded Context) o explorando nuevos formatos para sintetizar hallazgos competitivos. En conjunto, reconocen que el éxito de un proyecto tecnológico exige adaptabilidad y una actualización constante de conocimientos más allá de lo estrictamente técnico. <br><br> **TB1:**  El equipo demuestra que el aprendizaje continuo es un pilar indispensable no solo en la planificación, sino durante el desarrollo activo y la codificación del producto. Al enfrentarse a la construcción de la interfaz, el despliegue del sistema y la estructuración de una lógica de negocio robusta, los miembros reconocieron la necesidad de investigar y dominar de forma autónoma nuevas herramientas de desarrollo, diseño y pruebas. Esta adaptabilidad y proactividad les ha permitido anticipar escenarios de uso, mejorar las vistas del usuario y garantizar una arquitectura sólida, reafirmando de manera práctica que la rápida evolución de las tecnologías de la información exige una constante actualización técnica para asegurar el éxito del proyecto    |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo** <br> AV1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br>TB1: Elaboré y documenté el testing suite del sprint, aplicando casos de prueba para validar funcionalidades. Además, desarrollé la primera versión de la aplicación móvil <br> AV2: Desarrollé las pantallas de IoT y Readings, permitiendo agregar dispositivos IoT a un espacio, visualizar sus porcentajes de lectura y controlar su encendido o apagado. Además, realicé mejoras en la interfaz visual de la aplicación.<br><br> -**Martinez Gaona, Pablo Afranio** <br> AV1: Se revisaron y aplicaron conceptos relacionados con Domain-Driven Design, Bounded Contexts, Context Mapping, modelo C4, capas de arquitectura, diagramas UML y diseño de base de datos. Estos conocimientos fueron utilizados para desarrollar la arquitectura de SpacePulse, especialmente en los bounded contexts IoT Monitoring and Notifications y Space Management <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br> AV2: Se implementó el BC de notificaciones en la app móvil, incluyendo lista de alertas, filtros, búsqueda, detalle de notificación y marcado como leída, conectado al backend mediante Retrofit y ViewModel.<br><br> -**Perez Tuesta, Gabriel** <br> AV1: Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, aplicando nuevas tecnologías para la construcción del backend y la configuración del despliegue del sistema. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos técnicos, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional <br> AV2: Para el desarrollo del frontend del proyecto SpacePulse, fue necesario actualizar y adquirir nuevos conocimientos en paradigmas modernos de desarrollo móvil. Se investigó e implementó Jetpack Compose, transitando del diseño tradicional con vistas (XML) a un framework declarativo basado en Kotlin para la construcción de interfaces dinámicas. Además, se profundizó en la integración de consumo de APIs REST mediante la librería Retrofit, manejando llamadas asíncronas y serialización de datos (JSON) para conectar la aplicación con un backend desplegado en la nube. La adopción de estos estándares actuales de la industria garantizó una solución de software escalable, modular y alineada con las mejores prácticas de desarrollo móvil.<br><br>-**Sergio Javier Landa Ortiz**<br> AV1: Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, asumiendo la responsabilidad de la landing page desde la creación de los wireframes y mockups iniciales, además de apoyar en el diseño en Figma de la aplicación. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos visuales y de interfaz, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional. <br><br> -**Bruce Via Luna** <br> AV1:Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo <br>TB1: Realice en completo el backend junto con los multiples escenario de prueba hasta abarcar con lo requerido dela entrega de su desarrollo <br> AV2: Actualizó sus conocimientos en lenguajes y arquitecturas para el desarrollo del backend. Asimismo, investigó e implementó servicios en la nube para el despliegue del backend y frontend, y aplicó frameworks de testeo para asegurar la calidad y el correcto funcionamiento de ambas capas del software. <br><br>| **AV1:** Como equipo, se evidencia una actualización integral y proactiva de conocimientos aplicados a las fases tempranas del ciclo de vida del software. Los integrantes han investigado y dominado con éxito conceptos que abarcan desde el diseño estratégico y de negocio (Lean UX, Startup Profile, análisis competitivo para SpacePulse), hasta el modelado de arquitectura (EventStorming, Bounded Contexts) y la ingeniería de requisitos (Needfinding). En conjunto, esta asimilación metodológica y técnica garantiza que la solución de software en desarrollo cuente con una dirección clara, bases arquitectónicas robustas y funcionalidades estrictamente alineadas a las necesidades validadas del mercado y los usuarios <br><br> **TB1:** Como equipo, se evidencia una transición exitosa de la fase de diseño y arquitectura hacia la implementación técnica y validación del producto. Los integrantes han aplicado proactivamente nuevos conocimientos para el desarrollo frontend (aplicación móvil y landing page), la construcción del backend y la configuración del despliegue. Asimismo, destaca la actualización práctica en metodologías de aseguramiento de calidad (elaboración de testing suites y escenarios de prueba) y la iteración continua de la experiencia de usuario (ajustes en flujos, interfaces y wireframes). Esto demuestra que el equipo es capaz de investigar y adoptar nuevas herramientas tecnológicas de forma autónoma para resolver desafíos técnicos y cumplir con los requerimientos del sprint backlog.   <br><br> **AV2:** Se ha logrado actualizar y aplicar exitosamente los conocimientos técnicos necesarios para transformar la fase de diseño e ideación (Lean UX y gestión de requerimientos) en una solución de software funcional. Esta etapa demandó la asimilación de nuevas tecnologías prácticas, destacando la construcción de la lógica del backend, la implementación de frameworks de testeo para asegurar la calidad tanto del frontend como del backend, y la configuración de servicios en la nube para el despliegue del sistema. Como grupo, demostramos la capacidad de adquirir conocimientos actualizados que alinean nuestro proyecto con los estándares de desarrollo e infraestructura de la industria actual  |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Martinez Gaona, Pablo Afranio**<br> AV1: Durante el desarrollo del trabajo se identificó la necesidad de aprender y reforzar herramientas como Structurizr, PlantUML, vertabeo y el enfoque de arquitectura por capas. <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender. <br> AV2: Se realizaron pruebas con backend local, validación mediante Swagger, resolución de conflictos de merge y una entrevista de validación para recoger retroalimentación del usuario. <br> AV2: Investigué cómo estructurar pantallas IoT, mostrar lecturas de dispositivos y mejorar la experiencia visual del usuario dentro de la aplicación. <br><br> -**Wilder Gonzalo Aliaga Urbina** <br> AV1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br>TB1: Investigué cómo organizar pruebas, documentar evidencias y adaptarme al desarrollo de la aplicación móvil. <br><br> -**Perez Tuesta, Gabriel** <br> AV1: Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br>TB1:Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el rol de desarrollo backend y despliegue en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas que garantizaran una arquitectura sólida. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software. <br> AV2: Durante el ciclo de vida del desarrollo, se evidenció que los entornos de producción difieren significativamente de los entornos de prueba locales. La integración del frontend con un servidor desplegado (como Render) presentó desafíos de latencia, cold starts y manejo estricto de respuestas HTTP que requirieron investigación continua y lectura de documentación técnica (uso de Logcat, análisis de endpoints con Swagger). Asimismo, el requerimiento de implementar funcionalidades dinámicas, como el cambio de tema claro/oscuro a través de estados globales y la navegación estructurada (NavHost), demandó un aprendizaje constante sobre la gestión de estados y el ciclo de vida de la aplicación. Esta experiencia consolida la comprensión de que el desarrollo de software exige una constante adaptación y estudio autodidacta frente a las nuevas variables tecnológicas. <BR><br> -**Sergio Javier Landa Ortiz**<br> AV1: Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br>TB1: Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el diseño y desarrollo de la landing page, la creación de sus wireframes y mockups, y el apoyo en el Figma de la aplicación en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas de diseño y maquetación que garantizaran una interfaz sólida y funcional. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software <br><br> -**Bruce Via Luna** <br> AV1: Realice los analisis de diagramas, la estructura de como sera el desarrollo mediante las user stories para llevar el proyecto por la ruta correcta hacia una arquitectura limpia y funcional<br>TB1: Pense en los multiples escenario de desarrollo de la aplicacion que puedan suceder para tener en cuenta las actitudes de los usuarios y que acciones puedan tomar, haciendo una logica de negocio implecable, evitando que el codigo se sobreescriba constantemente <br> AV2: Reconoció que el ecosistema de despliegue de software y las prácticas de testeo (QA) evolucionan rápidamente. Comprendió que para mantener plataformas estables y seguras, es indispensable el aprendizaje continuo sobre nuevas tecnologías de infraestructura, integración y desarrollo backend <br><br>| **AV1:** El equipo demuestra una clara conciencia sobre la importancia del aprendizaje continuo en el ciclo de vida del desarrollo de software. Los integrantes han evidenciado esta competencia al salir de su zona de confort para investigar proactivamente de forma autónoma, ya sea adquiriendo una visión estratégica de negocio (Lean UX y análisis de mercado), buscando nuevas metodologías de representación arquitectónica (Bounded Context) o explorando nuevos formatos para sintetizar hallazgos competitivos. En conjunto, reconocen que el éxito de un proyecto tecnológico exige adaptabilidad y una actualización constante de conocimientos más allá de lo estrictamente técnico. <br><br> **TB1:**  El equipo demuestra que el aprendizaje continuo es un pilar indispensable no solo en la planificación, sino durante el desarrollo activo y la codificación del producto. Al enfrentarse a la construcción de la interfaz, el despliegue del sistema y la estructuración de una lógica de negocio robusta, los miembros reconocieron la necesidad de investigar y dominar de forma autónoma nuevas herramientas de desarrollo, diseño y pruebas. Esta adaptabilidad y proactividad les ha permitido anticipar escenarios de uso, mejorar las vistas del usuario y garantizar una arquitectura sólida, reafirmando de manera práctica que la rápida evolución de las tecnologías de la información exige una constante actualización técnica para asegurar el éxito del proyecto  <br><br> **AV2:** La transición hacia la etapa de desarrollo técnico y despliegue ha evidenciado la rápida evolución del ecosistema de software. Al enfrentarnos a los retos de integrar pruebas de calidad (QA) y configurar entornos en la nube, reconocemos que las herramientas de infraestructura y las mejores prácticas cambian constantemente. Por lo tanto, hemos internalizado que el aprendizaje permanente y la adaptabilidad no son solo un paso en el proyecto, sino pilares profesionales indispensables. Entendemos que para mantener plataformas estables, escalables y relevantes para el usuario final, será obligatorio mantenernos en constante investigación y capacitación a lo largo de nuestra carrera |
 <hr>
 
 ## Objetivos SMART
@@ -3337,27 +3338,27 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 | Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
 |---|---|---|---|---|---|---|---|---|
-| US01 | Visualización de Landing Page | TS01 | Diseño de estructura Landing Page | Crear estructura inicial de la landing con navbar, hero section y footer. | 6 | 3 | Frontend Dev | To Do |
-| US01 | Visualización de Landing Page | TS02 | Implementación sección servicios | Mostrar los beneficios y servicios ofrecidos por SpacePulse. | 5 | 2 | Frontend Dev | To Do |
-| US01 | Visualización de Landing Page | TS03 | Diseño responsive Landing | Adaptar la Landing Page para móviles y tablets. | 4 | 2 | Frontend Dev | To Do |
-| US02 | Acceso a la aplicación | TS04 | Botón de ingreso a la app | Implementar botón “Ingresar” con redirección al sistema principal. | 2 | 1 | Frontend Dev | To Do |
-| US03 | Registro de Usuarios | TS05 | Crear endpoint de registro | Desarrollar endpoint backend para registrar usuarios nuevos. | 6 | 3 | Backend Dev | To Do |
-| US03 | Registro de Usuarios | TS06 | Validación de datos de registro | Validar correo único, contraseña y campos obligatorios. | 5 | 2 | Backend Dev | To Do |
-| US03 | Registro de Usuarios | TS07 | Persistencia de usuarios | Guardar usuarios registrados en la base de datos. | 4 | 1 | Backend Dev | To Do |
-| US04 | Inicio de Sesión | TS08 | Endpoint de login | Implementar autenticación mediante correo y contraseña. | 6 | 3 | Backend Dev | To Do |
-| US04 | Inicio de Sesión | TS09 | Generación de JWT | Generar token JWT para sesiones autenticadas. | 4 | 2 | Backend Dev | To Do |
-| US04 | Inicio de Sesión | TS10 | Manejo de errores login | Mostrar respuesta adecuada cuando las credenciales sean inválidas. | 3 | 1 | Backend Dev | To Do |
-| US07 | Selección de Roles | TS16 | Gestión de roles de usuario | Implementar selección de roles durante el registro. | 4 | 2 | Backend Dev | To Do |
-| US07 | Selección de Roles | TS17 | Restricción de permisos por rol | Validar acceso a funcionalidades según rol asignado. | 5 | 2 | Backend Dev | To Do |
-| US08 | Creación de Espacio | TS18 | Endpoint crear espacio | Permitir registrar espacios con dimensiones, fotos y tipo. | 6 | 3 | Backend Dev | To Do |
-| US08 | Creación de Espacio | TS19 | Modelo entidad Espacio | Crear entidad y relaciones en base de datos para espacios. | 4 | 2 | Backend Dev | To Do |
-| US08 | Creación de Espacio | TS20 | Validación de formulario espacio | Validar datos obligatorios y formato correcto de espacios. | 3 | 1 | Backend Dev | To Do |
-| US11 | Subir espacio para edición | TS21 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Backend Dev | To Do |
-| US11 | Subir espacio para edición | TS22 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Backend Dev | To Do |
-| US38 | Visualización de espacios | TS25 | Endpoint listar espacios | Mostrar espacios registrados del usuario autenticado. | 5 | 2 | Backend Dev | To Do |
-| US38 | Visualización de espacios | TS26 | Consulta de detalles de espacio | Obtener información completa de cada espacio registrado. | 4 | 2 | Backend Dev | To Do |
-| US48 | Configuración de tareas automáticas | TS31 | Endpoint crear tarea monitoreo | Permitir registrar tareas automáticas de monitoreo IoT. | 6 | 3 | Backend Dev | To Do |
-| US48 | Configuración de tareas automáticas | TS32 | Programación de tareas | Configurar ejecución periódica de tareas automáticas. | 5 | 2 | Backend Dev | To Do |
+| US01 | Visualización de Landing Page | TS01 | Diseño de estructura Landing Page | Crear estructura inicial de la landing con navbar, hero section y footer. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US01 | Visualización de Landing Page | TS02 | Implementación sección servicios | Mostrar los beneficios y servicios ofrecidos por SpacePulse. | 5 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US01 | Visualización de Landing Page | TS03 | Diseño responsive Landing | Adaptar la Landing Page para móviles y tablets. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US02 | Acceso a la aplicación | TS04 | Botón de ingreso a la app | Implementar botón “Ingresar” con redirección al sistema principal. | 2 | 1 | Landa Ortiz, Sergio Javier | To Do |
+| US03 | Registro de Usuarios | TS05 | Crear endpoint de registro | Desarrollar endpoint backend para registrar usuarios nuevos. | 6 | 3 | Via Luna, Bruce | To Do |
+| US03 | Registro de Usuarios | TS06 | Validación de datos de registro | Validar correo único, contraseña y campos obligatorios. | 5 | 2 | Via Luna, Bruce | To Do |
+| US03 | Registro de Usuarios | TS07 | Persistencia de usuarios | Guardar usuarios registrados en la base de datos. | 4 | 1 | Perez Tuesta, Gabriel | To Do |
+| US04 | Inicio de Sesión | TS08 | Endpoint de login | Implementar autenticación mediante correo y contraseña. | 6 | 3 | Perez Tuesta, Gabriel | To Do |
+| US04 | Inicio de Sesión | TS09 | Generación de JWT | Generar token JWT para sesiones autenticadas. | 4 | 2 | Perez Tuesta, Gabriel | To Do |
+| US04 | Inicio de Sesión | TS10 | Manejo de errores login | Mostrar respuesta adecuada cuando las credenciales sean inválidas. | 3 | 1 | Perez Tuesta, Gabriel | To Do |
+| US07 | Selección de Roles | TS16 | Gestión de roles de usuario | Implementar selección de roles durante el registro. | 4 | 2 | Perez Tuesta, Gabriel | To Do |
+| US07 | Selección de Roles | TS17 | Restricción de permisos por rol | Validar acceso a funcionalidades según rol asignado. | 5 | 2 | Perez Tuesta, Gabriel | To Do |
+| US08 | Creación de Espacio | TS18 | Endpoint crear espacio | Permitir registrar espacios con dimensiones, fotos y tipo. | 6 | 3 | Perez Tuesta, Gabriel | To Do |
+| US08 | Creación de Espacio | TS19 | Modelo entidad Espacio | Crear entidad y relaciones en base de datos para espacios. | 4 | 2 | Perez Tuesta, Gabriel | To Do |
+| US08 | Creación de Espacio | TS20 | Validación de formulario espacio | Validar datos obligatorios y formato correcto de espacios. | 3 | 1 | Martinez Gaona, Pablo Afranio | To Do |
+| US11 | Subir espacio para edición | TS21 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Martinez Gaona, Pablo Afranio | To Do |
+| US11 | Subir espacio para edición | TS22 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Martinez Gaona, Pablo Afranio | To Do |
+| US38 | Visualización de espacios | TS25 | Endpoint listar espacios | Mostrar espacios registrados del usuario autenticado. | 5 | 2 | Martinez Gaona, Pablo Afranio | To Do |
+| US38 | Visualización de espacios | TS26 | Consulta de detalles de espacio | Obtener información completa de cada espacio registrado. | 4 | 2 | Martinez Gaona, Pablo Afranio | To Do |
+| US48 | Configuración de tareas automáticas | TS31 | Endpoint crear tarea monitoreo | Permitir registrar tareas automáticas de monitoreo IoT. | 6 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US48 | Configuración de tareas automáticas | TS32 | Programación de tareas | Configurar ejecución periódica de tareas automáticas. | 5 | 2 | Martinez Gaona, Pablo Afranio | To Do |
 
 
 
@@ -3617,8 +3618,8 @@ Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.ht
 | Resumen de la revisión anterior | Iniciar con la creacion del Frontend y avanzar casi a terminar el Backend|
 | Resumen de la retrospectiva anterior | Se lograron dichos objetivos para acercarse de forma mas rapida a la resolucion del Frontend y pasar la segunda version de la aplicacion |
 | Objetivo del Sprint | El objetivo del Sprint tiene la finalidad de definir las tareas y las fechas esperadas para las entregas, para empezar a actuar de manera cronometrada con los objetivos, desde finalizar el backend hasta terminar la aplicacion para el primer usuario Evento clave: Finalizacion del Backend y primera aplicacion de Frontend |
-| Velocidad del Sprint | Definamos el backlog primero. |
-| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  Story Points. |
+| Velocidad del Sprint | 150 Story Pointss |
+| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  150 = 193 Story Points. |
 
 ##### 4.2.2.2. Sprint Backlog 2 
 
@@ -3629,78 +3630,78 @@ Este sprint combinó tareas de diseño visual, estructura HTML, desarrollo en Ja
 
 | Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
 |---|---|---|---|---|---|---|---|---|
-| US05 | Recuperar Contraseña | TS01 | Diseño de formulario | Crear el diseño para ingresar los datos de recuperacion. | 2 | 2 | NOMBRE DE INTEGRANTE | To Do |
-| US05 | Recuperar Contraseña | TS02 | Porgramar funcionamiento | Diseñar y testear la funcionalidad de dicho segmento | 4 | 3 | NOMBRE DE INTEGRANTE | To Do |
-| US09 | Recibir notificaciones IoT | TS33 | Endpoint recepción de notificaciones | Implementar servicio para recibir eventos generados por dispositivos IoT. | 6 | 3 | Backend Dev | To Do |
-| US09 | Recibir notificaciones IoT | TS34 | Gestión de alertas en sistema | Procesar y almacenar notificaciones recibidas. | 5 | 2 | Backend Dev | To Do |
-| US09 | Recibir notificaciones IoT | TS35 | Visualización de notificaciones | Mostrar alertas IoT al usuario dentro de la plataforma. | 4 | 2 | Frontend Dev | To Do |
-| US11 | Subir espacio para edición | TS36 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Backend Dev | To Do |
-| US11 | Subir espacio para edición | TS37 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Backend Dev | To Do |
-| US12 | Seguridad de datos | TS38 | Implementación de cifrado de datos | Proteger información sensible almacenada en la plataforma. | 8 | 3 | Backend Dev | To Do |
-| US12 | Seguridad de datos | TS39 | Protección de accesos API | Configurar autenticación y autorización en endpoints. | 6 | 2 | Backend Dev | To Do |
-| US12 | Seguridad de datos | TS40 | Auditoría de seguridad | Registrar eventos críticos relacionados con accesos y modificaciones. | 5 | 2 | Backend Dev | To Do |
-| US12 | Seguridad de datos | TS41 | Validación de vulnerabilidades | Realizar controles básicos de seguridad y validaciones. | 5 | 2 | Backend Dev | To Do |
-| US13 | Historial de proyectos | TS42 | Consulta de proyectos históricos | Obtener listado de proyectos completados y activos. | 5 | 2 | Backend Dev | To Do |
-| US13 | Historial de proyectos | TS43 | Visualización de historial | Mostrar historial detallado en la interfaz del usuario. | 4 | 2 | Frontend Dev | To Do |
-| US15 | Alertas de seguridad | TS44 | Generación de alertas de seguridad | Detectar eventos críticos relacionados con seguridad. | 5 | 2 | Backend Dev | To Do |
-| US15 | Alertas de seguridad | TS45 | Notificación al usuario | Enviar alertas mediante sistema de notificaciones. | 4 | 1 | Backend Dev | To Do |
-| US16 | Seguimiento en tiempo real | TS46 | Servicio de actualización en tiempo real | Implementar actualización continua del estado de proyectos. | 6 | 3 | Backend Dev | To Do |
-| US16 | Seguimiento en tiempo real | TS47 | Integración WebSocket | Permitir transmisión de datos en tiempo real. | 5 | 2 | Backend Dev | To Do |
-| US16 | Seguimiento en tiempo real | TS48 | Visualización dinámica | Refrescar información en pantalla sin recargar página. | 4 | 2 | Frontend Dev | To Do |
-| US17 | Comparación de presupuestos | TS49 | Consulta de presupuestos | Obtener propuestas económicas asociadas al proyecto. | 4 | 2 | Backend Dev | To Do |
-| US17 | Comparación de presupuestos | TS50 | Vista comparativa | Mostrar comparación de costos y características. | 5 | 2 | Frontend Dev | To Do |
-| US18 | Gestión de pagos | TS51 | Registro de pagos | Permitir registrar operaciones de pago. | 6 | 3 | Backend Dev | To Do |
-| US18 | Gestión de pagos | TS52 | Validación de transacciones | Verificar consistencia y estado de pagos. | 5 | 2 | Backend Dev | To Do |
-| US18 | Gestión de pagos | TS53 | Historial de pagos | Mostrar pagos realizados por el usuario. | 4 | 2 | Frontend Dev | To Do |
-| US19 | Recordatorios de pago | TS54 | Programación de recordatorios | Configurar alertas automáticas de vencimiento. | 3 | 1 | Backend Dev | To Do |
-| US19 | Recordatorios de pago | TS55 | Notificaciones de pago | Informar al usuario sobre pagos pendientes. | 2 | 1 | Backend Dev | To Do |
-| US20 | Registro de incidencias | TS56 | Endpoint registrar incidencia | Permitir registrar problemas durante la remodelación. | 5 | 2 | Backend Dev | To Do |
-| US20 | Registro de incidencias | TS57 | Persistencia de incidencias | Almacenar incidencias en base de datos. | 4 | 1 | Backend Dev | To Do |
-| US20 | Registro de incidencias | TS58 | Consulta de incidencias | Visualizar incidencias reportadas. | 4 | 2 | Frontend Dev | To Do |
-| US23 | Panel de control de dispositivos IoT | TS59 | Dashboard IoT | Diseñar panel para monitoreo de dispositivos. | 6 | 3 | Frontend Dev | To Do |
-| US23 | Panel de control de dispositivos IoT | TS60 | Consulta de métricas IoT | Obtener datos de sensores conectados. | 5 | 2 | Backend Dev | To Do |
-| US23 | Panel de control de dispositivos IoT | TS61 | Visualización de estados | Mostrar estado actual de dispositivos registrados. | 4 | 2 | Frontend Dev | To Do |
-| US24 | Sugerencias de mejoras | TS62 | Formulario de sugerencias | Permitir registrar propuestas de mejora. | 3 | 1 | Frontend Dev | To Do |
-| US24 | Sugerencias de mejoras | TS63 | Almacenamiento de sugerencias | Guardar comentarios enviados por usuarios. | 2 | 1 | Backend Dev | To Do |
-| US26 | Control de acceso de usuarios (RBAC) | TS64 | Configuración de roles RBAC | Definir permisos según rol de usuario. | 5 | 2 | Backend Dev | To Do |
-| US26 | Control de acceso de usuarios (RBAC) | TS65 | Validación de permisos | Restringir acceso a funcionalidades protegidas. | 5 | 2 | Backend Dev | To Do |
-| US27 | Configuración de notificaciones | TS66 | Preferencias de notificaciones | Permitir configurar tipos de alertas. | 4 | 2 | Frontend Dev | To Do |
-| US27 | Configuración de notificaciones | TS67 | Persistencia de configuración | Guardar preferencias seleccionadas por el usuario. | 4 | 1 | Backend Dev | To Do |
-| US29 | Filtrado de proyectos | TS68 | Implementación de filtros | Permitir búsqueda por estado, fecha y categoría. | 4 | 2 | Backend Dev | To Do |
-| US29 | Filtrado de proyectos | TS69 | Interfaz de filtrado | Diseñar controles para aplicar filtros. | 4 | 2 | Frontend Dev | To Do |
-| US30 | Conexión con dispositivos IoT | TS70 | Integración de dispositivos IoT | Permitir vincular dispositivos a proyectos. | 6 | 3 | IoT Dev | To Do |
-| US30 | Conexión con dispositivos IoT | TS71 | Validación de conexión | Verificar comunicación con dispositivos registrados. | 5 | 2 | IoT Dev | To Do |
-| US30 | Conexión con dispositivos IoT | TS72 | Registro de dispositivos conectados | Almacenar dispositivos asociados al proyecto. | 4 | 2 | Backend Dev | To Do |
-| US35 | Roles de usuario | TS73 | Gestión de roles | Crear y administrar roles del sistema. | 4 | 2 | Backend Dev | To Do |
-| US35 | Roles de usuario | TS74 | Asignación de roles | Permitir asignar roles a usuarios registrados. | 4 | 2 | Backend Dev | To Do |
-| US36 | API para integración externa | TS75 | Diseño de API pública | Crear endpoints para integraciones externas. | 5 | 2 | Backend Dev | To Do |
-| US36 | API para integración externa | TS76 | Documentación de API | Generar documentación para desarrolladores externos. | 4 | 2 | Backend Dev | To Do |
-| US39 | Actualización de Espacio | TS77 | Endpoint actualización de espacio | Permitir modificar información de espacios registrados. | 5 | 2 | Backend Dev | To Do |
-| US39 | Actualización de Espacio | TS78 | Validación de cambios | Verificar integridad de datos actualizados. | 4 | 1 | Backend Dev | To Do |
-| US40 | Eliminación de Espacio | TS79 | Endpoint eliminar espacio | Permitir eliminar espacios registrados. | 4 | 2 | Backend Dev | To Do |
-| US40 | Eliminación de Espacio | TS80 | Confirmación de eliminación | Solicitar validación antes de eliminar registros. | 3 | 1 | Frontend Dev | To Do |
-| US45 | Registro de Proyecto de Monitoreo IoT | TS81 | Endpoint crear proyecto IoT | Registrar proyectos de monitoreo asociados a espacios. | 6 | 3 | Backend Dev | To Do |
-| US45 | Registro de Proyecto de Monitoreo IoT | TS82 | Persistencia de proyecto IoT | Guardar información del proyecto en base de datos. | 5 | 2 | Backend Dev | To Do |
-| US45 | Registro de Proyecto de Monitoreo IoT | TS83 | Validación de datos de proyecto | Verificar consistencia de la información registrada. | 4 | 2 | Backend Dev | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS84 | Consulta de proyecto IoT | Obtener información detallada del proyecto. | 6 | 3 | Backend Dev | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS85 | Visualización de métricas | Mostrar indicadores y datos relevantes del proyecto. | 5 | 2 | Frontend Dev | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS86 | Consulta de dispositivos asociados | Mostrar dispositivos vinculados al proyecto. | 5 | 2 | Backend Dev | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS87 | Visualización de incidentes | Mostrar incidentes registrados relacionados al proyecto. | 5 | 2 | Frontend Dev | To Do |
-| US47 | Recepción Masiva de Datos de Sensores | TS88 | Endpoint recepción masiva | Recibir grandes volúmenes de datos de sensores. | 6 | 3 | Backend Dev | To Do |
-| US47 | Recepción Masiva de Datos de Sensores | TS89 | Procesamiento de datos IoT | Procesar y validar información recibida. | 5 | 2 | Backend Dev | To Do |
-| US47 | Recepción Masiva de Datos de Sensores | TS90 | Persistencia de mediciones | Almacenar datos históricos de sensores. | 5 | 2 | Backend Dev | To Do |
-| US50 | Registro de Dispositivo IoT | TS91 | Endpoint registrar dispositivo | Permitir registrar nuevos dispositivos IoT. | 6 | 3 | IoT Dev | To Do |
-| US50 | Registro de Dispositivo IoT | TS92 | Validación de dispositivo | Verificar identificadores y configuración inicial. | 4 | 2 | IoT Dev | To Do |
-| US50 | Registro de Dispositivo IoT | TS93 | Persistencia de dispositivos | Guardar dispositivos registrados en la base de datos. | 4 | 2 | Backend Dev | To Do |
-| US51 | Consulta de Dispositivos por Proyecto | TS94 | Consulta de dispositivos | Obtener dispositivos asociados a un proyecto. | 6 | 3 | Backend Dev | To Do |
-| US51 | Consulta de Dispositivos por Proyecto | TS95 | Filtros de dispositivos | Permitir búsqueda por estado y tipo. | 5 | 2 | Backend Dev | To Do |
-| US51 | Consulta de Dispositivos por Proyecto | TS96 | Visualización de dispositivos | Mostrar información detallada en interfaz. | 5 | 2 | Frontend Dev | To Do |
-| US52 | Consulta de Incidentes por Proyecto | TS97 | Consulta de incidentes | Obtener incidentes relacionados con un proyecto. | 6 | 3 | Backend Dev | To Do |
-| US52 | Consulta de Incidentes por Proyecto | TS98 | Filtros de incidentes | Permitir búsqueda por severidad y fecha. | 5 | 2 | Backend Dev | To Do |
-| US52 | Consulta de Incidentes por Proyecto | TS99 | Visualización de incidentes | Mostrar listado y detalle de incidentes. | 5 | 2 | Frontend Dev | To Do |
-| US54 | Registro Histórico de Notificaciones | TS100 | Almacenamiento de notificaciones | Registrar historial de alertas generadas. | 5 | 2 | Backend Dev | To Do |
-| US54 | Registro Histórico de Notificaciones | TS101 | Consulta de historial | Permitir recuperar notificaciones anteriores. | 4 | 2 | Backend Dev | To Do |
-| US54 | Registro Histórico de Notificaciones | TS102 | Visualización de historial | Mostrar historial de notificaciones al usuario. | 4 | 2 | Frontend Dev | To Do |
+| US05 | Recuperar Contraseña | TS01 | Diseño de formulario | Crear el diseño para ingresar los datos de recuperacion. | 2 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US05 | Recuperar Contraseña | TS02 | Porgramar funcionamiento | Diseñar y testear la funcionalidad de dicho segmento | 4 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US09 | Recibir notificaciones IoT | TS33 | Endpoint recepción de notificaciones | Implementar servicio para recibir eventos generados por dispositivos IoT. | 6 | 3 | Via Luna, Bruce | To Do |
+| US09 | Recibir notificaciones IoT | TS34 | Gestión de alertas en sistema | Procesar y almacenar notificaciones recibidas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US09 | Recibir notificaciones IoT | TS35 | Visualización de notificaciones | Mostrar alertas IoT al usuario dentro de la plataforma. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US11 | Subir espacio para edición | TS36 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Via Luna, Bruce | To Do |
+| US11 | Subir espacio para edición | TS37 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS38 | Implementación de cifrado de datos | Proteger información sensible almacenada en la plataforma. | 8 | 3 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS39 | Protección de accesos API | Configurar autenticación y autorización en endpoints. | 6 | 2 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS40 | Auditoría de seguridad | Registrar eventos críticos relacionados con accesos y modificaciones. | 5 | 2 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS41 | Validación de vulnerabilidades | Realizar controles básicos de seguridad y validaciones. | 5 | 2 | Via Luna, Bruce | To Do |
+| US13 | Historial de proyectos | TS42 | Consulta de proyectos históricos | Obtener listado de proyectos completados y activos. | 5 | 2 | Via Luna, Bruce | To Do |
+| US13 | Historial de proyectos | TS43 | Visualización de historial | Mostrar historial detallado en la interfaz del usuario. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US15 | Alertas de seguridad | TS44 | Generación de alertas de seguridad | Detectar eventos críticos relacionados con seguridad. | 5 | 2 | Via Luna, Bruce | To Do |
+| US15 | Alertas de seguridad | TS45 | Notificación al usuario | Enviar alertas mediante sistema de notificaciones. | 4 | 1 | Via Luna, Bruce | To Do |
+| US16 | Seguimiento en tiempo real | TS46 | Servicio de actualización en tiempo real | Implementar actualización continua del estado de proyectos. | 6 | 3 | Via Luna, Bruce | To Do |
+| US16 | Seguimiento en tiempo real | TS47 | Integración WebSocket | Permitir transmisión de datos en tiempo real. | 5 | 2 | Via Luna, Bruce | To Do |
+| US16 | Seguimiento en tiempo real | TS48 | Visualización dinámica | Refrescar información en pantalla sin recargar página. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US17 | Comparación de presupuestos | TS49 | Consulta de presupuestos | Obtener propuestas económicas asociadas al proyecto. | 4 | 2 | Via Luna, Bruce | To Do |
+| US17 | Comparación de presupuestos | TS50 | Vista comparativa | Mostrar comparación de costos y características. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US18 | Gestión de pagos | TS51 | Registro de pagos | Permitir registrar operaciones de pago. | 6 | 3 | Via Luna, Bruce | To Do |
+| US18 | Gestión de pagos | TS52 | Validación de transacciones | Verificar consistencia y estado de pagos. | 5 | 2 | Via Luna, Bruce | To Do |
+| US18 | Gestión de pagos | TS53 | Historial de pagos | Mostrar pagos realizados por el usuario. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US19 | Recordatorios de pago | TS54 | Programación de recordatorios | Configurar alertas automáticas de vencimiento. | 3 | 1 | Via Luna, Bruce | To Do |
+| US19 | Recordatorios de pago | TS55 | Notificaciones de pago | Informar al usuario sobre pagos pendientes. | 2 | 1 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS56 | Endpoint registrar incidencia | Permitir registrar problemas durante la remodelación. | 5 | 2 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS57 | Persistencia de incidencias | Almacenar incidencias en base de datos. | 4 | 1 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS58 | Consulta de incidencias | Visualizar incidencias reportadas. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US23 | Panel de control de dispositivos IoT | TS59 | Dashboard IoT | Diseñar panel para monitoreo de dispositivos. | 6 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US23 | Panel de control de dispositivos IoT | TS60 | Consulta de métricas IoT | Obtener datos de sensores conectados. | 5 | 2 | Via Luna, Bruce | To Do |
+| US23 | Panel de control de dispositivos IoT | TS61 | Visualización de estados | Mostrar estado actual de dispositivos registrados. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US24 | Sugerencias de mejoras | TS62 | Formulario de sugerencias | Permitir registrar propuestas de mejora. | 3 | 1 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US24 | Sugerencias de mejoras | TS63 | Almacenamiento de sugerencias | Guardar comentarios enviados por usuarios. | 2 | 1 | Via Luna, Bruce | To Do |
+| US26 | Control de acceso de usuarios (RBAC) | TS64 | Configuración de roles RBAC | Definir permisos según rol de usuario. | 5 | 2 | Via Luna, Bruce | To Do |
+| US26 | Control de acceso de usuarios (RBAC) | TS65 | Validación de permisos | Restringir acceso a funcionalidades protegidas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US27 | Configuración de notificaciones | TS66 | Preferencias de notificaciones | Permitir configurar tipos de alertas. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US27 | Configuración de notificaciones | TS67 | Persistencia de configuración | Guardar preferencias seleccionadas por el usuario. | 4 | 1 | Via Luna, Bruce | To Do |
+| US29 | Filtrado de proyectos | TS68 | Implementación de filtros | Permitir búsqueda por estado, fecha y categoría. | 4 | 2 | Via Luna, Bruce | To Do |
+| US29 | Filtrado de proyectos | TS69 | Interfaz de filtrado | Diseñar controles para aplicar filtros. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US30 | Conexión con dispositivos IoT | TS70 | Integración de dispositivos IoT | Permitir vincular dispositivos a proyectos. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US30 | Conexión con dispositivos IoT | TS71 | Validación de conexión | Verificar comunicación con dispositivos registrados. | 5 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US30 | Conexión con dispositivos IoT | TS72 | Registro de dispositivos conectados | Almacenar dispositivos asociados al proyecto. | 4 | 2 | Via Luna, Bruce | To Do |
+| US35 | Roles de usuario | TS73 | Gestión de roles | Crear y administrar roles del sistema. | 4 | 2 | Via Luna, Bruce | To Do |
+| US35 | Roles de usuario | TS74 | Asignación de roles | Permitir asignar roles a usuarios registrados. | 4 | 2 | Via Luna, Bruce | To Do |
+| US36 | API para integración externa | TS75 | Diseño de API pública | Crear endpoints para integraciones externas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US36 | API para integración externa | TS76 | Documentación de API | Generar documentación para desarrolladores externos. | 4 | 2 | Via Luna, Bruce | To Do |
+| US39 | Actualización de Espacio | TS77 | Endpoint actualización de espacio | Permitir modificar información de espacios registrados. | 5 | 2 | Via Luna, Bruce | To Do |
+| US39 | Actualización de Espacio | TS78 | Validación de cambios | Verificar integridad de datos actualizados. | 4 | 1 | Via Luna, Bruce | To Do |
+| US40 | Eliminación de Espacio | TS79 | Endpoint eliminar espacio | Permitir eliminar espacios registrados. | 4 | 2 | Via Luna, Bruce | To Do |
+| US40 | Eliminación de Espacio | TS80 | Confirmación de eliminación | Solicitar validación antes de eliminar registros. | 3 | 1 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS81 | Endpoint crear proyecto IoT | Registrar proyectos de monitoreo asociados a espacios. | 6 | 3 | Via Luna, Bruce | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS82 | Persistencia de proyecto IoT | Guardar información del proyecto en base de datos. | 5 | 2 | Via Luna, Bruce | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS83 | Validación de datos de proyecto | Verificar consistencia de la información registrada. | 4 | 2 | Via Luna, Bruce | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS84 | Consulta de proyecto IoT | Obtener información detallada del proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS85 | Visualización de métricas | Mostrar indicadores y datos relevantes del proyecto. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS86 | Consulta de dispositivos asociados | Mostrar dispositivos vinculados al proyecto. | 5 | 2 | Via Luna, Bruce | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS87 | Visualización de incidentes | Mostrar incidentes registrados relacionados al proyecto. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS88 | Endpoint recepción masiva | Recibir grandes volúmenes de datos de sensores. | 6 | 3 | Via Luna, Bruce | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS89 | Procesamiento de datos IoT | Procesar y validar información recibida. | 5 | 2 | Via Luna, Bruce | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS90 | Persistencia de mediciones | Almacenar datos históricos de sensores. | 5 | 2 | Via Luna, Bruce | To Do |
+| US50 | Registro de Dispositivo IoT | TS91 | Endpoint registrar dispositivo | Permitir registrar nuevos dispositivos IoT. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US50 | Registro de Dispositivo IoT | TS92 | Validación de dispositivo | Verificar identificadores y configuración inicial. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US50 | Registro de Dispositivo IoT | TS93 | Persistencia de dispositivos | Guardar dispositivos registrados en la base de datos. | 4 | 2 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS94 | Consulta de dispositivos | Obtener dispositivos asociados a un proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS95 | Filtros de dispositivos | Permitir búsqueda por estado y tipo. | 5 | 2 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS96 | Visualización de dispositivos | Mostrar información detallada en interfaz. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS97 | Consulta de incidentes | Obtener incidentes relacionados con un proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS98 | Filtros de incidentes | Permitir búsqueda por severidad y fecha. | 5 | 2 | Via Luna, Bruce | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS99 | Visualización de incidentes | Mostrar listado y detalle de incidentes. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US54 | Registro Histórico de Notificaciones | TS100 | Almacenamiento de notificaciones | Registrar historial de alertas generadas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US54 | Registro Histórico de Notificaciones | TS101 | Consulta de historial | Permitir recuperar notificaciones anteriores. | 4 | 2 | Via Luna, Bruce | To Do |
+| US54 | Registro Histórico de Notificaciones | TS102 | Visualización de historial | Mostrar historial de notificaciones al usuario. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
 
 
 
@@ -3715,6 +3716,8 @@ Repositorio encargado de la presencia web de la solución, enfocado en optimizar
 | LandingPage-SpacePulse|main|31a5b09|commit add landing page|-| 09/05/2026
 | LandingPage-SpacePulse|main|3656e7c|Logo Agregado|-|13/05/2026
 | LandingPage-SpacePulse|main|77aa98c|carpetas borradas|-|04/05/2026
+| LandingPage-SpacePulse|main|14cba3b|responsive, agregar imagen producto|-|17/06/2026
+| LandingPage-SpacePulse|main|e097756|last changes|-|17/06/2026
 
 ### Development Evidence for FrontEnd
 
@@ -3724,7 +3727,27 @@ Repositorio que aloja la aplicación móvil nativa desarrollada en Kotlin con Je
 |--------|---------------|------------|---------------|---------|--|
 |SpacePulse-AppMobile|main|6cd6ed9|Primer commit|-|14/05/2026
 |SpacePulse-AppMobile|develop|23a2ca3|added screen views and functions|-|14/05/2026
-|SpacePulse-AppMobile|main|c5f39e0|Merge pull request #1 from Coder-Placing/develop|update app|15/05/2026
+|SpacePulse-AppMobile|develop|c5f39e0|Merge pull request #1 from Coder-Placing/develop|update app|15/05/2026
+|SpacePulse-AppMobile|main|3f91bca|update android|-|15/06/2026
+|SpacePulse-AppMobile|main|ddaaf92|update app|-|15/06/2026
+|SpacePulse-AppMobile|develop|39edc9e|Merge pull request #2 from Coder-Placing/main|-|15/06/2026
+|SpacePulse-AppMobile|feature/iot-monitoring|aaa369e|Merge pull request #3 from Coder-Placing/main|updated app|15/06/2026
+|SpacePulse-AppMobile|develop|b3535eb|update android: feature images|-|17/06/2026
+|SpacePulse-AppMobile|develop|4c7cb52|Merge branch 'main' of https://github.com/Coder-Placing/SpacePulse-AppMobile|-|17/06/2026
+|SpacePulse-AppMobile|main|de189f4|update android: feature images 2|-|17/06/2026
+|SpacePulse-AppMobile|develop|f5c572d|feat: implement space creation flow with ViewModel integration and UI screens|-|17/06/2026
+|SpacePulse-AppMobile|develop|be71930|feat: implement navigation graph, home dashboard, and space management screens with supporting ViewModels|-|17/06/2026
+|SpacePulse-AppMobile|main|ee7e2de|Merge pull request #4 from Coder-Placing/main|Merge main to develop|17/05/2026
+|SpacePulse-AppMobile|main|2644995|Merge branch 'develop' into feature/iot-monitoring|-|17/05/2026
+|SpacePulse-AppMobile|main|7430cb7|Merge pull request #5 from Coder-Placing/feature/iot-monitoring|-|17/05/2026
+|SpacePulse-AppMobile|develop|24d7111|feat: implement ClientHomeScreen UI with bottom navigation and view routing|-|17/05/2026
+|SpacePulse-AppMobile|develop|1665beb|Implement notifications screens|-|17/05/2026
+|SpacePulse-AppMobile|418d910|418d910|Merge branch 'develop' into feature/notification|-|17/05/2026
+|SpacePulse-AppMobile|develop|fa14e54|Merge pull request #6 from Coder-Placing/feature/notification|Implement notifications screens|17/05/2026
+|SpacePulse-AppMobile|develop|dbed81a|Fix: minor error|-|17/05/2026
+|SpacePulse-AppMobile|develop|62662cf|update android: feature fix|-|18/05/2026
+|SpacePulse-AppMobile|develop|1544beb|update android: feature fix 1|-|18/05/2026
+|SpacePulse-AppMobile|main|c11f033|update android: feature fix 2|-|18/05/2026
 
 ### Development Evidence for Backend
 
@@ -3745,6 +3768,9 @@ Este repositorio contiene la lógica de negocio centralizada bajo un enfoque de 
 |Backend|testing|e38a96f|finished testing suite for sprint 1|-|14/05/2026
 |Backend|main|382827f|Update environment variable and expose port in Dockerfile|-|15/05/2026
 |Backend|main|cfcf477|Updated: Fixed mistakes for deploying|-|15/05/2026
+|Backend|main|770ccd5|Commit: Unified services and polish products|-|09/05/2026
+|Backend|main|de66f9a|Final commit to complete Backend|-|11/05/2026
+
 
 ##### 4.2.2.4. Testing Suite Evidence for Sprint Review 
 
@@ -3753,7 +3779,35 @@ Esta seccion se da por finalizada al terminar expresamente con todo el backend, 
 
 ##### 4.2.2.5. Execution Evidence for Sprint Review  
 
+Iniciaremos con las historios de usuario que cambiaron el backend para las nuevas necesidades del proyecto:
 
+![Team Collaboration for Backend](Assets/upd_iot_2.png)
+
+![Team Collaboration for Backend](Assets/upc_space_2.png)
+
+![Team Collaboration for Backend](Assets/upd_task_2.png)
+
+Luego procederemos a las pruebas dentro del frontend ya vinculado con el backend
+
+![Frontend Deployed](Assets/Frontend_Downloaded.jpeg)
+
+![About_The_team](Assets/open_app_2.jpg)
+
+![About_The_team](Assets/acceso_multimedia.jpg)
+
+![About_The_team](Assets/dashboard_2.jpg)
+
+![About_The_team](Assets/esapcios_vacio.jpg)
+
+![About_The_team](Assets/lecturas_iot.jpg)
+
+![About_The_team](Assets/iot_off.jpg)
+
+![About_The_team](Assets/Notis.jpg)
+
+![About_The_team](Assets/reading_notis.jpg)
+
+![About_The_team](Assets/readed_notis.jpg)
 
 ##### 4.2.2.6. Services Documentation Evidence for Sprint Review  
 En esta sección, el equipo añadira y definira los nuevos metodos HTTP implementados en el desarrollo final del Backend API:
@@ -3767,6 +3821,10 @@ En esta sección, el equipo añadira y definira los nuevos metodos HTTP implemen
 | GET | /api/v1/monitoring/tasks/my-tasks | GetMyTasks| Get Tasks by JWT Token |
 | DELETE | /api/v1/monitoring/io-t-devices/{id} | DeleteIoTDevice| Delete IoT Device by Id|
 
+Ademas agregaremos una evidencia de como se estuvo desarrollando la capa de presentacion para la aplicacion movil
+
+![Distribucion_Carpetas_Moviles](Assets/files_movile.png)
+
 
 ##### 4.2.2.7. Software Deployment Evidence for Sprint Review  
 
@@ -3775,6 +3833,11 @@ En esta sección, el equipo añadira y definira los nuevos metodos HTTP implemen
 
 Usaremos las herramientas del despliegue de GitHub para desplegar la landing page
 
+![Landing Page Deployment](Assets/Landing_Deployed_2.png)
+
+![Landing Page Deployment](Assets/Landing_Deploy_2.png)
+
+![Landing Page Deployment](Assets/Landing_Deployment_2.png)
 
 ### Deployment for Backend
 
@@ -3795,34 +3858,43 @@ Finalmente se despliegueara y se comprobara que todo este conectado para su core
 
 ### Deployment for Frontend
 
-Debido a las limitantes para la ejecucion de una aplicacionFirebase el cual servira para probar los mockups a mayor detalle
+Debido a las limitantes para la ejecucion de una aplicacion Firebase el cual servira para probar la aplicacion completamente
 
+![About_The_team](Assets/creation_firebase_2.png)
+
+![About_The_team](Assets/distribution_2.png)
 
 Para eso generaremos el APK de la aplicacion movil y la subiremos a esta pagina para que asi genera esta version de prueba publica
 
+![About_The_team](Assets/apk_2.png)
 
+Finalmente llenaremos con la inforacion requerida por Firebase para desplegar la aplicacion, donde incluiremos a los testeadores para las entrevistas futuras
 
-Finalmente llenaremos con la inforacion requerida por Firebase para desplegar la aplicacion
+![About_The_team](Assets/testers_2.png)
 
+![About_The_team](Assets/sended_2.png)
 
 Y abriremos la aplicacion desde nuestros celulares
 
+![About_The_team](Assets/open_app_2.jpg)
 
+Enlace a la Landing Page Desplegada: https://coder-placing.github.io/LandingPage-SpacePulse/
 
-Enlace a la Landing Page Desplegada: 
-
-Enlace al Backend Desplegado: 
+Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.html
 
 ##### 4.2.2.8. Team Collaboration Insights during Sprint  
 
 #### Team Collaboration for Landing Page
 
+![About_The_team](Assets/landing_dev_2.png)
 
 #### Team Collaboration for Frontend
 
+![About_The_team](Assets/front_dev_2.png)
 
 #### Team Collaboration for Backend
 
+![About_The_team](Assets/back_dev_2.png)
 
 ### 4.3. Validation Interviews 
 
@@ -4342,35 +4414,21 @@ En general, el usuario tuvo una experiencia positiva con la aplicación, destaca
 
 ## Video About the product
 
+Aquí tenemos el video 'About the Product', donde mostramos en la práctica cómo funciona exactamente lo que hemos creado, cuáles son sus características clave y de qué manera esta solución resuelve el problema real que planteamos en el proyecto 
 
-<table align="center">
-  <tr>
-    <th colspan="2" style="text-align:center"></th>
-  </tr>
-     
-  <tr>
-    <td><strong>URL</strong></td>
-    <td>
-      
-  `https://www.youtube.com/watch?v=klJhEwJ3CGU`
 
-  </td>
-  </tr>
-  <tr>
-    <td colspan="2" style="text-align:justify">
-       <br>
-Aquí tenemos el video 'About the Product', donde mostramos en la práctica cómo funciona exactamente lo que hemos creado, cuáles son sus características clave y de qué manera esta solución resuelve el problema real que planteamos en el proyecto  <tr>
-    <td colspan="2"><br>
-      <img src="Assets/ProductBacklog.png" alt="segmento1entrevista3" width="1000"><br>
-    </td>
-  </tr>
-</table>
+<img src="Assets/ProductBacklog.png" alt="segmento1entrevista3" width="1000"><br>
+
+Enlace del video About the Product:  `https://www.youtube.com/watch?v=klJhEwJ3CGU`
+
 
 ## Video About the team
 
 Aqui tenemos el video que evidencia la participacion del grupo, el que aprendimo durante el curso y que aporta este proyecto a nuestro endemiento tanto del curso como de la carrera
 
-![About_The_team](Assets\About-the-Team.png)
+![About_The_team](Assets/About-the-Team.png)
+
+Enlace a video About the team: https://youtu.be/zGqyJXDKO4E
 
 ## Bibliografia
 
