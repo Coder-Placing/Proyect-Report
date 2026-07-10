@@ -3916,8 +3916,8 @@ Este apartado describe los componentes esenciales del Sprint Planning Meeting co
 | Resumen de la revisión anterior | Finalizar con los ultimos requerimientos del backend y avanzar el App en kotlin|
 | Resumen de la retrospectiva anterior | Se lograron los objetivos propuestos para acercarse de forma mas rapida a la finalizacion del backend cumpliendo con las funciones propuestas y pasar la segunda version de la aplicacion con el segundo usuario |
 | Objetivo del Sprint | La finalidad de desarrollar este sprint es tener la finalidad de definir las tareas y las fechas esperadas para las entregas, para empezar a actuar de manera eficiente con los objetivos propuestos, desde finalizar y corregir detalles de la app kotlin hasta terminar la aplicacion en flutter para el segundo usuario. |
-| Velocidad del Sprint | 150 Story Pointss |
-| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  150 = 193 Story Points. |
+| Velocidad del Sprint | 65 Story Pointss |
+| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  150 + 65 = 258 Story Points. |
 
 #### 4.2.3.2. Sprint Backlog 3
 
@@ -3927,176 +3927,68 @@ El objetivo principal del Sprint 3 es implementar las funcionalidades del Bounde
 
 | Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
 |---|---|---|---|---|---|---|---|---|
-| US05 | Recuperar Contraseña | TS01 | Diseño de formulario | Crear el diseño para ingresar los datos de recuperacion. | 2 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US05 | Recuperar Contraseña | TS02 | Porgramar funcionamiento | Diseñar y testear la funcionalidad de dicho segmento | 4 | 3 | Martinez Gaona, Pablo Afranio | To Do |
-| US09 | Recibir notificaciones IoT | TS33 | Endpoint recepción de notificaciones | Implementar servicio para recibir eventos generados por dispositivos IoT. | 6 | 3 | Via Luna, Bruce | To Do |
-| US09 | Recibir notificaciones IoT | TS34 | Gestión de alertas en sistema | Procesar y almacenar notificaciones recibidas. | 5 | 2 | Via Luna, Bruce | To Do |
-| US09 | Recibir notificaciones IoT | TS35 | Visualización de notificaciones | Mostrar alertas IoT al usuario dentro de la plataforma. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US11 | Subir espacio para edición | TS36 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Via Luna, Bruce | To Do |
-| US11 | Subir espacio para edición | TS37 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Via Luna, Bruce | To Do |
-| US12 | Seguridad de datos | TS38 | Implementación de cifrado de datos | Proteger información sensible almacenada en la plataforma. | 8 | 3 | Via Luna, Bruce | To Do |
-| US12 | Seguridad de datos | TS39 | Protección de accesos API | Configurar autenticación y autorización en endpoints. | 6 | 2 | Via Luna, Bruce | To Do |
-| US12 | Seguridad de datos | TS40 | Auditoría de seguridad | Registrar eventos críticos relacionados con accesos y modificaciones. | 5 | 2 | Via Luna, Bruce | To Do |
-| US12 | Seguridad de datos | TS41 | Validación de vulnerabilidades | Realizar controles básicos de seguridad y validaciones. | 5 | 2 | Via Luna, Bruce | To Do |
-| US13 | Historial de proyectos | TS42 | Consulta de proyectos históricos | Obtener listado de proyectos completados y activos. | 5 | 2 | Via Luna, Bruce | To Do |
-| US13 | Historial de proyectos | TS43 | Visualización de historial | Mostrar historial detallado en la interfaz del usuario. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US15 | Alertas de seguridad | TS44 | Generación de alertas de seguridad | Detectar eventos críticos relacionados con seguridad. | 5 | 2 | Via Luna, Bruce | To Do |
-| US15 | Alertas de seguridad | TS45 | Notificación al usuario | Enviar alertas mediante sistema de notificaciones. | 4 | 1 | Via Luna, Bruce | To Do |
-| US16 | Seguimiento en tiempo real | TS46 | Servicio de actualización en tiempo real | Implementar actualización continua del estado de proyectos. | 6 | 3 | Via Luna, Bruce | To Do |
-| US16 | Seguimiento en tiempo real | TS47 | Integración WebSocket | Permitir transmisión de datos en tiempo real. | 5 | 2 | Via Luna, Bruce | To Do |
-| US16 | Seguimiento en tiempo real | TS48 | Visualización dinámica | Refrescar información en pantalla sin recargar página. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US17 | Comparación de presupuestos | TS49 | Consulta de presupuestos | Obtener propuestas económicas asociadas al proyecto. | 4 | 2 | Via Luna, Bruce | To Do |
-| US17 | Comparación de presupuestos | TS50 | Vista comparativa | Mostrar comparación de costos y características. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US18 | Gestión de pagos | TS51 | Registro de pagos | Permitir registrar operaciones de pago. | 6 | 3 | Via Luna, Bruce | To Do |
-| US18 | Gestión de pagos | TS52 | Validación de transacciones | Verificar consistencia y estado de pagos. | 5 | 2 | Via Luna, Bruce | To Do |
-| US18 | Gestión de pagos | TS53 | Historial de pagos | Mostrar pagos realizados por el usuario. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US19 | Recordatorios de pago | TS54 | Programación de recordatorios | Configurar alertas automáticas de vencimiento. | 3 | 1 | Via Luna, Bruce | To Do |
-| US19 | Recordatorios de pago | TS55 | Notificaciones de pago | Informar al usuario sobre pagos pendientes. | 2 | 1 | Via Luna, Bruce | To Do |
-| US20 | Registro de incidencias | TS56 | Endpoint registrar incidencia | Permitir registrar problemas durante la remodelación. | 5 | 2 | Via Luna, Bruce | To Do |
-| US20 | Registro de incidencias | TS57 | Persistencia de incidencias | Almacenar incidencias en base de datos. | 4 | 1 | Via Luna, Bruce | To Do |
-| US20 | Registro de incidencias | TS58 | Consulta de incidencias | Visualizar incidencias reportadas. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US23 | Panel de control de dispositivos IoT | TS59 | Dashboard IoT | Diseñar panel para monitoreo de dispositivos. | 6 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US23 | Panel de control de dispositivos IoT | TS60 | Consulta de métricas IoT | Obtener datos de sensores conectados. | 5 | 2 | Via Luna, Bruce | To Do |
-| US23 | Panel de control de dispositivos IoT | TS61 | Visualización de estados | Mostrar estado actual de dispositivos registrados. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US24 | Sugerencias de mejoras | TS62 | Formulario de sugerencias | Permitir registrar propuestas de mejora. | 3 | 1 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US24 | Sugerencias de mejoras | TS63 | Almacenamiento de sugerencias | Guardar comentarios enviados por usuarios. | 2 | 1 | Via Luna, Bruce | To Do |
-| US26 | Control de acceso de usuarios (RBAC) | TS64 | Configuración de roles RBAC | Definir permisos según rol de usuario. | 5 | 2 | Via Luna, Bruce | To Do |
-| US26 | Control de acceso de usuarios (RBAC) | TS65 | Validación de permisos | Restringir acceso a funcionalidades protegidas. | 5 | 2 | Via Luna, Bruce | To Do |
-| US27 | Configuración de notificaciones | TS66 | Preferencias de notificaciones | Permitir configurar tipos de alertas. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US27 | Configuración de notificaciones | TS67 | Persistencia de configuración | Guardar preferencias seleccionadas por el usuario. | 4 | 1 | Via Luna, Bruce | To Do |
-| US29 | Filtrado de proyectos | TS68 | Implementación de filtros | Permitir búsqueda por estado, fecha y categoría. | 4 | 2 | Via Luna, Bruce | To Do |
-| US29 | Filtrado de proyectos | TS69 | Interfaz de filtrado | Diseñar controles para aplicar filtros. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US30 | Conexión con dispositivos IoT | TS70 | Integración de dispositivos IoT | Permitir vincular dispositivos a proyectos. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
-| US30 | Conexión con dispositivos IoT | TS71 | Validación de conexión | Verificar comunicación con dispositivos registrados. | 5 | 2 | Landa Ortiz, Sergio Javier | To Do |
-| US30 | Conexión con dispositivos IoT | TS72 | Registro de dispositivos conectados | Almacenar dispositivos asociados al proyecto. | 4 | 2 | Via Luna, Bruce | To Do |
-| US35 | Roles de usuario | TS73 | Gestión de roles | Crear y administrar roles del sistema. | 4 | 2 | Via Luna, Bruce | To Do |
-| US35 | Roles de usuario | TS74 | Asignación de roles | Permitir asignar roles a usuarios registrados. | 4 | 2 | Via Luna, Bruce | To Do |
-| US36 | API para integración externa | TS75 | Diseño de API pública | Crear endpoints para integraciones externas. | 5 | 2 | Via Luna, Bruce | To Do |
-| US36 | API para integración externa | TS76 | Documentación de API | Generar documentación para desarrolladores externos. | 4 | 2 | Via Luna, Bruce | To Do |
-| US39 | Actualización de Espacio | TS77 | Endpoint actualización de espacio | Permitir modificar información de espacios registrados. | 5 | 2 | Via Luna, Bruce | To Do |
-| US39 | Actualización de Espacio | TS78 | Validación de cambios | Verificar integridad de datos actualizados. | 4 | 1 | Via Luna, Bruce | To Do |
-| US40 | Eliminación de Espacio | TS79 | Endpoint eliminar espacio | Permitir eliminar espacios registrados. | 4 | 2 | Via Luna, Bruce | To Do |
-| US40 | Eliminación de Espacio | TS80 | Confirmación de eliminación | Solicitar validación antes de eliminar registros. | 3 | 1 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US45 | Registro de Proyecto de Monitoreo IoT | TS81 | Endpoint crear proyecto IoT | Registrar proyectos de monitoreo asociados a espacios. | 6 | 3 | Via Luna, Bruce | To Do |
-| US45 | Registro de Proyecto de Monitoreo IoT | TS82 | Persistencia de proyecto IoT | Guardar información del proyecto en base de datos. | 5 | 2 | Via Luna, Bruce | To Do |
-| US45 | Registro de Proyecto de Monitoreo IoT | TS83 | Validación de datos de proyecto | Verificar consistencia de la información registrada. | 4 | 2 | Via Luna, Bruce | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS84 | Consulta de proyecto IoT | Obtener información detallada del proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS85 | Visualización de métricas | Mostrar indicadores y datos relevantes del proyecto. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS86 | Consulta de dispositivos asociados | Mostrar dispositivos vinculados al proyecto. | 5 | 2 | Via Luna, Bruce | To Do |
-| US46 | Visualización de Detalles de Proyecto IoT | TS87 | Visualización de incidentes | Mostrar incidentes registrados relacionados al proyecto. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US47 | Recepción Masiva de Datos de Sensores | TS88 | Endpoint recepción masiva | Recibir grandes volúmenes de datos de sensores. | 6 | 3 | Via Luna, Bruce | To Do |
-| US47 | Recepción Masiva de Datos de Sensores | TS89 | Procesamiento de datos IoT | Procesar y validar información recibida. | 5 | 2 | Via Luna, Bruce | To Do |
-| US47 | Recepción Masiva de Datos de Sensores | TS90 | Persistencia de mediciones | Almacenar datos históricos de sensores. | 5 | 2 | Via Luna, Bruce | To Do |
-| US50 | Registro de Dispositivo IoT | TS91 | Endpoint registrar dispositivo | Permitir registrar nuevos dispositivos IoT. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
-| US50 | Registro de Dispositivo IoT | TS92 | Validación de dispositivo | Verificar identificadores y configuración inicial. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
-| US50 | Registro de Dispositivo IoT | TS93 | Persistencia de dispositivos | Guardar dispositivos registrados en la base de datos. | 4 | 2 | Via Luna, Bruce | To Do |
-| US51 | Consulta de Dispositivos por Proyecto | TS94 | Consulta de dispositivos | Obtener dispositivos asociados a un proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
-| US51 | Consulta de Dispositivos por Proyecto | TS95 | Filtros de dispositivos | Permitir búsqueda por estado y tipo. | 5 | 2 | Via Luna, Bruce | To Do |
-| US51 | Consulta de Dispositivos por Proyecto | TS96 | Visualización de dispositivos | Mostrar información detallada en interfaz. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US52 | Consulta de Incidentes por Proyecto | TS97 | Consulta de incidentes | Obtener incidentes relacionados con un proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
-| US52 | Consulta de Incidentes por Proyecto | TS98 | Filtros de incidentes | Permitir búsqueda por severidad y fecha. | 5 | 2 | Via Luna, Bruce | To Do |
-| US52 | Consulta de Incidentes por Proyecto | TS99 | Visualización de incidentes | Mostrar listado y detalle de incidentes. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
-| US54 | Registro Histórico de Notificaciones | TS100 | Almacenamiento de notificaciones | Registrar historial de alertas generadas. | 5 | 2 | Via Luna, Bruce | To Do |
-| US54 | Registro Histórico de Notificaciones | TS101 | Consulta de historial | Permitir recuperar notificaciones anteriores. | 4 | 2 | Via Luna, Bruce | To Do |
-| US54 | Registro Histórico de Notificaciones | TS102 | Visualización de historial | Mostrar historial de notificaciones al usuario. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US09 | Recibir notificaciones IoT | TS103 | Configuración Retrofit para alertas | Configurar Retrofit para recibir las alertas automáticas de anomalías detectadas por los sensores. | 6 | 5 | Perez Tuesta, Gabriel | To Do |
+| US15 | Alertas de seguridad | TS104 | Documentación de endpoints de alertas | Elaborar la documentación técnica (Swagger) para los endpoints de alertas y configurar servicios cloud. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US20 | Registro de incidencias | TS105 | Endpoint para reportar incidencias | Desarrollar endpoint para registrar reportes manuales de problemas detectados en obra. | 4 | 2 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS106 | Formulario de incidencias en App | Crear pantalla en la app móvil que permita al supervisor subir foto y descripción del problema. | 5 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US23 | Panel de control de dispositivos IoT | TS107 | UI de Panel de control IoT | Desarrollar la vista en Jetpack Compose para visualizar los porcentajes de lectura y el estado de conectividad. | 6 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US23 | Panel de control de dispositivos IoT | TS108 | Endpoint de telemetría | Implementar el servicio backend para enviar la información del estado y batería de los dispositivos. | 4 | 3 | Via Luna, Bruce | To Do |
+| US30 | Conexion con dispositivos IoT | TS109 | Integración de encendido/apagado | Integrar en la app móvil el consumo de la API REST para controlar el encendido o apagado de los dispositivos IoT. | 5 | 3 | Perez Tuesta, Gabriel | To Do |
+| US36 | API para integración externa | TS110 | Configuración de JWT para API | Habilitar seguridad y tokens JWT para la exposición del endpoint de integración de datos externos. | 4 | 2 | Via Luna, Bruce | To Do |
+| US37 | Modo oscuro | TS111 | Estados globales para Theme | Implementar el cambio de tema claro/oscuro en la app usando estados globales en Jetpack Compose. | 4 | 1 | Perez Tuesta, Gabriel | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS112 | Endpoint detalles de configuración | Crear servicio backend para devolver los umbrales establecidos y estado general de la instalación. | 5 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS113 | Vista de detalles del proyecto IoT | Desarrollar la interfaz móvil para consultar las configuraciones y reglas de monitoreo asociadas. | 5 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS114 | Servicio de ingesta en lote | Implementar lógica asíncrona en el backend para recibir y encolar paquetes grandes de lecturas IoT. | 6 | 3 | Via Luna, Bruce | To Do |
+| US50 | Registro de Dispositivo IoT | TS115 | UI para agregar dispositivo | Crear la pantalla en la app móvil que permita ingresar el MAC Address y vincular un nuevo hardware al espacio. | 5 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US50 | Registro de Dispositivo IoT | TS116 | Endpoint de vinculación | Desarrollar la lógica en el backend para validar la autenticidad del dispositivo y asociarlo al proyecto de monitoreo. | 4 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS117 | Endpoint listado de dispositivos | Crear endpoint que devuelva la lista de sensores asociados a una obra con su estado de conexión. | 4 | 2 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS118 | Interfaz de lista de dispositivos | Maquetar en Android la tabla agrupada de dispositivos IoT para facilitar la auditoría de equipamiento. | 5 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS119 | Endpoint historial de incidencias | Construir el servicio REST para filtrar y devolver la lista de incidentes ordenada por fecha y severidad. | 5 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS120 | UI de lista de incidentes | Diseñar y conectar la vista de incidentes en la app móvil para tomar decisiones correctivas o de mantenimiento. | 6 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US53 | Reconocimiento y Gestión de Incidentes | TS121 | Detalle de notificación y lectura | Desarrollar la vista de detalle de la alerta y la funcionalidad en la UI para marcarla como leída/reconocida. | 6 | 5 | Martinez Gaona, Pablo Afranio | To Do |
+| US53 | Reconocimiento y Gestión de Incidentes | TS122 | Lógica backend de incidentes | Actualizar el estado del incidente en la base de datos y silenciar las notificaciones recurrentes. | 5 | 5 | Perez Tuesta, Gabriel | To Do |
+| US54 | Registro Histórico de Notificaciones | TS123 | Vista de historial de alertas | Implementar la pantalla con la lista de notificaciones, incorporando los filtros y la barra de búsqueda. | 5 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US54 | Registro Histórico de Notificaciones | TS124 | API de historial de alertas | Verificar consistencia y estado de pagos. | 4 | 3 | Via Luna, Bruce | To Do |
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
-<table align="center">
-  <tr>
-    <td><strong>Repository</strong></td>
-    <td><strong>Branch</strong></td>
-    <td><strong>Commit Id</strong></td>
-    <td><strong>Commit Message</strong></td>
-    <td><strong>Commit Message Body</strong></td>
-    <td><strong>Commited on (Date)</strong></td>
-  </tr>
-  <tr>
-    <td>https://github.com/UniPafi/kotlin_app_InnoSpace</td>
-    <td>develop</td>
-    <td>2b0a450</td>
-    <td>style: Bottom search bar update</td>
-    <td>-</td>
-    <td>27/11/25</td>
-  </tr>
-<tr>
-    <td>https://github.com/UniPafi/kotlin_app_InnoSpace</td>
-    <td>deveplop</td>
-    <td>d57180f</td>
-    <td>fix: fixed style</td>
-    <td>-</td>
-    <td>27/11/25</td>
-  </tr>
-  <tr>
-    <td>https://github.com/UniPafi/kotlin_app_InnoSpace</td>
-    <td>develop</td>
-    <td>39083e4</td>
-    <td>fix: fix the themes</td>
-    <td>-</td>
-    <td>26/11/25</td>
-  </tr>
-<tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>7f17d94</td>
-    <td>feat: upgrade themes</td>
-    <td>-</td>
-    <td>03/12/25</td>
-  </tr>
-<tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>e3f14fd</td>
-    <td>feat: add platform permissions and image_picker dependency</td>
-    <td>Add Android permissions (INTERNET, READ_EXTERNAL_STORAGE, READ_MEDIA_IMAGES, CAMERA)</td>
-    <td>28/11/25</td>
-  </tr>
-  <tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>b95fa63</td>
-    <td>Fix lint errors: add path dependency, fix deprecated APIs and null-aware operators</td>
-    <td>-</td>
-    <td>27/11/25</td>
-  </tr>
-  <tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>2de5e7d</td>
-    <td>feat: added manager</td>
-    <td>-</td>
-    <td>27/11/25</td>
-  </tr>
-    <tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>ed8018d</td>
-    <td>fix: add dependencies</td>
-    <td>-</td>
-    <td>30/11/25</td>
-  </tr>
-</tr>
-    <tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>dea4768</td>
-    <td>fix: updated gitignore and dependencies</td>
-    <td>-</td>
-    <td>20/11/25</td>
-  </tr>
- <tr>
-    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
-    <td>develop</td>
-    <td>d5bb0d2</td>
-    <td>feat: testing the app</td>
-    <td>-</td>
-    <td>14/11/25</td>
-  </tr>
-<table>
+A continuación, se presentan las evidencias de desarrollo correspondientes al Sprint 3, organizadas por cada uno de los repositorios de la solución tecnológica de SpacePulse. Se detallan los principales commits de Git que sustentan la finalización del backend y las pantallas para el segmento 1 y 2 de la app. 
+
+### Development Evidence for FrontEnd (Kotlin)
+
+Repositorio que aloja la aplicación móvil nativa desarrollada en Kotlin con Jetpack Compose, enfocada por completo en la experiencia del primer segmento objetivo: el cliente/propietario del local.
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile|main|c9c19e4|feat: fixed final details|-|08/07/2026
+|SpacePulse-AppMobile|develop|79554d7|feat: completed details for final app|-|10/07/2026
+
+### Development Evidence for FrontEnd (Flutter)
+
+Repositorio que aloja la aplicación móvil nativa desarrollada en Flautter con Dart, enfocada por completo en la experiencia del segundo segmento objetivo: el especialista en remodelacion.
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile-Flutter|main|a312512|ProyectoFlutter|-|27/06/2026
+|SpacePulse-AppMobile-Flutter|main|b35bea7|Conexion bd, espacio y persona creados|-|29/06/2026
+|SpacePulse-AppMobile-Flutter|main|c6f7659|conexion bd exitosa register/ login|-|29/06/2026
+|SpacePulse-AppMobile-Flutter|develop|31e0b71|feat: implement space management features including Bloc, repository, service locator configuration, and UI views.|-|02/07/2026
+|SpacePulse-AppMobile-Flutter|develop|a49d5b2|IOT|-|05/07/2026
+|SpacePulse-AppMobile-Flutter|main|efff674|feat: implement BLoC architecture and UI screens for managing spaces and tasks|-|07/07/2026
+|SpacePulse-AppMobile-Flutter|main|cd7b662|feat: implement user authentication storage and profile view with logout functionality|-|07/07/2026
+|SpacePulse-AppMobile-Flutter|main|0b88f7c|feat: implement notifications BC for remodeler|-|07/07/2026
+|SpacePulse-AppMobile-Flutter|main|3682244|Merge pull request #1 from Coder-Placing/feature/spaces|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|e031524|Merge pull request #2 from Coder-Placing/feature/iot|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|43fde48|Merge pull request #3 from Coder-Placing/feature/tasks|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|0b88f7c|Merge pull request #4 from Coder-Placing/feature/notifications|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|cd7b662|Merge pull request #5 from Coder-Placing/develop|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|3db4b85|feat: completed app|-|10/07/2026
+
 
 #### 4.2.3.4. Testing Suite Evidence for Sprint Review
 
-No se realizaron Unit Tests debido a que en este sprint 3 no se ejecutaron pruebas funcionales ni unitarias. El equipo consideró que no era necesario desarrollar ni documentar nuevos tests porque el backend ya se encontraba completado al 100% en iteraciones anteriores, sin cambios de lógica o nuevas funcionalidades que requirieran validación adicional. Dado que no hubo modificaciones en el código ni integración de nuevos componentes que pudieran generar riesgos, se decidió omitir la ejecución de pruebas y, en consecuencia, no se generó evidencia para este apartado.
+Esta seccion se da por finalizada al terminar expresamente con todo el backend, haciendo que las Unit Test y escenarios ya no sean requeridos debido a la culminacion al 100% de los servicios presentados en el Sprint
+
 
 #### 4.2.3.5. Execution Evidence for Sprint Review
 
@@ -4104,52 +3996,58 @@ Durante este Sprint se implementaron las funcionalidades principales de la aplic
 
 **Flutter**
 
-Iniciar sesión: Desde esta pantalla, los usuarios pueden ingresar al sistema introduciendo el correo y contraseña registrados previamente. El sistema valida las credenciales y permite el acceso personalizado según el tipo de usuario.
+Iniciar sesión: Desde esta pantalla, los usuarios pueden ingresar al sistema introduciendo el correo y contraseña registrados previamente. El sistema valida las credenciales y permite el acceso personalizado para el usuario de el segmento 2 y la creacion de una cuenta al darle click a "Crear Cuenta".
 
 <p align="center">
-  <img src="images/flutter_demo/flutter_loginmod.jpg" alt="login flutter" width="
+  <img src="Assets/Evidence2.jpeg" alt="login flutter" width="
+  200">
+  <p align="center">
+  <img src="Assets/Evidence1.jpeg" alt="login flutter" width="
   200">
  
 </p>
 
-Proyectos: La sección Proyectos permite a los estudiantes explorar las iniciativas disponibles, donde se muestra el título del proyecto, un resumen breve y etiquetas que representan la categoría tecnológica (como IT, Software Development o App Móvil.Además esta compuesto por dos pestañas: Explorar, que muestra el catálogo completo de proyectos disponibles, y Favoritos, donde se listan únicamente aquellos que el estudiante ha marcado con el ícono de corazón.
-
-Manteniendo un diseño uniforme con categoría, resumen corto y el ícono de favorito alineado a la derecha para facilitar la interacción.
+Home: La interfaz "Home" permite gestionar el trabajo diario mediante un panel de resumen inicial que contabiliza los proyectos activos y las tareas asignadas. Además de listar los proyectos y tareas próximas, ofrece un botón central para actualizar el avance de estos y cuenta con un menú de navegación inferior para acceder a otras áreas de la aplicación, como la gestión de espacios, alertas, dispositivos IoT y el perfil del usuario.
 
 <p align="center">
-  <img src="images/flutter_demo/flutter_explorarproyectos.jpg" alt="proyectos flutter" width="
+  <img src="Assets/Evidence3.jpeg" alt="proyectos flutter" width="
   200">
-  <img src="images/flutter_demo/flutter_favoritosproyectos.jpg" alt="proyectos favorito flutter" width="
-  210">
 </p>
   
 
-Convocatorias: La sección de Convocatorias permite al Manager visualizar las convocatorias que ha creado, gestionar su estado y acceder al detalle de cada una.
-Desde aquí puede visualizar toda la información asociada, editar, cerrar o eliminar convocatorias, además de revisar los postulantes.
+Espacios: Esta interfaz está enfocada en la gestión de "Espacios", ofreciendo dos pestañas superiores para que el usuario pueda alternar entre la vista de espacios "Disponibles" y "Mis Espacios". Aunque actualmente indica que no hay opciones disponibles, la pantalla incluye un icono de actualización en la esquina superior derecha para recargar la información y mantiene el menú de navegación inferior que permite cambiar rápidamente a otras secciones de la aplicación.
 
 <p align="center">
-  <img src="images/flutter_demo/flutter_convocatoriasmod.jpg" alt="convocatorias flutter" width="
+  <img src="Assets/Evidence4.jpeg" alt="convocatorias flutter" width="
   200">
-  <img src="images/flutter_demo/flutter_detalleConvocatoriamod.jpg" alt="Convocatorias detalle flutter" width="
-  210">
-</p>
+  </p>
 
-Mis Postulaciones: La vista Mis Postulaciones permite al estudiante visualizar todas las convocatorias a las que ha aplicado, mostrando información clave como el nombre de la convocatoria, una breve descripción y el estado actual de la postulación (por ejemplo: Pending). Esta funcionalidad brinda al usuario un mayor control y seguimiento sobre sus solicitudes, permitiéndole identificar fácilmente en qué etapa se encuentra cada una.
+Alertas: Esta interfaz está dedicada a la sección de "Alertas", diseñada para gestionar eventos y notificaciones recientes. Incluye una barra de texto superior que permite buscar alertas específicas y un sistema de filtros rápidos para clasificar la vista entre "Todas", "No leídas" y "Leídas". Aunque actualmente se muestra un estado vacío con un ícono de campana indicando que no hay alertas activas, la pantalla conserva el menú de navegación inferior para facilitar el desplazamiento hacia los demás módulos de la aplicación.
 
 <p align="center">
-  <img src="images/flutter_demo/flutter_postulaciones.jpg" alt="postulaciones flutter" width="
+  <img src="Assets/Evidence5.jpeg" alt="postulaciones flutter" width="
   200">
 </p>
 
-Mi Perfil: La sección de Mi Perfil permite al usuario visualizar y actualizar su información personal y profesional, incluyendo datos como nombre, rol, teléfono, empresa, ubicación, descripción y tecnologías. A través de la opción Editar Perfil, el usuario puede modificar estos datos, actualizar su foto y gestionar sus tecnologías mediante etiquetas dinámicas. Al guardar los cambios, la aplicación muestra una confirmación de actualización exitosa.
+Monitoreo IOT: Esta interfraz esta dedicada a la seccion de "Monitoreo IoT". Actualmente presenta un estado de reposo con el mensaje "No tienes espacios asignados", lo que indica que la función principal de esta pantalla es agrupar y mostrar la telemetría de dispositivos inteligentes una vez que se vincula un área física al usuario. Al igual que el resto de la aplicación, mantiene la barra de navegación inferior activa.
 
 <p align="center">
-  <img src="images/flutter_demo/flutter_perfil.jpg" alt="editar perfil flutter" width="
+  <img src="Assets/Evidence6.jpeg" alt="postulaciones flutter" width="
+  200">
+</p>
+
+Mi perfil: Esta interfaz esta dedicada a la sección de "Perfil" destinada a la administración general de la cuenta. En ella se pueden gestionar los datos principales del usuario mediante la opción de editar el perfil, visualizar la información personal de contacto como el correo electrónico y el número telefónico, acceder a la configuración de los métodos de pago y utilizar un botón dedicado para cerrar la sesión actual, todo esto manteniendo el acceso rápido a los demás módulos de la aplicación mediante la barra de navegación inferior.
+
+<p align="center">
+  <img src="Assets/Evidence7.jpeg" alt="postulaciones flutter" width="
+  200">
+</p>
+
+Tarjeta: Esta interfaz corresponde a la sección de "Métodos de Pago" y permite gestionar las opciones de facturación del usuario. Al indicar que actualmente no hay opciones registradas, la pantalla despliega un formulario en la parte inferior diseñado para "Añadir Tarjeta", el cual requiere ingresar datos financieros estándar como el tipo de tarjeta (por ejemplo, Visa), el número de la misma, la fecha de expiración y el código de seguridad (CVV). Toda esta información se consolida mediante el botón inferior de "Guardar Tarjeta", e incluye una flecha de retroceso en la esquina superior izquierda para regresar al perfil.
+
+<p align="center">
+  <img src="Assets/Evidence8.jpeg" alt="editar perfil flutter" width="
   210">
-  <img src="images/flutter_demo/flutter_editarperfil.jpg" alt="exitoso perfil flutter" width="
-  200">
-  <img src="images/flutter_demo/flutter_confirperfil.jpg" alt="exitoso perfil flutter" width="
-  200">
 </p>
 
 #### 4.2.3.6. Services Documentation Evidence for Sprint Review
