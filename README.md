@@ -4055,61 +4055,59 @@ Tarjeta: Esta interfaz corresponde a la sección de "Métodos de Pago" y permite
 Durante el Sprint 3 no se generó nueva documentación de endpoints ni se realizaron modificaciones en los servicios existentes. Esto se debe a que el backend del proyecto ya se encontraba completo al 100% antes del inicio del sprint, con todos los endpoints implementados, documentados y validados en ciclos anteriores.
 El foco del sprint se centró en otras tareas planificadas que no involucraban intervención directa sobre la API.
 
+Sin embargo evidenciaremos el uso de DDD como estructura de carpetas al momento de desarrollar nuestra app:
+<br>
+<p align="center">
+  <img src="Assets/DDD-Evidence.jpeg" alt="execution" width="1000">
+</p>
+
+<br>
+
 #### 4.2.3.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 3, se revisó el backend de InnoSpace en Azure, asegurando su disponibilidad y persistencia de datos. Se validó el funcionamiento de los endpoints por medio de Swagger para el correcto desarrollo de nuestra aplicación móvil en el entorno de Flutter. Aquí las evidencias principales:
-
-### Despliegue del Backend en Azure
+### Despliegue del Backend en Render
 
 <br>
 <p align="center">
-  <img src="images/chapter4-sprint1/backendwebapp.png" alt="execution" width="1000">
+  <img src="Assets/Render-Evidence1.jpeg" alt="execution" width="1000">
 </p>
 
 <br>
-> Backend operativo en Azure App Service, conectado correctamente con MySQL Flexible Server.
-
-### Evidencia de Swagger UI - Endpoints
 
 <br>
 <p align="center">
-  <img src="images/chapter4-sprint1/swaggerdeploy1.png" alt="execution" width="1000">
+  <img src="Assets/Render-Evidence2.jpeg" alt="execution" width="1000">
 </p>
 
 <br>
-> Documentación Swagger mostrando los endpoints habilitados en el backend.
 
-### Modelos y API REST implementados
-
-- **Manager y Student Profiles**  
- <br>
+<br>
 <p align="center">
-  <img src="images/chapter4-sprint1/ManagerProfilesEvidence.png" alt="Manager profile API" width="1000">
+  <img src="Assets/Render-Evidence3.jpeg" alt="execution" width="1000">
 </p>
+
 <br>
 
-- **Proyectos estudiantiles**  
-  <br>
-<p align="center">
-  <img src="images/chapter4-sprint1/projectsot1.png" alt="Proyectos API" width="1000">
-</p>
 <br>
+<p align="center">
+  <img src="Assets/Render-Evidence4.jpeg" alt="execution" width="1000">
+</p>
 
-- **Convocatorias de empresa**  
- <br>
-<p align="center">
-  <img src="images/chapter4-sprint1/oportunites.png" alt="Oportunidades API" width="1000">
-</p>
 <br>
+> Link del backend desplegado: https://backend-0305.onrender.com
 
 ### Distribución en Firebase
 
-
-
-- **Creación de proyecto en Firebase**  
+- **Creación de proyecto en Firebase de ambos segmentos**  
  <br>
 <p align="center">
-  <img src="images/projectcreatiton+.png" alt="-" width="1000">
+  <img src="Assets/Firebase-Evidence1.jpeg" alt="-" width="1000">
+</p>
+<br>
+
+<br>
+<p align="center">
+  <img src="Assets/Firebase-Evidence2.jpeg" alt="-" width="1000">
 </p>
 <br>
 
@@ -4117,14 +4115,14 @@ Durante el Sprint 3, se revisó el backend de InnoSpace en Azure, asegurando su 
 - **Visualización de proyecto en Firebase**  
  <br>
 <p align="center">
-  <img src="images/firebasevisualizar.png" alt="-" width="1000">
+  <img src="Assets/Firebase-Evidence3.jpeg" alt="-" width="1000">
 </p>
 <br>
 
 - **APK subida a proyecto en Firebase**  
  <br>
 <p align="center">
-  <img src="images/aplicacionsubida.png" alt="-" width="1000">
+  <img src="Assets/Firebase-Evidence4.jpeg" alt="-" width="1000">
 </p>
 <br>
 
@@ -4132,26 +4130,27 @@ Durante el Sprint 3, se revisó el backend de InnoSpace en Azure, asegurando su 
 
 ### Commits y branches relevantes
 
-- Repositorio: [github.com/UniPafi/backend-InnoSpace](https://github.com/UniPafi/backend-InnoSpace)
+- Repositorio: [github.com/Coder-Placing/Backend](https://github.com/Coder-Placing/Backend)
 - Commits Sprint 3:
-  - `develop` `963b277`: Testeo de los dominios y de la seguridad JWT
-  - `feature/collaboration-applications` `9b0875b`: Endpoints añadidos a la sección de estudiantes
-  - `feature/student-projects-bounded-context` `70e83e1`: API para gestión de proyectos estudiantiles
-  - `feature/iam-bounded-context` `56b2668`: API de autenticación, endpoints de usuarios y seguridad JWT
+  - `Testing` `111f5d5`: Final commit for redeploy backend
 
 #### 4.2.3.8. Team Collaboration Insights during Sprint Review
 
 Flutter Insights:
 
 <p align="center">
-  <img src="images/sprint3/image.png" alt="flutter insights" width="800">
+  <img src="Assets/Commits-EvidenceFlutter.jpeg" alt="flutter insights" width="800">
+</p>
+
+<p align="center">
+  <img src="Assets/Commits-EvidenceFlutter2.jpeg" alt="flutter insights" width="800">
 </p>
 
 
 Kotlin App Insights :
 
 <p align="center">
-  <img src="images/sprint3/image2.png" alt="Kotlin Insights" width="800">
+  <img src="Assets/Commits-EvidenceKotlin.jpeg" alt="Kotlin Insights" width="800">
 </p>
 
 ### 4.3. Validation Interviews 
