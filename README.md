@@ -3899,6 +3899,374 @@ Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.ht
 
 ![About_The_team](Assets/back_dev_2.png)
 
+### 4.2.3. Sprint 3
+
+#### 4.2.3.1. Sprint Planning 3
+
+Este apartado describe los componentes esenciales del Sprint Planning Meeting correspondiente al Sprint 3. Con el fin de mantener la continuidad del proyecto, la sesión se centró en la alineación del equipo, la asignación de responsabilidades y la delimitación del alcance para esta nueva iteración. Seguidamente, se incluye una tabla que compila los acuerdos estratégicos y los puntos clave tratados durante la reunión.
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 3 |
+| Fecha | 1 de Julio del 2026 |
+| Hora | 03:30 p.m. |
+| Lugar | Virtual – Discord |
+| Elaborado por | Sergio Javier Landa Ortiz |
+| Participantes (Reunión de planificación) | Aliaga Urbina Wilder Gonzalo, <br> Via Luna Bruce,<br> Martinez Gaona Pablo Afranio,<br> Perez Tuesta Gabriel,<br> Landa Ortiz Sergio Javier |
+| Resumen de la revisión anterior | Finalizar con los ultimos requerimientos del backend y avanzar el App en kotlin|
+| Resumen de la retrospectiva anterior | Se lograron los objetivos propuestos para acercarse de forma mas rapida a la finalizacion del backend cumpliendo con las funciones propuestas y pasar la segunda version de la aplicacion con el segundo usuario |
+| Objetivo del Sprint | La finalidad de desarrollar este sprint es tener la finalidad de definir las tareas y las fechas esperadas para las entregas, para empezar a actuar de manera eficiente con los objetivos propuestos, desde finalizar y corregir detalles de la app kotlin hasta terminar la aplicacion en flutter para el segundo usuario. |
+| Velocidad del Sprint | 150 Story Pointss |
+| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  150 = 193 Story Points. |
+
+#### 4.2.3.2. Sprint Backlog 3
+
+En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del proyecto UniPafi (InnoSpace). El objetivo principal de este sprint fue finalizar la aplicación móvil en Flutter destinada a los managers, incluyendo la implementación de los apartados de mis postulaciones y perfil, así como mejorar el diseño de la interfaz tanto en la aplicación de Flutter como en Android Studio.
+
+<br>
+<p align="center">
+  <img src="images/trello3.png" alt="Sprint Backlog 3 Trello" width="600">
+</p>
+<p align="center">
+     Sprint Backlog 3 - Elaboración propia
+</p>
+
+
+Link al Trello: https://trello.com/invite/b/692a429b882177c311ce6589/ATTI6d2de2372325fb95c3a4590dc308519427C2E5DF/sprint-3
+
+<br>
+
+<h3>Sprint Backlog – Sprint 3</h3>
+<table border="1" cellspacing="0" cellpadding="5">
+<thead>
+<tr>
+<th colspan="8">Sprint 3</th>
+</tr>
+<tr>
+<th colspan="2">User Story</th>
+<th colspan="2">Work-Item / Task</th>
+<th rowspan="2">Description</th>
+<th rowspan="2">Estimation (Hours)</th>
+<th rowspan="2">Assigned To</th>
+<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
+</tr>
+<tr>
+<th>Id</th>
+<th>Title</th>
+<th>Id</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US04</td>
+<td>Guardado de Proyectos Favoritos</td>
+<td>WI012</td>
+<td>Implementar "Añadir a Favoritos" (Gerente)</td>
+<td>Desarrollar la funcionalidad para que un gerente guarde un proyecto en su lista y el ícono cambie de estado.</td>
+<td>2</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US09</td>
+<td>Explorar Ideas de estudiantes</td>
+<td>WI017</td>
+<td>Implementar listado de ideas (Gerente)</td>
+<td>Crear la vista para que el gerente vea una lista de ideas de estudiantes, con opción a "Ver Detalles".</td>
+<td>4</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US16</td>
+<td>Filtrado de proyectos de estudiantes</td>
+<td>WI024</td>
+<td>Implementar búsqueda de proyectos de estudiantes (Gerente)</td>
+<td>Desarrollar una barra de búsqueda en la lista de ideas de estudiantes que filtre por habilidades y tecnologías.</td>
+<td>4</td>
+<td>Renzo Rivera</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US06</td>
+<td>Gerente publica nuevo proyecto</td>
+<td>WI013</td>
+<td>Implementar formulario de publicación de proyecto</td>
+<td>Desarrollar el formulario para que un gerente cree un nuevo proyecto.</td>
+<td>3</td>
+<td>Erick Palomino</td>
+<td>Done</td>
+</tr>
+<tr>
+<td>US08</td>
+<td>Editar Perfil de Usuario</td>
+<td>WI015</td>
+<td>Implementar edición de perfil</td>
+<td>Crear el formulario y la lógica para que un usuario (ambos roles) pueda modificar y guardar los datos de su perfil.</td>
+<td>4</td>
+<td>Andrea Santur</td>
+<td>Done</td>
+</tr>
+</tbody>
+</table>
+
+#### 4.2.3.3. Development Evidence for Sprint Review
+
+<table align="center">
+  <tr>
+    <td><strong>Repository</strong></td>
+    <td><strong>Branch</strong></td>
+    <td><strong>Commit Id</strong></td>
+    <td><strong>Commit Message</strong></td>
+    <td><strong>Commit Message Body</strong></td>
+    <td><strong>Commited on (Date)</strong></td>
+  </tr>
+  <tr>
+    <td>https://github.com/UniPafi/kotlin_app_InnoSpace</td>
+    <td>develop</td>
+    <td>2b0a450</td>
+    <td>style: Bottom search bar update</td>
+    <td>-</td>
+    <td>27/11/25</td>
+  </tr>
+<tr>
+    <td>https://github.com/UniPafi/kotlin_app_InnoSpace</td>
+    <td>deveplop</td>
+    <td>d57180f</td>
+    <td>fix: fixed style</td>
+    <td>-</td>
+    <td>27/11/25</td>
+  </tr>
+  <tr>
+    <td>https://github.com/UniPafi/kotlin_app_InnoSpace</td>
+    <td>develop</td>
+    <td>39083e4</td>
+    <td>fix: fix the themes</td>
+    <td>-</td>
+    <td>26/11/25</td>
+  </tr>
+<tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>7f17d94</td>
+    <td>feat: upgrade themes</td>
+    <td>-</td>
+    <td>03/12/25</td>
+  </tr>
+<tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>e3f14fd</td>
+    <td>feat: add platform permissions and image_picker dependency</td>
+    <td>Add Android permissions (INTERNET, READ_EXTERNAL_STORAGE, READ_MEDIA_IMAGES, CAMERA)</td>
+    <td>28/11/25</td>
+  </tr>
+  <tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>b95fa63</td>
+    <td>Fix lint errors: add path dependency, fix deprecated APIs and null-aware operators</td>
+    <td>-</td>
+    <td>27/11/25</td>
+  </tr>
+  <tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>2de5e7d</td>
+    <td>feat: added manager</td>
+    <td>-</td>
+    <td>27/11/25</td>
+  </tr>
+    <tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>ed8018d</td>
+    <td>fix: add dependencies</td>
+    <td>-</td>
+    <td>30/11/25</td>
+  </tr>
+</tr>
+    <tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>dea4768</td>
+    <td>fix: updated gitignore and dependencies</td>
+    <td>-</td>
+    <td>20/11/25</td>
+  </tr>
+ <tr>
+    <td>https://github.com/UniPafi/flutter_InnoSpace</td>
+    <td>develop</td>
+    <td>d5bb0d2</td>
+    <td>feat: testing the app</td>
+    <td>-</td>
+    <td>14/11/25</td>
+  </tr>
+<table>
+
+#### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+No se realizaron Unit Tests debido a que en este sprint 3 no se ejecutaron pruebas funcionales ni unitarias. El equipo consideró que no era necesario desarrollar ni documentar nuevos tests porque el backend ya se encontraba completado al 100% en iteraciones anteriores, sin cambios de lógica o nuevas funcionalidades que requirieran validación adicional. Dado que no hubo modificaciones en el código ni integración de nuevos componentes que pudieran generar riesgos, se decidió omitir la ejecución de pruebas y, en consecuencia, no se generó evidencia para este apartado.
+
+#### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante este Sprint se implementaron las funcionalidades principales de la aplicación móvil de Innospace desarrollada en Flutter. 
+
+**Flutter**
+
+Iniciar sesión: Desde esta pantalla, los usuarios pueden ingresar al sistema introduciendo el correo y contraseña registrados previamente. El sistema valida las credenciales y permite el acceso personalizado según el tipo de usuario.
+
+<p align="center">
+  <img src="images/flutter_demo/flutter_loginmod.jpg" alt="login flutter" width="
+  200">
+ 
+</p>
+
+Proyectos: La sección Proyectos permite a los estudiantes explorar las iniciativas disponibles, donde se muestra el título del proyecto, un resumen breve y etiquetas que representan la categoría tecnológica (como IT, Software Development o App Móvil.Además esta compuesto por dos pestañas: Explorar, que muestra el catálogo completo de proyectos disponibles, y Favoritos, donde se listan únicamente aquellos que el estudiante ha marcado con el ícono de corazón.
+
+Manteniendo un diseño uniforme con categoría, resumen corto y el ícono de favorito alineado a la derecha para facilitar la interacción.
+
+<p align="center">
+  <img src="images/flutter_demo/flutter_explorarproyectos.jpg" alt="proyectos flutter" width="
+  200">
+  <img src="images/flutter_demo/flutter_favoritosproyectos.jpg" alt="proyectos favorito flutter" width="
+  210">
+</p>
+  
+
+Convocatorias: La sección de Convocatorias permite al Manager visualizar las convocatorias que ha creado, gestionar su estado y acceder al detalle de cada una.
+Desde aquí puede visualizar toda la información asociada, editar, cerrar o eliminar convocatorias, además de revisar los postulantes.
+
+<p align="center">
+  <img src="images/flutter_demo/flutter_convocatoriasmod.jpg" alt="convocatorias flutter" width="
+  200">
+  <img src="images/flutter_demo/flutter_detalleConvocatoriamod.jpg" alt="Convocatorias detalle flutter" width="
+  210">
+</p>
+
+Mis Postulaciones: La vista Mis Postulaciones permite al estudiante visualizar todas las convocatorias a las que ha aplicado, mostrando información clave como el nombre de la convocatoria, una breve descripción y el estado actual de la postulación (por ejemplo: Pending). Esta funcionalidad brinda al usuario un mayor control y seguimiento sobre sus solicitudes, permitiéndole identificar fácilmente en qué etapa se encuentra cada una.
+
+<p align="center">
+  <img src="images/flutter_demo/flutter_postulaciones.jpg" alt="postulaciones flutter" width="
+  200">
+</p>
+
+Mi Perfil: La sección de Mi Perfil permite al usuario visualizar y actualizar su información personal y profesional, incluyendo datos como nombre, rol, teléfono, empresa, ubicación, descripción y tecnologías. A través de la opción Editar Perfil, el usuario puede modificar estos datos, actualizar su foto y gestionar sus tecnologías mediante etiquetas dinámicas. Al guardar los cambios, la aplicación muestra una confirmación de actualización exitosa.
+
+<p align="center">
+  <img src="images/flutter_demo/flutter_perfil.jpg" alt="editar perfil flutter" width="
+  210">
+  <img src="images/flutter_demo/flutter_editarperfil.jpg" alt="exitoso perfil flutter" width="
+  200">
+  <img src="images/flutter_demo/flutter_confirperfil.jpg" alt="exitoso perfil flutter" width="
+  200">
+</p>
+
+#### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 no se generó nueva documentación de endpoints ni se realizaron modificaciones en los servicios existentes. Esto se debe a que el backend del proyecto ya se encontraba completo al 100% antes del inicio del sprint, con todos los endpoints implementados, documentados y validados en ciclos anteriores.
+El foco del sprint se centró en otras tareas planificadas que no involucraban intervención directa sobre la API.
+
+#### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 3, se revisó el backend de InnoSpace en Azure, asegurando su disponibilidad y persistencia de datos. Se validó el funcionamiento de los endpoints por medio de Swagger para el correcto desarrollo de nuestra aplicación móvil en el entorno de Flutter. Aquí las evidencias principales:
+
+### Despliegue del Backend en Azure
+
+<br>
+<p align="center">
+  <img src="images/chapter4-sprint1/backendwebapp.png" alt="execution" width="1000">
+</p>
+
+<br>
+> Backend operativo en Azure App Service, conectado correctamente con MySQL Flexible Server.
+
+### Evidencia de Swagger UI - Endpoints
+
+<br>
+<p align="center">
+  <img src="images/chapter4-sprint1/swaggerdeploy1.png" alt="execution" width="1000">
+</p>
+
+<br>
+> Documentación Swagger mostrando los endpoints habilitados en el backend.
+
+### Modelos y API REST implementados
+
+- **Manager y Student Profiles**  
+ <br>
+<p align="center">
+  <img src="images/chapter4-sprint1/ManagerProfilesEvidence.png" alt="Manager profile API" width="1000">
+</p>
+<br>
+
+- **Proyectos estudiantiles**  
+  <br>
+<p align="center">
+  <img src="images/chapter4-sprint1/projectsot1.png" alt="Proyectos API" width="1000">
+</p>
+<br>
+
+- **Convocatorias de empresa**  
+ <br>
+<p align="center">
+  <img src="images/chapter4-sprint1/oportunites.png" alt="Oportunidades API" width="1000">
+</p>
+<br>
+
+### Distribución en Firebase
+
+
+
+- **Creación de proyecto en Firebase**  
+ <br>
+<p align="center">
+  <img src="images/projectcreatiton+.png" alt="-" width="1000">
+</p>
+<br>
+
+
+- **Visualización de proyecto en Firebase**  
+ <br>
+<p align="center">
+  <img src="images/firebasevisualizar.png" alt="-" width="1000">
+</p>
+<br>
+
+- **APK subida a proyecto en Firebase**  
+ <br>
+<p align="center">
+  <img src="images/aplicacionsubida.png" alt="-" width="1000">
+</p>
+<br>
+
+
+
+### Commits y branches relevantes
+
+- Repositorio: [github.com/UniPafi/backend-InnoSpace](https://github.com/UniPafi/backend-InnoSpace)
+- Commits Sprint 3:
+  - `develop` `963b277`: Testeo de los dominios y de la seguridad JWT
+  - `feature/collaboration-applications` `9b0875b`: Endpoints añadidos a la sección de estudiantes
+  - `feature/student-projects-bounded-context` `70e83e1`: API para gestión de proyectos estudiantiles
+  - `feature/iam-bounded-context` `56b2668`: API de autenticación, endpoints de usuarios y seguridad JWT
+
+#### 4.2.3.8. Team Collaboration Insights during Sprint Review
+
+Flutter Insights:
+
+<p align="center">
+  <img src="images/sprint3/image.png" alt="flutter insights" width="800">
+</p>
+
+
+Kotlin App Insights :
+
+<p align="center">
+  <img src="images/sprint3/image2.png" alt="Kotlin Insights" width="800">
+</p>
+
 ### 4.3. Validation Interviews 
 
 Se realizaron entrevistas diseñadas para diferentes usuarios del segmento objetivo y puedan dar retroalimentacion para la direccion correcta del proyecto
@@ -4372,6 +4740,227 @@ Javier Landa, usuario perteneciente al segmento de propietarios que buscan reali
 En general, el usuario tuvo una experiencia positiva con la aplicación, destacando que la navegación fue sencilla y que la información principal resultó fácil de identificar. Durante el registro del proyecto, la única dificultad estuvo relacionada con la estimación del presupuesto inicial debido a la falta de conocimiento sobre los costos reales de una remodelación. Aunque las funciones fueron comprensibles, algunos procesos específicos requirieron más exploración para encontrar las opciones deseadas. Respecto a la cancelación de solicitudes, el usuario consideró que el proceso era claro, pero sugirió incluir confirmaciones más visibles para generar mayor confianza. Las alertas de sensores fueron percibidas como útiles, aunque algo técnicas, por lo que se recomendó utilizar mensajes más simples y orientados a la acción. La funcionalidad más valorada fue el control del presupuesto, ya que permite monitorear los gastos y evitar sobrecostos. Finalmente, el usuario manifestó que le brindaría mayor tranquilidad contar con fotografías del avance de la obra, tiempos estimados de finalización y notificaciones sobre cambios o retrasos durante el proceso de remodelación.  <tr>
     <td colspan="2"><br>
       <img src="Assets/Entrevista4AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 5</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Ayrton Zabarburu</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>1:08 - 8:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=6QrXzgDBbZw`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+ Ayrton indica que en general tuvo una experiencia positiva, además de indicar varios puntos a mejorar como ser más especifico en algunos campos así como indicar aspectos que el cliente talvez no pueda saber de primera mano como los m2 de un espacio.  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista5AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+**Segmento Objetivo #2**
+
+Tanto el entrevistador y entrevistado tienen que presentarse formalmente, este ultimo detallar como fue que recibió la versión de la aplicación a probar y resaltar el correo por el cual se le envió la aplicación 
+
+"Después de haber navegado y probado la aplicación, ¿cómo describirías tu experiencia general con la aplicacion?"
+
+"Acabas de completar el proceso de aceptar un espacio y definir las tareas a hacer. ¿Cómo sentiste la cantidad de información que te pidió la aplicación y los pasos para el proceso? ¿Hubo algún dato que dudaste en llenar?"
+
+"En tu pantalla principal vimos que tus proyectos para remodelar aparecen con la informacion correcta. Durante la prueba, ¿te fue fácil identificar todos los datos visibles y todos los espacios posibles?"
+
+"De todo lo que navegaste, ¿cuál dirías que fue el paso menos intuitivo o el momento en el que tuviste que pensar más para saber dónde hacer clic?"
+
+"En uno de los escenarios, te pedimos que cobrarás un espacio completado. ¿Qué tan seguro te sentiste de que la aplicación realmente había realizado todo el proceso? ¿Te pareció que el botón estaba en un lugar lógico y funcionaba ?"
+
+"También viste una alerta simulada de un sensor en tu hogar (por ejemplo, un pico de temperatura o humedad). Sabiendo que tú no instalaste ese sensor, sino el propietario, ¿la información en pantalla te resultó útil o la sentiste demasiado técnica? ¿Qué te gustaría ver en esa pantalla para saber si debes preocuparte o no?"
+
+"Respecto al avance del proceso de remodelacion, ¿Sentiste que como remodelador la aplicacion hacia mas tediosa la tarea de mantener un registro de todo el procedimiento y actualizaciones?"
+
+"Basado en lo que viste hoy, ¿Que funcionalidad sentiste que hacia falta en el proceso de remodelacion? ¿Podria alguna de nuestras caracteristicas mejorar continuamente con su retroalimentacion?"
+
+### Registro de entrevistas
+
+#### Entrevitas a Segmento #2
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Sebastian Altamirano</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:35-7:15</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://youtu.be/USl493CuMDY`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      Sebastian fue uno de los usuarios entrevistados previamente, en las entrevistas para diseño de usuarios y tuvo la oportunidad de probar la aplicacion de primera mano, reslta el diseño y como los datos no sobrecargan la pantallan ni lo abruman como usuario,resltando la caracteristica de un buen diseño UX 
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/App-validation-inteview.png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Mateo Vergaray</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:14-6:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=R7yH4puv10A`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Se entrevistó al remodelador Mateo para validar la experiencia de uso de SpacePulse desde el rol de especialista. Mateo indicó que recibió la versión de prueba por correo electrónico y que, al navegar por la aplicación, la experiencia le pareció ordenada, clara y fácil de entender. Señaló que el proceso para aceptar un espacio y definir tareas no fue pesado, que la pantalla principal mostraba correctamente los proyectos y que el cobro de un espacio completado se sintió seguro y lógico. También comentó que las alertas IoT eran útiles, aunque recomendó mostrar indicadores simples como “normal”, “atención” o “crítico”. Finalmente, destacó que la aplicación ayuda a registrar el avance de la remodelación de forma más organizada y sugirió agregar comentarios rápidos en cada tarea.    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista2.png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Landa</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Isidro</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:32-5:43</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=SM7MY4NbTgY`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Javier Landa, usuario perteneciente al segmento de propietarios que buscan realizar remodelaciones en el hogar, percibió la aplicación como una plataforma muy positiva, organizada e intuitiva. Resaltó que el diseño limpio, apoyado en gráficos y tarjetas, permite ver de un vistazo el avance de la remodelación en sus distintas fases, centralizando todo el control del proyecto en un solo lugar y evitando el caos de mensajes o audios perdidos. También mencionó que la plataforma responde a una necesidad real, porque brinda tranquilidad económica y logística al permitir un control de pagos vinculado directamente al cumplimiento de hitos de la obra. Como mejora, sugirió incluir un aviso aclarando que el presupuesto inicial es estimado, simplificar el lenguaje técnico de las alertas de los sensores, agregar correos o ventanas de confirmación al cancelar una solicitud, y mostrar perfiles completos con fotos y calificaciones validadas de los maestros de obra para reforzar la seguridad al dejarlos entrar a su casa. Finalmente, indicó que la función que definitivamente elegiría usar sería la liberación de dinero por hitos cumplidos para evitar problemas con los trabajadores.  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/Entrevista3AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 4</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Leonardo Cumba</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:00-4:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://upcedupe-my.sharepoint.com/personal/u202321281_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202321281%5Fupc%5Fedu%5Fpe%2FDocuments%2FLeccion%205%20%282%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebdca127d%2D9964%2D4890%2Dad7f%2Dca17c673a1ac`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+El video muestra una entrevista de retroalimentación sobre una aplicación diseñada para gestionar proyectos de remodelación. El usuario evalúa la plataforma de manera muy positiva, destacando que es intuitiva, está bien organizada y facilita el registro de los avances sin que el proceso resulte tedioso. Aunque encontró que la navegación, los cobros y las alertas de los sensores son bastante claros y funcionales, sugirió algunas mejoras clave para futuras actualizaciones: hacer más visible el botón para actualizar el progreso, agregar recomendaciones de acción a las alertas del sistema y, sobre todo, integrar un chat interno para que los remodeladores y los propietarios puedan comunicarse directamente sin necesidad de salir de la aplicación. En general, el entrevistado concluye que la herramienta tiene una base muy sólida.<tr> 
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista4.png" alt="segmento1entrevista3" width="1000"><br>
     </td>
   </tr>
 </table>
