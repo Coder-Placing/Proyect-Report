@@ -212,8 +212,9 @@ En elsiguiente cuadro se describe las accionesrealizadas y enunciados de conclus
 
 | Criterio específico | Acciones realizadas   | Conclusiones |
 |--------|---------------|------|
-| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo** <br> AV1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br>TB1: Elaboré y documenté el testing suite del sprint, aplicando casos de prueba para validar funcionalidades. Además, desarrollé la primera versión de la aplicación móvil <br> AV2: Desarrollé las pantallas de IoT y Readings, permitiendo agregar dispositivos IoT a un espacio, visualizar sus porcentajes de lectura y controlar su encendido o apagado. Además, realicé mejoras en la interfaz visual de la aplicación.<br><br> -**Martinez Gaona, Pablo Afranio** <br> AV1: Se revisaron y aplicaron conceptos relacionados con Domain-Driven Design, Bounded Contexts, Context Mapping, modelo C4, capas de arquitectura, diagramas UML y diseño de base de datos. Estos conocimientos fueron utilizados para desarrollar la arquitectura de SpacePulse, especialmente en los bounded contexts IoT Monitoring and Notifications y Space Management <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br> AV2: Se implementó el BC de notificaciones en la app móvil, incluyendo lista de alertas, filtros, búsqueda, detalle de notificación y marcado como leída, conectado al backend mediante Retrofit y ViewModel.<br><br> -**Perez Tuesta, Gabriel** <br> AV1: Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, aplicando nuevas tecnologías para la construcción del backend y la configuración del despliegue del sistema. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos técnicos, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional <br> AV2: Para el desarrollo del frontend del proyecto SpacePulse, fue necesario actualizar y adquirir nuevos conocimientos en paradigmas modernos de desarrollo móvil. Se investigó e implementó Jetpack Compose, transitando del diseño tradicional con vistas (XML) a un framework declarativo basado en Kotlin para la construcción de interfaces dinámicas. Además, se profundizó en la integración de consumo de APIs REST mediante la librería Retrofit, manejando llamadas asíncronas y serialización de datos (JSON) para conectar la aplicación con un backend desplegado en la nube. La adopción de estos estándares actuales de la industria garantizó una solución de software escalable, modular y alineada con las mejores prácticas de desarrollo móvil.<br><br>-**Sergio Javier Landa Ortiz**<br> AV1: Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, asumiendo la responsabilidad de la landing page desde la creación de los wireframes y mockups iniciales, además de apoyar en el diseño en Figma de la aplicación. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos visuales y de interfaz, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional. <br> AV2: Investigó y aplicó de manera autónoma las herramientas tecnológicas necesarias para el desarrollo y despliegue del 100% de la landing page. Asimismo, profundizó en la validación del producto mediante la ejecución de entrevistas a los segmentos establecidos, elaboró la documentación técnica del proyecto y fortaleció sus competencias en programación al colaborar activamente en la construcción del backend, asegurando una solución integral y centrada en el usuario. <br><br> -**Bruce Via Luna** <br> AV1:Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo <br>TB1: Realice en completo el backend junto con los multiples escenario de prueba hasta abarcar con lo requerido dela entrega de su desarrollo <br> AV2: Actualizó sus conocimientos en lenguajes y arquitecturas para el desarrollo del backend. Asimismo, investigó e implementó servicios en la nube para el despliegue del backend y frontend, y aplicó frameworks de testeo para asegurar la calidad y el correcto funcionamiento de ambas capas del software. <br><br>| **AV1:** Como equipo, se evidencia una actualización integral y proactiva de conocimientos aplicados a las fases tempranas del ciclo de vida del software. Los integrantes han investigado y dominado con éxito conceptos que abarcan desde el diseño estratégico y de negocio (Lean UX, Startup Profile, análisis competitivo para SpacePulse), hasta el modelado de arquitectura (EventStorming, Bounded Contexts) y la ingeniería de requisitos (Needfinding). En conjunto, esta asimilación metodológica y técnica garantiza que la solución de software en desarrollo cuente con una dirección clara, bases arquitectónicas robustas y funcionalidades estrictamente alineadas a las necesidades validadas del mercado y los usuarios <br><br> **TB1:** Como equipo, se evidencia una transición exitosa de la fase de diseño y arquitectura hacia la implementación técnica y validación del producto. Los integrantes han aplicado proactivamente nuevos conocimientos para el desarrollo frontend (aplicación móvil y landing page), la construcción del backend y la configuración del despliegue. Asimismo, destaca la actualización práctica en metodologías de aseguramiento de calidad (elaboración de testing suites y escenarios de prueba) y la iteración continua de la experiencia de usuario (ajustes en flujos, interfaces y wireframes). Esto demuestra que el equipo es capaz de investigar y adoptar nuevas herramientas tecnológicas de forma autónoma para resolver desafíos técnicos y cumplir con los requerimientos del sprint backlog.   <br><br> **AV2:** Se ha logrado actualizar y aplicar exitosamente los conocimientos técnicos necesarios para transformar la fase de diseño e ideación (Lean UX y gestión de requerimientos) en una solución de software funcional. Esta etapa demandó la asimilación de nuevas tecnologías prácticas, destacando la construcción de la lógica del backend, la implementación de frameworks de testeo para asegurar la calidad tanto del frontend como del backend, y la configuración de servicios en la nube para el despliegue del sistema. Como grupo, demostramos la capacidad de adquirir conocimientos actualizados que alinean nuestro proyecto con los estándares de desarrollo e infraestructura de la industria actual  |
-| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Martinez Gaona, Pablo Afranio**<br> AV1: Durante el desarrollo del trabajo se identificó la necesidad de aprender y reforzar herramientas como Structurizr, PlantUML, vertabeo y el enfoque de arquitectura por capas. <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender. <br> AV2: Se realizaron pruebas con backend local, validación mediante Swagger, resolución de conflictos de merge y una entrevista de validación para recoger retroalimentación del usuario. <br> AV2: Investigué cómo estructurar pantallas IoT, mostrar lecturas de dispositivos y mejorar la experiencia visual del usuario dentro de la aplicación. <br><br> -**Wilder Gonzalo Aliaga Urbina** <br> AV1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br>TB1: Investigué cómo organizar pruebas, documentar evidencias y adaptarme al desarrollo de la aplicación móvil. <br><br> -**Perez Tuesta, Gabriel** <br> AV1: Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br>TB1:Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el rol de desarrollo backend y despliegue en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas que garantizaran una arquitectura sólida. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software. <br> AV2: Durante el ciclo de vida del desarrollo, se evidenció que los entornos de producción difieren significativamente de los entornos de prueba locales. La integración del frontend con un servidor desplegado (como Render) presentó desafíos de latencia, cold starts y manejo estricto de respuestas HTTP que requirieron investigación continua y lectura de documentación técnica (uso de Logcat, análisis de endpoints con Swagger). Asimismo, el requerimiento de implementar funcionalidades dinámicas, como el cambio de tema claro/oscuro a través de estados globales y la navegación estructurada (NavHost), demandó un aprendizaje constante sobre la gestión de estados y el ciclo de vida de la aplicación. Esta experiencia consolida la comprensión de que el desarrollo de software exige una constante adaptación y estudio autodidacta frente a las nuevas variables tecnológicas. <BR><br> -**Sergio Javier Landa Ortiz**<br> AV1: Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br>TB1: Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el diseño y desarrollo de la landing page, la creación de sus wireframes y mockups, y el apoyo en el Figma de la aplicación en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas de diseño y maquetación que garantizaran una interfaz sólida y funcional. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software <br> AV2: Reconoció que el diseño de interfaces de usuario y las metodologías de validación en el mercado se transforman de manera constante. Comprendió que para consolidar soluciones digitales competitivas, es esencial mantener un aprendizaje interdisciplinario que abarque desde la maquetación web de la landing page y la estructuración de la documentación técnica, hasta el análisis de datos de usuarios y la colaboración en el desarrollo del backend. <br><br> -**Bruce Via Luna** <br> AV1: Realice los analisis de diagramas, la estructura de como sera el desarrollo mediante las user stories para llevar el proyecto por la ruta correcta hacia una arquitectura limpia y funcional<br>TB1: Pense en los multiples escenario de desarrollo de la aplicacion que puedan suceder para tener en cuenta las actitudes de los usuarios y que acciones puedan tomar, haciendo una logica de negocio implecable, evitando que el codigo se sobreescriba constantemente <br> AV2: Reconoció que el ecosistema de despliegue de software y las prácticas de testeo (QA) evolucionan rápidamente. Comprendió que para mantener plataformas estables y seguras, es indispensable el aprendizaje continuo sobre nuevas tecnologías de infraestructura, integración y desarrollo backend <br><br>| **AV1:** El equipo demuestra una clara conciencia sobre la importancia del aprendizaje continuo en el ciclo de vida del desarrollo de software. Los integrantes han evidenciado esta competencia al salir de su zona de confort para investigar proactivamente de forma autónoma, ya sea adquiriendo una visión estratégica de negocio (Lean UX y análisis de mercado), buscando nuevas metodologías de representación arquitectónica (Bounded Context) o explorando nuevos formatos para sintetizar hallazgos competitivos. En conjunto, reconocen que el éxito de un proyecto tecnológico exige adaptabilidad y una actualización constante de conocimientos más allá de lo estrictamente técnico. <br><br> **TB1:**  El equipo demuestra que el aprendizaje continuo es un pilar indispensable no solo en la planificación, sino durante el desarrollo activo y la codificación del producto. Al enfrentarse a la construcción de la interfaz, el despliegue del sistema y la estructuración de una lógica de negocio robusta, los miembros reconocieron la necesidad de investigar y dominar de forma autónoma nuevas herramientas de desarrollo, diseño y pruebas. Esta adaptabilidad y proactividad les ha permitido anticipar escenarios de uso, mejorar las vistas del usuario y garantizar una arquitectura sólida, reafirmando de manera práctica que la rápida evolución de las tecnologías de la información exige una constante actualización técnica para asegurar el éxito del proyecto  <br><br> **AV2:** La transición hacia la etapa de desarrollo técnico y despliegue ha evidenciado la rápida evolución del ecosistema de software. Al enfrentarnos a los retos de integrar pruebas de calidad (QA) y configurar entornos en la nube, reconocemos que las herramientas de infraestructura y las mejores prácticas cambian constantemente. Por lo tanto, hemos internalizado que el aprendizaje permanente y la adaptabilidad no son solo un paso en el proyecto, sino pilares profesionales indispensables. Entendemos que para mantener plataformas estables, escalables y relevantes para el usuario final, será obligatorio mantenernos en constante investigación y capacitación a lo largo de nuestra carrera |
+| Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | - **Aliaga Urbina, Wilder Gonzalo** <br> AV1: Desarrollé el Capítulo I del trabajo, aplicando conceptos de Startup Profile, Solution Profile, Lean UX y Segmentos Objetivo.  <br>TB1: Elaboré y documenté el testing suite del sprint, aplicando casos de prueba para validar funcionalidades. Además, desarrollé la primera versión de la aplicación móvil <br> AV2: Desarrollé las pantallas de IoT y Readings, permitiendo agregar dispositivos IoT a un espacio, visualizar sus porcentajes de lectura y controlar su encendido o apagado. Además, realicé mejoras en la interfaz visual de la aplicación.<br><br> -**Martinez Gaona, Pablo Afranio** <br> AV1: Se revisaron y aplicaron conceptos relacionados con Domain-Driven Design, Bounded Contexts, Context Mapping, modelo C4, capas de arquitectura, diagramas UML y diseño de base de datos. Estos conocimientos fueron utilizados para desarrollar la arquitectura de SpacePulse, especialmente en los bounded contexts IoT Monitoring and Notifications y Space Management <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender.<br> AV2: Se implementó el BC de notificaciones en la app móvil, incluyendo lista de alertas, filtros, búsqueda, detalle de notificación y marcado como leída, conectado al backend mediante Retrofit y ViewModel.<br>TB2: Implementé funcionalidades principales de la aplicación móvil, como la gestión de espacios, aceptación de espacios, visualización de tareas, actualización de progreso, pantalla Home, almacenamiento de datos del usuario, perfil y cierre de sesión. Además, apliqué arquitectura BLoC, repositorios y configuración del service locator.<br>TB2: Se implementó el BC Notifications en la app móvil del remodelador, incluyendo lista de alertas, filtros, búsqueda, detalle de notificación y marcado como leída, integrado al backend mediante Dio, Bloc y token de autenticación.<br><br> -**Perez Tuesta, Gabriel** <br> AV1: Comprendí la necesidad de mantener un aprendizaje constante al profundizar en EventStorming, Candidate Context Discovery, Domain Message Flows Modeling y Bounded Context Canvases, reconociendo su valor fundamental en el diseño inicial de soluciones de software. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, aplicando nuevas tecnologías para la construcción del backend y la configuración del despliegue del sistema. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos técnicos, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional <br> AV2: Para el desarrollo del frontend del proyecto SpacePulse, fue necesario actualizar y adquirir nuevos conocimientos en paradigmas modernos de desarrollo móvil. Se investigó e implementó Jetpack Compose, transitando del diseño tradicional con vistas (XML) a un framework declarativo basado en Kotlin para la construcción de interfaces dinámicas. Además, se profundizó en la integración de consumo de APIs REST mediante la librería Retrofit, manejando llamadas asíncronas y serialización de datos (JSON) para conectar la aplicación con un backend desplegado en la nube. La adopción de estos estándares actuales de la industria garantizó una solución de software escalable, modular y alineada con las mejores prácticas de desarrollo móvil.<br>TB2:Durante el desarrollo del proyecto, fortaleció sus conocimientos en tecnologías como Flutter, desarrollo backend y despliegue de aplicaciones en entornos en la nube, integrando estos aprendizajes en la implementación de nuevas funcionalidades y en la mejora del backend productivo. Esta experiencia le permitió ampliar sus competencias técnicas y aplicarlas de manera efectiva en el desarrollo de soluciones de software. <br><br>-**Sergio Javier Landa Ortiz**<br> AV1: Dominar el análisis comparativo y el resumen de entrevistas es vital para validar SpacePulse frente a la competencia. Estas herramientas permiten contrastar funcionalidades, detectar brechas en el mercado y alinear el diseño de nuestro producto con las necesidades reales de los usuarios desde la fase estratégica. <br>TB1: Durante el desarrollo del proyecto, demostré mi capacidad para investigar y actualizar mis conocimientos de forma autónoma, asumiendo la responsabilidad de la landing page desde la creación de los wireframes y mockups iniciales, además de apoyar en el diseño en Figma de la aplicación. A través de la gestión de requerimientos en el sprint backlog y la resolución de desafíos visuales y de interfaz, reconozco que la evolución constante de las tecnologías de la información exige un aprendizaje permanente y proactivo para asegurar la calidad de las soluciones de software y mi propio desarrollo profesional. <br> AV2: Investigó y aplicó de manera autónoma las herramientas tecnológicas necesarias para el desarrollo y despliegue del 100% de la landing page. Asimismo, profundizó en la validación del producto mediante la ejecución de entrevistas a los segmentos establecidos, elaboró la documentación técnica del proyecto y fortaleció sus competencias en programación al colaborar activamente en la construcción del backend, asegurando una solución integral y centrada en el usuario.<br>TB2: Me encargué de establecer y configurar la conexión de la aplicación con la base de datos, así como de desarrollar e integrar los módulos de autenticación (login y registro) para gestionar el acceso seguro de los usuarios. Adicionalmente, fui responsable de la redacción técnica y consolidación de los entregables correspondientes al Sprint 3 del documento, asegurando que el avance estuviera alineado con los requerimientos del proyecto <br><br> -**Bruce Via Luna** <br> AV1:Realice parte del Needfinding y el Requirements Specifications para dar una direccion de funcionalidades y requerimientos para el avance del grupo <br>TB1: Realice en completo el backend junto con los multiples escenario de prueba hasta abarcar con lo requerido dela entrega de su desarrollo <br> AV2: Actualizó sus conocimientos en lenguajes y arquitecturas para el desarrollo del backend. Asimismo, investigó e implementó servicios en la nube para el despliegue del backend y frontend, y aplicó frameworks de testeo para asegurar la calidad y el correcto funcionamiento de ambas capas del software.<br>TB2:Me encargue de la refactorizacion en ambas versiones de la aplicacion, mejorar la UX y UI para futuros usuarios, mejoran la verificacion de archivos multimedia y ajustando la aplicacion a las necesidades finales del proyecto <br><br>| **AV1:** Como equipo, se evidencia una actualización integral y proactiva de conocimientos aplicados a las fases tempranas del ciclo de vida del software. Los integrantes han investigado y dominado con éxito conceptos que abarcan desde el diseño estratégico y de negocio (Lean UX, Startup Profile, análisis competitivo para SpacePulse), hasta el modelado de arquitectura (EventStorming, Bounded Contexts) y la ingeniería de requisitos (Needfinding). En conjunto, esta asimilación metodológica y técnica garantiza que la solución de software en desarrollo cuente con una dirección clara, bases arquitectónicas robustas y funcionalidades estrictamente alineadas a las necesidades validadas del mercado y los usuarios <br><br> **TB1:** Como equipo, se evidencia una transición exitosa de la fase de diseño y arquitectura hacia la implementación técnica y validación del producto. Los integrantes han aplicado proactivamente nuevos conocimientos para el desarrollo frontend (aplicación móvil y landing page), la construcción del backend y la configuración del despliegue. Asimismo, destaca la actualización práctica en metodologías de aseguramiento de calidad (elaboración de testing suites y escenarios de prueba) y la iteración continua de la experiencia de usuario (ajustes en flujos, interfaces y wireframes). Esto demuestra que el equipo es capaz de investigar y adoptar nuevas herramientas tecnológicas de forma autónoma para resolver desafíos técnicos y cumplir con los requerimientos del sprint backlog.   <br><br> **AV2:** Se ha logrado actualizar y aplicar exitosamente los conocimientos técnicos necesarios para transformar la fase de diseño e ideación (Lean UX y gestión de requerimientos) en una solución de software funcional. Esta etapa demandó la asimilación de nuevas tecnologías prácticas, destacando la construcción de la lógica del backend, la implementación de frameworks de testeo para asegurar la calidad tanto del frontend como del backend, y la configuración de servicios en la nube para el despliegue del sistema. Como grupo, demostramos la capacidad de adquirir conocimientos actualizados que alinean nuestro proyecto con los estándares de desarrollo e infraestructura de la industria actual<br> TB2:Como equipo, consolidamos la solución de software enfocándonos en su madurez técnica, seguridad y despliegue final. Aplicamos arquitecturas móviles avanzadas (como BLoC), fortalecimos la infraestructura conectando el backend con la base de datos e implementamos autenticación segura. Además, realizamos refactorizaciones clave, optimizamos la UX/UI en ambas aplicaciones y documentamos el Sprint 3, logrando entregar un producto robusto, escalable y alineado a los requerimientos del proyecto
+  |
+| Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | - **Martinez Gaona, Pablo Afranio**<br> AV1: Durante el desarrollo del trabajo se identificó la necesidad de aprender y reforzar herramientas como Structurizr, PlantUML, vertabeo y el enfoque de arquitectura por capas. <br>TB1: Durante el avance se ajustaron pantallas, flujos e interacciones de acuerdo con las necesidades del proyecto. También se mejoró la diferenciación entre las vistas del cliente y del remodelador, buscando que la aplicación sea más completa y fácil de entender. <br> AV2: Se realizaron pruebas con backend local, validación mediante Swagger, resolución de conflictos de merge y una entrevista de validación para recoger retroalimentación del usuario. <br>TB2: Se realizaron pruebas con el backend local, revisión de endpoints y validación del funcionamiento de las notificaciones dentro de la app. También se resolvieron problemas técnicos relacionados con la configuración y ejecución del proyecto.  <br><br> -**Wilder Gonzalo Aliaga Urbina** <br> AV1: Durante esta parte del proyecto investigué y apliqué conceptos de Lean UX, hipótesis, canvas y análisis del mercado objetivo, complementando mis conocimientos técnicos con un enfoque más estratégico. <br>TB1: Investigué cómo organizar pruebas, documentar evidencias y adaptarme al desarrollo de la aplicación móvil.<br>AV2: Investigué cómo estructurar pantallas IoT, mostrar lecturas de dispositivos y mejorar la experiencia visual del usuario dentro de la aplicación.<br>TB2: Durante esta entrega investigué y adapté nuevas formas de estructurar la aplicación, manejar estados, conectar vistas con repositorios y mejorar la experiencia del usuario en pantallas como Home, Espacios, Tareas y Perfil. <br><br> -**Perez Tuesta, Gabriel** <br> AV1: Me di cuenta de que el aprendizaje es continuo al desarrollar completamente el Bounded Context, ya que fue necesario investigar nuevas maneras de presentar la información de forma clara y comprensible <br>TB1:Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el rol de desarrollo backend y despliegue en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas que garantizaran una arquitectura sólida. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software. <br> AV2: Durante el ciclo de vida del desarrollo, se evidenció que los entornos de producción difieren significativamente de los entornos de prueba locales. La integración del frontend con un servidor desplegado (como Render) presentó desafíos de latencia, cold starts y manejo estricto de respuestas HTTP que requirieron investigación continua y lectura de documentación técnica (uso de Logcat, análisis de endpoints con Swagger). Asimismo, el requerimiento de implementar funcionalidades dinámicas, como el cambio de tema claro/oscuro a través de estados globales y la navegación estructurada (NavHost), demandó un aprendizaje constante sobre la gestión de estados y el ciclo de vida de la aplicación. Esta experiencia consolida la comprensión de que el desarrollo de software exige una constante adaptación y estudio autodidacta frente a las nuevas variables tecnológicas.<br>TB2:Reconoció que el constante avance de las tecnologías utilizadas en el proyecto hace indispensable mantener una actualización continua de conocimientos. La incorporación de nuevas herramientas, buenas prácticas y procesos de desarrollo reforzó la importancia del aprendizaje permanente como parte fundamental del crecimiento profesional y de la construcción de soluciones de software de mayor calidad. <BR><br> -**Sergio Javier Landa Ortiz**<br> AV1: Confirmé que el aprendizaje es constante al realizar el análisis comparativo y las entrevistas, ya que tuve que investigar nuevos formatos para sintetizar los hallazgos y presentar las ventajas de SpacePulse de forma estratégica y convincente <br>TB1: Reconozco la necesidad del aprendizaje continuo como pilar de mi desempeño profesional, lo cual evidencié al asumir el diseño y desarrollo de la landing page, la creación de sus wireframes y mockups, y el apoyo en el Figma de la aplicación en este proyecto. Para lograr los objetivos planteados en el sprint backlog, tuve que actualizar constantemente mis conocimientos técnicos e investigar nuevas herramientas de diseño y maquetación que garantizaran una interfaz sólida y funcional. Esta experiencia confirma que la capacidad de aprender y adaptarse a nuevas metodologías y tecnologías es indispensable para el éxito en cualquier solución de software <br> AV2: Reconoció que el diseño de interfaces de usuario y las metodologías de validación en el mercado se transforman de manera constante. Comprendió que para consolidar soluciones digitales competitivas, es esencial mantener un aprendizaje interdisciplinario que abarque desde la maquetación web de la landing page y la estructuración de la documentación técnica, hasta el análisis de datos de usuarios y la colaboración en el desarrollo del backend. <br>TB2:Me encargué de la conexión a la base de datos de la aplicación y la implementación del flujo de autenticación (login y registro), además de estructurar y redactar el documento del Sprint 3 para asegurar el control del avance. Solucionando requerimientos de acceso de usuarios para facilitar la integración de futuras funcionalidades en el proyecto<br><br> -**Bruce Via Luna** <br> AV1: Realice los analisis de diagramas, la estructura de como sera el desarrollo mediante las user stories para llevar el proyecto por la ruta correcta hacia una arquitectura limpia y funcional<br>TB1: Pense en los multiples escenario de desarrollo de la aplicacion que puedan suceder para tener en cuenta las actitudes de los usuarios y que acciones puedan tomar, haciendo una logica de negocio implecable, evitando que el codigo se sobreescriba constantemente <br> AV2: Reconoció que el ecosistema de despliegue de software y las prácticas de testeo (QA) evolucionan rápidamente. Comprendió que para mantener plataformas estables y seguras, es indispensable el aprendizaje continuo sobre nuevas tecnologías de infraestructura, integración y desarrollo backend <br>TB2: Se realizo el despliegue completo de todas las versiones de la aplicacion, tanto backend como version de Flutter y Kotlin y redespliegue del Backend, ademas de refactorizar y levantar errores para asegurar la experiencia del usuario. Solucionando problemas tecnicos para mejorar el desarrollo futuro de la aplicacion<br><br>| **AV1:** El equipo demuestra una clara conciencia sobre la importancia del aprendizaje continuo en el ciclo de vida del desarrollo de software. Los integrantes han evidenciado esta competencia al salir de su zona de confort para investigar proactivamente de forma autónoma, ya sea adquiriendo una visión estratégica de negocio (Lean UX y análisis de mercado), buscando nuevas metodologías de representación arquitectónica (Bounded Context) o explorando nuevos formatos para sintetizar hallazgos competitivos. En conjunto, reconocen que el éxito de un proyecto tecnológico exige adaptabilidad y una actualización constante de conocimientos más allá de lo estrictamente técnico. <br><br> **TB1:**  El equipo demuestra que el aprendizaje continuo es un pilar indispensable no solo en la planificación, sino durante el desarrollo activo y la codificación del producto. Al enfrentarse a la construcción de la interfaz, el despliegue del sistema y la estructuración de una lógica de negocio robusta, los miembros reconocieron la necesidad de investigar y dominar de forma autónoma nuevas herramientas de desarrollo, diseño y pruebas. Esta adaptabilidad y proactividad les ha permitido anticipar escenarios de uso, mejorar las vistas del usuario y garantizar una arquitectura sólida, reafirmando de manera práctica que la rápida evolución de las tecnologías de la información exige una constante actualización técnica para asegurar el éxito del proyecto  <br><br> **AV2:** La transición hacia la etapa de desarrollo técnico y despliegue ha evidenciado la rápida evolución del ecosistema de software. Al enfrentarnos a los retos de integrar pruebas de calidad (QA) y configurar entornos en la nube, reconocemos que las herramientas de infraestructura y las mejores prácticas cambian constantemente. Por lo tanto, hemos internalizado que el aprendizaje permanente y la adaptabilidad no son solo un paso en el proyecto, sino pilares profesionales indispensables. Entendemos que para mantener plataformas estables, escalables y relevantes para el usuario final, será obligatorio mantenernos en constante investigación y capacitación a lo largo de nuestra carrera<br> TB2: Como equipo, demostramos que la etapa de integración final y despliegue exige una alta capacidad de adaptación y aprendizaje autodidacta. Durante esta iteración, tuvimos que investigar y aplicar de forma autónoma nuevas estrategias para estructurar la aplicación, gestionar estados complejos y ejecutar despliegues simultáneos en múltiples entornos (Flutter, Kotlin y la nube). Al enfrentarnos a la resolución de problemas de configuración, la validación de endpoints y la refactorización profunda del código, reafirmamos que la actualización constante en nuevas herramientas y buenas prácticas es un pilar indispensable para superar desafíos técnicos, asegurar la calidad del producto final y garantizar nuestro crecimiento profesional.|
 <hr>
 
 ## Objetivos SMART
@@ -3899,6 +3900,256 @@ Enlace al Backend Desplegado: https://backend-0305.onrender.com/swagger/index.ht
 
 ![About_The_team](Assets/back_dev_2.png)
 
+### 4.2.3. Sprint 3
+
+#### 4.2.3.1. Sprint Planning 3
+
+Este apartado describe los componentes esenciales del Sprint Planning Meeting correspondiente al Sprint 3. Con el fin de mantener la continuidad del proyecto, la sesión se centró en la alineación del equipo, la asignación de responsabilidades y la delimitación del alcance para esta nueva iteración. Seguidamente, se incluye una tabla que compila los acuerdos estratégicos y los puntos clave tratados durante la reunión.
+
+| Elemento | Detalle |
+|-----------|----------|
+| Sprint # | Sprint 3 |
+| Fecha | 1 de Julio del 2026 |
+| Hora | 03:30 p.m. |
+| Lugar | Virtual – Discord |
+| Elaborado por | Sergio Javier Landa Ortiz |
+| Participantes (Reunión de planificación) | Aliaga Urbina Wilder Gonzalo, <br> Via Luna Bruce,<br> Martinez Gaona Pablo Afranio,<br> Perez Tuesta Gabriel,<br> Landa Ortiz Sergio Javier |
+| Resumen de la revisión anterior | Finalizar con los ultimos requerimientos del backend y avanzar el App en kotlin|
+| Resumen de la retrospectiva anterior | Se lograron los objetivos propuestos para acercarse de forma mas rapida a la finalizacion del backend cumpliendo con las funciones propuestas y pasar la segunda version de la aplicacion con el segundo usuario |
+| Objetivo del Sprint | La finalidad de desarrollar este sprint es tener la finalidad de definir las tareas y las fechas esperadas para las entregas, para empezar a actuar de manera eficiente con los objetivos propuestos, desde finalizar y corregir detalles de la app kotlin hasta terminar la aplicacion en flutter para el segundo usuario. |
+| Velocidad del Sprint | 65 Story Pointss |
+| Suma de Story Points | La suma de Story Points planificados entre este sprint y el anteriore es de 43 +  150 + 65 = 258 Story Points. |
+
+#### 4.2.3.2. Sprint Backlog 3
+
+El objetivo principal del Sprint 3 es implementar las funcionalidades del Bounded Context de monitoreo IoT y gestión de notificaciones de SpacePulse. Este sprint se centra en permitir a los usuarios vincular dispositivos, visualizar lecturas en tiempo real y gestionar el historial de incidentes desde la aplicación móvil.
+
+# Sprint Backlog - SpacePulse
+
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
+|---|---|---|---|---|---|---|---|---|
+| US09 | Recibir notificaciones IoT | TS103 | Configuración Retrofit para alertas | Configurar Retrofit para recibir las alertas automáticas de anomalías detectadas por los sensores. | 6 | 5 | Perez Tuesta, Gabriel | To Do |
+| US15 | Alertas de seguridad | TS104 | Documentación de endpoints de alertas | Elaborar la documentación técnica (Swagger) para los endpoints de alertas y configurar servicios cloud. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US20 | Registro de incidencias | TS105 | Endpoint para reportar incidencias | Desarrollar endpoint para registrar reportes manuales de problemas detectados en obra. | 4 | 2 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS106 | Formulario de incidencias en App | Crear pantalla en la app móvil que permita al supervisor subir foto y descripción del problema. | 5 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US23 | Panel de control de dispositivos IoT | TS107 | UI de Panel de control IoT | Desarrollar la vista en Jetpack Compose para visualizar los porcentajes de lectura y el estado de conectividad. | 6 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US23 | Panel de control de dispositivos IoT | TS108 | Endpoint de telemetría | Implementar el servicio backend para enviar la información del estado y batería de los dispositivos. | 4 | 3 | Via Luna, Bruce | To Do |
+| US30 | Conexion con dispositivos IoT | TS109 | Integración de encendido/apagado | Integrar en la app móvil el consumo de la API REST para controlar el encendido o apagado de los dispositivos IoT. | 5 | 3 | Perez Tuesta, Gabriel | To Do |
+| US36 | API para integración externa | TS110 | Configuración de JWT para API | Habilitar seguridad y tokens JWT para la exposición del endpoint de integración de datos externos. | 4 | 2 | Via Luna, Bruce | To Do |
+| US37 | Modo oscuro | TS111 | Estados globales para Theme | Implementar el cambio de tema claro/oscuro en la app usando estados globales en Jetpack Compose. | 4 | 1 | Perez Tuesta, Gabriel | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS112 | Endpoint detalles de configuración | Crear servicio backend para devolver los umbrales establecidos y estado general de la instalación. | 5 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS113 | Vista de detalles del proyecto IoT | Desarrollar la interfaz móvil para consultar las configuraciones y reglas de monitoreo asociadas. | 5 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS114 | Servicio de ingesta en lote | Implementar lógica asíncrona en el backend para recibir y encolar paquetes grandes de lecturas IoT. | 6 | 3 | Via Luna, Bruce | To Do |
+| US50 | Registro de Dispositivo IoT | TS115 | UI para agregar dispositivo | Crear la pantalla en la app móvil que permita ingresar el MAC Address y vincular un nuevo hardware al espacio. | 5 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US50 | Registro de Dispositivo IoT | TS116 | Endpoint de vinculación | Desarrollar la lógica en el backend para validar la autenticidad del dispositivo y asociarlo al proyecto de monitoreo. | 4 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS117 | Endpoint listado de dispositivos | Crear endpoint que devuelva la lista de sensores asociados a una obra con su estado de conexión. | 4 | 2 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS118 | Interfaz de lista de dispositivos | Maquetar en Android la tabla agrupada de dispositivos IoT para facilitar la auditoría de equipamiento. | 5 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS119 | Endpoint historial de incidencias | Construir el servicio REST para filtrar y devolver la lista de incidentes ordenada por fecha y severidad. | 5 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS120 | UI de lista de incidentes | Diseñar y conectar la vista de incidentes en la app móvil para tomar decisiones correctivas o de mantenimiento. | 6 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US53 | Reconocimiento y Gestión de Incidentes | TS121 | Detalle de notificación y lectura | Desarrollar la vista de detalle de la alerta y la funcionalidad en la UI para marcarla como leída/reconocida. | 6 | 5 | Martinez Gaona, Pablo Afranio | To Do |
+| US53 | Reconocimiento y Gestión de Incidentes | TS122 | Lógica backend de incidentes | Actualizar el estado del incidente en la base de datos y silenciar las notificaciones recurrentes. | 5 | 5 | Perez Tuesta, Gabriel | To Do |
+| US54 | Registro Histórico de Notificaciones | TS123 | Vista de historial de alertas | Implementar la pantalla con la lista de notificaciones, incorporando los filtros y la barra de búsqueda. | 5 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US54 | Registro Histórico de Notificaciones | TS124 | API de historial de alertas | Verificar consistencia y estado de pagos. | 4 | 3 | Via Luna, Bruce | To Do |
+
+#### 4.2.3.3. Development Evidence for Sprint Review
+
+A continuación, se presentan las evidencias de desarrollo correspondientes al Sprint 3, organizadas por cada uno de los repositorios de la solución tecnológica de SpacePulse. Se detallan los principales commits de Git que sustentan la finalización del backend y las pantallas para el segmento 1 y 2 de la app. 
+
+### Development Evidence for FrontEnd (Kotlin)
+
+Repositorio que aloja la aplicación móvil nativa desarrollada en Kotlin con Jetpack Compose, enfocada por completo en la experiencia del primer segmento objetivo: el cliente/propietario del local.
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile|main|c9c19e4|feat: fixed final details|-|08/07/2026
+|SpacePulse-AppMobile|develop|79554d7|feat: completed details for final app|-|10/07/2026
+
+### Development Evidence for FrontEnd (Flutter)
+
+Repositorio que aloja la aplicación móvil nativa desarrollada en Flautter con Dart, enfocada por completo en la experiencia del segundo segmento objetivo: el especialista en remodelacion.
+
+| Repository| Branch | Commit Id| Commit Message | Commit Message Body|Commited on (Date)|
+|--------|---------------|------------|---------------|---------|--|
+|SpacePulse-AppMobile-Flutter|main|a312512|ProyectoFlutter|-|27/06/2026
+|SpacePulse-AppMobile-Flutter|main|b35bea7|Conexion bd, espacio y persona creados|-|29/06/2026
+|SpacePulse-AppMobile-Flutter|main|c6f7659|conexion bd exitosa register/ login|-|29/06/2026
+|SpacePulse-AppMobile-Flutter|develop|31e0b71|feat: implement space management features including Bloc, repository, service locator configuration, and UI views.|-|02/07/2026
+|SpacePulse-AppMobile-Flutter|develop|a49d5b2|IOT|-|05/07/2026
+|SpacePulse-AppMobile-Flutter|main|efff674|feat: implement BLoC architecture and UI screens for managing spaces and tasks|-|07/07/2026
+|SpacePulse-AppMobile-Flutter|main|cd7b662|feat: implement user authentication storage and profile view with logout functionality|-|07/07/2026
+|SpacePulse-AppMobile-Flutter|main|0b88f7c|feat: implement notifications BC for remodeler|-|07/07/2026
+|SpacePulse-AppMobile-Flutter|main|3682244|Merge pull request #1 from Coder-Placing/feature/spaces|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|e031524|Merge pull request #2 from Coder-Placing/feature/iot|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|43fde48|Merge pull request #3 from Coder-Placing/feature/tasks|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|0b88f7c|Merge pull request #4 from Coder-Placing/feature/notifications|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|cd7b662|Merge pull request #5 from Coder-Placing/develop|-|08/07/2026
+|SpacePulse-AppMobile-Flutter|main|3db4b85|feat: completed app|-|10/07/2026
+
+
+#### 4.2.3.4. Testing Suite Evidence for Sprint Review
+
+Esta seccion se da por finalizada al terminar expresamente con todo el backend, haciendo que las Unit Test y escenarios ya no sean requeridos debido a la culminacion al 100% de los servicios presentados en el Sprint
+
+
+#### 4.2.3.5. Execution Evidence for Sprint Review
+
+Durante este Sprint se implementaron las funcionalidades principales de la aplicación móvil de Innospace desarrollada en Flutter. 
+
+**Flutter**
+
+Iniciar sesión: Desde esta pantalla, los usuarios pueden ingresar al sistema introduciendo el correo y contraseña registrados previamente. El sistema valida las credenciales y permite el acceso personalizado para el usuario de el segmento 2 y la creacion de una cuenta al darle click a "Crear Cuenta".
+
+<p align="center">
+  <img src="Assets/Evidence2.jpeg" alt="login flutter" width="
+  200">
+  <p align="center">
+  <img src="Assets/Evidence1.jpeg" alt="login flutter" width="
+  200">
+ 
+</p>
+
+Home: La interfaz "Home" permite gestionar el trabajo diario mediante un panel de resumen inicial que contabiliza los proyectos activos y las tareas asignadas. Además de listar los proyectos y tareas próximas, ofrece un botón central para actualizar el avance de estos y cuenta con un menú de navegación inferior para acceder a otras áreas de la aplicación, como la gestión de espacios, alertas, dispositivos IoT y el perfil del usuario.
+
+<p align="center">
+  <img src="Assets/Evidence3.jpeg" alt="proyectos flutter" width="
+  200">
+</p>
+  
+
+Espacios: Esta interfaz está enfocada en la gestión de "Espacios", ofreciendo dos pestañas superiores para que el usuario pueda alternar entre la vista de espacios "Disponibles" y "Mis Espacios". Aunque actualmente indica que no hay opciones disponibles, la pantalla incluye un icono de actualización en la esquina superior derecha para recargar la información y mantiene el menú de navegación inferior que permite cambiar rápidamente a otras secciones de la aplicación.
+
+<p align="center">
+  <img src="Assets/Evidence4.jpeg" alt="convocatorias flutter" width="
+  200">
+  </p>
+
+Alertas: Esta interfaz está dedicada a la sección de "Alertas", diseñada para gestionar eventos y notificaciones recientes. Incluye una barra de texto superior que permite buscar alertas específicas y un sistema de filtros rápidos para clasificar la vista entre "Todas", "No leídas" y "Leídas". Aunque actualmente se muestra un estado vacío con un ícono de campana indicando que no hay alertas activas, la pantalla conserva el menú de navegación inferior para facilitar el desplazamiento hacia los demás módulos de la aplicación.
+
+<p align="center">
+  <img src="Assets/Evidence5.jpeg" alt="postulaciones flutter" width="
+  200">
+</p>
+
+Monitoreo IOT: Esta interfraz esta dedicada a la seccion de "Monitoreo IoT". Actualmente presenta un estado de reposo con el mensaje "No tienes espacios asignados", lo que indica que la función principal de esta pantalla es agrupar y mostrar la telemetría de dispositivos inteligentes una vez que se vincula un área física al usuario. Al igual que el resto de la aplicación, mantiene la barra de navegación inferior activa.
+
+<p align="center">
+  <img src="Assets/Evidence6.jpeg" alt="postulaciones flutter" width="
+  200">
+</p>
+
+Mi perfil: Esta interfaz esta dedicada a la sección de "Perfil" destinada a la administración general de la cuenta. En ella se pueden gestionar los datos principales del usuario mediante la opción de editar el perfil, visualizar la información personal de contacto como el correo electrónico y el número telefónico, acceder a la configuración de los métodos de pago y utilizar un botón dedicado para cerrar la sesión actual, todo esto manteniendo el acceso rápido a los demás módulos de la aplicación mediante la barra de navegación inferior.
+
+<p align="center">
+  <img src="Assets/Evidence7.jpeg" alt="postulaciones flutter" width="
+  200">
+</p>
+
+Tarjeta: Esta interfaz corresponde a la sección de "Métodos de Pago" y permite gestionar las opciones de facturación del usuario. Al indicar que actualmente no hay opciones registradas, la pantalla despliega un formulario en la parte inferior diseñado para "Añadir Tarjeta", el cual requiere ingresar datos financieros estándar como el tipo de tarjeta (por ejemplo, Visa), el número de la misma, la fecha de expiración y el código de seguridad (CVV). Toda esta información se consolida mediante el botón inferior de "Guardar Tarjeta", e incluye una flecha de retroceso en la esquina superior izquierda para regresar al perfil.
+
+<p align="center">
+  <img src="Assets/Evidence8.jpeg" alt="editar perfil flutter" width="
+  210">
+</p>
+
+#### 4.2.3.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 3 no se generó nueva documentación de endpoints ni se realizaron modificaciones en los servicios existentes. Esto se debe a que el backend del proyecto ya se encontraba completo al 100% antes del inicio del sprint, con todos los endpoints implementados, documentados y validados en ciclos anteriores.
+El foco del sprint se centró en otras tareas planificadas que no involucraban intervención directa sobre la API.
+
+Sin embargo evidenciaremos el uso de DDD como estructura de carpetas al momento de desarrollar nuestra app:
+<br>
+<p align="center">
+  <img src="Assets/DDD-Evidence.jpeg" alt="execution" width="1000">
+</p>
+
+<br>
+
+#### 4.2.3.7. Software Deployment Evidence for Sprint Review
+
+### Despliegue del Backend en Render
+
+<br>
+<p align="center">
+  <img src="Assets/Render-Evidence1.jpeg" alt="execution" width="1000">
+</p>
+
+<br>
+
+<br>
+<p align="center">
+  <img src="Assets/Render-Evidence2.jpeg" alt="execution" width="1000">
+</p>
+
+<br>
+
+<br>
+<p align="center">
+  <img src="Assets/Render-Evidence3.jpeg" alt="execution" width="1000">
+</p>
+
+<br>
+
+<br>
+<p align="center">
+  <img src="Assets/Render-Evidence4.jpeg" alt="execution" width="1000">
+</p>
+
+<br>
+> Link del backend desplegado: https://backend-0305.onrender.com
+
+### Distribución en Firebase
+
+- **Creación de proyecto en Firebase de ambos segmentos**  
+ <br>
+<p align="center">
+  <img src="Assets/Firebase-Evidence1.jpeg" alt="-" width="1000">
+</p>
+<br>
+
+<br>
+<p align="center">
+  <img src="Assets/Firebase-Evidence2.jpeg" alt="-" width="1000">
+</p>
+<br>
+
+
+- **Visualización de proyecto en Firebase**  
+ <br>
+<p align="center">
+  <img src="Assets/Firebase-Evidence3.jpeg" alt="-" width="1000">
+</p>
+<br>
+
+- **APK subida a proyecto en Firebase**  
+ <br>
+<p align="center">
+  <img src="Assets/Firebase-Evidence4.jpeg" alt="-" width="1000">
+</p>
+<br>
+
+
+
+### Commits y branches relevantes
+
+- Repositorio: [github.com/Coder-Placing/Backend](https://github.com/Coder-Placing/Backend)
+- Commits Sprint 3:
+  - `Testing` `111f5d5`: Final commit for redeploy backend
+
+#### 4.2.3.8. Team Collaboration Insights during Sprint Review
+
+Flutter Insights:
+
+<p align="center">
+  <img src="Assets/Commit-Evidence-Flutter.jpeg" alt="flutter insights" width="800">
+</p>
+
+
+Kotlin App Insights :
+
+<p align="center">
+  <img src="Assets/Commit-Evidence-Kotlin.jpeg" alt="Kotlin Insights" width="800">
+</p>
+
 ### 4.3. Validation Interviews 
 
 Se realizaron entrevistas diseñadas para diferentes usuarios del segmento objetivo y puedan dar retroalimentacion para la direccion correcta del proyecto
@@ -4411,6 +4662,227 @@ En general, el usuario tuvo una experiencia positiva con la aplicación, destaca
  Ayrton indica que en general tuvo una experiencia positiva, además de indicar varios puntos a mejorar como ser más especifico en algunos campos así como indicar aspectos que el cliente talvez no pueda saber de primera mano como los m2 de un espacio.  <tr>
     <td colspan="2"><br>
       <img src="Assets/Entrevista5AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+**Segmento Objetivo #2**
+
+Tanto el entrevistador y entrevistado tienen que presentarse formalmente, este ultimo detallar como fue que recibió la versión de la aplicación a probar y resaltar el correo por el cual se le envió la aplicación 
+
+"Después de haber navegado y probado la aplicación, ¿cómo describirías tu experiencia general con la aplicacion?"
+
+"Acabas de completar el proceso de aceptar un espacio y definir las tareas a hacer. ¿Cómo sentiste la cantidad de información que te pidió la aplicación y los pasos para el proceso? ¿Hubo algún dato que dudaste en llenar?"
+
+"En tu pantalla principal vimos que tus proyectos para remodelar aparecen con la informacion correcta. Durante la prueba, ¿te fue fácil identificar todos los datos visibles y todos los espacios posibles?"
+
+"De todo lo que navegaste, ¿cuál dirías que fue el paso menos intuitivo o el momento en el que tuviste que pensar más para saber dónde hacer clic?"
+
+"En uno de los escenarios, te pedimos que cobrarás un espacio completado. ¿Qué tan seguro te sentiste de que la aplicación realmente había realizado todo el proceso? ¿Te pareció que el botón estaba en un lugar lógico y funcionaba ?"
+
+"También viste una alerta simulada de un sensor en tu hogar (por ejemplo, un pico de temperatura o humedad). Sabiendo que tú no instalaste ese sensor, sino el propietario, ¿la información en pantalla te resultó útil o la sentiste demasiado técnica? ¿Qué te gustaría ver en esa pantalla para saber si debes preocuparte o no?"
+
+"Respecto al avance del proceso de remodelacion, ¿Sentiste que como remodelador la aplicacion hacia mas tediosa la tarea de mantener un registro de todo el procedimiento y actualizaciones?"
+
+"Basado en lo que viste hoy, ¿Que funcionalidad sentiste que hacia falta en el proceso de remodelacion? ¿Podria alguna de nuestras caracteristicas mejorar continuamente con su retroalimentacion?"
+
+### Registro de entrevistas
+
+#### Entrevitas a Segmento #2
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 1</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Olivia Carmelino</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:00-6:54</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=TuDJHEbBf8c`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+      En la entrevista, Olivia Carmelino comparte su experiencia tras probar una aplicación de remodelación, destacando que la plataforma facilita mucho la visualización de los espacios al permitir ubicar muebles y contrastar texturas (como madera o mármol) de manera efectiva. Aunque considera que el proceso de ingresar los datos iniciales y registrar los avances puede resultar un poco tedioso por la cantidad de detalles solicitados, reconoce que esto es necesario para tener una visión más completa del proyecto. Olivia encontró la pantalla principal clara y el botón de cobro fácil de usar, aunque señaló que agregar dispositivos fue la parte menos intuitiva. Además, valoró muy positivamente el sistema simulado de alertas de humedad y temperatura, considerándolo sumamente útil para el cuidado de los objetos según el clima de su zona. Finalmente, como sugerencia de mejora, recomendó añadir un mayor nivel de personalización y más opciones de ítems al momento de agregar elementos a los planos.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista1.png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 2</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Mateo Vergaray</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Pueblo Libre</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:14-6:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=R7yH4puv10A`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+Se entrevistó al remodelador Mateo para validar la experiencia de uso de SpacePulse desde el rol de especialista. Mateo indicó que recibió la versión de prueba por correo electrónico y que, al navegar por la aplicación, la experiencia le pareció ordenada, clara y fácil de entender. Señaló que el proceso para aceptar un espacio y definir tareas no fue pesado, que la pantalla principal mostraba correctamente los proyectos y que el cobro de un espacio completado se sintió seguro y lógico. También comentó que las alertas IoT eran útiles, aunque recomendó mostrar indicadores simples como “normal”, “atención” o “crítico”. Finalmente, destacó que la aplicación ayuda a registrar el avance de la remodelación de forma más organizada y sugirió agregar comentarios rápidos en cada tarea.    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista2.png" alt="segmento1entrevista2" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 3</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Javier Landa</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Isidro</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:32-5:43</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=hlo9SVn-dJA`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+En esta entrevista de validación para la aplicación Spacepulse, Javier, un especialista en diseño de interiores, comparte su experiencia utilizando la plataforma. Aunque destaca que la interfaz es limpia, atractiva y muy eficiente para revisar el progreso de los proyectos de manera directa, señala varias áreas clave para mejorar la agilidad en plena obra. Sugiere simplificar el ingreso de datos iniciales permitiendo estimaciones generales, hacer más visible el menú de subtareas y facilitar el registro de avances usando únicamente fotografías en lugar de texto. Además, recomienda incorporar confirmaciones de pantalla o recibos automáticos para dar mayor seguridad a los cobros, transformar las métricas de los sensores en alertas prácticas sobre riesgos inmediatos y añadir un módulo rápido para aprobar cambios de última hora con el cliente. Finalmente, propone que la app aprenda de sus tiempos reales de trabajo para sugerir plazos automáticos en futuros presupuestos.  </tr>
+  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista3.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 4</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Leonardo Cumba</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:00-4:00</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://youtu.be/dSjruTXWwcc`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+El video muestra una entrevista de retroalimentación sobre una aplicación diseñada para gestionar proyectos de remodelación. El usuario evalúa la plataforma de manera muy positiva, destacando que es intuitiva, está bien organizada y facilita el registro de los avances sin que el proceso resulte tedioso. Aunque encontró que la navegación, los cobros y las alertas de los sensores son bastante claros y funcionales, sugirió algunas mejoras clave para futuras actualizaciones: hacer más visible el botón para actualizar el progreso, agregar recomendaciones de acción a las alertas del sistema y, sobre todo, integrar un chat interno para que los remodeladores y los propietarios puedan comunicarse directamente sin necesidad de salir de la aplicación. En general, el entrevistado concluye que la herramienta tiene una base muy sólida.<tr> 
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista4.png" alt="segmento1entrevista3" width="1000"><br>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center">
+  <tr>
+    <th colspan="2" style="text-align:center">Entrevista 5</th>
+  </tr>
+  <tr>
+    <td><strong>Entrevistado</strong></td>
+    <td>Martin Alegre Padilla</td>
+  </tr>
+  <tr>
+    <td><strong>Edad</strong></td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td><strong>Distrito</strong></td>
+    <td>Jesus Maria</td>
+  </tr>
+  <tr>
+    <td><strong>Timing</strong></td>
+    <td>0:05 - 4:37</td>
+  </tr>
+  <tr>
+    <td><strong>URL</strong></td>
+    <td>
+      
+  `https://www.youtube.com/watch?v=4FvYabth_do`
+
+  </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:justify">
+      Resumen: <br>
+ En esta sesión de validación de la aplicación Space Pulse, Martín Alegre evalúa la plataforma desde la perspectiva del segmento de remodeladores. Martín considera que la herramienta es organizada, fácil de navegar y que agiliza significativamente el registro de los avances en los proyectos. Sin embargo, para optimizar la experiencia, propone varias mejoras clave: permitir que los presupuestos de las tareas se marquen como aproximados, darle un mayor tamaño a las imágenes en la pantalla principal, aclarar los textos en los botones de gestión de tareas y añadir un mensaje de confirmación al procesar cobros para mayor seguridad. Además, sugiere simplificar las alertas de los sensores de la casa para que muestren niveles de riesgo prácticos en lugar de datos demasiado técnicos, y recomienda encarecidamente integrar un chat con el cliente junto con un apartado para subir evidencia fotográfica del trabajo realizado.  <tr>
+    <td colspan="2"><br>
+      <img src="Assets/AppValidationespecialista5.png" alt="segmento1entrevista3" width="1000"><br>
     </td>
   </tr>
 </table>
