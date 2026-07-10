@@ -3921,95 +3921,84 @@ Este apartado describe los componentes esenciales del Sprint Planning Meeting co
 
 #### 4.2.3.2. Sprint Backlog 3
 
-En esta sección se presenta el Sprint Backlog correspondiente al Sprint 3 del proyecto UniPafi (InnoSpace). El objetivo principal de este sprint fue finalizar la aplicación móvil en Flutter destinada a los managers, incluyendo la implementación de los apartados de mis postulaciones y perfil, así como mejorar el diseño de la interfaz tanto en la aplicación de Flutter como en Android Studio.
+El objetivo principal del Sprint 3 es implementar las funcionalidades del Bounded Context de monitoreo IoT y gestión de notificaciones de SpacePulse. Este sprint se centra en permitir a los usuarios vincular dispositivos, visualizar lecturas en tiempo real y gestionar el historial de incidentes desde la aplicación móvil.
 
-<br>
-<p align="center">
-  <img src="images/trello3.png" alt="Sprint Backlog 3 Trello" width="600">
-</p>
-<p align="center">
-     Sprint Backlog 3 - Elaboración propia
-</p>
+# Sprint Backlog - SpacePulse
 
-
-Link al Trello: https://trello.com/invite/b/692a429b882177c311ce6589/ATTI6d2de2372325fb95c3a4590dc308519427C2E5DF/sprint-3
-
-<br>
-
-<h3>Sprint Backlog – Sprint 3</h3>
-<table border="1" cellspacing="0" cellpadding="5">
-<thead>
-<tr>
-<th colspan="8">Sprint 3</th>
-</tr>
-<tr>
-<th colspan="2">User Story</th>
-<th colspan="2">Work-Item / Task</th>
-<th rowspan="2">Description</th>
-<th rowspan="2">Estimation (Hours)</th>
-<th rowspan="2">Assigned To</th>
-<th rowspan="2">Status (To-do / In-Process / To-Review / Done)</th>
-</tr>
-<tr>
-<th>Id</th>
-<th>Title</th>
-<th>Id</th>
-<th>Title</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>US04</td>
-<td>Guardado de Proyectos Favoritos</td>
-<td>WI012</td>
-<td>Implementar "Añadir a Favoritos" (Gerente)</td>
-<td>Desarrollar la funcionalidad para que un gerente guarde un proyecto en su lista y el ícono cambie de estado.</td>
-<td>2</td>
-<td>Erick Palomino</td>
-<td>Done</td>
-</tr>
-<tr>
-<td>US09</td>
-<td>Explorar Ideas de estudiantes</td>
-<td>WI017</td>
-<td>Implementar listado de ideas (Gerente)</td>
-<td>Crear la vista para que el gerente vea una lista de ideas de estudiantes, con opción a "Ver Detalles".</td>
-<td>4</td>
-<td>Renzo Rivera</td>
-<td>Done</td>
-</tr>
-<tr>
-<td>US16</td>
-<td>Filtrado de proyectos de estudiantes</td>
-<td>WI024</td>
-<td>Implementar búsqueda de proyectos de estudiantes (Gerente)</td>
-<td>Desarrollar una barra de búsqueda en la lista de ideas de estudiantes que filtre por habilidades y tecnologías.</td>
-<td>4</td>
-<td>Renzo Rivera</td>
-<td>Done</td>
-</tr>
-<tr>
-<td>US06</td>
-<td>Gerente publica nuevo proyecto</td>
-<td>WI013</td>
-<td>Implementar formulario de publicación de proyecto</td>
-<td>Desarrollar el formulario para que un gerente cree un nuevo proyecto.</td>
-<td>3</td>
-<td>Erick Palomino</td>
-<td>Done</td>
-</tr>
-<tr>
-<td>US08</td>
-<td>Editar Perfil de Usuario</td>
-<td>WI015</td>
-<td>Implementar edición de perfil</td>
-<td>Crear el formulario y la lógica para que un usuario (ambos roles) pueda modificar y guardar los datos de su perfil.</td>
-<td>4</td>
-<td>Andrea Santur</td>
-<td>Done</td>
-</tr>
-</tbody>
-</table>
+| Código US / TS | Título | Id de Tarea | Título de la Tarea | Descripción | Estimación (hrs) | Story Points | Asignado a | Estado |
+|---|---|---|---|---|---|---|---|---|
+| US05 | Recuperar Contraseña | TS01 | Diseño de formulario | Crear el diseño para ingresar los datos de recuperacion. | 2 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US05 | Recuperar Contraseña | TS02 | Porgramar funcionamiento | Diseñar y testear la funcionalidad de dicho segmento | 4 | 3 | Martinez Gaona, Pablo Afranio | To Do |
+| US09 | Recibir notificaciones IoT | TS33 | Endpoint recepción de notificaciones | Implementar servicio para recibir eventos generados por dispositivos IoT. | 6 | 3 | Via Luna, Bruce | To Do |
+| US09 | Recibir notificaciones IoT | TS34 | Gestión de alertas en sistema | Procesar y almacenar notificaciones recibidas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US09 | Recibir notificaciones IoT | TS35 | Visualización de notificaciones | Mostrar alertas IoT al usuario dentro de la plataforma. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US11 | Subir espacio para edición | TS36 | Publicación de espacios | Permitir publicar espacios para cotización pública. | 5 | 2 | Via Luna, Bruce | To Do |
+| US11 | Subir espacio para edición | TS37 | Endpoint listado público | Crear endpoint para mostrar espacios disponibles. | 4 | 2 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS38 | Implementación de cifrado de datos | Proteger información sensible almacenada en la plataforma. | 8 | 3 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS39 | Protección de accesos API | Configurar autenticación y autorización en endpoints. | 6 | 2 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS40 | Auditoría de seguridad | Registrar eventos críticos relacionados con accesos y modificaciones. | 5 | 2 | Via Luna, Bruce | To Do |
+| US12 | Seguridad de datos | TS41 | Validación de vulnerabilidades | Realizar controles básicos de seguridad y validaciones. | 5 | 2 | Via Luna, Bruce | To Do |
+| US13 | Historial de proyectos | TS42 | Consulta de proyectos históricos | Obtener listado de proyectos completados y activos. | 5 | 2 | Via Luna, Bruce | To Do |
+| US13 | Historial de proyectos | TS43 | Visualización de historial | Mostrar historial detallado en la interfaz del usuario. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US15 | Alertas de seguridad | TS44 | Generación de alertas de seguridad | Detectar eventos críticos relacionados con seguridad. | 5 | 2 | Via Luna, Bruce | To Do |
+| US15 | Alertas de seguridad | TS45 | Notificación al usuario | Enviar alertas mediante sistema de notificaciones. | 4 | 1 | Via Luna, Bruce | To Do |
+| US16 | Seguimiento en tiempo real | TS46 | Servicio de actualización en tiempo real | Implementar actualización continua del estado de proyectos. | 6 | 3 | Via Luna, Bruce | To Do |
+| US16 | Seguimiento en tiempo real | TS47 | Integración WebSocket | Permitir transmisión de datos en tiempo real. | 5 | 2 | Via Luna, Bruce | To Do |
+| US16 | Seguimiento en tiempo real | TS48 | Visualización dinámica | Refrescar información en pantalla sin recargar página. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US17 | Comparación de presupuestos | TS49 | Consulta de presupuestos | Obtener propuestas económicas asociadas al proyecto. | 4 | 2 | Via Luna, Bruce | To Do |
+| US17 | Comparación de presupuestos | TS50 | Vista comparativa | Mostrar comparación de costos y características. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US18 | Gestión de pagos | TS51 | Registro de pagos | Permitir registrar operaciones de pago. | 6 | 3 | Via Luna, Bruce | To Do |
+| US18 | Gestión de pagos | TS52 | Validación de transacciones | Verificar consistencia y estado de pagos. | 5 | 2 | Via Luna, Bruce | To Do |
+| US18 | Gestión de pagos | TS53 | Historial de pagos | Mostrar pagos realizados por el usuario. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US19 | Recordatorios de pago | TS54 | Programación de recordatorios | Configurar alertas automáticas de vencimiento. | 3 | 1 | Via Luna, Bruce | To Do |
+| US19 | Recordatorios de pago | TS55 | Notificaciones de pago | Informar al usuario sobre pagos pendientes. | 2 | 1 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS56 | Endpoint registrar incidencia | Permitir registrar problemas durante la remodelación. | 5 | 2 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS57 | Persistencia de incidencias | Almacenar incidencias en base de datos. | 4 | 1 | Via Luna, Bruce | To Do |
+| US20 | Registro de incidencias | TS58 | Consulta de incidencias | Visualizar incidencias reportadas. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US23 | Panel de control de dispositivos IoT | TS59 | Dashboard IoT | Diseñar panel para monitoreo de dispositivos. | 6 | 3 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US23 | Panel de control de dispositivos IoT | TS60 | Consulta de métricas IoT | Obtener datos de sensores conectados. | 5 | 2 | Via Luna, Bruce | To Do |
+| US23 | Panel de control de dispositivos IoT | TS61 | Visualización de estados | Mostrar estado actual de dispositivos registrados. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US24 | Sugerencias de mejoras | TS62 | Formulario de sugerencias | Permitir registrar propuestas de mejora. | 3 | 1 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US24 | Sugerencias de mejoras | TS63 | Almacenamiento de sugerencias | Guardar comentarios enviados por usuarios. | 2 | 1 | Via Luna, Bruce | To Do |
+| US26 | Control de acceso de usuarios (RBAC) | TS64 | Configuración de roles RBAC | Definir permisos según rol de usuario. | 5 | 2 | Via Luna, Bruce | To Do |
+| US26 | Control de acceso de usuarios (RBAC) | TS65 | Validación de permisos | Restringir acceso a funcionalidades protegidas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US27 | Configuración de notificaciones | TS66 | Preferencias de notificaciones | Permitir configurar tipos de alertas. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US27 | Configuración de notificaciones | TS67 | Persistencia de configuración | Guardar preferencias seleccionadas por el usuario. | 4 | 1 | Via Luna, Bruce | To Do |
+| US29 | Filtrado de proyectos | TS68 | Implementación de filtros | Permitir búsqueda por estado, fecha y categoría. | 4 | 2 | Via Luna, Bruce | To Do |
+| US29 | Filtrado de proyectos | TS69 | Interfaz de filtrado | Diseñar controles para aplicar filtros. | 4 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US30 | Conexión con dispositivos IoT | TS70 | Integración de dispositivos IoT | Permitir vincular dispositivos a proyectos. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US30 | Conexión con dispositivos IoT | TS71 | Validación de conexión | Verificar comunicación con dispositivos registrados. | 5 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US30 | Conexión con dispositivos IoT | TS72 | Registro de dispositivos conectados | Almacenar dispositivos asociados al proyecto. | 4 | 2 | Via Luna, Bruce | To Do |
+| US35 | Roles de usuario | TS73 | Gestión de roles | Crear y administrar roles del sistema. | 4 | 2 | Via Luna, Bruce | To Do |
+| US35 | Roles de usuario | TS74 | Asignación de roles | Permitir asignar roles a usuarios registrados. | 4 | 2 | Via Luna, Bruce | To Do |
+| US36 | API para integración externa | TS75 | Diseño de API pública | Crear endpoints para integraciones externas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US36 | API para integración externa | TS76 | Documentación de API | Generar documentación para desarrolladores externos. | 4 | 2 | Via Luna, Bruce | To Do |
+| US39 | Actualización de Espacio | TS77 | Endpoint actualización de espacio | Permitir modificar información de espacios registrados. | 5 | 2 | Via Luna, Bruce | To Do |
+| US39 | Actualización de Espacio | TS78 | Validación de cambios | Verificar integridad de datos actualizados. | 4 | 1 | Via Luna, Bruce | To Do |
+| US40 | Eliminación de Espacio | TS79 | Endpoint eliminar espacio | Permitir eliminar espacios registrados. | 4 | 2 | Via Luna, Bruce | To Do |
+| US40 | Eliminación de Espacio | TS80 | Confirmación de eliminación | Solicitar validación antes de eliminar registros. | 3 | 1 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS81 | Endpoint crear proyecto IoT | Registrar proyectos de monitoreo asociados a espacios. | 6 | 3 | Via Luna, Bruce | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS82 | Persistencia de proyecto IoT | Guardar información del proyecto en base de datos. | 5 | 2 | Via Luna, Bruce | To Do |
+| US45 | Registro de Proyecto de Monitoreo IoT | TS83 | Validación de datos de proyecto | Verificar consistencia de la información registrada. | 4 | 2 | Via Luna, Bruce | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS84 | Consulta de proyecto IoT | Obtener información detallada del proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS85 | Visualización de métricas | Mostrar indicadores y datos relevantes del proyecto. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS86 | Consulta de dispositivos asociados | Mostrar dispositivos vinculados al proyecto. | 5 | 2 | Via Luna, Bruce | To Do |
+| US46 | Visualización de Detalles de Proyecto IoT | TS87 | Visualización de incidentes | Mostrar incidentes registrados relacionados al proyecto. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS88 | Endpoint recepción masiva | Recibir grandes volúmenes de datos de sensores. | 6 | 3 | Via Luna, Bruce | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS89 | Procesamiento de datos IoT | Procesar y validar información recibida. | 5 | 2 | Via Luna, Bruce | To Do |
+| US47 | Recepción Masiva de Datos de Sensores | TS90 | Persistencia de mediciones | Almacenar datos históricos de sensores. | 5 | 2 | Via Luna, Bruce | To Do |
+| US50 | Registro de Dispositivo IoT | TS91 | Endpoint registrar dispositivo | Permitir registrar nuevos dispositivos IoT. | 6 | 3 | Landa Ortiz, Sergio Javier | To Do |
+| US50 | Registro de Dispositivo IoT | TS92 | Validación de dispositivo | Verificar identificadores y configuración inicial. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
+| US50 | Registro de Dispositivo IoT | TS93 | Persistencia de dispositivos | Guardar dispositivos registrados en la base de datos. | 4 | 2 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS94 | Consulta de dispositivos | Obtener dispositivos asociados a un proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS95 | Filtros de dispositivos | Permitir búsqueda por estado y tipo. | 5 | 2 | Via Luna, Bruce | To Do |
+| US51 | Consulta de Dispositivos por Proyecto | TS96 | Visualización de dispositivos | Mostrar información detallada en interfaz. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS97 | Consulta de incidentes | Obtener incidentes relacionados con un proyecto. | 6 | 3 | Via Luna, Bruce | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS98 | Filtros de incidentes | Permitir búsqueda por severidad y fecha. | 5 | 2 | Via Luna, Bruce | To Do |
+| US52 | Consulta de Incidentes por Proyecto | TS99 | Visualización de incidentes | Mostrar listado y detalle de incidentes. | 5 | 2 | Aliaga Urbina, Wilder Gonzalo | To Do |
+| US54 | Registro Histórico de Notificaciones | TS100 | Almacenamiento de notificaciones | Registrar historial de alertas generadas. | 5 | 2 | Via Luna, Bruce | To Do |
+| US54 | Registro Histórico de Notificaciones | TS101 | Consulta de historial | Permitir recuperar notificaciones anteriores. | 4 | 2 | Via Luna, Bruce | To Do |
+| US54 | Registro Histórico de Notificaciones | TS102 | Visualización de historial | Mostrar historial de notificaciones al usuario. | 4 | 2 | Landa Ortiz, Sergio Javier | To Do |
 
 #### 4.2.3.3. Development Evidence for Sprint Review
 
@@ -4813,37 +4802,37 @@ Tanto el entrevistador y entrevistado tienen que presentarse formalmente, este u
   </tr>
   <tr>
     <td><strong>Entrevistado</strong></td>
-    <td>Sebastian Altamirano</td>
+    <td>Olivia Carmelino</td>
   </tr>
   <tr>
     <td><strong>Edad</strong></td>
-    <td>25</td>
+    <td>30</td>
   </tr>
   <tr>
     <td><strong>Distrito</strong></td>
-    <td>Miraflores</td>
+    <td>Surco</td>
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>0:35-7:15</td>
+    <td>0:00-6:54</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
     <td>
       
-  `https://youtu.be/USl493CuMDY`
+  `https://www.youtube.com/watch?v=TuDJHEbBf8c`
 
   </td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
-      Sebastian fue uno de los usuarios entrevistados previamente, en las entrevistas para diseño de usuarios y tuvo la oportunidad de probar la aplicacion de primera mano, reslta el diseño y como los datos no sobrecargan la pantallan ni lo abruman como usuario,resltando la caracteristica de un buen diseño UX 
+      En la entrevista, Olivia Carmelino comparte su experiencia tras probar una aplicación de remodelación, destacando que la plataforma facilita mucho la visualización de los espacios al permitir ubicar muebles y contrastar texturas (como madera o mármol) de manera efectiva. Aunque considera que el proceso de ingresar los datos iniciales y registrar los avances puede resultar un poco tedioso por la cantidad de detalles solicitados, reconoce que esto es necesario para tener una visión más completa del proyecto. Olivia encontró la pantalla principal clara y el botón de cobro fácil de usar, aunque señaló que agregar dispositivos fue la parte menos intuitiva. Además, valoró muy positivamente el sistema simulado de alertas de humedad y temperatura, considerándolo sumamente útil para el cuidado de los objetos según el clima de su zona. Finalmente, como sugerencia de mejora, recomendó añadir un mayor nivel de personalización y más opciones de ítems al momento de agregar elementos a los planos.
     </td>
   </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="Assets/App-validation-inteview.png" alt="segmento1entrevista2" width="1000"><br>
+      <img src="Assets/AppValidationespecialista1.png" alt="segmento1entrevista2" width="1000"><br>
     </td>
   </tr>
 </table>
@@ -4912,17 +4901,17 @@ Se entrevistó al remodelador Mateo para validar la experiencia de uso de SpaceP
     <td><strong>URL</strong></td>
     <td>
       
-  `https://www.youtube.com/watch?v=SM7MY4NbTgY`
+  `https://www.youtube.com/watch?v=hlo9SVn-dJA`
 
   </td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
-Javier Landa, usuario perteneciente al segmento de propietarios que buscan realizar remodelaciones en el hogar, percibió la aplicación como una plataforma muy positiva, organizada e intuitiva. Resaltó que el diseño limpio, apoyado en gráficos y tarjetas, permite ver de un vistazo el avance de la remodelación en sus distintas fases, centralizando todo el control del proyecto en un solo lugar y evitando el caos de mensajes o audios perdidos. También mencionó que la plataforma responde a una necesidad real, porque brinda tranquilidad económica y logística al permitir un control de pagos vinculado directamente al cumplimiento de hitos de la obra. Como mejora, sugirió incluir un aviso aclarando que el presupuesto inicial es estimado, simplificar el lenguaje técnico de las alertas de los sensores, agregar correos o ventanas de confirmación al cancelar una solicitud, y mostrar perfiles completos con fotos y calificaciones validadas de los maestros de obra para reforzar la seguridad al dejarlos entrar a su casa. Finalmente, indicó que la función que definitivamente elegiría usar sería la liberación de dinero por hitos cumplidos para evitar problemas con los trabajadores.  </tr>
+En esta entrevista de validación para la aplicación Spacepulse, Javier, un especialista en diseño de interiores, comparte su experiencia utilizando la plataforma. Aunque destaca que la interfaz es limpia, atractiva y muy eficiente para revisar el progreso de los proyectos de manera directa, señala varias áreas clave para mejorar la agilidad en plena obra. Sugiere simplificar el ingreso de datos iniciales permitiendo estimaciones generales, hacer más visible el menú de subtareas y facilitar el registro de avances usando únicamente fotografías en lugar de texto. Además, recomienda incorporar confirmaciones de pantalla o recibos automáticos para dar mayor seguridad a los cobros, transformar las métricas de los sensores en alertas prácticas sobre riesgos inmediatos y añadir un módulo rápido para aprobar cambios de última hora con el cliente. Finalmente, propone que la app aprenda de sus tiempos reales de trabajo para sugerir plazos automáticos en futuros presupuestos.  </tr>
   <tr>
     <td colspan="2"><br>
-      <img src="Assets/Entrevista3AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+      <img src="Assets/AppValidationespecialista3.png" alt="segmento1entrevista3" width="1000"><br>
     </td>
   </tr>
 </table>
@@ -4951,7 +4940,7 @@ Javier Landa, usuario perteneciente al segmento de propietarios que buscan reali
     <td><strong>URL</strong></td>
     <td>
       
-  `https://upcedupe-my.sharepoint.com/personal/u202321281_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202321281%5Fupc%5Fedu%5Fpe%2FDocuments%2FLeccion%205%20%282%29%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebdca127d%2D9964%2D4890%2Dad7f%2Dca17c673a1ac`
+  `https://youtu.be/dSjruTXWwcc`
 
   </td>
   </tr>
@@ -4972,34 +4961,34 @@ El video muestra una entrevista de retroalimentación sobre una aplicación dise
   </tr>
   <tr>
     <td><strong>Entrevistado</strong></td>
-    <td>Ayrton Zabarburu</td>
+    <td>Martin Alegre Padilla</td>
   </tr>
   <tr>
     <td><strong>Edad</strong></td>
-    <td>20</td>
+    <td>24</td>
   </tr>
   <tr>
     <td><strong>Distrito</strong></td>
-    <td>San Miguel</td>
+    <td>Jesus Maria</td>
   </tr>
   <tr>
     <td><strong>Timing</strong></td>
-    <td>1:08 - 8:15</td>
+    <td>0:05 - 4:37</td>
   </tr>
   <tr>
     <td><strong>URL</strong></td>
     <td>
       
-  `https://www.youtube.com/watch?v=6QrXzgDBbZw`
+  `https://www.youtube.com/watch?v=4FvYabth_do`
 
   </td>
   </tr>
   <tr>
     <td colspan="2" style="text-align:justify">
       Resumen: <br>
- Ayrton indica que en general tuvo una experiencia positiva, además de indicar varios puntos a mejorar como ser más especifico en algunos campos así como indicar aspectos que el cliente talvez no pueda saber de primera mano como los m2 de un espacio.  <tr>
+ En esta sesión de validación de la aplicación Space Pulse, Martín Alegre evalúa la plataforma desde la perspectiva del segmento de remodeladores. Martín considera que la herramienta es organizada, fácil de navegar y que agiliza significativamente el registro de los avances en los proyectos. Sin embargo, para optimizar la experiencia, propone varias mejoras clave: permitir que los presupuestos de las tareas se marquen como aproximados, darle un mayor tamaño a las imágenes en la pantalla principal, aclarar los textos en los botones de gestión de tareas y añadir un mensaje de confirmación al procesar cobros para mayor seguridad. Además, sugiere simplificar las alertas de los sensores de la casa para que muestren niveles de riesgo prácticos en lugar de datos demasiado técnicos, y recomienda encarecidamente integrar un chat con el cliente junto con un apartado para subir evidencia fotográfica del trabajo realizado.  <tr>
     <td colspan="2"><br>
-      <img src="Assets/Entrevista5AppValidation.png" alt="segmento1entrevista3" width="1000"><br>
+      <img src="Assets/AppValidationespecialista5.png" alt="segmento1entrevista3" width="1000"><br>
     </td>
   </tr>
 </table>
