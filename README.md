@@ -19,7 +19,7 @@ NRC: 3667
 <br><br>
 Docente: Eduardo Martin Reyes Rodriguez  
 <br><br>
-<strong>Informe de AV2</strong>  
+<strong>Informe de Trabajo Final</strong>  
 <br><br>
 Startup: Coder-Placing
 <br><br>
@@ -28,21 +28,21 @@ Producto: SpacePulse
 <br><br>
 <strong>Integrantes</strong>  
 <br><br>
-Aliaga Urbina, Wilder Gonzalo (U202222001)
+U202222001 - Aliaga Urbina, Wilder Gonzalo
 <br><br>
-Via Luna, Bruce (U202313403)
+U202311086 - Landa Ortiz, Sergio Javier
 <br><br>
-Martinez Gaona, Pablo Afranio (U202120011) 
+U202120011 - Martinez Gaona, Pablo Afranio
 <br><br>
- Perez Tuesta, Gabriel (U202321281) 
+U202321281 - Perez Tuesta, Gabriel
 <br><br>
- Landa Ortiz, Sergio Javier (U202311086)
+U202313403 - Via Luna, Bruce
 <br><br>
 2026-01
 </h3>
 </div>
 
-
+<div style="break-after: page;"></div>
 
 ## Registro de Versiones del Informe
 
